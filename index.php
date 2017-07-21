@@ -12,7 +12,8 @@
     <title>Title</title>
 </head>
 <body>
-Hi Morrison. You are about to create something amazing!! This is the new project
+Hi Morrison. You are about to create something amazing!! This is the new project.... got to <a href="testDb.php">Click here</a>
 <?php echo 'hey'?>
+
 </body>
 </html>
