@@ -7,12 +7,11 @@
  */
 
 include ("dbConnect.php");
-$sql_query = "Select name,age,address from testdb Where id='1'";
+$sql_query = "Select age,address from testdb Where id='1'";
 $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()){
-    $name=$row['name'];
     $address=$row['address'];
     $age=$row['age'];
 
-    echo "Hi"+$name+". Your Age is"+$age+". Your address is "+ $address ;
+    echo ' Your Age is'+$age+'. Your address is '+ $address ;
 }
