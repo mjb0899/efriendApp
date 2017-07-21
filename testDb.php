@@ -13,5 +13,5 @@ while($row = $result -> fetch_array()){
     $address=$row['address'];
     $age=$row['age'];
 
-    echo ' Your Age is'+$age+'. Your address is '+ $address ;
+    echo ' Your Age is'.$age.'. Your address is '. $address ;
 }
