@@ -74,25 +74,27 @@ footer{
 
 
 /*FEATURE CSS*/
-.wrapper_feature{
-	width:70%;
-	border: 2px solid blue;
-	margin: auto;
 
-}
 .wrapper_left{
-float: left;
-width: 50%;
-border: 2px solid red;
-	text-align: center;	padding: 1rem;
+	text-align: center;
+	border:2px solid yellow;
+	width: 49%;
+	float: left;
+	padding: 1rem;
+	height: 100%;
+	border-radius: 1rem;
 
 }
 .wrapper_right{
-float: left;
-width: 50%;
-border: 2px solid black;
-text-align: center;	
-padding: 1rem;
+	float: right;
+	border:2px solid grey;
+	width:49%;
+	height: 100%;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 1rem;
+
+
 }
 
 
@@ -109,12 +111,13 @@ padding: 1rem;
 
 .eConnectLogo
 {
-height: 10rem;
+	height: 10rem;
 	width: 10rem;
 	border: 4px solid pink;
 	margin:auto;
-		border-radius: 50%;
-			text-align: center;
+	border-radius: 50%;
+	text-align: center;
+
 
 
 
