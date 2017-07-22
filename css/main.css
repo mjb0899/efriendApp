@@ -5,7 +5,8 @@ html{
 
 body
 {
-	background-image: url('../images/rr2.png');
+	background-image: url('rr2.PNG');
+
 	background-repeat: no-repeat;
     background-attachment: fixed;
      background-position: center; 
@@ -16,6 +17,7 @@ body
 
 footer{
 	text-align: center;
+	bottom: 0;
 }
 
 .container{
@@ -150,7 +152,20 @@ border-radius: 50%;
 	background-color: red;
 	padding: 1rem;
 }
+/*Registration CSS*/
+.wrapper_reg{
+	width: 100%;
+		margin-top: 60px;
+		padding: 1rem;
 
+}
+.container_reg{
+	width: 70%;
+		margin: auto;
+		padding: 1rem;
+
+
+}
 
 /*
 footer{
