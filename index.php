@@ -81,7 +81,17 @@
     </div>
 </div>
 <footer>
-    <p>copyright</p>
+    <div class="footer_left" >
+        <h1>eFriend</h1>
+    </div>
+    <div class="footer_right" >
+        <a target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>
+        <a target="_blank" title="follow me on Twitter" href="http://www.twitter.com/PLACEHOLDER"><img alt="follow me on Twitter" src="https://c866088.ssl.cf3.rackcdn.com/assets/twitter30x30.png" border=0></a>
+        <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
+    </div>
+    <div class="footer_below" >
+        <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
+    </div>
 </footer>
 </body>
 </html>
