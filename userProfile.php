@@ -50,7 +50,7 @@
         <div class="div_top">
 
             <div class="profile_image">
-                <img id="pic" src="rr.PNG">
+                <img id="pic" src="images/rr2.png">
             </div>
             <h4>Morrison Barreto</h4>
         </div>
