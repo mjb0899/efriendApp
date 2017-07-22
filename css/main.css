@@ -125,6 +125,7 @@ footer{
 /*PROFILE CSS*/
 .wrapper_profile{
 	background-color: pink;
+
 }
 .profile_image{
 	height: 15rem;
@@ -137,15 +138,15 @@ footer{
 }
 
 #pic{
-	
-width: 100%;
+
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 	-webkit-border-radius: 50%;
--moz-border-radius: 50%;
--ms-border-radius: 50%;
--o-border-radius: 50%;
-border-radius: 50%;  
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
 }
 .div_bottom{
 	background-color: grey;
@@ -154,7 +155,14 @@ border-radius: 50%;
 .div_top{
 	background-color: red;
 	padding: 1rem;
+	text-align: center;
 }
+.div_middle{
+	padding: 1rem;
+}
+
+
+
 /*Registration CSS*/
 .wrapper_reg{
 	width: 100%;
