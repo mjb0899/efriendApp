@@ -52,7 +52,7 @@ if(in_array($type,$allowed_utype)) {
 
 */
 
-$stmt2 = $db->prepare("INSERT INTO users(uusername,upassword,uemail,ufname,ulname,age,location) VALUES (?,?,?,?,?,?,?)");
+$stmt2 = $db->prepare("INSERT INTO users(uusername,upassword,uemail,ufname,ulname,uage,uaddress) VALUES (?,?,?,?,?,?,?)");
 $stmt2->bind_param('sssssss', $username,$pass,$email,$ufname,$ulname,$age,$location);
 $stmt2->execute();
 $stmt2->store_result();
