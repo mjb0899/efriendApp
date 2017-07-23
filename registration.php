@@ -67,12 +67,23 @@
                         </div>
                         <div class="form-group">
                             <label for="usr" class="label_font">Last Name</label>
-                            <input type="text" class="form-control" id="usr" name="lname"placeholder="Enter Last Name" pattern="[A-Za-z]+" title="Letters Only" required>
+                            <input type="text" class="form-control" id="usr" name="lname" placeholder="Enter Last Name" pattern="[A-Za-z]+" title="Letters Only" required>
                         </div>
                         <div class="form-group">
                             <label for="usr" class="label_font">Pick a username:</label>
-                            <input type="text" class="form-control" id="usr" name="username"placeholder="Select a username" pattern=".{6,}" title="Six or more characters" required>
+                            <input type="text" class="form-control" id="usr" name="username" placeholder="Select a username" pattern=".{6,}" title="Six or more characters" required>
                         </div>
+                        <div class="form-group">
+                            <label for="age" class="label_font">Enter your age:</label>
+                            <input type="text" class="form-control" id="age" name="age" placeholder="Enter your age"  title="Six or more characters" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="location" class="label_font">Enter your age:</label>
+                            <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location"  title="Six or more characters" required>
+                        </div>
+
+
+
                         <div class="form-group">
                             <label for="email" class="label_font">Email:</label>
                             <input type="email" class="form-control" id="email" placeholder="Enter email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" name="email" required>
