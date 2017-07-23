@@ -21,6 +21,11 @@ $email=$_POST["email"];
 $pass = md5($_POST["pass"]);
 $age=$_POST["age"];
 $location=$_POST["location"];
+
+
+echo ' Your data is here'.$username.$age. $address.$fname.$lname.$email.$pass.$location ;
+
+
 /*
 $stmt= $db->prepare("SELECT uid FROM users WHERE username= ?");
 $stmt->bind_param('s',$username);
