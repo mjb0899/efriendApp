@@ -40,7 +40,7 @@ while ($stmt->fetch()) {
 }
 
 if(isset($_SESSION['name'])){
-    echo $uid. "Logged in 2";
+    header("location:features.php");
 }
 else{
 
