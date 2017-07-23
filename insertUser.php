@@ -5,17 +5,17 @@
  * Date: 03/04/2017
  * Time: 13:10
  */
-/*
+
 if($_POST['username']==null){
     header("location:pageNotFound.html");
     exit();
 }
-*/
+
 include ("dbConnect.php");
 
-$username=$_POST["username"];
-$fname=$_POST["fname"];
-$lname=$_POST["lname"];
+$uusername=$_POST["username"];
+$ufname=$_POST["fname"];
+$ulname=$_POST["lname"];
 $email=$_POST["email"];
 //$type=$_POST['utype'];
 $pass = md5($_POST["pass"]);
@@ -23,7 +23,7 @@ $age=$_POST["age"];
 $location=$_POST["location"];
 
 
-echo ' Your data is here'.$username.$age.$fname.$lname.$email.$pass.$location ;
+echo ' Your data is here'.$uusername.$age.$ufname.$ulname.$email.$pass.$location ;
 
 
 /*
@@ -50,13 +50,14 @@ if(in_array($type,$allowed_utype)) {
     $type='user';
 }
 
+*/
 
-$stmt2 = $db->prepare("INSERT INTO users(username,upassword,uemail,ufname,ulname,age,location) VALUES (?,?,?,?,?,?,?)");
-$stmt2->bind_param('sssssss', $username,$pass,$email,$fname,$lname,$age,$location);
+$stmt2 = $db->prepare("INSERT INTO users(uusername,upassword,uemail,ufname,ulname,age,location) VALUES (?,?,?,?,?,?,?)");
+$stmt2->bind_param('sssssss', $username,$pass,$email,$ufname,$ulname,$age,$location);
 $stmt2->execute();
 $stmt2->store_result();
 $stmt2->bind_result($col1);
-*/
+
 /*
 try{
 
