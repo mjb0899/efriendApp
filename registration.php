@@ -78,7 +78,7 @@
                             <input type="text" class="form-control" id="age" name="age" placeholder="Enter your age"  title="Six or more characters" required>
                         </div>
                         <div class="form-group">
-                            <label for="location" class="label_font">Enter your age:</label>
+                            <label for="location" class="label_font">Enter your Location:</label>
                             <input type="text" class="form-control" id="location" name="location" placeholder="Enter your location"  title="Six or more characters" required>
                         </div>
 
