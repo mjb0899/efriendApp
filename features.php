@@ -60,17 +60,17 @@ if(isset($_SESSION['name'])){
     <div class="container">
         <div class="wrapper_left">
 
-            <div class="eFriendLogo"></div>
+            <div class="eFriendLogo"></div>       efriend
             <a href="http://www.google.com" class="fill-div"></a>
-            efriend
+
 
         </div>
 
         <div class="wrapper_right">
 
-            <div class="eConnectLogo"></div>
+            <div class="eConnectLogo"></div>  eConnect
             <a href="http://www.google.com" class="fill-div"></a>
-            eConnect
+
 
 
         </div>
