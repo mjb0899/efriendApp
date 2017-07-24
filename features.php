@@ -1,12 +1,12 @@
 <?php
-session_start();
+session_start();/*
 if(isset($_SESSION['name'])){
     $username=$_SESSION['name'];
 }else{
     header("url=pageNotFound.php");
 
 }
-
+*/
 
 ?>
 
