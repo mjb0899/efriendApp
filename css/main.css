@@ -188,6 +188,10 @@ a.fill-div {
 .wrapper_right > a:hover {
 	background-color: yellow;
 }
+
+.wrapper_left > a:hover {
+	background-color: yellow;
+}
 /*
 footer{
 	text-align: center;

@@ -59,9 +59,9 @@ if(isset($_SESSION['name'])){
 <main>
     <div class="container">
         <div class="wrapper_left">
-
+            <a href="http://www.google.com" class="fill-div">
             <div class="eFriendLogo"></div>       efriend
-            <a href="http://www.google.com" class="fill-div"></a>
+           </a>
 
 
         </div>
