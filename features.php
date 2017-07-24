@@ -68,8 +68,10 @@ if(isset($_SESSION['name'])){
 
         <div class="wrapper_right">
 
-            <div class="eConnectLogo"></div>  eConnect
-            <a href="http://www.google.com" class="fill-div"></a>
+
+            <a href="http://www.google.com" class="fill-div">
+                <div class="eConnectLogo"></div>  eConnect
+            </a>
 
 
 
