@@ -60,7 +60,9 @@ if(isset($_SESSION['name'])){
     <div class="container">
         <div class="wrapper_left">
             <div class="eFriendLogo"></div>
+            <a href="www.google.com" class="fill-div"></a>
             efriend
+
         </div>
 
         <div class="wrapper_right">
