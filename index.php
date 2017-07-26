@@ -38,7 +38,7 @@
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="features.php">eFriend Finder</a></li>
-                            <li><a href="#">eConnect</a></li>
+                            <li><a href="eFriendSurvey.php">eConnect</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Happy Friends</a></li>
