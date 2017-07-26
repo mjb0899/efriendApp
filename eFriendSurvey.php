@@ -117,7 +117,7 @@
         <form action="insertUser.php" method="post">
             <div class="container_reg">
                 <div class="header_div">
-                    <h2>  Join Our Family </h2>
+                    <h2>  Let's Find You a match </h2>
                 </div>
                 <div >
 
