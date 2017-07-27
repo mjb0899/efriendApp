@@ -164,7 +164,7 @@
                             <li><input id="like5" type="text"></li>
                         </ol>
 
-                        <input type="hidden" name="likes">
+                        <input type="hidden" name="likes" id="likes">
 
 
 
