@@ -191,8 +191,6 @@
                             <option value="enthusiasm">exceptional enthusiasm</option>
                         </select>
 
-
-
                         <li>After work/school I usually:
                         </li>
                         <select>
@@ -205,13 +203,13 @@
 
                         <li>The best way for someone to notice you is:
                         </li>
-                        <select>
-                            <option value="saab"> smile and wink</option>
+                        <select name="approach_game">
+                            <option value="smile"> smile and wink</option>
 
-                            <option value="home">introduce yourself</option>
+                            <option value="selfIntro">introduce yourself</option>
 
-                            <option value="saab">have a friend introduce you</option>
-                            <option value="saab"> do the worm in the hall</option>
+                            <option value="friend">have a friend introduce you</option>
+                            <option value="worm"> do the worm in the hall</option>
                         </select>
 
                         </select>
