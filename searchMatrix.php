@@ -12,7 +12,7 @@ if(isset($_SESSION['name'])){
     header("url=pageNotFound.php");
 
 }
-
+//List Variables
 $type=$_POST["type"];
 $likes=$_POST["likes"];
 $bio=$_POST["bio"];
