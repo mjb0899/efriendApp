@@ -89,6 +89,17 @@
 
     </script>
 
+    <script type="text/javascript">
+        function join_ym()
+        {
+            var like1 =document.getElementById('like1').value;
+            var like2 =document.getElementById('like2').value;
+            document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
+            alert(document.getElementById('likes').value);
+        }
+    </script>
+
+
 </head>
 <body>
 <header>
@@ -271,7 +282,7 @@
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     <div class="clearfix">
                         <button type="button" class="cancelbtn">Cancel</button>
-                        <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="submit" class="signupbtn" onclick="join_ym();">Sign Up</button>
                     </div>
                 </div>
 
