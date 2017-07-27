@@ -76,20 +76,20 @@
 
     </style>
     <script>
-   //     $(document).ready(function () {
-    //        $("submit").click(function () {
-   //             var like1 =document.getElementById('like1').value;
-    //            var like2 =document.getElementById('like2').value;
-     //           var like3 =document.getElementById('like3').value;
-     //           var like4 =document.getElementById('like4').value;
-      //          var like5 =document.getElementById('like5').value;
-      //          document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
-     //       })
-    //    })
+       $(document).ready(function () {
+            $("submit").click(function () {
+                var like1 =document.getElementById('like1').value;
+                var like2 =document.getElementById('like2').value;
+               var like3 =document.getElementById('like3').value;
+                var like4 =document.getElementById('like4').value;
+                var like5 =document.getElementById('like5').value;
+                document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
+           })
+        })
 
     </script>
 
-    <script type="text/javascript">
+ <!--   <script type="text/javascript">
         function join_ym()
         {
             var like1 =document.getElementById('like1').value;
@@ -97,7 +97,7 @@
             document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
             alert(document.getElementById('likes').value);
         }
-    </script>
+    </script>-->
 
 
 </head>
