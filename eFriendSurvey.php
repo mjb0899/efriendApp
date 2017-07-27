@@ -13,7 +13,7 @@
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <style type="text/css">
-        textarea[name=foo] {
+        textarea[name=bio] {
             resize: none;
         }
 
@@ -153,12 +153,12 @@
                             <li><input name="like5" type="text"></li>
                         </ol>
 
-                        <input type="hidden" name="likes" value=""
+                        <input type="hidden" name="likes">
 
 
 
                         <li>Create a small bio about something you like?</li>
-                        <textarea name="foo" rows="5" cols="30" placeholder="Say something here" id="tarea">
+                        <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
       
       </textarea>
                         <br>
@@ -172,13 +172,47 @@
 
 
                         <li>What would your ideal weekend be?</li>
-                        <select>
+                        <select name="weekend">
                             <option value="home">Something at home</option>
-                            <option value="saab">Definitely an outing</option>
-                            <option value="saab">
+                            <option value="out">Definitely an outing</option>
+                            <option value="work">
                                 Take advantage of the empty Library</option>
 
 
+
+
+                        <li>The best thing you have going is:</li>
+                        <select name="self">
+                            <option value="intelligence">incredible intelligence</option>
+                            <option value="humour">gut splitting  humor</option>
+                            <option value="honesty">amazing honesty</option>
+                            <option value="looks"> super looks</option>
+                            <option value="caring">compassionate caring</option>
+                            <option value="enthusiasm">exceptional enthusiasm</option>
+                        </select>
+
+
+
+                        <li>After work/school I usually:
+                        </li>
+                        <select>
+                            <option value="work">work</option>
+                            <option value="sleep">sleep</option>
+                            <option value="study">  study</option>
+                            <option value="shop">shop</option>
+                            <option value="hangout">hang out</option>
+                        </select>
+
+                        <li>The best way for someone to notice you is:
+                        </li>
+                        <select>
+                            <option value="saab"> smile and wink</option>
+
+                            <option value="home">introduce yourself</option>
+
+                            <option value="saab">have a friend introduce you</option>
+                            <option value="saab"> do the worm in the hall</option>
+                        </select>
 
                         </select>
 
@@ -187,15 +221,6 @@
                             <option value="home">Flirtline</option>
                             <option value="saab">Keeping it simple</option>
                             <option value="saab">A compliment</option>
-                        </select>
-                        <li>The best thing you have going is:</li>
-                        <select>
-                            <option value="home">incredible intelligence</option>
-                            <option value="saab">gut splitting  humor</option>
-                            <option value="saab">amazing honesty</option>
-                            <option value="saab"> super looks</option>
-                            <option value="saab">compassionate caring</option>
-                            <option value="saab">exceptional enthusiasm</option>
                         </select>
 
                         <li>What do you look for first in others?
@@ -215,32 +240,9 @@
                             <option value="saab">Female</option>
                             <option value="saab">Doesn't Matter</option>
                         </select>
-
-                        <li>After work/school I usually:
-                        </li>
-                        <select>
-                            <option value="home">work</option>
-                            <option value="saab">sleep</option>
-                            <option value="saab">  study</option>
-                            <option value="saab">shop</option>
-                            <option value="saab">hang out</option>
-                        </select>
-
-                        <li>The best way for someone to notice you is:
-                        </li>
-                        <select>
-                            <option value="saab"> smile and wink</option>
-
-                            <option value="home">introduce yourself</option>
-
-                            <option value="saab">have a friend introduce you</option>
-                            <option value="saab"> do the worm in the hall</option>
-                        </select>
-
-
-
-
                     </ol>
+
+
 
                     <!-- new form end -->
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
