@@ -157,11 +157,11 @@
 
                         <li>List your top five likes/hobbies?</li>
                         <ol>
-                            <li><input name="like1" type="text"></li>
-                            <li><input name="like2" type="text"></li>
-                            <li><input name="like3" type="text"></li>
-                            <li><input name="like4" type="text"></li>
-                            <li><input name="like5" type="text"></li>
+                            <li><input id="like1" type="text"></li>
+                            <li><input id="like2" type="text"></li>
+                            <li><input id="like3" type="text"></li>
+                            <li><input id="like4" type="text"></li>
+                            <li><input id="like5" type="text"></li>
                         </ol>
 
                         <input type="hidden" name="likes">
