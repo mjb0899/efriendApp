@@ -178,7 +178,7 @@
                             <option value="work">
                                 Take advantage of the empty Library</option>
 
-
+                        </select>
 
 
                         <li>The best thing you have going is:</li>
@@ -212,7 +212,32 @@
                             <option value="worm"> do the worm in the hall</option>
                         </select>
 
+                        <li>Do you smoke?</li>
+                        <select name="smoke">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
                         </select>
+                        <li>Do you drink?</li>
+                        <select name="drink">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <li>religion?</li>
+                        <select name="religion">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <li>Ethnicity?</li>
+                        <select name="smoke">
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+
+
+
+
+
+                        <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
 
                         <li>How would you like to be approached?</li>
                         <select>
