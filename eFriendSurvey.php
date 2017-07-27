@@ -114,7 +114,7 @@
 <main>
     <div class="wrapper_reg">
 
-        <form action="insertUser.php" method="post">
+        <form action="searchMatrix.php" method="post">
             <div class="container_reg">
                 <div class="header_div">
                     <h2>  Let's Find You a match </h2>
