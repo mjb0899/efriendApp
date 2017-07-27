@@ -75,7 +75,19 @@
 
 
     </style>
+    <script>
+        $(document).ready(function () {
+            $("submit").click(function () {
+                var like1 =document.getElementById('like1').value;
+                var like2 =document.getElementById('like2').value;
+                var like3 =document.getElementById('like3').value;
+                var like4 =document.getElementById('like4').value;
+                var like5 =document.getElementById('like5').value;
+                document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
+            })
+        })
 
+    </script>
 
 </head>
 <body>
@@ -124,9 +136,9 @@
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
-                        <select>
-                            <option value="volvo">Introvert</option>
-                            <option value="saab">Extrovert</option>
+                        <select name="type">
+                            <option value="Intro">Introvert</option>
+                            <option value="Extro">Extrovert</option>
 
                         </select>
 
@@ -134,13 +146,14 @@
 
                         <li>List your top five likes/hobbies?</li>
                         <ol>
-                            <li><input type="text"></li>
-                            <li><input type="text"></li>
-                            <li><input type="text"></li>
-                            <li><input type="text"></li>
-                            <li><input type="text"></li>
+                            <li><input name="like1" type="text"></li>
+                            <li><input name="like2" type="text"></li>
+                            <li><input name="like3" type="text"></li>
+                            <li><input name="like4" type="text"></li>
+                            <li><input name="like5" type="text"></li>
                         </ol>
 
+                        <input type="hidden" name="likes" value=""
 
 
 
