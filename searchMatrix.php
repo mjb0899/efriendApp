@@ -28,7 +28,7 @@ $ethnicity =$_POST["ethnicity"];
 
 
 
-echo ' Your data is here'.$uusername.$age.$ufname.$ulname.$email.$pass.$location ;
+echo ' Your data is here'.$type.$likes.$bio.$weekend.$self.$ambition.$approach_game.$smoke.$drink.$religion.$ethnicity;
 
 
 
