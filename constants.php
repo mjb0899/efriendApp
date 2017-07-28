@@ -9,6 +9,26 @@
 //#used 1,2,3,4,5,6
 //#used a,b,c,d,e,f,g,h,i,j,k,l,z
 
+/* #userInotable
+ *  type5/6
+ *  likes--
+ *  bio--
+ * weekend p/q/r/ss
+ * self a/b/c/d/e/f
+ * ambition m/n/o
+ * approach_game/guts v/w/x/y
+ * smoke _1/_2
+ * drink _1/_2
+ * religion _1/_2
+ * ethnicity g/h/i/j/k/l
+ * appoach_expected s/t/u
+ * */
+
+
+
+
+
+
 //1/2 #yes/no
 define("_1","yes");
 define("_2","no");
@@ -52,7 +72,7 @@ define("o","little");
 define("p","home");
 define("q","out");
 define("r","work");
-//sleep defined below
+//sleep defined below ss
 
 //approach
 define("s","flirt");
