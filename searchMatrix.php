@@ -37,13 +37,21 @@ echo ' Your data is here'.$type.$likes.$bio.$weekend.$self.$ambition.$approach_g
 
 
 try{
-
+/*
     $stmt2 = $db->prepare("INSERT INTO user_info(uid,likes,bio,weekend,self,ambition,approach_game,smoke,drink,religion,ethnicity,approach_wanted,ptype) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $stmt2->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
 
+
+    //need data for this
+    $stmt3 = $db->prepare("INSERT INTO user_search(uid,sfor,ssex,smatrix,ssmoke,sdrink,ethnicity,like1,like2,like3,like4,like5) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
+    $stmt3->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
+    $stmt3->execute();
+    $stmt3->store_result();
+    $stmt3->bind_result($col2);
+*/
 
 
 
