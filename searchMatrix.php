@@ -39,7 +39,7 @@ echo ' Your data is here'.$type.$likes.$bio.$weekend.$self.$ambition.$approach_g
 try{
 
     $stmt2 = $db->prepare("INSERT INTO user_info(uid,likes,bio,weekend,self,ambition,approach_game,smoke,drink,religion,ethnicity,approach_wanted,ptype) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    $stmt2->bind_param('sssssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
+    $stmt2->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
