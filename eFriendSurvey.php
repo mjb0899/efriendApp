@@ -149,8 +149,10 @@
 
                     <?php
                     include ("constants.php");
-                        echo 1;
-                        echo 2;
+                        echo _1;
+                        echo _4;
+
+                        echo _5;
 
                         echo a;
 

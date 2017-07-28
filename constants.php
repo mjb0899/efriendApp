@@ -10,16 +10,16 @@
 //#used a,b,c,d,e,f,g,h,i,j,k,l,z
 
 //1/2 #yes/no
-define(1,"yes");
-define(2,"no");
+define("_1","yes");
+define("_2","no");
 
 //3/4 ~male/female
-define(3,"male");
-define(4,"female");
+define("_3","male");
+define("_4","female");
 
 // #intro/extro
-define(5,"intro");
-define(6,"extro");
+define("_5","intro");
+define("_6","extro");
 
 //person type
 define("a","intelligent");
