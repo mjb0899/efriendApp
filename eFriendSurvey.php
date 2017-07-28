@@ -147,6 +147,24 @@
                 </div>
                 <div >
 
+                    <?php
+                    include ("constants.php");
+                        echo 1;
+                        echo 2;
+
+                        echo a;
+
+                        echo s;
+
+                        echo z;
+
+
+
+                    ?>
+
+
+
+
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
