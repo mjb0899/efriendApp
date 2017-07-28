@@ -13,7 +13,8 @@ if(isset($_SESSION['name'])){
 
 }
 //List Variables
-$type=$_POST["type"];
+$uid = $_SESSION['name'];
+$ptype=$_POST["type"];
 $likes=$_POST["likes"];
 $bio=$_POST["bio"];
 $weekend=$_POST["weekend"];
@@ -24,17 +25,29 @@ $smoke=$_POST["smoke"];
 $drink=$_POST["drink"];
 $religion=$_POST["religion"];
 $ethnicity =$_POST["ethnicity"];
-
-
-
+$approach_wanted=$_POST["approach_wanted"]; //recheck
 
 echo ' Your data is here'.$type.$likes.$bio.$weekend.$self.$ambition.$approach_game.$smoke.$drink.$religion.$ethnicity;
 
 
 
+
+
+
+
+
 try{
+
+    $stmt2 = $db->prepare("INSERT INTO user_info(uid,likes,bio,weekend,self,ambition,approach_game,smoke,drink,religion,ethnicity,approach_wanted,ptype) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $stmt2->bind_param('sssssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
+    $stmt2->execute();
+    $stmt2->store_result();
+    $stmt2->bind_result($col1);
+
+
 
 
 }catch(PDOException $e){
 
+    header("url=pageNotFound.php");
 }
