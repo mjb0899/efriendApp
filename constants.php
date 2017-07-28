@@ -52,6 +52,7 @@ define("o","little");
 define("p","home");
 define("q","out");
 define("r","work");
+//sleep defined below
 
 //approach
 define("s","flirt");
@@ -64,6 +65,12 @@ define("w","selfIntro");
 define("x","friend");
 define("y","worm");
 
+
+//ambition determine
+define("ww","work/study");
+define("ss","sleep");
+define("shop","shop");
+define("hh","hang out");
 
 
 

@@ -171,8 +171,8 @@
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
                         <select name="type">
-                            <option value="Intro">Introvert</option>
-                            <option value="Extro">Extrovert</option>
+                            <option value="_5">Introvert</option>
+                            <option value="_6">Extrovert</option>
 
                         </select>
 
@@ -204,35 +204,34 @@
                             <span class="slider round"></span>
                         </label>
 
-
+<!--p/q/r-->
                         <li>What would your ideal weekend be?</li>
                         <select name="weekend">
-                            <option value="home">Something at home</option>
-                            <option value="out">Definitely an outing</option>
-                            <option value="work">
-                                Take advantage of the empty Library</option>
-
+                            <option value="p">Something at home</option>
+                            <option value="q">Definitely an outing</option>
+                            <option value="r">Take advantage of the empty Library</option>
+                            <option value="ss">sleep</option>
                         </select>
 
-
+                        <!--a/b/c/d/e/f-->
                         <li>The best thing you have going is:</li>
                         <select name="self">
-                            <option value="intelligence">incredible intelligence</option>
-                            <option value="humour">gut splitting  humor</option>
-                            <option value="honesty">amazing honesty</option>
-                            <option value="looks"> super looks</option>
-                            <option value="caring">compassionate caring</option>
-                            <option value="enthusiasm">exceptional enthusiasm</option>
+                            <option value="a">incredible intelligence</option>
+                            <option value="b">gut splitting  humor</option>
+                            <option value="c">amazing honesty</option>
+                            <option value="d"> super looks</option>
+                            <option value="e">compassionate caring</option>
+                            <option value="f">exceptional enthusiasm</option>
                         </select>
 
+                        <!--p/q/r-->
                         <li>After work/school I usually:
                         </li>
                         <select>
-                            <option value="work">work</option>
-                            <option value="sleep">sleep</option>
-                            <option value="study">  study</option>
+                            <option value="ww">work/study</option>
+                            <option value="ss">sleep</option>
                             <option value="shop">shop</option>
-                            <option value="hangout">hang out</option>
+                            <option value="hh">hang out</option>
                         </select>
 
                         <li>The best way for someone to notice you is:
