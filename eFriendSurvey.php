@@ -277,7 +277,7 @@
                         <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
 
                         <li>How would you like to be approached?</li>
-                        <select>
+                        <select name="approach_wanted">
                             <option value="s">Flirtline</option>
                             <option value="t">Keeping it simple</option>
                             <option value="u">A compliment</option>
@@ -285,20 +285,21 @@
 
                         <li>What do you look for first in others?
                         </li>
-                        <select>
-                            <option value="home">doesn't matter</option>
-                            <option value="saab">intelligence</option>
-                            <option value="saab"> sense of humor</option>
-                            <option value="saab">honesty</option>
-                            <option value="saab">looks</option>
-                            <option value="saab">enthusiasm</option>
+                        <select name="searchCriteria">
+                            <option value="z">doesn't matter</option>
+                            <option value="a">intelligence</option>
+                            <option value="b">humor</option>
+                            <option value="c">honesty</option>
+                            <option value="d">looks</option>
+                            <option value="e">caring</option>
+                            <option value="f">enthusiasm</option>
                         </select>
 
                         <li>Your friend should be a?</li>
-                        <select>
-                            <option value="home">Male</option>
-                            <option value="saab">Female</option>
-                            <option value="saab">Doesn't Matter</option>
+                        <select name="searchSex">
+                            <option value="_3">Male</option>
+                            <option value="_4">Female</option>
+                            <option value="z">Doesn't Matter</option>
                         </select>
                     </ol>
 
