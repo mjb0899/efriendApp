@@ -44,7 +44,7 @@ echo ' Your search Criteria is here'.$approach_wanted.$searchCriteria.$searchSex
 try{
 
     $stmt2 = $db->prepare("INSERT INTO user_info(uid,likes,bio,weekend,workMeter,self,approach_game,smoke,drink,religion,ethnicity,approach_wanted,searchCriteria,searchSex) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    $stmt2->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex);
+    $stmt2->bind_param('isssssssssssss', $uid,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
