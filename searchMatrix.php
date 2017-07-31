@@ -29,7 +29,7 @@ $ethnicity =$_POST["ethnicity"];
 $approach_wanted=$_POST["approach_wanted"]; //recheck
 $searchCriteria =$_POST["searchCriteria"]; //search
 $searchSex =$_POST["searchSex"]; //search
-
+$uid=3;
 
 echo ' Your data is here'.$ptype.$likes.$bio.$weekend.$self.$workMeter."{}"/*$ambition*/.$approach_game.$smoke.$drink.$religion.$ethnicity;
 echo ' Your search criteria is here'.$approach_wanted.$searchCriteria.$searchSex;
@@ -42,14 +42,14 @@ echo ' Your search criteria is here'.$approach_wanted.$searchCriteria.$searchSex
 
 
 try{
-/*
-    $stmt2 = $db->prepare("INSERT INTO user_info(uid,likes,bio,weekend,self,ambition,approach_game,smoke,drink,religion,ethnicity,approach_wanted,ptype) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    $stmt2->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
+
+    $stmt2 = $db->prepare("INSERT INTO user_info(uid,likes,bio,weekend,workMeter,self,approach_game,smoke,drink,religion,ethnicity,approach_wanted,searchCriteria,searchSex) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $stmt2->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
 
-
+/*
     //need data for this
     $stmt3 = $db->prepare("INSERT INTO user_search(uid,sfor,ssex,smatrix,ssmoke,sdrink,ethnicity,like1,like2,like3,like4,like5) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
     $stmt3->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
