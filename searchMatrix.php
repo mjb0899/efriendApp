@@ -49,6 +49,8 @@ try{
     $stmt2->store_result();
     $stmt2->bind_result($col1);
 
+    echo 'In try loop';
+
 /*
     //need data for this
     $stmt3 = $db->prepare("INSERT INTO user_search(uid,sfor,ssex,smatrix,ssmoke,sdrink,ethnicity,like1,like2,like3,like4,like5) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
@@ -62,5 +64,8 @@ try{
 
 }catch(PDOException $e){
 
-    header("url=pageNotFound.php");
+   // header("url=pageNotFound.php");
+    echo 'in catch';
 }
+
+echo 'tried loop';
