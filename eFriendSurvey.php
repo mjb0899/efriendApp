@@ -247,18 +247,18 @@
 
                         <li>Do you smoke?</li>
                         <select name="smoke">
-                            <option value="1">Yes</option>
-                            <option value="2">No</option>
+                            <option value="_1">Yes</option>
+                            <option value="_2">No</option>
                         </select>
                         <li>Do you drink?</li>
                         <select name="drink">
-                            <option value="1">Yes</option>
-                            <option value="2">No</option>
+                            <option value="_1">Yes</option>
+                            <option value="_2">No</option>
                         </select>
                         <li>Would you say you're religious?</li>
                         <select name="religion">
-                            <option value="1">Yes</option>
-                            <option value="2">No</option>
+                            <option value="_1">Yes</option>
+                            <option value="_2">No</option>
                         </select>
                         <li>Ethnicity?</li>
                         <select name="smoke">
