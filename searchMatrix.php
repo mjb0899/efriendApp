@@ -62,7 +62,7 @@ try{
 
 
 
-}catch(PDOException $e){
+}catch(PDOException $exception){
 
    // header("url=pageNotFound.php");
     echo 'in catch';
