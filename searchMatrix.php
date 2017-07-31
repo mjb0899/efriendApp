@@ -13,7 +13,7 @@ if(isset($_SESSION['name'])){
 
 }
 //List Variables
-$uid = $_SESSION['name'];
+//$uid = $_SESSION['name'];
 $ptype=$_POST["type"];
 $likes=$_POST["likes"];
 $bio=$_POST["bio"];
