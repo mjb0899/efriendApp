@@ -237,12 +237,12 @@
                         <li>The best way for someone to notice you is:
                         </li>
                         <select name="approach_game">
-                            <option value="smile"> smile and wink</option>
+                            <option value="v"> smile and wink</option>
 
-                            <option value="selfIntro">introduce yourself</option>
+                            <option value="w">introduce yourself</option>
 
-                            <option value="friend">have a friend introduce you</option>
-                            <option value="worm"> do the worm in the hall</option>
+                            <option value="x">have a friend introduce you</option>
+                            <option value="y"> do the worm in the hall</option>
                         </select>
 
                         <li>Do you smoke?</li>
@@ -278,9 +278,9 @@
 
                         <li>How would you like to be approached?</li>
                         <select>
-                            <option value="home">Flirtline</option>
-                            <option value="saab">Keeping it simple</option>
-                            <option value="saab">A compliment</option>
+                            <option value="s">Flirtline</option>
+                            <option value="t">Keeping it simple</option>
+                            <option value="u">A compliment</option>
                         </select>
 
                         <li>What do you look for first in others?
