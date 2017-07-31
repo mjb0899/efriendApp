@@ -191,7 +191,7 @@
 
 
 
-                        <li>Create a small bio about something you like?</li>
+                        <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
       
       </textarea>
@@ -205,7 +205,7 @@
                         </label>
 
 <!--p/q/r-->
-                        <li>What would your ideal weekend be?</li>
+                        <li>What would your ideal weekend be?</li> <!--weekend-->
                         <select name="weekend">
                             <option value="p">Something at home</option>
                             <option value="q">Definitely an outing</option>
@@ -214,7 +214,7 @@
                         </select>
 
                         <!--a/b/c/d/e/f-->
-                        <li>The best thing you have going is:</li>
+                        <li>The best thing you have going is:</li><!--self-->
                         <select name="self">
                             <option value="a">incredible intelligence</option>
                             <option value="b">gut splitting  humor</option>
@@ -225,9 +225,9 @@
                         </select>
 
                         <!--p/q/r-->
-                        <li>After work/school I usually:
+                        <li>After work/school I usually: <!--workmeter-->
                         </li>
-                        <select>
+                        <select name="workMeter">
                             <option value="ww">work/study</option>
                             <option value="ss">sleep</option>
                             <option value="shop">shop</option>

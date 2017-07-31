@@ -19,6 +19,7 @@ $likes=$_POST["likes"];
 $bio=$_POST["bio"];
 $weekend=$_POST["weekend"];
 $self=$_POST["self"];
+$workMeter=$_POST["workMeter"];
 $ambition=$_POST["ambition"];
 $approach_game=$_POST["approach_game"];
 $smoke=$_POST["smoke"];
@@ -27,7 +28,7 @@ $religion=$_POST["religion"];
 $ethnicity =$_POST["ethnicity"];
 $approach_wanted=$_POST["approach_wanted"]; //recheck
 
-echo ' Your data is here'.$ptype.$likes.$bio.$weekend.$self.$ambition.$approach_game.$smoke.$drink.$religion.$ethnicity;
+echo ' Your data is here'.$ptype.$likes.$bio.$weekend.$self.$workMeter."{}".$ambition.$approach_game.$smoke.$drink.$religion.$ethnicity;
 
 
 
