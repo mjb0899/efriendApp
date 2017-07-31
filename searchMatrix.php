@@ -34,7 +34,7 @@ $uid=3;
 echo ' Your data is here'.$uid.$ptype.$likes.$bio.$weekend.$self.$workMeter."{}"/*$ambition*/.$approach_game.$smoke.$drink.$religion.$ethnicity;
 echo ' Your search Criteria is here'.$approach_wanted.$searchCriteria.$searchSex;
 
-
+include "dbConnect.php";
 
 
 
