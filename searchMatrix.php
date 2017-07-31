@@ -37,19 +37,19 @@ echo ' Your search Criteria is here'.$approach_wanted.$searchCriteria.$searchSex
 include ("dbConnect.php");
 
 
-
+echo 'dbConnect Fine';
 
 
 
 try{
-
+    echo 'In try loop';
     $stmt2 = $db->prepare("INSERT INTO user_info(uid,ptype,likes,bio,weekend,workMeter,self,approach_game,smoke,drink,religion,ethnicity,approach_wanted,searchCriteria,searchSex) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $stmt2->bind_param('issssssssssssss', $uid,$ptype,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
 
-    echo 'In try loop';
+    echo 'end try loop';
 
 /*
     //need data for this
