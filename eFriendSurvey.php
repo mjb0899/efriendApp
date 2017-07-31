@@ -261,7 +261,7 @@
                             <option value="_2">No</option>
                         </select>
                         <li>Ethnicity?</li>
-                        <select name="smoke">
+                        <select name="ethnicity">
                             <option value="g">White</option>
                             <option value="h">Black</option>
                             <option value="i">Asian</option>
