@@ -262,8 +262,12 @@
                         </select>
                         <li>Ethnicity?</li>
                         <select name="smoke">
-                            <option value="yes">Yes</option>
-                            <option value="no">No</option>
+                            <option value="g">White</option>
+                            <option value="h">Black</option>
+                            <option value="i">Asian</option>
+                            <option value="j">Mixed</option>
+                            <option value="k">Brown</option>
+                            <option value="l">Other</option>
                         </select>
 
 
