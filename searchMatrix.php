@@ -27,8 +27,12 @@ $drink=$_POST["drink"];
 $religion=$_POST["religion"];
 $ethnicity =$_POST["ethnicity"];
 $approach_wanted=$_POST["approach_wanted"]; //recheck
+$searchCriteria =$_POST["searchCriteria"]; //search
+$searchSex =$_POST["searchSex"]; //search
+
 
 echo ' Your data is here'.$ptype.$likes.$bio.$weekend.$self.$workMeter."{}"/*$ambition*/.$approach_game.$smoke.$drink.$religion.$ethnicity;
+echo ' Your search criteria is here'.$approach_wanted.$searchCriteria.$searchSex;
 
 
 
