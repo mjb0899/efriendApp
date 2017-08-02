@@ -85,7 +85,7 @@ if($value1=="r" and $value2=="ww" and $value3=="a"){
     $ambition = 3;
 }
 
-echo 'Your ambition is'.$ambition;
+echo '\n Your ambition is'.$ambition;
 
 
 
