@@ -69,8 +69,20 @@ echo 'dbConnect Fine';
 
 //GENERATE AMBITION
 
+$value1=$weekend;
+$value2=$workMeter;
+$value3=$self;
 
+//ambition 1/2/3 -> high/moderate/low;
 
+if($value1=="r" and $value2=="ww" and $value3=="a"){
+    $ambition=1;
+} elseif($value1=="r" or $value2=="ww" or $value3=="a"){
+    $ambition=2;
+} elseif($value1!="r" or $value2!="ww" or $value3!="a"){
+    $ambition=3;
+}
+echo'Your ambition is'. $ambition;
 
 
 
