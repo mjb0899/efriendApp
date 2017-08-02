@@ -192,6 +192,9 @@ a.fill-div {
 .wrapper_left > a:hover {
 	background-color: yellow;
 }
+.error_colour{
+	color:red;
+}
 /*
 footer{
 	text-align: center;

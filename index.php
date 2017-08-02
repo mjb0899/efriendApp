@@ -71,7 +71,7 @@ session_start();
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
                 </div>
                 <div id="error">
-                <p><?php echo $_SESSION['errmsg'] ?></p>
+                    <p><span class="glyphicon glyphicon-remove error_colour"></span><?php echo $_SESSION['errmsg'] ?></p>
                 </div>
                 <div class="buttonholder register_link">
                     <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
