@@ -55,6 +55,7 @@ echo 'dbConnect Fine';
 
 
 try{
+    //adding to personal info
     echo 'In try loop';
     $stmt2 = $db->prepare("INSERT INTO user_info(uid,ptype,likes,bio,weekend,workMeter,self,approach_game,smoke,drink,religion,ethnicity,approach_wanted,searchCriteria,searchSex) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
     $stmt2->bind_param('issssssssssssss', $uid,$ptype,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex);
@@ -64,7 +65,7 @@ try{
     echo 'end try loop';
 
 
-    //need data for this
+    //need data for this //adding to search criteria table
     $stmt3 = $db->prepare("INSERT INTO user_search(uid,ssex,ssmoke,sdrink,sreligion) VALUES (?,?,?,?,?,?,?,?,?,?)");
     $stmt3->bind_param('issssssssssss', $uid,$searchSex,$searchSmoke,$searchDrink,$religion);
     $stmt3->execute();
