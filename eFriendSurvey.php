@@ -306,12 +306,12 @@
                         <option value="_2">No</option>
                     </select>
                     <li>Do you drink?</li>
-                    <select name="SearchDrink">
+                    <select name="searchDrink">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
                     <li>Would you say you're religious?</li>
-                    <select name="SearchReligion">
+                    <select name="searchReligion">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
