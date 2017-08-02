@@ -56,8 +56,7 @@ try {
 
     }
 }catch(exception $exept){
-    $_SESSION['errmsg']="Invalid Credentials";
-    header("location:index.php");
+    header("location:pageNotFound.html");
 }
 
 
@@ -68,7 +67,10 @@ else{
 
     //session_start();
     //$_SESSION['errmsg']='INVALID CREDENTIALS';
-    header("location:pageNotFound.php");
+
+
+    $_SESSION['errmsg']="Invalid Credentials";
+    header("location:index.php");
 }
 
 
