@@ -1,9 +1,9 @@
 <?php
 session_start();
 if(isset($_SESSION['name'])){
-    $username=$_SESSION['name'];
+
 }else{
-    header("url=pageNotFound.php");
+    header("location:index.php");
 
 }
 

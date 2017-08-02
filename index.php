@@ -6,12 +6,13 @@
  * Time: 20:58
  */
 session_start();
-/*
-if($_SESSION['errmsg']==NULL){
 
+if(isset($_SESSION['name'])){
+ header("location:features.php");
 }else{
 
-}*/
+
+}
 
 
 ?>
