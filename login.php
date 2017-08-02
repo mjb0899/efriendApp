@@ -1,16 +1,31 @@
 <?php
 include ("dbConnect.php");
-/*$_SESSION['errmsg']=0;
 
-if(($_POST["username"]=='musicandme_admin')&&($_POST["password"]=='x1x2x3')){
+
+
+
+//DEAL WITH NO INPUT
+session_start();
+
+//$_SESSION['errmsg']=0;
+
+
+//FOR ADMIN
+/*if(($_POST["username"]=='musicandme_admin')&&($_POST["password"]=='x1x2x3')){
     session_start();
     $_SESSION["dev"]=1;
     header("location:ad_site/ad_login.php");
     exit();
 }
 */
+
+//DEAL WITH INVALID LOGIN
+
 if(empty($_POST["username"])||empty($_POST["password"])){
+    $_SESSION['errmsg']="Please Enter Both Fields";
+    header("location:index.php");
     echo "both fields required";
+
 }
 else{
     $username=$_POST["username"];
