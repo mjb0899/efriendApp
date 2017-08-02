@@ -32,7 +32,7 @@ $searchSex =$_POST["searchSex"]; //search
 $uid=3;
 
 
-//segrate likes according to #(hash)
+//segregate likes according to #(hash)
 
 $stringToSplit=$likes;
 $splitString=explode("#",$stringToSplit);
@@ -66,6 +66,15 @@ include ("dbConnect.php");
 
 
 echo 'dbConnect Fine';
+
+//GENERATE AMBITION
+
+
+
+
+
+
+
 
 
 
