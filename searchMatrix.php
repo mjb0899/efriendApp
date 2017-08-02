@@ -32,6 +32,21 @@ $searchSex =$_POST["searchSex"]; //search
 $uid=3;
 
 
+//segrate likes according to #(hash)
+
+$stringToSplit=$likes;
+$splitString=explode("#",$stringToSplit);
+echo 'Likes split here';
+echo $splitString[0];
+echo '/'.$splitString[1];
+echo '/'.$splitString[2];
+echo '/'.$splitString[3];
+echo '/'.$splitString[4];
+
+
+
+
+
 //SearchTable
 $searchSmoke=$_POST["searchSmoke"];
 $searchDrink=$_POST["searchDrink"];
