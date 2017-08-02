@@ -269,13 +269,6 @@
                             <option value="k">Brown</option>
                             <option value="l">Other</option>
                         </select>
-
-
-
-
-
-                        <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
-
                         <li>How would you like to be approached?</li>
                         <select name="approach_wanted">
                             <option value="s">Flirtline</option>
@@ -302,6 +295,42 @@
                             <option value="z">Doesn't Matter</option>
                         </select>
                     </ol>
+
+
+                        <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
+                <h1>PART 2</h1>
+                  <ol>
+                    <li>Do you smoke?</li>
+                    <select name="searchSmoke">
+                        <option value="_1">Yes</option>
+                        <option value="_2">No</option>
+                    </select>
+                    <li>Do you drink?</li>
+                    <select name="SearchDrink">
+                        <option value="_1">Yes</option>
+                        <option value="_2">No</option>
+                    </select>
+                    <li>Would you say you're religious?</li>
+                    <select name="SearchReligion">
+                        <option value="_1">Yes</option>
+                        <option value="_2">No</option>
+                    </select>
+
+                      <!--SEARCH SEX-->
+
+                      <!--SEARCH CRITERIA-->
+
+                      <!--UID-->
+
+
+
+
+
+
+                  </ol>
+
+
+
 
 
 

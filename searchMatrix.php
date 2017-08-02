@@ -31,8 +31,21 @@ $searchCriteria =$_POST["searchCriteria"]; //search
 $searchSex =$_POST["searchSex"]; //search
 $uid=3;
 
+
+//SearchTable
+$searchSmoke=$_POST["ssmoke"];
+$searchDrink=$_POST["sdrink"];
+$searchReligion=$_POST["sreligion"];
+
+
+
+
 echo ' Your data is here'.$uid.$ptype.$likes.$bio.$weekend.$self.$workMeter."{}"/*$ambition*/.$approach_game.$smoke.$drink.$religion.$ethnicity;
 echo ' Your search Criteria is here'.$approach_wanted.$searchCriteria.$searchSex;
+echo 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxx';
+
+echo ' Your new Search Criteria is'.$searchSmoke.$searchDrink.$searchReligion;
+
 
 include ("dbConnect.php");
 
@@ -48,17 +61,15 @@ try{
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
-
     echo 'end try loop';
 
-/*
+
     //need data for this
-    $stmt3 = $db->prepare("INSERT INTO user_search(uid,sfor,ssex,smatrix,ssmoke,sdrink,ethnicity,like1,like2,like3,like4,like5) VALUES (?,?,?,?,?,?,?,?,?,?,?,?)");
-    $stmt3->bind_param('issssssssssss', $uid,$likes,$bio,$weekend,$self,$ambition,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$ptype);
+    $stmt3 = $db->prepare("INSERT INTO user_search(uid,ssex,ssmoke,sdrink,sreligion) VALUES (?,?,?,?,?,?,?,?,?,?)");
+    $stmt3->bind_param('issssssssssss', $uid,$searchSex,$searchSmoke,$searchDrink,$religion);
     $stmt3->execute();
     $stmt3->store_result();
     $stmt3->bind_result($col2);
-*/
 
 
 
