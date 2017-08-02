@@ -22,7 +22,7 @@ session_start();
 //DEAL WITH INVALID LOGIN
 
 if(empty($_POST["username"])||empty($_POST["password"])){
-    session_start();
+
     $_SESSION['errmsg']="Please Enter Both Fields";
     header("location:index.php");
     echo "both fields required";
@@ -34,26 +34,31 @@ else{
 }
 
 
+try {
 
-/*
-$stmt= $db->prepare("SELECT uid FROM users WHERE uusername= ? and upassword = ?");
-$stmt->bind_param('ss',$username,$password);
-$stmt-> execute();
-$stmt-> store_result();
-$stmt->bind_result($col1);
+    $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ? and upassword = ?");
+    $stmt->bind_param('ss', $username, $password);
+    $stmt->execute();
+    $stmt->store_result();
+    $stmt->bind_result($col1);
 
-while ($stmt->fetch()) {
+    while ($stmt->fetch()) {
 
-    $uid=$col1;
-    session_start();
+        $uid = $col1;
+        session_start();
+        $_SESSION['name'] = $username;
+        $_SESSION['userNum']=$uid;
 
-    $_SESSION['name']=$username;
-
-    echo $uid. "Logged in";
-    //header("refresh:5; url=index.php");
+         //  echo $uid . "Logged in";
+        //header("refresh:5; url=index.php");
 
 
-}*/
+    }
+}catch(exception $exept){
+    $_SESSION['errmsg']="Invalid Credentials";
+    header("location:index.php");
+}
+
 /*
 if(isset($_SESSION['name'])){
     header("location:features.php");
