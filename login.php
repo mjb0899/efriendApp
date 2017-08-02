@@ -51,6 +51,11 @@ try {
 
          //  echo $uid . "Logged in";
         //header("refresh:5; url=index.php");
+        if(isset($_SESSION['name'])){
+            header("location:features.php");
+        }else{
+            header("location:pageNotFound.php");
+        }
 
 
     }
