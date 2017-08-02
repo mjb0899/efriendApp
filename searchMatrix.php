@@ -81,7 +81,7 @@ try{
 
 
     //need data for thiss //adding to search criteria table
-    $stmt3 = $db->prepare("INSERT INTO user_search(uid,ssex,ssmoke,sdrink,like1,like2,like3,like4.like5,sreligion) VALUES (?,?,?,?,?,?,?,?,?,?)");
+    $stmt3 = $db->prepare("INSERT INTO user_search(uid,ssex,ssmoke,sdrink,like1,like2,like3,like4,like5,sreligion) VALUES (?,?,?,?,?,?,?,?,?,?)");
     $stmt3->bind_param('isssssssss', $uid,$searchSex,$searchSmoke,$searchDrink,$splitString[0],$splitString[1],$splitString[2],$splitString[3],$splitString[4],$searchReligion);
     $stmt3->execute();
     $stmt3->store_result();
