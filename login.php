@@ -22,6 +22,7 @@ session_start();
 //DEAL WITH INVALID LOGIN
 
 if(empty($_POST["username"])||empty($_POST["password"])){
+    session_start();
     $_SESSION['errmsg']="Please Enter Both Fields";
     header("location:index.php");
     echo "both fields required";
@@ -34,7 +35,7 @@ else{
 
 
 
-
+/*
 $stmt= $db->prepare("SELECT uid FROM users WHERE uusername= ? and upassword = ?");
 $stmt->bind_param('ss',$username,$password);
 $stmt-> execute();
@@ -52,8 +53,8 @@ while ($stmt->fetch()) {
     //header("refresh:5; url=index.php");
 
 
-}
-
+}*/
+/*
 if(isset($_SESSION['name'])){
     header("location:features.php");
 }
@@ -63,6 +64,6 @@ else{
     //$_SESSION['errmsg']='INVALID CREDENTIALS';
     header("location:pageNotFound.php");
 }
-
+*/
 
 
