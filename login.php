@@ -64,7 +64,6 @@ if(isset($_SESSION['name'])){
     header("location:features.php");
 }
 else{
-
     //session_start();
     //$_SESSION['errmsg']='INVALID CREDENTIALS';
 
