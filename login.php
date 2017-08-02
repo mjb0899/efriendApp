@@ -48,6 +48,7 @@ try {
         session_start();
         $_SESSION['name'] = $username;
         $_SESSION['userNum']=$uid;
+        unset($_SESSION['errmsg']);
 
          //  echo $uid . "Logged in";
         //header("refresh:5; url=index.php");
