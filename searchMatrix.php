@@ -66,8 +66,8 @@ try{
 
 
     //need data for thiss //adding to search criteria table
-    $stmt3 = $db->prepare("INSERT INTO user_search(uid,ssex,ssmoke,sdrink,sreligion) VALUES (?,?,?,?,?,?,?,?,?,?)");
-    $stmt3->bind_param('issssssssssss', $uid,$searchSex,$searchSmoke,$searchDrink,$religion);
+    $stmt3 = $db->prepare("INSERT INTO user_search(uid,ssex,ssmoke,sdrink,sreligion) VALUES (?,?,?,?,?)");
+    $stmt3->bind_param('isssss', $uid,$searchSex,$searchSmoke,$searchDrink,$religion);
     $stmt3->execute();
     $stmt3->store_result();
     $stmt3->bind_result($col2);
