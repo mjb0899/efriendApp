@@ -80,7 +80,7 @@ if(isset($_SESSION['name'])){
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
                 </div>
                 <div id="error">
-                   <?php  if($_SESSION['errmsg']!=NULL){ echo'<span class="glyphicon glyphicon-remove red"></span>'} ?>
+                   <?php  if($_SESSION['errmsg']!=NULL){ echo'<span class="glyphicon glyphicon-remove red"></span>';} ?>
                     <p> <?php
                         if($_SESSION['errmsg']!=NULL){
                             echo $_SESSION['errmsg'];
