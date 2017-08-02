@@ -33,9 +33,9 @@ $uid=3;
 
 
 //SearchTable
-$searchSmoke=$_POST["ssmoke"];
-$searchDrink=$_POST["sdrink"];
-$searchReligion=$_POST["sreligion"];
+$searchSmoke=$_POST["searchSmoke"];
+$searchDrink=$_POST["searchDrink"];
+$searchReligion=$_POST["searchReligion"];
 
 
 
