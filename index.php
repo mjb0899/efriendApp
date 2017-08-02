@@ -6,6 +6,14 @@
  * Time: 20:58
  */
 session_start();
+/*
+if($_SESSION['errmsg']==NULL){
+
+}else{
+
+}*/
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -71,7 +79,18 @@ session_start();
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
                 </div>
                 <div id="error">
-                    <span class="glyphicon glyphicon-remove red"></span><?php echo $_SESSION['errmsg'] ?>
+                    <span class="glyphicon glyphicon-remove red"></span>
+                    <p> <?php
+                        if($_SESSION['errmsg']!=NULL){
+                            echo $_SESSION['errmsg'];
+                        }else{
+
+                        }
+
+
+
+
+                        ?> </p>
                 </div>
                 <div class="buttonholder register_link">
                     <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
