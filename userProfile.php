@@ -103,8 +103,8 @@ if(isset($_SESSION['name'])){
             <p>Profile Info</p>
             <ul class="nav nav-pills">
                 <li class="active"><a data-toggle="pill" href="#home">My Info</a></li>
-                <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
-                <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
+                <li><a data-toggle="pill" href="#menu1">Search Info</a></li>
+                <li><a data-toggle="pill" href="#menu2">Your Images</a></li>
                 <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
             </ul>
 
