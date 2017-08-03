@@ -59,7 +59,7 @@ if(isset($_SESSION['name'])){
 <main>
     <div class="container">
         <div class="wrapper_left">
-            <a href="http://www.google.com" class="fill-div">
+            <a href="eFriendMatcher.php" class="fill-div">
             <div class="eFriendLogo"></div>       efriend
            </a>
 
@@ -69,7 +69,7 @@ if(isset($_SESSION['name'])){
         <div class="wrapper_right">
 
 
-            <a href="http://www.google.com" class="fill-div">
+            <a href="eConnectMatcher.php" class="fill-div">
                 <div class="eConnectLogo"></div>  eConnect
             </a>
 
