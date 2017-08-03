@@ -85,7 +85,7 @@ if(isset($_SESSION['name'])){
 
                     <?php
                     include("dbConnect.php");
-                    $sql_query = "Select ufname,ulname,uemail,uage,usex,uaddress from users Where username='$username'";
+                    $sql_query = "Select ufname,ulname,uemail,uage,usex,uaddress from users Where uusername='$username'";
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()){
                         $firstname= $row['ufname'];
