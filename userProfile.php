@@ -86,7 +86,7 @@ if(isset($_SESSION['name'])){
         </div>
     </nav>
 </header>
-
+<main>
 <div class="container">
     <div class="wrapper_profile">
         <div class="div_top">
@@ -226,6 +226,11 @@ if(isset($_SESSION['name'])){
 
     </div>
 </div>
+</main>
+
+
+
+
 <footer>
     <div class="footer_left" >
         <h1>eFriend</h1>
