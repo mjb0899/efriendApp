@@ -5,8 +5,10 @@ if(isset($_SESSION['name'])){
     $username=$_SESSION['name'];
 }else{
     header("url=pageNotFound.php");
+    $username=null;
 
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -80,7 +82,7 @@ if(isset($_SESSION['name'])){
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
                     <h3>Profile Info</h3>
-                    <h3><?php echo $_SESSION['name'] ?></h3>
+                    <h3><?php echo $username ?></h3>
 
 
                     <?php
@@ -96,6 +98,8 @@ if(isset($_SESSION['name'])){
                         $address= $row['uaddress'];
                     }
                     ?>
+                    <h3><?php echo $firstname ?></h3>
+                    <h3><?php echo $age ?></h3>
                     <form>
                         <table style="width:100%">
                             <tr>
