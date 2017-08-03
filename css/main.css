@@ -202,6 +202,11 @@ a.fill-div {
 .red{
 	color:red;
 }
+
+
+#submit_data,#firstname,#lastname,#email,#psw{
+	display: none;
+}
 /*
 footer{
 	text-align: center;
