@@ -98,8 +98,6 @@ if(isset($_SESSION['name'])){
                         $address= $row['uaddress'];
                     }
                     ?>
-                    <h3><?php echo $firstname ?></h3>
-                    <h3><?php echo $age ?></h3>
                     <form>
                         <table style="width:100%">
                             <tr>
