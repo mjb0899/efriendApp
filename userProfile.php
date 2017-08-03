@@ -71,7 +71,7 @@ if(isset($_SESSION['name'])){
         <div class="div_bottom">
             <p>Profile Info</p>
             <ul class="nav nav-pills">
-                <li class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                <li class="active"><a data-toggle="pill" href="#home">My Info</a></li>
                 <li><a data-toggle="pill" href="#menu1">Menu 1</a></li>
                 <li><a data-toggle="pill" href="#menu2">Menu 2</a></li>
                 <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
@@ -79,8 +79,64 @@ if(isset($_SESSION['name'])){
 
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
-                    <h3>HOME</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    <h3>Profile Information</h3>
+
+                    <?php
+                    include("dbConnect.php");
+                    $sql_query = "Select ufname,ulname,uemail,uage,usex,uaddress from users Where username='$username'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()){
+                        $firstname= $row['ufname'];
+                        $lastname= $row['ulname'];
+                        $email= $row['uemail'];
+                        $age= $row['uage'];
+                        $sex= $row['usex'];
+                        $address= $row['uaddress'];
+                    }
+                    ?>
+                    <form>
+                        <table style="width:100%">
+                            <tr>
+                                <td>
+                                    <?php echo $firstname?>
+                                </td>
+                                <td>
+                                    <input type="text" name="firstname" id="firstname">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo $lastname?>
+                                </td>
+                                <td>
+                                    <input type="text" name="firstname" id="lastname">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo $email?>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
+                                </td>
+                            </tr>
+                            <?php/*
+                            if(isset($_SESSION['match'])){
+                                echo' <tr>
+                                    <td>Change Password</td>
+                                    <td><input type="password" name="psw" id="psw"></td>
+                                   </tr>';
+                            }*/
+                            ?>
+                        </table>
+                    </form>
+
+
+
+
+
+
+
                 </div>
                 <div id="menu1" class="tab-pane fade">
                     <h3>Menu 1</h3>
