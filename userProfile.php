@@ -80,6 +80,8 @@ if(isset($_SESSION['name'])){
             <div class="tab-content">
                 <div id="home" class="tab-pane fade in active">
                     <h3>Profile Info</h3>
+                    <h3><?php echo $_SESSION['name'] ?></h3>
+
 
                     <?php
                     include("dbConnect.php");
