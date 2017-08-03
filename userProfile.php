@@ -20,10 +20,10 @@ if(isset($_SESSION['name'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="js/index.js">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
+    <script src="js/index.js"></script>
 
-        <link rel="stylesheet" type="text/css" href="css/main.css">
     <script>
         $(document).ready(function(){
                 $("#edit_data").click(function(){
@@ -153,7 +153,7 @@ if(isset($_SESSION['name'])){
                                     <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
                                 </td>
                             </tr>
-                            <?php
+                        <?php
                             if(isset($_SESSION['name'])){
                                 echo' <tr>
                                     <td>Change Password</td>
