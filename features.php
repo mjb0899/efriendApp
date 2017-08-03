@@ -43,6 +43,7 @@ if(isset($_SESSION['name'])){
                         <ul class="dropdown-menu">
                             <li><a href="#">eFriend Finder</a></li>
                             <li><a href="#">eConnect</a></li>
+                            <li><a href="userProfile.php">eConnect</a></li>
                         </ul>
                     </li>
                     <li><a href="#">Happy Friends</a></li>
