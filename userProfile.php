@@ -124,14 +124,39 @@ if(isset($_SESSION['name'])){
                                     <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" >
                                 </td>
                             </tr>
-                            <?php/*
-                            if(isset($_SESSION['match'])){
+                            <?php
+                            if(isset($_SESSION['name'])){
                                 echo' <tr>
                                     <td>Change Password</td>
                                     <td><input type="password" name="psw" id="psw"></td>
                                    </tr>';
-                            }*/
+                            }
                             ?>
+                            <tr>
+                                <td>
+                                    <?php echo $age?>
+                                </td>
+                                <td>
+                                    <input type="email" name="age" id="email"  >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo $sex?>
+                                </td>
+                                <td>
+                                    <input type="email" name="sex" id="email"  >
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <?php echo $address?>
+                                </td>
+                                <td>
+                                    <input type="email" name="address" id="email"  >
+                                </td>
+                            </tr>
+
                         </table>
                     </form>
 
