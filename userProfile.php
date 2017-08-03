@@ -231,7 +231,7 @@ if(isset($_SESSION['name'])){
 
 
 
-<footer>
+<footer style="clear: both;">
     <div class="footer_left" >
         <h1>eFriend</h1>
     </div>
