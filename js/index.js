@@ -1,31 +1,35 @@
 /**
  * Created by ADMIN on 02/08/2017.
  */
-/*function chkLogin() {
-    var username=document.getElementById('username').value;
-    var userpass=document.getElementById('password').value;
-    var dataString='username='+firstname+'&userpass='+lastname;
+function chk() {
+    var firstname=document.getElementById('firstname').value;
+    var lastname=document.getElementById('lastname').value;
+    var email=document.getElementById('email').value;
+    var psw=document.getElementById('psw').value;
+    var sex=document.getElementById('sex').value;
+    var address=document.getElementById('address').value;
+    var age=document.getElementById('age').value;
+    var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw+'&sex='+sex+'&address='+address+'&age='+age;
     $.ajax({
             type:"post",
-            url:"login.php",
+            url:"updateProfile.php",
             data: dataString,
             cache:false,
             success:function (d) {
                 if(d>0){
-                //   $("#test").html("Your changes have been saved.");
+                    $("#test").html("Your changes have been saved.");
                     setTimeout(function(){
                             location.reload();
                         }
-                        ,2000);//
-                  location.href("")
+                        ,2000);
                 }else if(d==0){
-                    $("#error").html("Invalid Login");
+                    $("#test").html("Check Fields");
                 }
                 else{
-                    $("#error").html("Invalid Login");
+                    $("#test").html("Not saved.");
                 }
             }
         }
     );
     return false
-}*/
+}

@@ -20,9 +20,38 @@ if(isset($_SESSION['name'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/index.js">
 
-    <link rel="stylesheet" type="text/css" href="css/main.css">
 
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script>
+        $(document).ready(function(){
+                $("#edit_data").click(function(){
+                        $("#edit_data").hide();
+                        $("#submit_data").show();
+                        $("#firstname").show();
+                        $("#lastname").show();
+                        $("#email").show();
+                        $("#psw").show();
+                    }
+                );
+            }
+        );
+    </script>
+    <script>
+        $(document).ready(function(){
+                $("#submit_data").click(function(){
+                        $("#edit_data").show();
+                        $("#submit_data").hide();
+                        $("#firstname").hide();
+                        $("#lastname").hide();
+                        $("#email").hide();
+                        $("#psw").hide();
+                    }
+                );
+            }
+        );
+    </script>
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
 <header>
@@ -113,7 +142,7 @@ if(isset($_SESSION['name'])){
                                     <?php echo $lastname?>
                                 </td>
                                 <td>
-                                    <input type="text" name="firstname" id="lastname">
+                                    <input type="text" name="lastname" id="lastname">
                                 </td>
                             </tr>
                             <tr>
@@ -137,7 +166,7 @@ if(isset($_SESSION['name'])){
                                     <?php echo $age?>
                                 </td>
                                 <td>
-                                    <input type="email" name="age" id="email"  >
+                                    <input type="email" name="age" id="age"  >
                                 </td>
                             </tr>
                             <tr>
@@ -145,7 +174,7 @@ if(isset($_SESSION['name'])){
                                     <?php echo $sex?>
                                 </td>
                                 <td>
-                                    <input type="email" name="sex" id="email"  >
+                                    <input type="email" name="sex" id="sex"  >
                                 </td>
                             </tr>
                             <tr>
@@ -153,13 +182,23 @@ if(isset($_SESSION['name'])){
                                     <?php echo $address?>
                                 </td>
                                 <td>
-                                    <input type="email" name="address" id="email"  >
+                                    <input type="email" name="address" id="address"  >
                                 </td>
                             </tr>
 
                         </table>
                     </form>
-
+                    <?php
+                    if(isset($_SESSION['name'])){
+                        echo'
+                        <div>
+                        <button id="edit_data"><span class="glyphicon glyphicon-pencil"></button>
+                        <button type="submit" id="submit_data" onclick="return chk()"> Save</button>
+                        </div>';
+                    }
+                    ?>
+                    <div id="test">
+                    </div>
 
 
 
