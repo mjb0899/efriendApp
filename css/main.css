@@ -156,13 +156,7 @@ footer{
 	border-radius: 50%;
 }
 
-#pic2{
 
-
-	object-fit: cover;
-	margin: auto;
-
-}
 .div_bottom{
 	background-color: grey;
 	padding: 1rem;
@@ -228,7 +222,14 @@ a.fill-div {
 	width:400px;
 	height: 400px;
 }
+#pic2{
 
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: cover;
+	margin: auto;
+
+}
 
 /*
 footer{
