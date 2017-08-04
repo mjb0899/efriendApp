@@ -215,6 +215,8 @@ a.fill-div {
 #submit_data,#firstname,#lastname,#email,#psw,#age,#sex,#address{
 	display: none;
 }
+
+/*carosel*/
 .tales {
 	width: 100%;
 }
@@ -222,9 +224,10 @@ a.fill-div {
 	width:100%;
 	max-height: 500px !important;
 }
-/*.item{
-	object-fit: fill;
-}*/
+.item{
+	width:400px;
+	height: 400px;
+}
 
 
 /*
