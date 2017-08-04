@@ -124,6 +124,7 @@ if(isset($_SESSION['name'])){
                 <h1 class="fn">C'thulhu</h1>
 
                 <p>
+                    <!--ADD LOCATION HERE-->
                     Cell: <span class="tel">555-666-7777</span><br />
                     Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
                 </p>
