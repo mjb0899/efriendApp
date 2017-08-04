@@ -257,6 +257,10 @@ footer{
 		width: 100%;
 
 	}
+	.item{
+		width:100%;
+		height: 400px;
+	}
 }
 
 
