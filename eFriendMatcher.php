@@ -87,15 +87,15 @@ if(isset($_SESSION['name'])){
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
                 <div class="item active">
-                    <img src="images/rr2.png" id="#pic" alt="Los Angeles" style="width:100%;">
+                    <img src="images/rr2.png" id="#pic" alt="Los Angeles" >
                 </div>
 
                 <div class="item">
-                    <img src="images/rr2.png" id="#pic" alt="Chicago" style="width:100%;">
+                    <img src="images/rr2.png" id="#pic" alt="Chicago" >
                 </div>
 
                 <div class="item">
-                    <img src="images/rr2.png" id="#pic" alt="New york" style="width:100%;">
+                    <img src="images/rr2.png" id="#pic" alt="New york" >
                 </div>
             </div>
 
