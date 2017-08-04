@@ -244,7 +244,9 @@ footer{
 }
 
 */
-
+.myslider{
+	width: 20rem;
+}
 @media screen and (max-width:960px) {
 	.matcherPage {
 		width: 100%;

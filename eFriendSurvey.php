@@ -11,6 +11,45 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+
+
+
+
+
+<!--NEW ADDED-->
+    <title>jQuery UI Slider - Range slider</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 18,
+                max: 100,
+                values: [ 25, 60 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                }
+            });
+            $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+                " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+    </script>
+
+
+    <!--NEW XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXADDED-->
+
+
+
+
+
+
+
+
+
+
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <style type="text/css">
         textarea[name=bio] {
@@ -321,6 +360,28 @@
                     </select>
 
                       <!--Select AGE to find people-->
+
+
+
+
+
+
+<div class="mySlider">
+                      <p>
+                          <label for="amount">Search Age:</label>
+                          <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+                      </p>
+
+                      <div id="slider-range"></div>
+
+</div>
+
+
+
+
+
+
+
 
                       <!--UID-->
 
