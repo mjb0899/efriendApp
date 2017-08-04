@@ -221,11 +221,11 @@ a.fill-div {
 .carousel-inner{
 	width:400px;
 	max-height: 500px !important;
+	margin: auto;
 }
 .item{
 	width:400px;
 	height: 400px;
-	margin: auto;
 }
 #pic2{
 
