@@ -75,6 +75,7 @@ if(isset($_SESSION['name'])){
 </header>
 <main>
     <div class="container2">
+        <div class="matcherPage">
         <h2>Carousel Example2</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
@@ -109,7 +110,7 @@ if(isset($_SESSION['name'])){
                 <span class="sr-only">Next</span>
             </a>
         </div>
-
+        </div>
     </div>
 </main>
 

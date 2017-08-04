@@ -37,6 +37,10 @@ footer{
 
 
 }
+.matcherPage{
+	width: 60%;
+	margin: auto;
+}
 .navbar{
 	background-color: #88BBD6;
 	border-bottom: white;
