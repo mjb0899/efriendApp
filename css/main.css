@@ -221,7 +221,7 @@ a.fill-div {
 	width: 100%;
 }
 .carousel-inner{
-	width:100%;
+	width:400px;
 	max-height: 500px !important;
 }
 .item{
