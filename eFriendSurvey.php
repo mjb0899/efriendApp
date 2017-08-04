@@ -276,6 +276,10 @@
                             <option value="u">A compliment</option>
                         </select>
 
+                        <!--SEARCH SEX-->
+
+                        <!--SEARCH CRITERIA-->
+
                         <li>What do you look for first in others?
                         </li>
                         <select name="searchCriteria">
@@ -316,9 +320,7 @@
                         <option value="_2">No</option>
                     </select>
 
-                      <!--SEARCH SEX-->
-
-                      <!--SEARCH CRITERIA-->
+                      <!--Select AGE to find people-->
 
                       <!--UID-->
 
