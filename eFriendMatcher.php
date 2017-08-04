@@ -113,6 +113,74 @@ if(isset($_SESSION['name'])){
                 <span class="sr-only">Next</span>
             </a>
         </div>
+
+            <!--PERSON DATA-->
+            <div class="match">
+                <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
+            </div>
+
+            <div id="contact-info" class="vcard">
+
+                <!-- Microformats! -->
+
+                <h1 class="fn">C'thulhu</h1>
+
+                <p>
+                    Cell: <span class="tel">555-666-7777</span><br />
+                    Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
+                </p>
+            </div>
+
+            <div id="objective">
+                <p>
+                    I am an outgoing and energetic (ask anybody) young professional, seeking a
+                    career that fits my professional skills, personality, and murderous tendencies.
+                    My squid-like head is a masterful problem solver and inspires fear in who gaze upon it.
+                    I can bring world domination to your organization.
+                </p>
+            </div>
+
+            <div class="clear"></div>
+
+            <dl>
+                <dd class="clear"></dd>
+
+                <dt>Education</dt>
+                <dd>
+                    <h2>Withering Madness University - Planet Vhoorl</h2>
+                    <p><strong>Major:</strong> Public Relations<br />
+                        <strong>Minor:</strong> Scale Tending</p>
+                </dd>
+
+                <dd class="clear"></dd>
+
+                <dt>Skills</dt>
+                <dd>
+                    <h2>Office skills</h2>
+                    <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
+
+                    <h2>Computer skills</h2>
+                    <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
+                </dd>
+
+                <dd class="clear"></dd>
+
+
+
+                <dd class="clear"></dd>
+
+                <dt>Hobbies</dt>
+                <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
+
+                <dd class="clear"></dd>
+
+                <dt>References</dt>
+                <dd>Available on request</dd>
+
+                <dd class="clear"></dd>
+            </dl>
+
+
         </div>
     </div>
 </main>
