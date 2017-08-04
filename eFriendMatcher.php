@@ -138,46 +138,20 @@ if(isset($_SESSION['name'])){
                     I can bring world domination to your organization.
                 </p>
             </div>
+            <h1>Likes</h1>
+            <p>ajfhsudgayudsisdigaisa</p>
+            <h1>Likes</h1>
+            <p>ajfhsudgayudsisdigaisa</p>
 
-            <div class="clear"></div>
-
-            <dl>
-                <dd class="clear"></dd>
-
-                <dt>Education</dt>
-                <dd>
-                    <h2>Withering Madness University - Planet Vhoorl</h2>
-                    <p><strong>Major:</strong> Public Relations<br />
-                        <strong>Minor:</strong> Scale Tending</p>
-                </dd>
-
-                <dd class="clear"></dd>
-
-                <dt>Skills</dt>
-                <dd>
-                    <h2>Office skills</h2>
-                    <p>Office and records management, database administration, event organization, customer support, travel coordination</p>
-
-                    <h2>Computer skills</h2>
-                    <p>Microsoft productivity software (Word, Excel, etc), Adobe Creative Suite, Windows</p>
-                </dd>
-
-                <dd class="clear"></dd>
+            <h1>Likes</h1>
+            <p>ajfhsudgayudsisdigaisa</p>
+            <h1>Likes</h1>
+            <p>ajfhsudgayudsisdigaisa</p>
 
 
 
-                <dd class="clear"></dd>
 
-                <dt>Hobbies</dt>
-                <dd>World Domination, Deep Sea Diving, Murder Most Foul</dd>
 
-                <dd class="clear"></dd>
-
-                <dt>References</dt>
-                <dd>Available on request</dd>
-
-                <dd class="clear"></dd>
-            </dl>
 
 
         </div>
