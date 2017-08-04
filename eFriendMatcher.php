@@ -115,9 +115,6 @@ if(isset($_SESSION['name'])){
         </div>
 
             <!--PERSON DATA-->
-            <div class="match">
-                <img src="images/cthulu.png" alt="Photo of Cthulu" id="pic" />
-            </div>
 
             <div id="contact-info" class="vcard">
 
