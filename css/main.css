@@ -255,7 +255,6 @@ footer{
 @media screen and (max-width:600px) {
 	.matcherPage {
 		width: 100%;
-		overflow-x: auto;
 
 	}
 }
