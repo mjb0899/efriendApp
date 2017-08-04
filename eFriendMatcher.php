@@ -80,7 +80,7 @@ if(isset($_SESSION['name'])){
         <div class="matcherPage">
 
             <!--CAROUSEL-->
-            <h2>We've Found You A Friend!</h2>
+            <h2>We've Found You A Friend!!</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
