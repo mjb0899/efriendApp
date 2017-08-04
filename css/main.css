@@ -215,7 +215,7 @@ a.fill-div {
 	max-height: 500px !important;
 }
 .item{
-	object-fit: cover;
+	object-fit: fill;
 }
 
 
