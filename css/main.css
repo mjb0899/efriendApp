@@ -207,6 +207,13 @@ a.fill-div {
 #submit_data,#firstname,#lastname,#email,#psw,#age,#sex,#address{
 	display: none;
 }
+
+
+#myCarousel{
+	height: ;
+}
+
+
 /*
 footer{
 	text-align: center;

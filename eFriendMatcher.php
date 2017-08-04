@@ -74,7 +74,7 @@ if(isset($_SESSION['name'])){
     </nav>
 </header>
 <main>
-    <div class="container">
+    <div class="container2">
         <h2>Carousel Example</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
