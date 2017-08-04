@@ -369,10 +369,10 @@
 <div class="mySlider">
                       <p>
                           <label for="amount">Search Age:</label>
-                          <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;width:5rem">
+                          <input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;width:5rem;">
                       </p>
 
-                      <div id="slider-range"></div>
+                      <div id="slider-range"style="width:5rem;"></div>
 
 </div>
 
