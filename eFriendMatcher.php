@@ -75,8 +75,11 @@ if(isset($_SESSION['name'])){
 </header>
 <main>
     <div class="container2">
+        <!--MIddle of container on matcher page-->
         <div class="matcherPage">
-        <h2>Carousel Example2</h2>
+
+            <!--CAROUSEL-->
+            <h2>Carousel Example2</h2>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
