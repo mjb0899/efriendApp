@@ -44,8 +44,10 @@ echo '/'.$splitString[3];
 echo '/'.$splitString[4];
 
 
-
-
+$ageVal=$_POST["ageRange"];
+echo $ageVal;
+echo 'SEEE THISSSSSXXXXXXXXXXXXXXXXx';
+echo $ageVal;
 
 //SearchTable
 $searchSmoke=$_POST["searchSmoke"];
