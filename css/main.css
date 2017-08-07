@@ -39,12 +39,18 @@ footer{
 .wrapper_up{
 	font-family: Century Gothic, sans-serif;
 	text-align: center;
-	background-color: white;
+/*	background-color: white;*/
 	border: 2px solid deeppink;
 
 	margin: auto;
 	padding: 1rem;
 	color: aquamarine;
+
+	background-image: url('../images/rr2.PNG');
+/*	margin-top: 8rem;*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
 
 }
 .wrapper_down{
