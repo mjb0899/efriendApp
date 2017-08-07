@@ -365,11 +365,11 @@ if(isset($_SESSION['name'])){
                                 <!-- Trigger the modal with a button -->
                                 <hr>
 
-                                <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></button>
+                                <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-pencil"></button>
                                 <hr>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="myModal" role="dialog">
+                                <div class="modal fade" id="myModal2" role="dialog">
                                     <div class="modal-dialog modal-sm">
                                          <div class="modal-content">
                                             <div class="modal-header">
