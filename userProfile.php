@@ -354,14 +354,18 @@ if(isset($_SESSION['name'])){
                     <p>Show and update search Information like sex,place</p>
                 </div>
                 <div id="menu2" class="tab-pane fade">
-                    <h3>Images</h3>
+                    <h3>Image Gallery</h3>
 
                     <!--UPLOAD MODAL-->
                     <?php
                     if(isset($_SESSION['name'])){
                         echo '<div class="container">
                                 <!-- Trigger the modal with a button -->
+                                <hr>
+
                                 <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></button>
+                                <hr>
+
                                 <!-- Modal -->
                                 <div class="modal fade" id="myModal" role="dialog">
                                     <div class="modal-dialog modal-sm">
@@ -406,9 +410,6 @@ if(isset($_SESSION['name'])){
 
 
 
-
-                    <h2>Responsive Image Gallery</h2>
-                    <h4>Resize the browser window to see the effect.</h4>
 
                     <div class="responsive">
                         <div class="gallery">
