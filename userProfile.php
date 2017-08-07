@@ -75,12 +75,28 @@ if(isset($_SESSION['name'])){
                             <li><a href="#">eConnect</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">Happy Friends</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="happyFriends.php">Happy Friends</a></li>
+                    <li><a href="aboutUs.php">About Us</a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-                    <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='registration.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li> "; }  ?>
+                        <?php if(!isset($_SESSION['name'])) {   echo"  <li><a href='index.php'><span class='glyphicon glyphicon-log-in'></span> Login</a></li> "; }  ?>
+                        <?php if(isset($_SESSION['name'])) {   echo'     
+                                                                                                         
+                                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="">'. $_SESSION["name"].' <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+
+                             <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
+                             <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
+
+
+                       </ul>
+                    </li>                                                         
+                                                                                                         
+                                                                                                         '; }  ?>
+
                 </ul>
             </div>
         </div>
