@@ -51,8 +51,14 @@ if(isset($_SESSION['name'])){
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="features.php">eFriend Finder</a></li>
-                            <li><a href="eFriendSurvey.php">eConnect</a></li>
+
+                            <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='features.php'>eFriend Finder</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo"       <li><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
+
+
+                            <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eFriendSurvey.php'>eConnect</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo"           <li><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
+
 
                         </ul>
                     </li>
