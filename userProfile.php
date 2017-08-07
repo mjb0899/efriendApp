@@ -108,7 +108,32 @@ if(isset($_SESSION['name'])){
         <div class="div_top">
 
             <div class="profile_image">
+
+                <?php/*
+                include("dbConnect.php");
+                $sql_query = "Select profile_image,username from users Where username='$owner'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()){
+                    $profile_path=$row['profile_image'];
+                    $post_owner=$row['username'];
+//upload profile picture
+                    echo "<img src=\"$profile_path\" id=\"pic\">";
+                }*/
+                ?>
+
+
+
+
+
+
                 <img id="pic" src="images/rr2.png">
+
+
+
+
+
+
+
             </div>
 
             <?php
