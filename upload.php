@@ -53,9 +53,9 @@ if (isset($_POST['submit'])) {
                 $fileNameNew     = uniqid('', true) . "." . $fileActualExt;
                 $fileDestination = 'uploads/' . $fileNameNew;
 
-                echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
+              //  echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
 
-                sleep(5);
+            //    sleep(5);
 
 
 
@@ -74,7 +74,7 @@ if (isset($_POST['submit'])) {
 
 
 
-                echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
+               // echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
 
 
 
@@ -88,7 +88,7 @@ if (isset($_POST['submit'])) {
 
 
 
-              //  header("location:userProfile.php");
+                header("location:userProfile.php");
 
 
 
