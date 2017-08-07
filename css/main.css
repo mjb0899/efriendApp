@@ -6,7 +6,7 @@ html{
 body
 {
 	background-image: url('../images/rr2.PNG');
-
+	margin-top: 8rem;
 	background-repeat: no-repeat;
     background-attachment: fixed;
      background-position: center; 
@@ -31,7 +31,6 @@ footer{
 	
 }
 .container2{
-	margin-top: 8rem;
 	padding: 1rem;
 	width: 100%;
 
