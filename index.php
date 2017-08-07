@@ -43,7 +43,7 @@ if(isset($_SESSION['name'])){
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                 <li<?php if(!isset($_SESSION['name'])) { ?>style="display:none;"<?php } ?>><a href="features.php">Home</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
