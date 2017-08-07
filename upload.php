@@ -8,15 +8,6 @@
 session_start();
 $sess        = $_SESSION['name'];
 $uid        = $_SESSION['userNum'];
-$date   = date('Y-m-d H:i:s');
-
-echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
-
-
-
-
-
-/*
 
 if($sess==null){
     header("location:pageNotFound.html");
@@ -128,4 +119,4 @@ if (isset($_POST['submit'])) {
                     </SCRIPT>");
         exit();
     }
-}*/
+}
