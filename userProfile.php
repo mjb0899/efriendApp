@@ -305,7 +305,60 @@ if(isset($_SESSION['name'])){
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <h3>Images</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <h2>Responsive Image Gallery</h2>
+                    <h4>Resize the browser window to see the effect.</h4>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="images/default.jpg">
+                                <img src="images/default.jpg" alt="Trolltunga Norway" width="300" height="200">
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="images/default.jpg">
+                                <img src="images/default.jpg" alt="Forest" width="600" height="400">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="images/default.jpg">
+                                <img src="images/default.jpg" alt="Northern Lights" width="600" height="400">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="images/default.jpg">
+                                <img src="images/default.jpg" alt="Mountains" width="600" height="400">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="clearfix"></div>
+
+                    <div style="padding:6px;">
+                        <p>This example use media queries to re-arrange the images on different screen sizes: for screens larger than 700px wide, it will show four images side by side, for screens smaller than 700px, it will show two images side by side. For screens smaller than 500px, the images will stack vertically (100%).</p>
+                        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
                 <div id="menu3" class="tab-pane fade">
                     <h3>Menu 3</h3>
