@@ -67,12 +67,12 @@ if(isset($_SESSION['name'])){
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="userProfile.php">Home</a></li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li><a href="#">eFriend Finder</a></li>
-                            <li><a href="#">eConnect</a></li>
+                            <li><a href="features.php">eFriend Finder</a></li>
+                            <li><a href="features.php">eConnect</a></li>
                         </ul>
                     </li>
                     <li><a href="happyFriends.php">Happy Friends</a></li>
