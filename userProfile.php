@@ -3,9 +3,11 @@
 session_start();
 if(isset($_SESSION['name'])){
     $username=$_SESSION['name'];
+    $uid = $_SESSION['userNum'];
 }else{
     header("url=pageNotFound.php");
     $username=null;
+    $uid = null;
 
 }
 
@@ -391,25 +393,34 @@ if(isset($_SESSION['name'])){
                     ?>
 
 
-                    <!--GALLERY-->
+                   <!--GALLERY-->
+                    <?php
+                    include('dbConnect.php');
+                    $sql_query = "Select path from uploads Where uid='$uid'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()) {
+
+                        $path = $row['path'];
+
+                        $count=$count+1;
+
+                        if($path!=null){
+                            echo '  <div class="responsive">
+                        <div class="gallery">
+                            <a target="_blank" href="'.$path.'">
+                                <img src="'.$path.'" alt="Trolltunga Norway" width="300" height="200">
+                            </a>
+                        </div>
+                    </div> ';
+                        }
 
 
 
 
 
+                    }?>
 
-
-
-
-
-
-
-
-
-
-
-
-
+<!--
 
                     <div class="responsive">
                         <div class="gallery">
@@ -443,7 +454,7 @@ if(isset($_SESSION['name'])){
                             </a>
                         </div>
                     </div>
-
+-->
                     <div class="clearfix"></div>
 
                     <div style="padding:6px;">
