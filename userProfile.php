@@ -120,7 +120,19 @@ if(isset($_SESSION['name'])){
                         $profile_path = $row['profile_image'];
                         $user = $row['uusername'];
 //upload profile picture
-                        echo "<img id='pic' src=\"$profile_path\" >";
+
+
+                        if($profile_path!=null)   {
+                            echo "<img id='pic' src=\"$profile_path\" >";
+
+                        } else{
+                            echo ' <img id="pic" src="images/default.jpg">';
+
+                        }
+
+
+
+
                     }
                 }catch(PDOException $exception){
 
