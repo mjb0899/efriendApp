@@ -2,34 +2,25 @@
 /**
  * Created by PhpStorm.
  * User: ADMIN
- * Date: 06/07/2017
- * Time: 20:58
+ * Date: 07/08/2017
+ * Time: 13:52
  */
-session_start();
-
-if(isset($_SESSION['name'])){
- header("location:features.php");
-}else{
-
-
-}
-
-
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
-    <title>Bootstrap Example</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>MusicAndMe</title>
+    <!--MENUBAR CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <!--FOOTER CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
-
 </head>
 <body>
+<!--HEADER CODE-->
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top menu_logo">
         <div class="container-fluid">
@@ -63,7 +54,7 @@ if(isset($_SESSION['name'])){
                         </ul>
                     </li>
                     <li><a href="#">Happy Friends</a></li>
-                    <li><a href="aboutUs.php">About Us</a></li>
+                    <li><a href="#">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
@@ -73,47 +64,26 @@ if(isset($_SESSION['name'])){
         </div>
     </nav>
 </header>
+<!--MAIN CODE-->
+<main>
+    <div class="container2">
+        <div class="wrapper_one">
+            <h2>-Our Mission-</h2>
+            <p>
+                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
+            </p>
+            <p>
+                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
+            </p>
+            <h3 <?php if(isset($_SESSION['name'])) { ?>style="display:none;"<?php } ?> > Don't have a free account yet?</h3>
+            <div class="wrapper_signup">
+                <a href="registration.php"> <button type="button" class="log-btn" <?php if(isset($_SESSION['name'])) { ?>style="display:none;"<?php } ?>  >Create Account</button></a>
 
-<div class="container">
-    <div class="wrapper_quote">
-        <h1>Finding Friends Just Got Easier</h1>
-    </div>
-    <div class="wrapper_box_surround">
-        <div class="wrapper_box">
-            <form action="login.php" method="post">
-                <label for="exampleInputEmail1" class="label_font">Username</label>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" title="Invalid input" pattern="[^'\x22]+" required="">
-                </div>
-                <label for="exampleInputPassword1" class="label_font">Password</label>
-                <div class="form-group">
-
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
-                </div>
-                <div id="error">
-                   <?php  if($_SESSION['errmsg']!=NULL){ echo'<span class="glyphicon glyphicon-remove red"></span>';} ?>
-                    <p> <?php
-                        if($_SESSION['errmsg']!=NULL){
-                            echo $_SESSION['errmsg'];
-                        }else{
-
-                        }
-
-
-
-
-                        ?> </p>
-                </div>
-                <div class="buttonholder register_link">
-                    <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
-                    <a href="registration.php"> <p>Not Registered yet?</p></a>
-                </div>
-
-
-            </form>
+            </div>
         </div>
     </div>
-</div>
+</main>
+<!--FOOTER CODE!!-->
 <footer>
     <div class="footer_left" >
         <h1>eFriend</h1>
