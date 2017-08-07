@@ -58,12 +58,12 @@ if (isset($_POST['submit'])) {
 
                 $date = date('Y-m-d H:i:s');
                 //preparing
-                $stmt2 = $db->prepare("INSERT INTO uploads(username,uid,path,filename,dateposted) VALUES (?,?,?,?,?)");
+                $stmt2 = $db->prepare("INSERT INTO uploads(username,uid,path,filename,date_posted) VALUES (?,?,?,?,?)");
                 $stmt2->bind_param('sisss', $sess, $uid,$fileDestination ,$fileNameNew , $date);
                 $stmt2->execute();
                 $stmt2->store_result();
                 $stmt2->bind_result($col1);
-                header("location:home.php");
+                header("location:userProfile.php");
             } else {
                 try{
                     echo ("<SCRIPT LANGUAGE='JavaScript'>
@@ -78,14 +78,14 @@ if (isset($_POST['submit'])) {
         } else {
             echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('Something went Wrong')
-                        window.location.href='home.php';
+                        window.location.href='userProfile.php';
                     </SCRIPT>");
             exit();
         }
     }  else {
         echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('Cannot Upload this kind of file')
-                        window.location.href='home.php';
+                        window.location.href='userProfile.php';
                     </SCRIPT>");
         exit();
     }
