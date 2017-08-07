@@ -10,3 +10,5 @@ unset($_SESSION['errmsg']);
 unset($_SESSION['name']);
 unset($_SESSION['userNum']);
 session_destroy();
+
+header("Location:index.php");
