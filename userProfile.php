@@ -109,16 +109,16 @@ if(isset($_SESSION['name'])){
 
             <div class="profile_image">
 
-                <?php/*
+                <?php
                 include("dbConnect.php");
-                $sql_query = "Select profile_image,username from users Where username='$owner'";
+                $sql_query = "Select profile_image,uusername from users Where username='$owner'";
                 $result = $db -> query($sql_query);
                 while($row = $result -> fetch_array()){
                     $profile_path=$row['profile_image'];
-                    $post_owner=$row['username'];
+                    $user=$row['uusername'];
 //upload profile picture
-                    echo "<img src=\"$profile_path\" id=\"pic\">";
-                }*/
+                    echo "<img src=\"$profile_path\" id='pic'>";
+                }
                 ?>
 
 
@@ -126,7 +126,7 @@ if(isset($_SESSION['name'])){
 
 
 
-                <img id="pic" src="images/rr2.png">
+              <!--  <img id="pic" src="images/rr2.png">-->
 
 
 
