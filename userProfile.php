@@ -111,14 +111,26 @@ if(isset($_SESSION['name'])){
 
                 <?php
                 include("dbConnect.php");
-                $sql_query = "Select profile_image,uusername from users Where uusername='$username'";
-                $result = $db -> query($sql_query);
-                while($row = $result -> fetch_array()){
-                    $profile_path=$row['profile_image'];
-                    $user=$row['uusername'];
+
+
+                try{
+                    $sql_query = "Select profile_image,uusername from users Where uusername='$username'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()) {
+                        $profile_path = $row['profile_image'];
+                        $user = $row['uusername'];
 //upload profile picture
-                    echo "<img id='pic' src=\"$profile_path\" >";
+                        echo "<img id='pic' src=\"$profile_path\" >";
+                    }
+                }catch(PDOException $exception){
+
+
+                    echo ' <img id="pic" src="images/default.jpg">';
+
+
                 }
+
+
                 ?>
 
 
@@ -126,7 +138,6 @@ if(isset($_SESSION['name'])){
 
 
 
-              <!--  <img id="pic" src="images/rr2.png">-->
 
 
 
