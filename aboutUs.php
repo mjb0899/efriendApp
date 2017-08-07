@@ -70,7 +70,7 @@
 
 
 
-    <div class="container2">
+    <div class="wrapper_about">
         <div class="wrapper_one">
             <h2>-Our Mission-</h2>
             <p>
