@@ -66,7 +66,11 @@
 </header>
 <!--MAIN CODE-->
 <main>
-    <div class="container2">
+
+   <div class="container">
+
+
+    <div class="wrapper">
         <div class="wrapper_one">
             <h2>-Our Mission-</h2>
             <p>
@@ -82,6 +86,11 @@
             </div>
         </div>
     </div>
+
+
+   </div>
+
+
 </main>
 <!--FOOTER CODE!!-->
 <footer>
