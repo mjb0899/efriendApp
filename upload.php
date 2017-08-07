@@ -57,13 +57,32 @@ if (isset($_POST['submit'])) {
 
 
                 $date = date('Y-m-d H:i:s');
+
+
+
+                /*not executing this*/
+
+
+                echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
+
+
+
                 //preparing
                 $stmt2 = $db->prepare("INSERT INTO uploads(username,uid,path,filename,date_posted) VALUES (?,?,?,?,?)");
                 $stmt2->bind_param('sisss', $sess, $uid,$fileDestination ,$fileNameNew , $date);
                 $stmt2->execute();
                 $stmt2->store_result();
                 $stmt2->bind_result($col1);
-                header("location:userProfile.php");
+
+
+
+
+              //  header("location:userProfile.php");
+
+
+
+
+
             } else {
                 try{
                     echo ("<SCRIPT LANGUAGE='JavaScript'>
