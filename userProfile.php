@@ -379,7 +379,7 @@ if(isset($_SESSION['name'])){
                                              <div class="modal-body">
                                                 <form action="upload.php" method="post" enctype="multipart/form-data">
                                                 <input type="file" name="file" id="exampleInputFile" required>
-                                                <button type="submit" class="btn btn-default btn-sm" name="submit"> <span class="glyphicon glyphicon-pencil">Upload</span></button>
+                                                <button type="submit" class="btn btn-default btn-sm" name="submit_btn"> <span class="glyphicon glyphicon-pencil">Upload</span></button>
                                                 </form>
                                              </div>
                                             <div class="modal-footer">
