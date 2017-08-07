@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
                         window.location.href='userProfile.php';
                     </SCRIPT>");
                     exit();
-                }catch(PDOException $e){
+                }catch(PDOException $exception){
                     echo "file too big";
                 }
             }
