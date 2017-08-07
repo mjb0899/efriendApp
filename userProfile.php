@@ -112,7 +112,7 @@ if(isset($_SESSION['name'])){
             </div>
 
             <?php
-            if(isset($_SESSION['match'])){
+            if(isset($_SESSION['name'])){
                 echo '<div class="container">
                                 <!-- Trigger the modal with a button -->
                                 <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-pencil"></button>
