@@ -1,0 +1,319 @@
+html{
+    width: 100%;
+}
+
+
+body
+{
+	background-image: url('../images/rr2.PNG');
+	margin-top: 8rem;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+     background-position: center; 
+     border:2px solid black;
+     height: 100%;
+     width: 100%;
+}
+
+footer{
+	text-align: center;
+
+}
+
+
+.container2{
+	padding: 1rem;
+	width: 100%;
+}
+
+/*About us page wrapper*/
+.wrapper_up{
+	font-family: Century Gothic, sans-serif;
+	text-align: center;
+/*	background-color: white;*/
+	border: 2px solid deeppink;
+
+	margin: auto;
+	padding: 1rem;
+	color: aquamarine;
+
+	background-image: url('../images/rr2.PNG');
+/*	margin-top: 8rem;*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+.wrapper_down{
+	margin:auto;
+}
+.log-btn {
+	background:#ff3333;
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	height: 50px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: auto;
+
+}
+
+
+
+
+/*MATCHER PAGE*/
+.matcherPage{
+	width: 60%;
+	margin: auto;
+}
+.navbar{
+	background-color: #88BBD6;
+	border-bottom: white;
+}
+.container-fluid a{
+    color: white !important;
+    font-size: large;
+}
+
+.navbar-custom {
+    background-color: #212121;
+}
+/*Quote beside login box*/
+.wrapper_quote{
+	text-align: center;
+	border:2px solid yellow;
+	width: 50%;
+	float: left;
+		padding: 1rem;
+		height: 100%;
+
+}
+/*login box*/
+.wrapper_box{
+	border: 2px solid green;
+	padding: 2rem;
+	background-color: lightgrey;
+
+
+}
+.wrapper_box_surround{
+	float: right;
+	background-color: grey;
+	width:50%;
+	height: 100%;
+}
+/*Not registered yet beside button*/
+.register_link > input {
+	border: 2px solid black;
+	float: left;
+}
+
+
+/*FEATURE CSS*/
+
+.wrapper_left{
+	text-align: center;
+	border:2px solid yellow;
+	width: 49%;
+	float: left;
+	padding: 1rem;
+	height: 100%;
+	border-radius: 1rem;
+
+}
+.wrapper_right{
+	float: right;
+	border:2px solid grey;
+	width:49%;
+	height: 100%;
+	padding: 1rem;
+	text-align: center;
+	border-radius: 1rem;
+
+
+}
+
+
+.eFriendLogo
+{
+	height: 10rem;
+	width: 10rem;
+	border: 4px solid pink;
+	margin:auto;
+	border-radius: 50%;
+
+}
+
+
+.eConnectLogo
+{
+	height: 10rem;
+	width: 10rem;
+	border: 4px solid pink;
+	margin:auto;
+	border-radius: 50%;
+	text-align: center;
+
+
+
+
+}
+/*PROFILE CSS*/
+.wrapper_profile{
+	background-color: pink;
+
+}
+.profile_image{
+	height: 15rem;
+	width: 15rem;
+	border: 2px solid white;
+	margin: auto;
+	margin-top: 1rem;
+	border-radius: 50%;
+	padding: 2px;
+}
+
+#pic{
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+}
+
+
+.div_bottom{
+	background-color: grey;
+	padding: 1rem;
+}
+.div_top{
+	background-color: red;
+	padding: 1rem;
+	text-align: center;
+}
+.div_middle{
+	padding: 1rem;
+}
+
+
+
+/*Registration CSS*/
+.wrapper_reg{
+	width: 100%;
+		margin-top: 60px;
+		padding: 1rem;
+
+}
+.container_reg{
+	width: 70%;
+		margin: auto;
+		padding: 1rem;
+
+
+}
+a.fill-div {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+}
+
+
+.wrapper_right > a:hover {
+	background-color: yellow;
+}
+
+.wrapper_left > a:hover {
+	background-color: yellow;
+}
+.red{
+	color:red;
+}
+
+
+#submit_data,#firstname,#lastname,#email,#psw,#age,#sex,#address{
+	display: none;
+}
+
+/*carosel*/
+.tales {
+	width: 100%;
+}
+.carousel-inner{
+	width:400px;
+	max-height: 500px !important;
+	margin: auto;
+}
+.item{
+	width:400px;
+	height: 400px;
+}
+#pic2{
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+
+}
+
+/*
+footer{
+	text-align: center;
+	bottom: 0;
+	border-top: 2px solid green;
+
+}
+
+*/
+
+@media screen and (max-width:960px) {
+	.matcherPage {
+		width: 100%;
+
+	}
+}
+
+@media screen and (max-width:600px) {
+	.matcherPage {
+		width: 100%;
+
+	}
+	.item{
+		width:100%;
+		height: 400px;
+	}
+	.carousel-inner{
+		width:100%;
+		height: 100%;
+	}
+}
+
+
+
+
+
+
+
+    /*
+    .two{
+
+        margin: auto;
+    }
+
+    .out-wrapper {
+        width: 100%;
+        margin: 0;
+    }
+    .media{
+        width: 100%;
+    }
+}
