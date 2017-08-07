@@ -8,7 +8,15 @@
 session_start();
 $sess        = $_SESSION['name'];
 $uid        = $_SESSION['userNum'];
+$date   = date('Y-m-d H:i:s');
 
+echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
+
+
+
+
+
+/*
 
 if($sess==null){
     header("location:pageNotFound.html");
@@ -25,6 +33,10 @@ $songartist  = $_POST['songartist'];
 $songtitle   = $_POST['songtitle'];
 $upload = "upload";
 $date   = date('Y-m-d H:i:s');
+
+
+
+
 include("dbConnect.php");
 if (isset($_POST['submit'])) {
     $file          = $_FILES['file'];
@@ -68,7 +80,7 @@ if (isset($_POST['submit'])) {
 
 
 
-                /*not executing this*/
+
 
 
                 echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
@@ -116,4 +128,4 @@ if (isset($_POST['submit'])) {
                     </SCRIPT>");
         exit();
     }
-}
+}*/
