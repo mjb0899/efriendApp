@@ -34,7 +34,7 @@ if(isset($_POST['submit'])){
                 move_uploaded_file($fileTmpName,$fileDestination);
                 //insert
                 //get uid
-                $sql_query = "UPDATE users SET profile_image='$fileDestination' Where username='$sess'";
+                $sql_query = "UPDATE users SET profile_image='$fileDestination' Where uusername='$sess'";
                 $result = $db -> query($sql_query);
                 if(mysqli_query($db,$sql)){
                 }
