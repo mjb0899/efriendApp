@@ -50,6 +50,22 @@ footer{
 .wrapper_down{
 	margin:auto;
 }
+.log-btn {
+	background:#ff3333;
+	display: inline-block;
+	width: 50%;
+	font-size: 16px;
+	height: 50px;
+	color: #fff;
+	text-decoration: none;
+	border: none;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	margin: auto;
+
+}
+
 
 
 
