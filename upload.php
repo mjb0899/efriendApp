@@ -49,6 +49,14 @@ if (isset($_POST['submit'])) {
             if ($fileSize < 1171520) {
                 $fileNameNew     = uniqid('', true) . "." . $fileActualExt;
                 $fileDestination = 'uploads/' . $fileNameNew;
+
+                echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
+
+                sleep(5);
+
+
+
+
                 move_uploaded_file($fileTmpName, $fileDestination);
 
 
