@@ -5,6 +5,7 @@
  * Date: 07/08/2017
  * Time: 13:52
  */
+session_start();
 ?>
 <!DOCTYPE html>
 <html >
