@@ -31,36 +31,36 @@ if(!isset($_SESSION['name'])){
 <script>
     $(document).ready(function () {
 
-        $(".tdelete").on("click",function(e){
+        $(".tdelete").on("click", function (e) {
             e.preventDefault();
 
 
             var person = $(this).attr("data-nm");
 
-        var dataString='persondata='+person;
-        $.ajax({
-                type:"post",
-                url:"textGetter.php",
+            var dataString = 'persondata=' + person;
+            $.ajax({
+                type: "post",
+                url: "textGetter.php",
                 data: dataString,
-                cache:false,
-                success:function (d) {
-                    if(d>0){
+                cache: false,
+                success: function (d) {
+                    if (d > 0) {
 
                         alert("Accept saved");
-                    }else if(d==0){
+                    } else if (d == 0) {
 
                         alert("Deny saved");
                     }
-                    else{
+                    else {
 
                         alert("nothing saved");
 
                     }
                 }
-            }
+            });
 
-    });
-
+        });
+    }
 </script>
 
 </head>
