@@ -43,24 +43,28 @@ if(!isset($_SESSION['name'])){
                 url: "textGetter.php",
                 data: dataString,
                 cache: false,
-                success: function (d) {
-                    if (d > 0) {
+                /*
+                 success: function (d) {
+                 if (d > 0) {
 
-                        alert("Accept saved");
-                    } else if (d == 0) {
+                 alert("Accept saved");
+                 } else if (d == 0) {
 
-                        alert("Deny saved");
-                    }
-                    else {
+                 alert("Deny saved");
+                 }
+                 else {
 
-                        alert("nothing saved");
+                 alert("nothing saved");
 
-                    }
-                }
+                 }
+                 }*/
+
+            });
+
             });
 
         });
-    }
+
 </script>
 
 </head>
