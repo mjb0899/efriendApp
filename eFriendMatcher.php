@@ -144,25 +144,11 @@ $_SESSION['match']='myron10';
             <div class="response">
                 <div class="message">
 
-                    <form>
-                        <input type="hidden" id="acu" name="currentUser" value="<?php $_SESSION['name']?>">
-                        <input type="hidden" id="amu" name="matchedUser" value="<?php $_SESSION['matcher']?>">
-                        <input type="hidden" id="ay" name="yes" value="yes">
-
-                    </form>
-
                     <button type="submit" class="btn btn-success btn-flt" id="submit_accept" onclick="return accept()">Message</button>
 
                 </div>
 
                 <div class="deny">
-
-                    <form>
-                        <input type="hidden" id="dcu" name="currentUser" value="<?php $_SESSION['name']?>">
-                        <input type="hidden" id="dmu" name="matchedUser" value="<?php $_SESSION['matcher']?>">
-                        <input type="hidden" id="dn" name="no" value="no">
-
-                    </form>
 
                     <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny()">Deny</button>
 

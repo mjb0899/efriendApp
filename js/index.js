@@ -61,7 +61,7 @@ rangeSlider();
 function accept() {
     var cuser=document.getElementById('acu').value;
     var muser=document.getElementById('amu').value;
-    var resp=document.getElementById('ay').value;
+    var resp=1;
 
 
     var dataString='cuser='+cuser+'&muser='+muser+'response='+resp;
@@ -92,10 +92,11 @@ function accept() {
 function deny() {
     var cuser=document.getElementById('dcu').value;
     var muser=document.getElementById('dmu').value;
-    var resp=document.getElementById('dn').value;
+   var resp=0;
 
 
     var dataString='cuser='+cuser+'&muser='+muser+'response='+resp;
+
     $.ajax({
             type:"post",
             url:"acceptDeny.php",
