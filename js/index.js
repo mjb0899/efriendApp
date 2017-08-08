@@ -59,8 +59,8 @@ rangeSlider();
 
 
 function accept() {
-    var cuser=document.getElementById('acu').value;
-    var muser=document.getElementById('amu').value;
+  //  var cuser=document.getElementById('acu').value;
+  //  var muser=document.getElementById('amu').value;
     var resp=1;
 
 
@@ -94,8 +94,8 @@ function accept() {
 }
 
 function deny() {
-    var cuser=document.getElementById('dcu').value;
-    var muser=document.getElementById('dmu').value;
+   // var cuser=document.getElementById('dcu').value;
+ //   var muser=document.getElementById('dmu').value;
    var resp=0;
 
 
