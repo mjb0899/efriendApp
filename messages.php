@@ -47,9 +47,9 @@ if(!isset($_SESSION['name'])){
                  success: function (d) {
                  if (d > 0) {
 
-
-                     alert(j);
                      var j=d;
+                     alert(j);
+
                  } else if (d == 0) {
 
                  alert("Deny saved");
