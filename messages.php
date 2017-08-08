@@ -87,7 +87,7 @@ session_start();
 
 
 
-    <div class="container_reg">
+    <div class="container2">
         <div class="wrapper_message">
             <h2>-Your Inbox-</h2>
             <hr>
