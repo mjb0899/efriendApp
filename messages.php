@@ -43,7 +43,7 @@ if(!isset($_SESSION['name'])){
                 url: "textGetter.php",
                 data: dataString,
                 cache: false,
-                /*
+
                  success: function (d) {
                  if (d > 0) {
 
@@ -57,7 +57,7 @@ if(!isset($_SESSION['name'])){
                  alert("nothing saved");
 
                  }
-                 }*/
+                 }
 
             });
 
