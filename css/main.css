@@ -30,6 +30,9 @@ footer{
 	background-color: #4484CE;
 	border-bottom: 2px solid #F9CF00;
 }
+.container-fluid a{
+	color: whitesmoke;
+}
 
 
 
