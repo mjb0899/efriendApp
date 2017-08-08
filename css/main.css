@@ -194,9 +194,11 @@ width:100%;
 }
 .messageFloaterLeft{
 	float: left;
+	clear: right;
 }
 .messageFloaterRight{
 	float: right;
+	clear: left;
 }
 
 /*FEATURE CSS*/
