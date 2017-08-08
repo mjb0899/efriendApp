@@ -339,9 +339,11 @@ footer{
 }
 .accept{
 	width: 49%;
+	float: left;
 }
 .deny{
 	width: 49%;
+	float: right;
 }
 
 
