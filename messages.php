@@ -50,7 +50,6 @@ if(!isset($_SESSION['name'])){
 
                      alert(j);
                      var j=d;
-                     $("#texter").load("#texter");
                  } else if (d == 0) {
 
                  alert("Deny saved");
