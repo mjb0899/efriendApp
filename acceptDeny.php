@@ -43,6 +43,8 @@ if(isset($_POST['resp'])){
         $stmt1->execute();
         $stmt1->store_result();
         $stmt1->bind_result($col1);
+        echo 1;
+
 
     }elseif($resp==0){
         $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?,?)");
@@ -50,6 +52,8 @@ if(isset($_POST['resp'])){
         $stmt1->execute();
         $stmt1->store_result();
         $stmt1->bind_result($col1);
+        echo 0;
+
     }else{
        //alert error and redirect to page not found.
     }

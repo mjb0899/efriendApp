@@ -72,16 +72,20 @@ function accept() {
             cache:false,
             success:function (d) {
                 if(d>0){
-                    //$("#test").html("Your changes have been saved.");
-                    setTimeout(function(){
-                            location.reload();
-                        }
-                        ,2000);
+                    //    $("#test").html("Your changes have been saved.");
+                    /*   setTimeout(function(){
+                     location.reload();
+                     }
+                     ,2000);*/
+                    alert("Accept saved");
                 }else if(d==0){
-                    $("#test").html("Check Fields");
+                    //  $("#test").html("Check Fields");
+                    alert("Deny saved");
                 }
                 else{
-                    $("#test").html("Not saved.");
+                   // $("#test").html("Not saved.");
+                    alert("Nothing saved");
+
                 }
             }
         }
@@ -104,16 +108,20 @@ function deny() {
             cache:false,
             success:function (d) {
                 if(d>0){
-                 //   $("#test").html("Your changes have been saved.");
-                    setTimeout(function(){
-                            location.reload();
-                        }
-                        ,2000);
+                    //    $("#test").html("Your changes have been saved.");
+                    /*   setTimeout(function(){
+                     location.reload();
+                     }
+                     ,2000);*/
+                    alert("Accept saved");
                 }else if(d==0){
-                    $("#test").html("Check Fields");
+                    //  $("#test").html("Check Fields");
+                    alert("Deny saved");
                 }
                 else{
                     $("#test").html("Not saved.");
+                    alert("nothing saved");
+
                 }
             }
         }
