@@ -143,11 +143,15 @@ if(isset($_SESSION['name'])){
             <!--CAROUSEL END-->
             <div class="response">
                 <div class="message">
-                    <button type="button" class="btn btn-success btn-flt">Message</button>
+
+                    <button type="submit" class="btn btn-success btn-flt" id="submit_accept" onclick="return accept()">Message</button>
+
                 </div>
 
                 <div class="deny">
-                    <button type="button" class="btn btn-danger">Deny</button>
+
+                    <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny()">Deny</button>
+
                 </div>
 
 
