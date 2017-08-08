@@ -19,6 +19,8 @@ session_start();
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bubble.css">
+
 </head>
 <body>
 <!--HEADER CODE-->
