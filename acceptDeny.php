@@ -7,7 +7,13 @@
  */
 session_start();
 //required 3 variable!!!!
+
 $sess=$_SESSION['name'];
+
+if($sess==null){
+    header("location:pageNotFound.html");
+}
+
 $match='myron10';
 $resp=$_POST['resp'];
 $date = date('Y-m-d H:i:s');
@@ -18,9 +24,9 @@ if($sess==null){
 
 //$user=$_SESSION['user'];
 //$artist=$_SESSION['artist'];
-$cuser=$_POST['cuser'];
-$muser=$_POST['muser'];
-$resp=$_POST['resp'];
+//$cuser=$_POST['cuser'];
+//$muser=$_POST['muser'];
+//$resp=$_POST['resp'];
 
 //connect to db
 include("dbConnect.php");
