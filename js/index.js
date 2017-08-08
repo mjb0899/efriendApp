@@ -78,6 +78,7 @@ function accept() {
                      }
                      ,2000);*/
                     alert("Accept saved");
+                    location.href="messages.php";
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                     alert("Deny saved");
