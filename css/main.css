@@ -336,6 +336,7 @@ footer{
 
 .response{
 	width: 100%;
+	border: 2px solid lawngreen;
 }
 .message{
 	width: 49%;
