@@ -62,9 +62,9 @@ function accept() {
   //  var cuser=document.getElementById('acu').value;
   //  var muser=document.getElementById('amu').value;
     var resp=1;
+   // 'cuser='+cuser+'&muser='+muser+
 
-
-    var dataString='cuser='+cuser+'&muser='+muser+'resp='+resp;
+    var dataString='resp='+resp;
     $.ajax({
             type:"post",
             url:"acceptDeny.php",
@@ -97,9 +97,9 @@ function deny() {
    // var cuser=document.getElementById('dcu').value;
  //   var muser=document.getElementById('dmu').value;
    var resp=0;
+  //  'cuser='+cuser+'&muser='+muser+
 
-
-    var dataString='cuser='+cuser+'&muser='+muser+'resp='+resp;
+    var dataString='resp='+resp;
 
     $.ajax({
             type:"post",
