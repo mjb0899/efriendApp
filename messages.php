@@ -51,7 +51,7 @@ if(!isset($_SESSION['name'])){
                      //     $("#texter").load("#texter");
 
 
-                     alert(d);
+                     //alert(d);
                      $( "#texter" ).load(window.location.href + " #texter" );
                  } else if (d == 0) {
 
