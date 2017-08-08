@@ -64,7 +64,7 @@ function accept() {
     var resp=1;
 
 
-    var dataString='cuser='+cuser+'&muser='+muser+'response='+resp;
+    var dataString='cuser='+cuser+'&muser='+muser+'resp='+resp;
     $.ajax({
             type:"post",
             url:"acceptDeny.php",
