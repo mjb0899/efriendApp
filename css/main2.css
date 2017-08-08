@@ -45,6 +45,33 @@ ul.nav a:hover{
 }
 
 /*About us page wrapper*/
+.wrapper_message{
+	font-family: Century Gothic, sans-serif;
+	text-align: center;
+	/*	background-color: white;*/
+	border: 2px solid deeppink;
+
+	margin: auto;
+	padding: 1rem;
+	color: red;
+	width:100%;
+	background-image: url('../images/rr2.PNG');
+	/*margin-top: 8rem;*/
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
+}
+.conversations{
+	width: 49%;
+	float:left;
+	background-color: #999999;
+}
+.content{
+	width: 49%;
+	float: left;
+	background-color: #4484CE;
+}
 .wrapper_up{
 	font-family: Century Gothic, sans-serif;
 	text-align: center;
