@@ -33,9 +33,12 @@ footer{
 .container-fluid a{
 	color: whitesmoke;
 }
-
-.ditem{
+.dropdown-menu{
 	background-color: #4484CE;
+}
+ul.nav a:hover{
+	color: #F9CF00;
+
 }
 
 
