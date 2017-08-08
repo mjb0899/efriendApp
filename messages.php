@@ -47,7 +47,9 @@ if(!isset($_SESSION['name'])){
                  success: function (d) {
                  if (d > 0) {
                 var j=d;
-                 alert(j);
+                     $("#texter").load("#texter");
+
+                     alert(j);
                  } else if (d == 0) {
 
                  alert("Deny saved");
@@ -168,7 +170,7 @@ if(!isset($_SESSION['name'])){
         </div>
 
     </div>
-    <div class="wrapper_content">
+    <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
 
 
