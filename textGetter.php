@@ -8,7 +8,7 @@
 $message = $_POST['persondata'];
 
 if($message!=null){
-echo $message;
+echo 1;
 }else{
     echo 0;
 }
