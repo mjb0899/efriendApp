@@ -95,7 +95,7 @@ function deny() {
    var resp=0;
 
 
-    var dataString='cuser='+cuser+'&muser='+muser+'response='+resp;
+    var dataString='cuser='+cuser+'&muser='+muser+'resp='+resp;
 
     $.ajax({
             type:"post",
