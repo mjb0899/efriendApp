@@ -6,4 +6,9 @@
  * Time: 17:59
  */
 $message = $_POST['personData'];
-echo "<script type='text/javascript'>alert('$message');</script>";
+
+if($message!=null){
+echo 1;
+}else{
+    echo 0;
+}
