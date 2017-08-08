@@ -5,8 +5,9 @@
  * Date: 08/08/2017
  * Time: 17:59
  */
-$message = $_POST['persondata'];
 
+$message = $_POST['persondata'];
+session_start();
 $_SESSION['check']=$message;
 
 
