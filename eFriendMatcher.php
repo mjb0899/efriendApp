@@ -99,6 +99,7 @@ if(isset($_SESSION['name'])){
         </div>
     </nav>
 </header>
+
 <main>
     <div class="container2">
         <!--MIddle of container on matcher page-->
@@ -139,6 +140,19 @@ if(isset($_SESSION['name'])){
                 <span class="sr-only">Next</span>
             </a>
         </div>
+            <!--CAROUSEL END-->
+            <div class="response">
+                <div class="Message">
+                    <button type="button" class="btn btn-success">Success</button>
+                </div>
+
+                <div class="Deny">
+                    <button type="button" class="btn btn-danger">Danger</button>
+                </div>
+
+
+
+            </div>
 
             <!--PERSON DATA-->
 

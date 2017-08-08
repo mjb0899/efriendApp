@@ -332,7 +332,17 @@ footer{
 	}
 }
 
+/*EFIENDmatcher css*/
 
+.response{
+	width: 100%;
+}
+.accept{
+	width: 49%;
+}
+.deny{
+	width: 49%;
+}
 
 
 
