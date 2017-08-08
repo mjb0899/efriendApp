@@ -46,10 +46,11 @@ if(!isset($_SESSION['name'])){
 
                  success: function (d) {
                  if (d > 0) {
-                var j=d;
-                     $("#texter").load("#texter");
+
 
                      alert(j);
+                     var j=d;
+                     $("#texter").load("#texter");
                  } else if (d == 0) {
 
                  alert("Deny saved");
