@@ -95,6 +95,12 @@ session_start();
             <!-- DIV LEFT-->
             <div class="conversations">
                 <hr>
+                <h1>Hi</h1>
+                <hr>
+                <h1>Hi</h1>
+
+
+
             </div>
             <!-- DIV RIGHT-->
             <div class="content">
