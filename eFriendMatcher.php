@@ -143,7 +143,7 @@ if(isset($_SESSION['name'])){
             <!--CAROUSEL END-->
             <div class="response">
                 <div class="message">
-                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-success btn-flt">Success</button>
                 </div>
 
                 <div class="deny">
