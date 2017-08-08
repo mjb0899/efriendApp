@@ -10,10 +10,11 @@
 session_start();
 if(isset($_SESSION['name'])){
     $username=$_SESSION['name'];
-}else{
-    $username=null;
-    header("url=pageNotFound.php");
 }
+if(!isset($_SESSION['name'])){
+    header("index.php");
+}
+
 
 $_SESSION['match']='myron10';
 //get uid from table
