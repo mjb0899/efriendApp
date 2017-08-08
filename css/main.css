@@ -341,10 +341,14 @@ footer{
 .message{
 	width: 49%;
 	float: left;
+	border: 2px solid darkgreen;
+
 }
 .deny{
 	width: 49%;
 	float: right;
+	border: 2px solid red;
+
 }
 
 
