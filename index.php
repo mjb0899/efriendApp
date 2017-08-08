@@ -52,12 +52,12 @@ if(isset($_SESSION['name'])){
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 
-                            <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='features.php'>eFriend Finder</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"       <li><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
+                            <?php if(isset($_SESSION['name'])) {   echo"       <li class='ditem'><a href='features.php'>eFriend Finder</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo"       <li class='ditem'><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
 
 
-                            <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eFriendSurvey.php'>eConnect</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"           <li><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
+                            <?php if(isset($_SESSION['name'])) {   echo"           <li class='ditem'><a href='eFriendSurvey.php'>eConnect</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo"           <li class='ditem'><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
 
 
                         </ul>
