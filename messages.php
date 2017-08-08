@@ -89,9 +89,21 @@ if(!isset($_SESSION['name'])){
 
 <div class="container">
     <div class="wrapper_convo">
+        <!-- GET ALL MESSAGES/CONVOS FROM DB ie MESSAGE TABLE -->
+
+        <?php
+        //get convos
+
+
+
+        ?>
+
+
         <div onclick=" return text_getter()">
             <hr>
-            <h1><?php echo $_SESSION['name'] ?></h1>
+            <!--PASS id to ajax func-->
+
+            <h1 id="session_name"><?php echo $_SESSION['name'] ?></h1>
             <hr>
         </div>
 
@@ -99,6 +111,7 @@ if(!isset($_SESSION['name'])){
 
     </div>
     <div class="wrapper_content">
+        <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
 
 
         <div class="talk-bubble tri-right left-top messageFloaterLeft">
