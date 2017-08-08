@@ -46,15 +46,15 @@ if(!isset($_SESSION['name'])){
 
                  success: function (d) {
                  if (d > 0) {
-
-                 alert("Accept saved"+d);
+                var j=d;
+                 alert(j);
                  } else if (d == 0) {
 
-                 alert("Deny saved"+d);
+                 alert("Deny saved");
                  }
                  else {
 
-                 alert("nothing saved"+d);
+                 alert("nothing saved");
 
                  }
                  }
