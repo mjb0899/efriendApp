@@ -24,6 +24,8 @@ if(!isset($_SESSION['name'])){
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/bubble.css">
+
 
 </head>
 <body>
@@ -73,42 +75,10 @@ if(!isset($_SESSION['name'])){
 
 <div class="container">
     <div class="wrapper_quote">
-        <h1>Finding Friends Just Got Easier</h1>
+
     </div>
     <div class="wrapper_box_surround">
-        <div class="wrapper_box">
-            <form action="login.php" method="post">
-                <label for="exampleInputEmail1" class="label_font">Username</label>
-                <div class="form-group">
-                    <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" title="Invalid input" pattern="[^'\x22]+" required="">
-                </div>
-                <label for="exampleInputPassword1" class="label_font">Password</label>
-                <div class="form-group">
 
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
-                </div>
-                <div id="error">
-                    <?php  if($_SESSION['errmsg']!=NULL){ echo'<span class="glyphicon glyphicon-remove red"></span>';} ?>
-                    <p> <?php
-                        if($_SESSION['errmsg']!=NULL){
-                            echo $_SESSION['errmsg'];
-                        }else{
-
-                        }
-
-
-
-
-                        ?> </p>
-                </div>
-                <div class="buttonholder register_link">
-                    <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
-                    <a href="registration.php"> <p>Not Registered yet?</p></a>
-                </div>
-
-
-            </form>
-        </div>
     </div>
 </div>
 <footer>
