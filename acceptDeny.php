@@ -61,6 +61,7 @@ if(isset($_POST['resp'])){
         echo 0;
 
     }else{
+        echo 'x';
        //alert error and redirect to page not found.
     }
 }
