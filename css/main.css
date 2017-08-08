@@ -68,15 +68,10 @@ ul.nav a:hover{
 	/*	background-color: white;*/
 	border: 2px solid deeppink;
 
-	margin: auto;
 	padding: 1rem;
 	color: red;
 width:100%;
-	background-image: url('../images/rr2.PNG');
-	/*margin-top: 8rem;*/
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-position: center;
+
 
 }
 .conversations{
