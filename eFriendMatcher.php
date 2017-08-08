@@ -8,14 +8,14 @@
 
 
 session_start();
+
 if(isset($_SESSION['name'])){
-    $username=$_SESSION['name'];
-}
-if(!isset($_SESSION['name'])){
-    header("index.php");
-}
 
+}else{
+    header("location:index.php");
 
+}
+$username=$_SESSION['name'];
 $_SESSION['match']='myron10';
 //get uid from table
 //go to search info and get data
