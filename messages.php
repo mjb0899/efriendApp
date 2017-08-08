@@ -7,11 +7,8 @@
  */
 session_start();
 
-if(isset($_SESSION['name'])){
-    header("location:features.php");
-}else{
-
-
+if(!isset($_SESSION['name'])){
+    header("location:index.php");
 }
 
 
