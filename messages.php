@@ -53,7 +53,7 @@ if(!isset($_SESSION['name'])){
 
                      //alert(d);
                   //   $( "#texter" ).load(window.location.href + " #texter" );
-                     $('#texter').load("messages.php");
+                     $('#texter').load(" #texter");
 
                  } else if (d == 0) {
 
