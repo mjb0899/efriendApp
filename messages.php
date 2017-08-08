@@ -2,28 +2,34 @@
 /**
  * Created by PhpStorm.
  * User: ADMIN
- * Date: 07/08/2017
- * Time: 13:52
+ * Date: 06/07/2017
+ * Time: 20:58
  */
 session_start();
+
+if(isset($_SESSION['name'])){
+    header("location:features.php");
+}else{
+
+
+}
+
+
 ?>
 <!DOCTYPE html>
-<html >
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>MusicAndMe</title>
-    <!--MENUBAR CSS-->
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-    <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="css/main2.css">
-    <link rel="stylesheet" type="text/css" href="css/bubble.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 </head>
 <body>
-<!--HEADER CODE-->
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top menu_logo">
         <div class="container-fluid">
@@ -33,7 +39,7 @@ session_start();
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand menu_logo" href="index.php" >eFriend</a>
+                <a class="navbar-brand menu_logo" href="#" >eFriend</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
@@ -46,12 +52,12 @@ session_start();
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 
-                            <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='features.php'>eFriend Finder</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"       <li><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
+                            <?php if(isset($_SESSION['name'])) {   echo"       <li class='ditem'><a href='features.php'>eFriend Finder</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo"       <li class='ditem'><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
 
 
-                            <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eFriendSurvey.php'>eConnect</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"           <li><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
+                            <?php if(isset($_SESSION['name'])) {   echo"           <li class='ditem'><a href='eFriendSurvey.php'>eConnect</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo"           <li class='ditem'><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
 
 
                         </ul>
@@ -60,77 +66,54 @@ session_start();
                     <li><a href="aboutUs.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='registration.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li> "; }  ?>
-                    <?php if(!isset($_SESSION['name'])) {   echo"  <li><a href='index.php'><span class='glyphicon glyphicon-log-in'></span> Login</a></li> "; }  ?>
-                    <?php if(isset($_SESSION['name'])) {   echo'     
-                                                                                                         
-                                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="">'. $_SESSION["name"].' <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-
-                             <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
-                             <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
-
-
-                       </ul>
-                    </li>                                                         
-                                                                                                         
-                                                                                                         '; }  ?>
+                    <li><a href="registration.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 </header>
-<!--MAIN CODE-->
-<main>
+
+<div class="container">
+    <div class="wrapper_quote">
+        <h1>Finding Friends Just Got Easier</h1>
+    </div>
+    <div class="wrapper_box_surround">
+        <div class="wrapper_box">
+            <form action="login.php" method="post">
+                <label for="exampleInputEmail1" class="label_font">Username</label>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" title="Invalid input" pattern="[^'\x22]+" required="">
+                </div>
+                <label for="exampleInputPassword1" class="label_font">Password</label>
+                <div class="form-group">
+
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
+                </div>
+                <div id="error">
+                    <?php  if($_SESSION['errmsg']!=NULL){ echo'<span class="glyphicon glyphicon-remove red"></span>';} ?>
+                    <p> <?php
+                        if($_SESSION['errmsg']!=NULL){
+                            echo $_SESSION['errmsg'];
+                        }else{
+
+                        }
 
 
 
 
-    <div class="container2">
-        <div class="wrapper_message">
-            <h2>-Your Inbox-</h2>
-            <hr>
-
-            <!-- DIV LEFT-->
-            <div class="conversations">
-                <hr>
-                <h1>Hi</h1>
-                <hr>
-                <h1>Hi</h1>
-
-
-
-            </div>
-            <!-- DIV RIGHT-->
-            <div class="content">
-                <div class="talk-bubble tri-right left-top">
-                    <div class="talktext">
-                        <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
-                    </div>
+                        ?> </p>
+                </div>
+                <div class="buttonholder register_link">
+                    <input type="submit" class="btn btn-default" id="loginbtn" value="Login">
+                    <a href="registration.php"> <p>Not Registered yet?</p></a>
                 </div>
 
 
-
-                <div class="talk-bubble tri-right btm-right">
-                    <div class="talktext">
-                        <p>Flush to the bottom right. Uses .btm-right only.</p>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
+            </form>
         </div>
     </div>
-
-
-
-
-</main>
-<!--FOOTER CODE!!-->
+</div>
 <footer>
     <div class="footer_left" >
         <h1>eFriend</h1>
