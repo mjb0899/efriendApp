@@ -1,8 +1,6 @@
 html{
     width: 100%;
 }
-
-
 body
 {
 	background-image: url('../images/rr2.PNG');
@@ -50,12 +48,8 @@ ul.nav a:hover{
 	text-align: center;
 	/*	background-color: white;*/
 	border: 2px solid deeppink;
-
-
 	color: red;
 	width:100%;
-
-
 }
 .conversations{
 	width: 49%;
