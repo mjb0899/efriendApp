@@ -27,6 +27,42 @@ if(!isset($_SESSION['name'])){
     <link rel="stylesheet" type="text/css" href="css/bubble.css">
 
 
+
+<script>
+    $(document).ready(function () {
+
+        $(".tdelete").on("click",function(e){
+            e.preventDefault();
+
+
+            var person = $(this).attr("data-nm"));
+
+        var dataString='persondata='+person;
+        $.ajax({
+                type:"post",
+                url:"textGetter.php",
+                data: dataString,
+                cache:false,
+                success:function (d) {
+                    if(d>0){
+
+                        alert("Accept saved");
+                    }else if(d==0){
+
+                        alert("Deny saved");
+                    }
+                    else{
+
+                        alert("nothing saved");
+
+                    }
+                }
+            }
+        );
+    });
+
+</script>
+
 </head>
 <body>
 <header>
@@ -103,9 +139,16 @@ if(!isset($_SESSION['name'])){
             <hr>
             <!--PASS id to ajax func-->
 
-            <h1 id="session_name"><?php echo $_SESSION['name'] ?></h1>
+            <!--<h1 class="entry-title"><?php //echo $_SESSION['name'] ?></h1>-->
+             <a href="javascript:void();" class="tdelete" data-nm="<?php echo $_SESSION['name'];?>"><?php echo $_SESSION['name'];?></a>
+
+
+
+
             <hr>
         </div>
+        <!--Hidden textbox for on click-->
+     <!--   <input id="personName" type="hidden" value="" onclick="">-->
 
 
 

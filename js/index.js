@@ -132,9 +132,10 @@ function deny() {
 
 function text_getter() {
 
-    var resp=0;
+     var messageGet=document.getElementById('personName').value;
+    var headervalue = $(".entry-title").text();
 
-    var dataString='resp='+resp;
+    var dataString='get='+messageGet;
 
     $.ajax({
             type:"post",
