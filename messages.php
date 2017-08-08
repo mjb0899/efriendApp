@@ -89,19 +89,25 @@ session_start();
         <div class="wrapper_message">
             <h2>-Your Inbox-</h2>
             <hr>
-            <div class="talk-bubble tri-right left-top">
-                <div class="talktext">
-                    <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
+            <div class="conversations">
+                <hr>
+            </div>
+            <div class="content">
+                <div class="talk-bubble tri-right left-top">
+                    <div class="talktext">
+                        <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
+                    </div>
+                </div>
+
+
+
+                <div class="talk-bubble tri-right btm-right">
+                    <div class="talktext">
+                        <p>Flush to the bottom right. Uses .btm-right only.</p>
+                    </div>
                 </div>
             </div>
 
-
-
-            <div class="talk-bubble tri-right btm-right">
-                <div class="talktext">
-                    <p>Flush to the bottom right. Uses .btm-right only.</p>
-                </div>
-            </div>
 
 
 
