@@ -47,14 +47,14 @@ if(!isset($_SESSION['name'])){
                  success: function (d) {
                  if (d > 0) {
 
-                 alert("Accept saved");
+                 alert("Accept saved"+d);
                  } else if (d == 0) {
 
-                 alert("Deny saved");
+                 alert("Deny saved"+d);
                  }
                  else {
 
-                 alert("nothing saved");
+                 alert("nothing saved"+d);
 
                  }
                  }
