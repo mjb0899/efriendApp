@@ -89,9 +89,12 @@ if(!isset($_SESSION['name'])){
 
 <div class="container">
     <div class="wrapper_convo">
-        <hr>
-        <h1><?php echo $_SESSION['name'] ?></h1>
-        <hr>
+        <div onclick=" return text_getter()">
+            <hr>
+            <h1><?php echo $_SESSION['name'] ?></h1>
+            <hr>
+        </div>
+
 
 
     </div>

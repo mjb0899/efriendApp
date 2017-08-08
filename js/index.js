@@ -129,3 +129,37 @@ function deny() {
     );
     return false
 }
+
+function text_getter() {
+
+    var resp=0;
+
+    var dataString='resp='+resp;
+
+    $.ajax({
+            type:"post",
+            url:"textGetter.php",
+            data: dataString,
+            cache:false,
+            success:function (d) {
+                if(d>0){
+                    //    $("#test").html("Your changes have been saved.");
+                    /*   setTimeout(function(){
+                     location.reload();
+                     }
+                     ,2000);*/
+                    alert("Accept saved");
+                }else if(d==0){
+                    //  $("#test").html("Check Fields");
+                    alert("Deny saved");
+                }
+                else{
+                    $("#test").html("Not saved.");
+                    alert("nothing saved");
+
+                }
+            }
+        }
+    );
+    return false
+}
