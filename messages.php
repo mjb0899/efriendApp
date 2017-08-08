@@ -35,7 +35,7 @@ if(!isset($_SESSION['name'])){
             e.preventDefault();
 
 
-            var person = $(this).attr("data-nm"));
+            var person = $(this).attr("data-nm");
 
         var dataString='persondata='+person;
         $.ajax({
