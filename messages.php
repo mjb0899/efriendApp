@@ -96,7 +96,9 @@ if(!isset($_SESSION['name'])){
 
     </div>
     <div class="wrapper_content">
-        <div class="talk-bubble tri-right left-top">
+
+
+        <div class="talk-bubble tri-right left-top messageFloaterLeft">
             <div class="talktext">
                 <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
             </div>
@@ -104,11 +106,14 @@ if(!isset($_SESSION['name'])){
 
 
 
-        <div class="talk-bubble tri-right btm-right">
+        <div class="talk-bubble tri-right btm-right messageFloaterRight">
             <div class="talktext">
                 <p>Flush to the bottom right. Uses .btm-right only.</p>
             </div>
         </div>
+
+
+
     </div>
 </div>
 <footer>
