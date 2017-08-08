@@ -27,7 +27,8 @@ footer{
 /*MENUBAR*/
 .container-fluid{
 
-	background-color: darkgreen;
+	background-color: #4484CE;
+	border-bottom: 2px solid #F9CF00;
 }
 
 
