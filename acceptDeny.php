@@ -38,7 +38,7 @@ if(isset($_POST['resp'])){
             echo"Error:".$sql."<br>" . mysqli_error($db);
         }*/
         //prepared
-        $stmt1 = $db->prepare("INSERT into accept(cuser,muser,matchdate) VALUES (?,?,?,?)");
+        $stmt1 = $db->prepare("INSERT into accept(cuser,muser,matchdate) VALUES (?,?,?)");
         $stmt1->bind_param('sss', $sess, $match,$date);
         $stmt1->execute();
         $stmt1->store_result();
@@ -47,7 +47,7 @@ if(isset($_POST['resp'])){
 
 
     }elseif($resp==0){
-        $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?,?)");
+        $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?)");
         $stmt1->bind_param('sss', $sess, $match,$date);
         $stmt1->execute();
         $stmt1->store_result();
