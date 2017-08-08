@@ -135,7 +135,7 @@ if(!isset($_SESSION['name'])){
         ?>
 
 
-        <div onclick=" return text_getter()">
+        <div>
             <hr>
             <!--PASS id to ajax func-->
 
