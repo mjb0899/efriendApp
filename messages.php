@@ -89,6 +89,9 @@ if(!isset($_SESSION['name'])){
 
 <div class="container">
     <div class="wrapper_quote">
+        <hr>
+        <h1><?php echo $_SESSION['name'] ?></h1>
+
 
     </div>
     <div class="wrapper_box_surround">
