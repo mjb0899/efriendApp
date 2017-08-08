@@ -59,22 +59,20 @@ rangeSlider();
 
 
 function accept() {
-    var firstname=document.getElementById('firstname').value;
-    var lastname=document.getElementById('lastname').value;
-    var email=document.getElementById('email').value;
-    var psw=document.getElementById('psw').value;
-    var sex=document.getElementById('sex').value;
-    var address=document.getElementById('address').value;
-    var age=document.getElementById('age').value;
-    var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw+'&sex='+sex+'&address='+address+'&age='+age;
+    var cuser=document.getElementById('acu').value;
+    var muser=document.getElementById('amu').value;
+    var resp=document.getElementById('ay').value;
+
+
+    var dataString='cuser='+cuser+'&muser='+muser+'response='+resp;
     $.ajax({
             type:"post",
-            url:"updateProfile.php",
+            url:"acceptDeny.php",
             data: dataString,
             cache:false,
             success:function (d) {
                 if(d>0){
-                    $("#test").html("Your changes have been saved.");
+                    //$("#test").html("Your changes have been saved.");
                     setTimeout(function(){
                             location.reload();
                         }
@@ -92,22 +90,20 @@ function accept() {
 }
 
 function deny() {
-    var firstname=document.getElementById('firstname').value;
-    var lastname=document.getElementById('lastname').value;
-    var email=document.getElementById('email').value;
-    var psw=document.getElementById('psw').value;
-    var sex=document.getElementById('sex').value;
-    var address=document.getElementById('address').value;
-    var age=document.getElementById('age').value;
-    var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw+'&sex='+sex+'&address='+address+'&age='+age;
+    var cuser=document.getElementById('dcu').value;
+    var muser=document.getElementById('dmu').value;
+    var resp=document.getElementById('dn').value;
+
+
+    var dataString='cuser='+cuser+'&muser='+muser+'response='+resp;
     $.ajax({
             type:"post",
-            url:"updateProfile.php",
+            url:"acceptDeny.php",
             data: dataString,
             cache:false,
             success:function (d) {
                 if(d>0){
-                    $("#test").html("Your changes have been saved.");
+                 //   $("#test").html("Your changes have been saved.");
                     setTimeout(function(){
                             location.reload();
                         }
