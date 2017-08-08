@@ -82,10 +82,12 @@ width:100%;
 .conversations{
 	width: 49%;
 	float:left;
+	background-color: #999999;
 }
 .content{
 	width: 49%;
 	float: left;
+	background-color: #4484CE;
 }
 
 
