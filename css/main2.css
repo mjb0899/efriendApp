@@ -20,7 +20,24 @@ footer{
 
 }
 
+/*MENUBAR*/
+.container-fluid{
 
+	background-color: #4484CE;
+	border-bottom: 2px solid #F9CF00;
+}
+.container-fluid a{
+	color: whitesmoke;
+}
+.dropdown-menu{
+	background-color: #4484CE;
+}
+ul.nav a:hover{
+	color: #F9CF00;
+	background-color: #4484CE;
+	border-left: 2px solid #F9CF00;
+}
+/*ENDDDD*/
 .container2{
 	padding: 1rem;
 	width: 100%;
