@@ -154,7 +154,18 @@ if(!isset($_SESSION['name'])){
         <!--Hidden textbox for on click-->
      <!--   <input id="personName" type="hidden" value="" onclick="">-->
 
+        <div>
+            <hr>
+            <!--PASS id to ajax func-->
 
+            <!--<h1 class="entry-title"><?php //echo $_SESSION['name'] ?></h1>-->
+            <a href="javascript:void();" class="tdelete" data-nm="myron10">myron10</a>
+
+
+
+
+            <hr>
+        </div>
 
     </div>
     <div class="wrapper_content">
