@@ -91,9 +91,12 @@ session_start();
         <div class="wrapper_message">
             <h2>-Your Inbox-</h2>
             <hr>
+
+            <!-- DIV LEFT-->
             <div class="conversations">
                 <hr>
             </div>
+            <!-- DIV RIGHT-->
             <div class="content">
                 <div class="talk-bubble tri-right left-top">
                     <div class="talktext">

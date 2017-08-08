@@ -71,7 +71,7 @@ ul.nav a:hover{
 	margin: auto;
 	padding: 1rem;
 	color: red;
-
+width:100%;
 	background-image: url('../images/rr2.PNG');
 	/*margin-top: 8rem;*/
 	background-repeat: no-repeat;
@@ -79,6 +79,16 @@ ul.nav a:hover{
 	background-position: center;
 
 }
+.conversations{
+	width: 49%;
+	float:left;
+}
+.content{
+	width: 49%;
+	float: left;
+}
+
+
 .wrapper_up{
 	font-family: Century Gothic, sans-serif;
 	text-align: center;
