@@ -88,13 +88,14 @@ if(!isset($_SESSION['name'])){
 </header>
 
 <div class="container">
-    <div class="wrapper_quote">
+    <div class="wrapper_convo">
         <hr>
         <h1><?php echo $_SESSION['name'] ?></h1>
+        <hr>
 
 
     </div>
-    <div class="wrapper_box_surround">
+    <div class="wrapper_content">
         <div class="talk-bubble tri-right left-top">
             <div class="talktext">
                 <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
