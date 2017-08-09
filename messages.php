@@ -134,7 +134,7 @@ if(!isset($_SESSION['name'])){
     </nav>
 </header>
 
-<div class="comtainer_message">
+<div class="container_message">
     <div class="wrapper_convo">
         <!-- GET ALL MESSAGES/CONVOS FROM DB ie MESSAGE TABLE -->
 
