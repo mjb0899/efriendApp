@@ -139,23 +139,34 @@ $uid=$_SESSION['userNum'];
         <!-- GET ALL MESSAGES/CONVOS FROM DB ie MESSAGE TABLE -->
 
         <?php
-        //get convos
+//getting convos
+
+        include("dbConnect.php");
+
+        $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid'";
+        $result = $db -> query($sql_query);
+        while($row = $result -> fetch_array()) {
+            $mid = $row['mid'];
+            $m_name = $row['match_uname'];
+            $s_date = $row['start_date'];
+            echo '<script language="javascript">';
+            echo 'alert("'.$mid."//".$m_name."//".$s_date.'")';
+            echo '</script>';
+
+      echo' <div>
+            <hr>
+             <a href="javascript:void();" class="tdelete" data-nm=" '.$m_name.'"> '. $m_name. ' </a>
+            <hr>
+            </div>';
 
 
-
+        }
         ?>
 
 
         <div>
             <hr>
-            <!--PASS id to ajax func-->
-
-            <!--<h1 class="entry-title"><?php //echo $_SESSION['name'] ?></h1>-->
              <a href="javascript:void();" class="tdelete" data-nm="<?php echo $_SESSION['name'];?>"><?php echo $_SESSION['name'];?></a>
-
-
-
-
             <hr>
         </div>
         <!--Hidden textbox for on click-->
@@ -181,23 +192,6 @@ $uid=$_SESSION['userNum'];
 
            <!--RETRIEVE OLD CONVERSATIONS-->
 
-           <?php
-
-
-                    include("dbConnect.php");
-
-                    $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid'";
-                    $result = $db -> query($sql_query);
-                    while($row = $result -> fetch_array()) {
-                        $mid = $row['mid'];
-                        $m_name = $row['match_uname'];
-                        $s_date = $row['start_date'];
-                        echo '<script language="javascript">';
-                        echo 'alert("'.$mid."//".$m_name."//".$s_date.'")';
-                        echo '</script>';
-                    }
-
-           ?>
 
 
 
