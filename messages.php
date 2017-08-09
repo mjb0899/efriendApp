@@ -195,7 +195,7 @@ if(!isset($_SESSION['name'])){
                   </div>
               </div>
           </div>
-    </div>
+
         <div class="text_input">
 
             <div class="form-group area_left">
@@ -206,7 +206,7 @@ if(!isset($_SESSION['name'])){
             <button type="submit" class="w3-button w3-xlarge w3-circle w3-teal">></button>
             </div>
         </div>
-
+       </div>
 
 
 
