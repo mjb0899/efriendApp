@@ -178,7 +178,8 @@ if(!isset($_SESSION['name'])){
     </div>
     <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
-          <div class="matter" id="matter_get">
+       <div id="matter_get">
+          <div class="matter">
               <div class="talk-bubble tri-right left-top messageFloaterLeft">
                   <div class="talktext">
                       <h3><?php echo $_SESSION['check']?></h3>
@@ -194,7 +195,7 @@ if(!isset($_SESSION['name'])){
                   </div>
               </div>
           </div>
-
+    </div>
         <div class="text_input">
 
             <div class="form-group area_left">
