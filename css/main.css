@@ -298,6 +298,9 @@ textarea { resize: none; }
 	float: right;
 	margin: auto;
 }
+.right>button{
+	border: 2px solid #F9CF00;
+}
 /*PROFILE CSS*/
 .wrapper_profile{
 	background-color: pink;
