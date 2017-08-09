@@ -265,11 +265,11 @@ textarea { resize: none; }
 	float: right;
 }
 .area_left{
-	width: 90%;
+	width: 88%;
 	float: left;
 }
 .area_right{
-	width: 9%;
+	width: 10%;
 	float: right;
 	margin: auto;
 }
