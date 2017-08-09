@@ -197,7 +197,6 @@ if(!isset($_SESSION['name'])){
           </div>
         <div class="text_input">
             <div class="form-group">
-                <label for="comment">Comment:</label>
                 <textarea class="form-control" rows="3" id="comment"></textarea>
             </div>
 
