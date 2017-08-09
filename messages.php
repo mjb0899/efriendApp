@@ -139,7 +139,7 @@ $uid=$_SESSION['userNum'];
         <!-- GET ALL MESSAGES/CONVOS FROM DB ie MESSAGE TABLE -->
 
         <?php
-//getting convos
+//getting convos people
 
         include("dbConnect.php");
 
@@ -166,29 +166,25 @@ $uid=$_SESSION['userNum'];
 
         <div>
             <hr>
-             <a href="javascript:void();" class="tdelete" data-nm="<?php echo $_SESSION['name'];?>"><?php echo $_SESSION['name'];?></a>
+              <a href="javascript:void();" class="tdelete" data-nm="<?php echo $_SESSION['name'];?>"><?php echo $_SESSION['name'];?></a>
             <hr>
-        </div>
-        <!--Hidden textbox for on click-->
-     <!--   <input id="personName" type="hidden" value="" onclick="">-->
+        </div><!--LONE DIV CLOSE TAG-->
+
 
         <div>
             <hr>
-            <!--PASS id to ajax func-->
-
-            <!--<h1 class="entry-title"><?php //echo $_SESSION['name'] ?></h1>-->
-            <a href="javascript:void();" class="tdelete" data-nm="myron10">myron10</a>
-
-
-
-
+                <a href="javascript:void();" class="tdelete" data-nm="myron10">myron10</a>
             <hr>
-        </div>
+        </div><!--LONE DIV CLOSE TAG-->
 
-    </div>
+    </div><!--WRAPPER CONVO CLOSE TAG( Left Side )-->
+
     <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
-       <div id="matter_get">
+
+
+       <div id="matter_get"><!--IMPORTANT DIV HELPS TO RELOAD-->
+
 
            <!--RETRIEVE OLD CONVERSATIONS-->
 
@@ -196,45 +192,50 @@ $uid=$_SESSION['userNum'];
 
 
 
+               <!--RETRIEVE MESSAGE CONTENT HERE-->
 
-                    <div class="matter">
-                                  <div class="talk-bubble tri-right left-top messageFloaterLeft">
-                                      <div class="talktext">
-                                          <h3><?php echo $_SESSION['check']?></h3>
-                                          <p>HEY THERE</p>
+                        <div class="matter">
+                                      <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                          <div class="talktext">
+                                              <h3><?php echo $_SESSION['check']?></h3>
+                                              <p>HEY THERE</p>
+                                          </div>
                                       </div>
-                                  </div>
 
 
 
-                                  <div class="talk-bubble tri-right btm-right messageFloaterRight">
-                                      <div class="talktext">
-                                          <p>Hello Buddy</p>
+                                      <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                          <div class="talktext">
+                                              <p>Hello Buddy</p>
+                                          </div>
                                       </div>
-                                  </div>
-                    </div>
+                        </div><!--MATTER CLOSE TAG-->
 
 
 
 
+               <!--SEND MESSAGE HERE-->
 
-                <div class="text_input">
-                            <div class="absol">
-                                <div class="form-group area_left">
-                                    <textarea class="form-control" rows="3" id="msgSend"></textarea>
+                    <div class="text_input">
+                                <div class="absol">
+                                    <div class="form-group area_left">
+                                        <textarea class="form-control" rows="3" id="msgSend"></textarea>
+                                    </div>
+                                    <div class="form-group area_right">
+                                    <button type="submit" class="btn btn-info btn-lg">>></button>
+
+                                    </div>
                                 </div>
-                                <div class="form-group area_right">
-                                <button type="submit" class="btn btn-info btn-lg">>></button>
+                    </div><!--TEXT INPUT CLOSE TAG-->
 
-                                </div>
-                            </div>
-                </div>
-       </div>
+       </div><!-- ID MATTER GET  CLOSE TAG-->
+
+    </div><!--WRAPPER CONTENT CLOSE TAG(right side)-->
 
 
 
-    </div>
-</div>
+
+</div><!--MESSAGE CONTAINER CLOSE TAG-->
 <footer>
     <div class="footer_left" >
         <h1>eFriend</h1>
