@@ -268,8 +268,11 @@ width:100%;
 	padding:2px;
 	clear: both;
 	bottom: 0;
+	height: 35%;
 }
-.matter{clear: both;overflow-y: scroll;}
+.matter{clear: both;
+	overflow-y: scroll;
+height: 60%;}
 
 
 textarea { resize: none; }
