@@ -270,7 +270,7 @@ textarea { resize: none; }
 }
 .area_right{
 	width: 19%;
-	float: left;
+	float: right;
 	margin: auto;
 }
 /*PROFILE CSS*/
