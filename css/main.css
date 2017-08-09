@@ -260,6 +260,7 @@ width:100%;
 .matter{clear: both;overflow-y: scroll;}
 
 
+textarea { resize: none; }
 
 /*PROFILE CSS*/
 .wrapper_profile{
