@@ -5,6 +5,7 @@
  * Date: 08/08/2017
  * Time: 15:16
  */
+
 session_start();
 //required 3 variable!!!!
 
@@ -14,13 +15,19 @@ if($sess==null){
     header("location:pageNotFound.html");
 }
 
+
+//get match username
 $match='myron10';
+
+//user id
+$uid=$_SESSION['userNum'];
+
+
+
+//for accepting match resp/date
 $resp=$_POST['resp'];
 $date = date('Y-m-d H:i:s');
 
-if($sess==null){
-    header("location:pageNotFound.html");
-}
 
 //$user=$_SESSION['user'];
 //$artist=$_SESSION['artist'];
@@ -49,8 +56,17 @@ if(isset($_POST['resp'])){
         $stmt1->execute();
         $stmt1->store_result();
         $stmt1->bind_result($col1);
-        echo 1;
 
+        $stmt1 = $db->prepare("INSERT into messages(uid,match_uname,start_date) VALUES (?,?,?)");
+        $stmt1->bind_param('sss', $uid, $match,$date);
+        $stmt1->execute();
+        $stmt1->store_result();
+        $stmt1->bind_result($col1);
+
+
+
+
+        echo 1;
 
     }elseif($resp==0){
         $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?)");
