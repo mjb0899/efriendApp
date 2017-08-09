@@ -272,16 +272,17 @@ width:100%;
 	position: relative; /*NEW*/
 	height: 19%;
 }
-.matter{clear: both;
+.matter{
+	clear: both;
 	overflow-y: scroll;
-height: 80%;}
+height: 80%;
+border: 2px solid palevioletred;}
 
 
 textarea { resize: none; }
 .send_text{
 	float: right;
-	padding: 2px;
-
+	border: 2px solid goldenrod;
 }
 
 .absol{
