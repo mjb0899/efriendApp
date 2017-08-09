@@ -280,10 +280,10 @@ height: 80%;
 border: 2px solid palevioletred;}
 
 
-textarea { resize: none; }
+textarea { resize: none;    position: absolute;bottom: 0; }
 .send_text{
 	float: right;
-    bottom: 0;
+
 
 }
 
@@ -296,6 +296,7 @@ textarea { resize: none; }
 .area_left{
 	width: 85%;
 	float: left;
+	position: relative;
 }
 .area_right{
 	width: 15%;
