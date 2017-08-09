@@ -201,7 +201,7 @@ if(!isset($_SESSION['name'])){
                                     <textarea class="form-control" rows="3" id="msgSend"></textarea>
                                 </div>
                                 <div class="form-group area_right">
-                                <button type="button" class="btn btn-info btn-lg">>></button>
+                                <button type="submit" class="btn btn-info btn-lg">>></button>
 
                                 </div>
                             </div>
