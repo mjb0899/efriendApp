@@ -264,8 +264,14 @@ textarea { resize: none; }
 .send_text{
 	float: right;
 }
-
-
+.area_left{
+	width: 70%;
+	float: left;
+}
+.area_right{
+	width: 25%;
+	float: left;
+}
 /*PROFILE CSS*/
 .wrapper_profile{
 	background-color: pink;
