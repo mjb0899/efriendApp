@@ -164,3 +164,35 @@ function text_getter() {
     );
     return false
 }
+
+function send_message() {
+     var msg=document.getElementById('msgSend').value;
+
+
+    var dataString='msg='+msg;
+
+    $.ajax({
+            type:"post",
+            url:"messageSender.php",
+            data: dataString,
+            cache:false,
+            success:function (d) {
+                if(d>0){
+                    //    $("#test").html("Your changes have been saved.");
+                    /*   setTimeout(function(){
+                     location.reload();
+                     }
+                     ,2000);*/
+                    alert("Accepted Message");
+                }else if(d==0){
+                    alert("issues");
+                }
+                else{
+                    alert("Not Acepted");
+
+                }
+            }
+        }
+    );
+    return false
+}

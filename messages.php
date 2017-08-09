@@ -200,7 +200,7 @@ if(!isset($_SESSION['name'])){
         <div class="text_input">
 
             <div class="form-group area_left">
-                <textarea class="form-control" rows="3" id="comment"></textarea>
+                <textarea class="form-control" rows="3" id="msgSend"></textarea>
             </div>
             <div class="form-group area_right">
 
