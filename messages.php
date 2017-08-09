@@ -199,7 +199,7 @@ if(!isset($_SESSION['name'])){
             <div class="form-group">
                 <textarea class="form-control" rows="3" id="comment"></textarea>
             </div>
-
+            <button type="submit" class="w3-button w3-xlarge w3-circle w3-teal">+</button>
 
         </div>
 
