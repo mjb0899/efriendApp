@@ -280,6 +280,7 @@ height: 60%;}
 textarea { resize: none;position: absolute;bottom: 0; }
 .send_text{
 	float: right;
+	position: absolute;bottom: 0;
 }
 .area_left{
 	width: 85%;
