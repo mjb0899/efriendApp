@@ -271,6 +271,7 @@ width:100%;
 	clear: both;
 	position: relative; /*NEW*/
 	height: 19%;
+	border: 2px solid goldenrod;
 }
 .matter{
 	clear: both;
@@ -282,7 +283,7 @@ border: 2px solid palevioletred;}
 textarea { resize: none; }
 .send_text{
 	float: right;
-	border: 2px solid goldenrod;
+
 }
 
 .absol{
