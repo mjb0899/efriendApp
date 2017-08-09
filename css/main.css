@@ -262,7 +262,9 @@ width:100%;
 
 }
 
-/*widthfor text are input*/
+#matter_get{
+	height: 100%;
+}
 .text_input{
 	width: 100%;
 	padding:2px;
