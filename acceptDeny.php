@@ -17,7 +17,7 @@ if($sess==null){
 
 
 //get match username
-$match='myron10';
+$match=$_SESSION['match'];
 
 //user id
 $uid=$_SESSION['userNum'];

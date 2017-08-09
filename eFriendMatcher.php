@@ -16,7 +16,7 @@ if(isset($_SESSION['name'])){
 
 }
 $username=$_SESSION['name'];
-$_SESSION['match']='myron10';
+$_SESSION['match']='sarah10';
 //get uid from table
 //go to search info and get data
 //add info code to array and
@@ -145,7 +145,7 @@ $_SESSION['match']='myron10';
             <div class="response">
                 <div class="message">
 
-                    <button type="submit" class="btn btn-success btn-flt" id="submit_accept" onclick="return accept()">Message</button>
+                    <button type="submit" class="btn btn-success btn-flt" id="submit_accept" data-match="<?php echo $_SESSION['match'] ?>" onclick="return accept()">Message</button>
 
                 </div>
 
