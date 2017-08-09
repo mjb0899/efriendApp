@@ -270,11 +270,11 @@ width:100%;
 	padding:2px;
 	clear: both;
 	position: relative; /*NEW*/
-	height: 35%;
+	height: 19%;
 }
 .matter{clear: both;
 	overflow-y: scroll;
-height: 60%;}
+height: 80%;}
 
 
 textarea { resize: none; }
