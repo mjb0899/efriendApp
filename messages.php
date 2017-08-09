@@ -10,7 +10,7 @@ session_start();
 if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
-
+$uid=$_SESSION['userNum'];
 
 ?>
 <!DOCTYPE html>
@@ -178,22 +178,51 @@ if(!isset($_SESSION['name'])){
     <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
        <div id="matter_get">
-                <div class="matter">
-                              <div class="talk-bubble tri-right left-top messageFloaterLeft">
-                                  <div class="talktext">
-                                      <h3><?php echo $_SESSION['check']?></h3>
-                                      <p>HEY THERE</p>
+
+           <!--RETRIEVE OLD CONVERSATIONS-->
+
+           <?php
+
+
+                    include("dbConnect.php");
+
+                    $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()) {
+                        $mid = $row['mid'];
+                        $m_name = $row['match_uname'];
+                        $s_date = $row['start_date'];
+                        echo '<script language="javascript">';
+                        echo 'alert('.$mid."//".$m_name."//".$s_date.')';
+                        echo '</script>';
+                    }
+
+           ?>
+
+
+
+
+
+                    <div class="matter">
+                                  <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                      <div class="talktext">
+                                          <h3><?php echo $_SESSION['check']?></h3>
+                                          <p>HEY THERE</p>
+                                      </div>
                                   </div>
-                              </div>
 
 
 
-                              <div class="talk-bubble tri-right btm-right messageFloaterRight">
-                                  <div class="talktext">
-                                      <p>Hello Buddy</p>
+                                  <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                      <div class="talktext">
+                                          <p>Hello Buddy</p>
+                                      </div>
                                   </div>
-                              </div>
-                </div>
+                    </div>
+
+
+
+
 
                 <div class="text_input">
                             <div class="absol">
