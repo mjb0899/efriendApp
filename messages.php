@@ -196,7 +196,7 @@ if(!isset($_SESSION['name'])){
               </div>
           </div>
         <div class="text_input">
-            <textarea style="resize:none" rows="4" cols="10"></textarea>
+            <textarea style="resize:none" rows="4" cols="10" width="100%"></textarea>
 
 
         </div>
