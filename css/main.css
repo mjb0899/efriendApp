@@ -290,7 +290,8 @@ textarea { resize: none;     }
 .absol{
 	position: absolute;bottom: 0;
 	width: 100%;
-	padding: 0.5%;
+	padding-left: 0.5%;
+	padding-right: 0.5%;
 }
 
 
