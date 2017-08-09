@@ -282,6 +282,12 @@ textarea { resize: none; }
 	float: right;
 
 }
+
+.absol{
+	position: absolute;bottom: 0;
+}
+
+
 .area_left{
 	width: 85%;
 	float: left;

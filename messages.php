@@ -179,33 +179,34 @@ if(!isset($_SESSION['name'])){
     <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
        <div id="matter_get">
-          <div class="matter">
-              <div class="talk-bubble tri-right left-top messageFloaterLeft">
-                  <div class="talktext">
-                      <h3><?php echo $_SESSION['check']?></h3>
-                      <p>HEY THERE</p>
-                  </div>
-              </div>
+                <div class="matter">
+                              <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                  <div class="talktext">
+                                      <h3><?php echo $_SESSION['check']?></h3>
+                                      <p>HEY THERE</p>
+                                  </div>
+                              </div>
 
 
 
-              <div class="talk-bubble tri-right btm-right messageFloaterRight">
-                  <div class="talktext">
-                      <p>Hello Buddy</p>
-                  </div>
-              </div>
-          </div>
+                              <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                  <div class="talktext">
+                                      <p>Hello Buddy</p>
+                                  </div>
+                              </div>
+                </div>
 
-        <div class="text_input">
+                <div class="text_input">
+                            <div class="absol">
+                                <div class="form-group area_left">
+                                    <textarea class="form-control" rows="3" id="msgSend"></textarea>
+                                </div>
+                                <div class="form-group area_right">
 
-            <div class="form-group area_left">
-                <textarea class="form-control" rows="3" id="msgSend"></textarea>
-            </div>
-            <div class="form-group area_right">
-
-            <button type="submit" class="w3-button w3-xlarge w3-circle w3-teal">></button>
-            </div>
-        </div>
+                                <button type="submit" class="w3-button w3-xlarge w3-circle w3-teal">></button>
+                                </div>
+                            </div>
+                </div>
        </div>
 
 
