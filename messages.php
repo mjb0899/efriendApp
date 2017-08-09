@@ -54,8 +54,8 @@ if(!isset($_SESSION['name'])){
 
                      //alert(d);
                   //   $( "#texter" ).load(window.location.href + " #texter" );
-                   //  $('#texter').load(" #texter");
-                     $("#texter").load();
+                     $('#texter').load(" #matter_get");
+
                  } else if (d == 0) {
 
                  alert("Deny saved");
@@ -178,7 +178,7 @@ if(!isset($_SESSION['name'])){
     </div>
     <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
-          <div class="matter">
+          <div class="matter" id="matter_get">
               <div class="talk-bubble tri-right left-top messageFloaterLeft">
                   <div class="talktext">
                       <h3><?php echo $_SESSION['check']?></h3>
