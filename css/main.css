@@ -255,7 +255,12 @@ width:100%;
 .text_input{
 	width: 100%;
 	padding:2px;
+	clear: both;
 }
+.matter{clear: both;}
+
+
+
 /*PROFILE CSS*/
 .wrapper_profile{
 	background-color: pink;
