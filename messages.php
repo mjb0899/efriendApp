@@ -55,9 +55,7 @@ if(!isset($_SESSION['name'])){
                      //alert(d);
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                    //  $('#texter').load(" #texter");
-                     $("#texter").load("messages.php #texter");
-
-
+                     $("#texter").load("messages.php");
                  } else if (d == 0) {
 
                  alert("Deny saved");
