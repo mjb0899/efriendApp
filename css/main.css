@@ -254,6 +254,7 @@ width:100%;
 /*widthfor text are input*/
 .text_input{
 	width: 100%;
+	padding:2px;
 }
 /*PROFILE CSS*/
 .wrapper_profile{
