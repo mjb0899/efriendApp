@@ -22,7 +22,6 @@ if(!isset($_SESSION['name'])){
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/bubble.css">
@@ -202,8 +201,8 @@ if(!isset($_SESSION['name'])){
                                     <textarea class="form-control" rows="3" id="msgSend"></textarea>
                                 </div>
                                 <div class="form-group area_right">
+                                <button type="button" class="btn btn-info btn-lg">>></button>
 
-                                <button type="submit" class="w3-button w3-xlarge w3-circle w3-teal">></button>
                                 </div>
                             </div>
                 </div>
