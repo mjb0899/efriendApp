@@ -265,12 +265,12 @@ textarea { resize: none; }
 	float: right;
 }
 .area_left{
-	width: 88%;
+	width: 90%;
 	float: left;
 }
 .area_right{
-	width: 10%;
-
+	width: 9%;
+	float: right;
 	margin: auto;
 }
 /*PROFILE CSS*/
