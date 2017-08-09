@@ -44,7 +44,7 @@ if(isset($_POST['resp'])){
     if($resp==1){
         //raw
         /*
-        $sql = "UPDATE users SET ufname='$fname' Where username='$sess'";
+        $sql = "UPDATEz users SET ufname='$fname' Where username='$sess'";
         if(mysqli_query($db,$sql)){
         }
         else{
