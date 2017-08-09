@@ -283,6 +283,7 @@ border: 2px solid palevioletred;}
 textarea { resize: none; }
 .send_text{
 	float: right;
+    bottom: 0;
 
 }
 
