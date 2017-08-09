@@ -57,7 +57,7 @@ if(isset($_POST['resp'])){
         $stmt1->store_result();
         $stmt1->bind_result($col1);
 
-        $stmt1 = $db->prepare("INSERT into messages(uid,match_uname,start_date) VALUES (?,?,?)");
+        $stmt1 = $db->prepare("INSERT into message(uid,match_uname,start_date) VALUES (?,?,?)");
         $stmt1->bind_param('iss', $uid, $match,$date);
         $stmt1->execute();
         $stmt1->store_result();
