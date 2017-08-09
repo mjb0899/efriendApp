@@ -280,6 +280,7 @@ height: 80%;}
 textarea { resize: none; }
 .send_text{
 	float: right;
+	padding: 2px;
 
 }
 
