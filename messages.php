@@ -193,7 +193,7 @@ $uid=$_SESSION['userNum'];
                         $m_name = $row['match_uname'];
                         $s_date = $row['start_date'];
                         echo '<script language="javascript">';
-                        echo 'alert('.$mid."//".$m_name."//".$s_date.')';
+                        echo 'alert("'.$mid."//".$m_name."//".$s_date.'")';
                         echo '</script>';
                     }
 
