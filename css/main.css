@@ -250,6 +250,11 @@ width:100%;
 
 
 }
+
+/*widthfor text are input*/
+.text_input{
+	width: 100%;
+}
 /*PROFILE CSS*/
 .wrapper_profile{
 	background-color: pink;

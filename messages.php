@@ -179,22 +179,28 @@ if(!isset($_SESSION['name'])){
     </div>
     <div class="wrapper_content" id="texter">
         <!-- GET ALL CONTENT FROM DB ie CONVO TABLE using mid -->
+          <div>
+              <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                  <div class="talktext">
+                      <h3><?php echo $_SESSION['check']?></h3>
+                      <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
+                  </div>
+              </div>
 
 
-        <div class="talk-bubble tri-right left-top messageFloaterLeft">
-            <div class="talktext">
-                <h3><?php echo $_SESSION['check']?></h3>
-                <p>This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
-            </div>
+
+              <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                  <div class="talktext">
+                      <p>Flush to the bottom right. Uses .btm-right only.</p>
+                  </div>
+              </div>
+          </div>
+        <div class="text_input">
+            <textarea style="overflow:auto;resize:none" rows="4" cols="10"></textarea>
+
+
         </div>
 
-
-
-        <div class="talk-bubble tri-right btm-right messageFloaterRight">
-            <div class="talktext">
-                <p>Flush to the bottom right. Uses .btm-right only.</p>
-            </div>
-        </div>
 
 
 
