@@ -270,7 +270,7 @@ $get_mid=$_SESSION['mid'];
                                         <textarea class="form-control" rows="3" id="msgSend"></textarea>
                                     </div>
                                     <div class="form-group area_right">
-                                    <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
+                                    <button type="submit" class="btn btn-info btn-lg" onclick="return deny()">>></button>
 
                                     </div>
                                 </div>
