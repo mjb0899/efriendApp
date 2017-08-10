@@ -14,7 +14,7 @@ $_SESSION['check']=$message;
 $uid=$_SESSION['userNum'];
 
 echo '<script language="javascript">';
-echo 'alert('.$uid.$message.$_SESSION['check'].')';
+echo 'alert("hello")';
 echo '</script>';
 
 
