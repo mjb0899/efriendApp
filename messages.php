@@ -268,7 +268,7 @@ $get_mid=$_SESSION['mid'];
                     <div class="text_input">
                                 <div class="absol">
                                     <div class="form-group area_left">
-                                        <textarea class="form-control" rows="3" id="msgSend"></textarea>
+                                        <textarea class="form-control" rows="3" id="msgSend" maxlength="100"></textarea>
                                     </div>
                                     <div class="form-group area_right">
                                     <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
