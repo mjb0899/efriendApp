@@ -15,19 +15,23 @@ $_SESSION['check']=$message; //working
 
 $uid=$_SESSION['userNum'];
 
+try{
+                $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ?");
+                $stmt->bind_param('is', $uid, $message);
+                $stmt->execute();
+                $stmt->store_result();
+                $stmt->bind_result($col1);
 
-$stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? LIMIT 1");
-$stmt->bind_param('is', $uid, $message);
-$stmt->execute();
-$stmt->store_result();
-$stmt->bind_result($col1);
+                while ($stmt->fetch()) {
 
-while ($stmt->fetch()) {
+                    $m_id = $col1;
+                    session_start();
+                    $_SESSION['mid']=$m_id;
 
-    $m_id = $col1;
-    session_start();
-    $_SESSION['mid']=$m_id;
+                }
 
+}catch(PDOException $exept){
+    $_SESSION['mid']=1;
 }
 
 echo 1;
