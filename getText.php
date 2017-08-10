@@ -33,7 +33,7 @@ try {
         $m_id = $col1;
 
         session_start();
-        $_SESSION['mid']=1;
+        $_SESSION['mid']=$m_id;
 //not entering loop
     }
      //not s
