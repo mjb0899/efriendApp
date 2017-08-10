@@ -17,7 +17,7 @@ $uid=$_SESSION['userNum'];
 
 
 try {
-
+    include ("dbConnect.php");
     $stmt = $db->prepare("SELECT uid FROM users WHERE uid= ?");
     $stmt->bind_param('i', $uid);
     $stmt->execute();
