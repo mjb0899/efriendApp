@@ -158,7 +158,7 @@ $get_mid=$_SESSION['mid'];
 
       echo' <div>
             <hr>
-             <a href="javascript:void();" class="tdelete" data-nm=" '.$m_name.'"> '. $m_name. ' </a>
+             <a href="javascript:void();" class="tdelete" data-nm="'.$m_name.'"> '. $m_name. ' </a>
             <hr>
             </div>';
 
