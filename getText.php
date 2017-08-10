@@ -10,12 +10,12 @@ session_start();
 $message = $_POST['persondata'];//working
 
 $_SESSION['check']=$message; //working
+$test=$message;
 
 //retrieve mid here and send back to message.j
 
-$uid=$_SESSION['userNum'];
+$uid=$_SESSION['userNum'];//working
 
-$test="sarah13";
 
 try {
     include ("dbConnect.php");
