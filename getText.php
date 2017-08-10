@@ -13,13 +13,14 @@ $_SESSION['check']=$message; //working
 
 //retrieve mid here and send back to message.j
 
-$uid=$_SESSION['userNum'];
-
+//$uid=$_SESSION['userNum'];
+$uid=1;
+$test="sarah10";
 
 try {
     include ("dbConnect.php");
     $stmt = $db->prepare("SELECT mid FROM message WHERE uid = ? and match_uname = ?");
-    $stmt->bind_param('is', $uid,$message);
+    $stmt->bind_param('is', $uid,$test);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($col1);
@@ -29,10 +30,10 @@ try {
         $m_id = $col1;
 
         session_start();
-
-
+        $_SESSION['mid']=1;
+//not entering loop
     }
-    $_SESSION['mid']=1;
+     //not s
 
 }catch(exception $exept){
     header("location:pageNotFound.html");
