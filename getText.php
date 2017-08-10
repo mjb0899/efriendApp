@@ -17,7 +17,7 @@ $uid=$_SESSION['userNum'];
 
 
     include("dbConnect.php");
-
+/*
                 $sql_query="Select mid from message Where uid= '$uid' and match_uname= $message LIMIT 1";
                $result= $db -> query($sql_query);
 
@@ -31,7 +31,7 @@ $uid=$_SESSION['userNum'];
 
 session_start();
 $_SESSION['mid']=$mid;
-                }
+                }*/
 $_SESSION['mid']=1;
 
 echo 1;
