@@ -28,6 +28,8 @@ try {
 
         $m_id = $col1;
 
+        session_start();
+
         $_SESSION['mid']=$m_id;
 
     }
