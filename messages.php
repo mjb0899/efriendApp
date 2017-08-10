@@ -40,7 +40,7 @@ $get_mid=$_SESSION['mid'];
             var dataString = 'persondata=' + person;
             $.ajax({
                 type: "post",
-                url: "textGetter.php",
+                url: "getText.php",
                 data: dataString,
                 cache: false,
 
