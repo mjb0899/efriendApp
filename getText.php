@@ -31,9 +31,16 @@ try {
     while ($stmt->fetch()) {
 
         $m_id = $col1;
+            if($col1!=null){
+                session_start();
+                $_SESSION['mid']=$m_id;
 
-        session_start();
-        $_SESSION['mid']=$m_id;
+            }else{
+                session_start();
+
+                $_SESSION['mid']=null;
+            }
+
 //not entering loop
     }
      //not s
