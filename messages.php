@@ -217,14 +217,14 @@ $get_mid=$_SESSION['mid'];
                                             if ($sender == $_SESSION['name']) {
                                                             echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight">
                                                               <div class="talktext">
-                                                                  <p>morrisons line</p>
+                                                                  <p>'.$content.'</p>
                                                               </div>
                                                           </div>';
                                             } else {
                                                         echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft">
                                                           <div class="talktext">
                                                               <h3><?php echo $_SESSION[\'check\']?></h3>
-                                                              <p>sarahs line</p>
+                                                              <p>'.$content.'</p>
                                                           </div>
                                                             </div>';
                                             }
