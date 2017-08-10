@@ -12,7 +12,7 @@ $date = date('Y-m-d H:i:s');
 $match=$_SESSION['check'];
 $mid=$_SESSION['mid'];
 //sanitize
-
+/*
 if(isset($_POST['msg'])){
 
     $stmt2 = $db->prepare("INSERT into convo(content,mid,sender,start_date) VALUES (?,?,?,?)");
@@ -25,4 +25,5 @@ if(isset($_POST['msg'])){
         echo 1;
 
 
-    }
+    }*/
+echo 1;
