@@ -13,6 +13,7 @@ $_SESSION['check']=$message;
 //retrieve mid here and send back to message.j
 $uid=$_SESSION['userNum'];
 
+echo 1;
 /*
 
 $sql_query = "Select mid from message Where uid='$uid' AND match_uname='$message'";
