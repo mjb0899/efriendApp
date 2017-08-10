@@ -32,6 +32,7 @@ $uid=$_SESSION['userNum'];
 session_start();
 $_SESSION['mid']=$mid;
                 }
+$_SESSION['mid']=1;
 
 echo 1;
 
