@@ -13,6 +13,8 @@ session_start();
 $_SESSION['check']=$message;
 //retrieve mid here and send back to message.j
 
+include("dbConnect.php");
+
 
 
 $sql_query = "Select mid from message Where uid='$uid' AND match_uname='$message'";
