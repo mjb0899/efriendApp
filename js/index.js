@@ -184,6 +184,8 @@ function send() {
                      }
                      ,2000);*/
                     alert("Accepted Message");
+                    $('#hidethis').hide();
+                    $('#texter').load(" #matter_get");
                 }else if(d==0){
                     alert("issues");
                 }
