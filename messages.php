@@ -198,6 +198,7 @@ $get_mid=$_SESSION['mid'];
 
                             if($mid==null){
                                 echo '<h1>SELECT CONVERSATION</h1>';
+                                echo $_SESSION['mid'];
                             }else {
 
                                 $sql_query = "Select content,sender,start_date from convo Where mid='$mid' sort BY start_date DESC";
