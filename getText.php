@@ -20,7 +20,7 @@ $uid=$_SESSION['userNum'];//working
 try {
     include ("dbConnect.php");
     $stmt = $db->prepare("SELECT mid FROM message WHERE uid = ? and match_uname = ?");
-    $stmt->bind_param('is', $uid,$test);
+    $stmt->bind_param('is', $uid,$_SESSION['check']);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($col1);
