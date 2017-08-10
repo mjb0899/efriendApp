@@ -11,7 +11,7 @@ $message = $_POST['persondata'];//working
 
 $_SESSION['check']=$message; //working
 if(isset($_POST['persondata'])){
-    $test ="sarah10";
+    $test = $_POST['persondata'];
 
 }
 
