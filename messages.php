@@ -11,7 +11,7 @@ if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
 $uid=$_SESSION['userNum'];
-
+$get_mid=$_SESSION['mid'];
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -187,14 +187,53 @@ $uid=$_SESSION['userNum'];
 
 
            <!--RETRIEVE OLD CONVERSATIONS-->
-
-
-
-
-
                <!--RETRIEVE MESSAGE CONTENT HERE-->
 
                         <div class="matter">
+                            <?php
+                            //getting convos people
+
+                            include("dbConnect.php");
+                            $mid=$_SESSION['mid'];
+
+                            if($mid==null){
+                                echo '<h1>SELECT CONVERSATION</h1>';
+                            }else {
+
+                                $sql_query = "Select content,sender,start_date from convo Where mid='$mid' sort BY start_date DESC";
+                                $result = $db->query($sql_query);
+                                while ($row = $result->fetch_array()) {
+                                    $content = $row['content'];
+                                    $sender = $row['sender'];
+                                    $s_date = $row['start_date'];
+
+                                    if ($sender == $_SESSION['name']) {
+                                        echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                          <div class="talktext">
+                                              <p>Hello Buddy</p>
+                                          </div>
+                                      </div>';
+                                    } else {
+                                        echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                          <div class="talktext">
+                                              <h3><?php echo $_SESSION[\'check\']?></h3>
+                                              <p>HEY THERE</p>
+                                          </div>
+                                      </div>';
+                                    }
+
+                                    //create bubble
+
+
+                                }//end while
+
+                            }//end else
+                            ?>
+
+
+
+
+
                                       <div class="talk-bubble tri-right left-top messageFloaterLeft">
                                           <div class="talktext">
                                               <h3><?php echo $_SESSION['check']?></h3>
