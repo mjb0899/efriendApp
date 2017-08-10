@@ -8,6 +8,7 @@
 
 session_start();
 $message = $_POST['persondata'];//working
+echo("<script>console.log('PHP: ".$message."');</script>");
 
 $_SESSION['check']=$message; //working
 $test ="sarah10";
