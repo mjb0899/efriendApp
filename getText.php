@@ -13,6 +13,11 @@ $_SESSION['check']=$message;
 //retrieve mid here and send back to message.j
 $uid=$_SESSION['userNum'];
 
+echo '<script language="javascript">';
+echo 'alert('.$uid.$message.$_SESSION['check'].')';
+echo '</script>';
+
+
 echo 1;
 /*
 
