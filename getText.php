@@ -15,7 +15,7 @@ $_SESSION['check']=$message; //working
 
 $uid=$_SESSION['userNum'];
 
-$test="sarah10";
+$test="sarah13";
 
 try {
     include ("dbConnect.php");
