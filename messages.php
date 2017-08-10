@@ -26,9 +26,10 @@ $get_mid=$_SESSION['mid'];
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/bubble.css">
 
+    <script src="js/index.js"></script>
 
 
-<script>
+    <script>
     $(document).ready(function () {
 
         $(".tdelete").on("click", function (e) {
@@ -270,7 +271,7 @@ $get_mid=$_SESSION['mid'];
                                         <textarea class="form-control" rows="3" id="msgSend"></textarea>
                                     </div>
                                     <div class="form-group area_right">
-                                    <button type="submit" class="btn btn-info btn-lg" onclick="return deny()">>></button>
+                                    <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
 
                                     </div>
                                 </div>
