@@ -18,8 +18,8 @@ $uid=$_SESSION['userNum'];
 
 try {
     include ("dbConnect.php");
-    $stmt = $db->prepare("SELECT uid FROM users WHERE uid= ?");
-    $stmt->bind_param('i', $uid);
+    $stmt = $db->prepare("SELECT mid FROM message WHERE uid = ? and match_uname = ?");
+    $stmt->bind_param('is', $uid,$message);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($col1);
