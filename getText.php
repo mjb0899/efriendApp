@@ -31,19 +31,15 @@ try {
     while ($stmt->fetch()) {
 
         $m_id = $col1;
-            if($col1!=null){
+            if($m_id!=null){
                 session_start();
                 $_SESSION['mid']=$m_id;
-
             }else{
                 session_start();
-
-                $_SESSION['mid']=0;
+                $_SESSION['mid']=null;
             }
 
-//not entering loop
     }
-     //not s
 
 }catch(exception $exept){
     header("location:pageNotFound.html");
