@@ -30,9 +30,10 @@ try {
 
         session_start();
 
-        $_SESSION['mid']=1;
 
     }
+    $_SESSION['mid']=1;
+
 }catch(exception $exept){
     header("location:pageNotFound.html");
 }
