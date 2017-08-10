@@ -10,7 +10,7 @@ $text=$_POST['msg'];
 $uid=$_SESSION['userNum'];
 $date = date('Y-m-d H:i:s');
 $match=$_SESSION['check'];
-$mid=0;
+$mid=$_SESSION['mid'];
 //sanitize
 
 if(isset($_POST['msg'])){
