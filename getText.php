@@ -12,7 +12,7 @@ $message = $_POST['persondata'];//working
 $_SESSION['check']=$message; //working
 $test=$_SESSION['check'];
 
-//retrieve mid here and send back to message.j
+//retrieve mid here and send back to mmessage.j
 
 $uid=$_SESSION['userNum'];//working
 
