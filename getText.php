@@ -18,7 +18,7 @@ $uid=$_SESSION['userNum'];
 try{
     include("dbConnect.php");
 
-    $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? Limit 1");
+                $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? LIMIT 1");
                 $stmt->bind_param('is', $uid, $message);
                 $stmt->execute();
                 $stmt->store_result();
