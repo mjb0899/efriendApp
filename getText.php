@@ -14,7 +14,7 @@ if(isset($_POST['persondata'])){
     $test = $_POST['persondata'];
 
 }
-
+$count=0;
 //retrieve mid here and send backk to mmessage.j
 
 $uid=$_SESSION['userNum'];//working
@@ -28,20 +28,21 @@ try {
     $stmt->store_result();
     $stmt->bind_result($col1);
 
-    if ($stmt->fetch()) {
+    while ($stmt->fetch()) {
 
         $m_id = $col1;
             if($m_id!=null){
                 session_start();
                 $_SESSION['mid']=$m_id;
-            }else{
-
+                $count=1;
             }
 
-    }else{
-        session_start();
-        $_SESSION['mid']=null;
     }
+
+if($count!=1){
+    session_start();
+    unset($_SESSION['mid']);
+}
 
 }catch(exception $exept){
     header("location:pageNotFound.html");
