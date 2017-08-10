@@ -25,16 +25,21 @@ try{
 
                 while ($stmt->fetch()) {
 
-                    $m_id = $col1;
-                    session_start();
-                    $_SESSION['mid']=$m_id;
+                    if($col1==null){
+                        $m_id = $col1;
+                        session_start();
+                        $_SESSION['mid']=$m_id;
+                    }else{
+                        $_SESSION['mid']=null;
+
+                    }
+
 
                 }
 
 }catch(PDOException $exept){
     $_SESSION['mid']=null;
 }
-
 
 
 echo 1;
