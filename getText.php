@@ -16,16 +16,19 @@ $_SESSION['check']=$message; //working
 $uid=$_SESSION['userNum'];
 
 
+$stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? LIMIT 1");
+$stmt->bind_param('is', $uid, $message);
+$stmt->execute();
+$stmt->store_result();
+$stmt->bind_result($col1);
 
+while ($stmt->fetch()) {
 
+    $m_id = $col1;
+    session_start();
+    $_SESSION['mid']=$m_id;
 
-$sql_query = "Select mid from message Where uid='$uid' AND match_uname='$message' LIMIT 1";
-$result = $db -> query($sql_query);
-while($row = $result -> fetch_array()) {
-    $_SESSION['mid'] = $row['mid'];
 }
-
-
 
 echo 1;
 
