@@ -16,23 +16,26 @@ $_SESSION['check']=$message; //working
 $uid=$_SESSION['userNum'];
 
 
-    include("dbConnect.php");
-/*
-                $sql_query="Select mid from message Where uid= '$uid' and match_uname= $message LIMIT 1";
-               $result= $db -> query($sql_query);
+try {
 
-                while ($row= $result -> fetch_array()) {
+    $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ?");
+    $stmt->bind_param('i', $uid);
+    $stmt->execute();
+    $stmt->store_result();
+    $stmt->bind_result($col1);
 
-                    $mid=$row['mid'];
+    while ($stmt->fetch()) {
+
+        $m_id = $col1;
+
+        $_SESSION['mid']=$m_id;
+
+    }
+}catch(exception $exept){
+    header("location:pageNotFound.html");
+}
 
 
-
-
-
-session_start();
-$_SESSION['mid']=$mid;
-                }*/
-$_SESSION['mid']=1;
 
 echo 1;
 

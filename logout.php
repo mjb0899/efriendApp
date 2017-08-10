@@ -11,6 +11,8 @@ unset($_SESSION['name']);
 unset($_SESSION['userNum']);
 unset($_SESSION['check']);
 unset($_SESSION['match']);
+unset($_SESSION['mid']);
+
 session_destroy();
 
 header("Location:index.php");
