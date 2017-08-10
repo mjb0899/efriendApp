@@ -10,7 +10,10 @@ session_start();
 $message = $_POST['persondata'];//working
 
 $_SESSION['check']=$message; //working
-$test ="sarah10";
+if(isset($_POST['persondata'])){
+    $test ="sarah10";
+
+}
 
 //retrieve mid here and send back to mmessage.j
 
@@ -20,7 +23,7 @@ $uid=$_SESSION['userNum'];//working
 try {
     include ("dbConnect.php");
     $stmt = $db->prepare("SELECT mid FROM message WHERE uid = ? and match_uname = ?");
-    $stmt->bind_param('is', $uid,$_SESSION['check']);
+    $stmt->bind_param('is', $uid,$test);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($col1);
