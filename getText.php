@@ -13,9 +13,9 @@ $_SESSION['check']=$message; //working
 
 //retrieve mid here and send back to message.j
 
-//$uid=$_SESSION['userNum'];
-$uid=1;
-$test=$_SESSION['check'];
+$uid=$_SESSION['userNum'];
+
+$test="sarah10";
 
 try {
     include ("dbConnect.php");
