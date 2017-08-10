@@ -30,7 +30,7 @@ try {
 
         session_start();
 
-        $_SESSION['mid']=$m_id;
+        $_SESSION['mid']=1;
 
     }
 }catch(exception $exept){
