@@ -53,6 +53,7 @@ $get_mid=$_SESSION['mid'];
 
                      //alert(d);
                   //   $( "#texter" ).load(window.location.href + " #texter" );
+                     $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
 
                  } else if (d == 0) {
@@ -201,7 +202,7 @@ $get_mid=$_SESSION['mid'];
                             $convo_id=$_SESSION['mid'];//funny
 
                             if($convo_id==null){
-                                echo '<h1>SELECT CONVERSATION</h1>';
+                                echo '<h1 id="hidethis">SELECT CONVERSATION</h1>';
                                 echo $_SESSION['mid'];
                             }else {
 
