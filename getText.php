@@ -17,7 +17,7 @@ $uid=$_SESSION['userNum'];
 include("dbConnect.php");
 
 try{
-                $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ?");
+                $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? Limit 1");
                 $stmt->bind_param('is', $uid, $message);
                 $stmt->execute();
                 $stmt->store_result();
@@ -26,12 +26,11 @@ try{
                 while ($stmt->fetch()) {
 
                     if($col1==null){
+                        $_SESSION['mid']=null;
+                    }else{
                         $m_id = $col1;
                         session_start();
                         $_SESSION['mid']=$m_id;
-                    }else{
-                        $_SESSION['mid']=null;
-
                     }
 
 
