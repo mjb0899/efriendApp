@@ -190,7 +190,8 @@ $get_mid=$_SESSION['mid'];
                <!--RETRIEVE MESSAGE CONTENT HERE-->
 
                         <div class="matter">
-                            <?php
+
+                            <?php/*
                             //getting convos people
 
                             include("dbConnect.php");
@@ -229,7 +230,7 @@ $get_mid=$_SESSION['mid'];
                                 }//end while
 
                             }//end else
-                            ?>
+                          */  ?>
 
 
 
