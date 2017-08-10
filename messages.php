@@ -239,24 +239,26 @@ $get_mid=$_SESSION['mid'];
 
 
 
-                            <hr>
+
                                       <div class="talk-bubble tri-right left-top messageFloaterLeft">
                                           <div class="talktext">
+                                              <hr>
                                               <h3><?php echo $_SESSION['check']?></h3>
                                               <p>HEY THERE</p>
                                           </div>
                                       </div>
 
 
-                            <hr>
+
                                       <div class="talk-bubble tri-right btm-right messageFloaterRight">
                                           <div class="talktext">
+                                              <hr>
                                               <h3><?php echo $_SESSION['mid']?></h3>
                                               <p>Hello Buddy</p>
                                           </div>
                                       </div>
                         </div><!--MATTER CLOSE TAG-->
-           <hr>
+
 
 
 
