@@ -206,32 +206,32 @@ $get_mid=$_SESSION['mid'];
                                 echo $_SESSION['mid'];
                             }else {
 
-                                $sql_query = "Select content,sender,start_date from convo Where mid='$convo_id'";
-                                $result = $db->query($sql_query);
-                                while ($row = $result->fetch_array()) {
-                                    $content = $row['content'];
-                                    $sender = $row['sender'];
-                                    $s_date = $row['start_date'];
+                                        $sql_query = "Select content,sender,start_date from convo Where mid='$convo_id'";
+                                        $result = $db->query($sql_query);
+                                        while ($row = $result->fetch_array()) {
+                                                $content = $row['content'];
+                                                $sender = $row['sender'];
+                                                $s_date = $row['start_date'];
 
-                                    if ($sender == $_SESSION['name']) {
-                                        echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight">
-                                          <div class="talktext">
-                                              <p>morrisons line</p>
-                                          </div>
-                                      </div>';
-                                    } else {
-                                        echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft">
-                                          <div class="talktext">
-                                              <h3><?php echo $_SESSION[\'check\']?></h3>
-                                              <p>sarahs line</p>
-                                          </div>
-                                      </div>';
-                                    }
+                                            if ($sender == $_SESSION['name']) {
+                                                            echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                                              <div class="talktext">
+                                                                  <p>morrisons line</p>
+                                                              </div>
+                                                          </div>';
+                                            } else {
+                                                        echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                                          <div class="talktext">
+                                                              <h3><?php echo $_SESSION[\'check\']?></h3>
+                                                              <p>sarahs line</p>
+                                                          </div>
+                                                            </div>';
+                                            }
 
-                                    //create bubble
+                                            //create bubble
 
 
-                                }//end while
+                                        }//end while
 
                             }//end else
                             ?>

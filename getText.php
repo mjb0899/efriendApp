@@ -14,10 +14,11 @@ $_SESSION['check']=$message; //working
 //retrieve mid here and send back to message.j
 
 $uid=$_SESSION['userNum'];
-include("dbConnect.php");
 
 try{
-                $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? Limit 1");
+    include("dbConnect.php");
+
+    $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ? Limit 1");
                 $stmt->bind_param('is', $uid, $message);
                 $stmt->execute();
                 $stmt->store_result();
