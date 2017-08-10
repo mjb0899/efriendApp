@@ -56,6 +56,8 @@ if(isset($_POST['resp'])){
         while ($stmt->fetch()) {
 
             if($col3==null){
+                include("dbConnect.php");
+
                 $stmt1 = $db->prepare("INSERT into accept(cuser,muser,matchdate) VALUES (?,?,?)");
                 $stmt1->bind_param('sss', $sess, $match,$date);
                 $stmt1->execute();
