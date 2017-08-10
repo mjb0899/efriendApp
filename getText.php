@@ -10,7 +10,7 @@ $message = $_POST['persondata'];
 session_start();
 $_SESSION['check']=$message;
 //retrieve mid here and send back to message.j
-
+$uid=$_SESSION['userNum'];
 
 
 
