@@ -15,7 +15,7 @@ if(isset($_POST['persondata'])){
 
 }
 
-//retrieve mid here and send back to mmessage.j
+//retrieve mid here and send backk to mmessage.j
 
 $uid=$_SESSION['userNum'];//working
 
