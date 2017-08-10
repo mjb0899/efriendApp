@@ -18,8 +18,9 @@ $sql_query = "Select mid from message Where uid='$uid' AND match_uname='$message
 $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()) {
     $mid = $row['mid'];
+    $_SESSION['mid']=$mid;
 }
-$_SESSION['mid']=$mid;
+
 
 
 if($message!=null){
