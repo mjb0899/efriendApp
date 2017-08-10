@@ -191,18 +191,19 @@ $get_mid=$_SESSION['mid'];
 
                         <div class="matter">
 
-                            <?php/*
+                            <?php
                             //getting convos people
 
                             include("dbConnect.php");
-                            $mid=$_SESSION['mid'];
 
-                            if($mid==null){
+                            $convo_id=$_SESSION['mid'];//funny
+
+                            if($convo_id==null){
                                 echo '<h1>SELECT CONVERSATION</h1>';
                                 echo $_SESSION['mid'];
                             }else {
 
-                                $sql_query = "Select content,sender,start_date from convo Where mid='$mid' sort BY start_date DESC";
+                                $sql_query = "Select content,sender,start_date from convo Where mid='$convo_id'";
                                 $result = $db->query($sql_query);
                                 while ($row = $result->fetch_array()) {
                                     $content = $row['content'];
@@ -212,14 +213,14 @@ $get_mid=$_SESSION['mid'];
                                     if ($sender == $_SESSION['name']) {
                                         echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight">
                                           <div class="talktext">
-                                              <p>Hello Buddy</p>
+                                              <p>morrisons line</p>
                                           </div>
                                       </div>';
                                     } else {
                                         echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft">
                                           <div class="talktext">
                                               <h3><?php echo $_SESSION[\'check\']?></h3>
-                                              <p>HEY THERE</p>
+                                              <p>sarahs line</p>
                                           </div>
                                       </div>';
                                     }
@@ -230,7 +231,7 @@ $get_mid=$_SESSION['mid'];
                                 }//end while
 
                             }//end else
-                          */  ?>
+                            ?>
 
 
 
