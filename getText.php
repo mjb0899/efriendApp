@@ -14,7 +14,7 @@ $_SESSION['check']=$message; //working
 //retrieve mid here and send back to message.j
 
 $uid=$_SESSION['userNum'];
-
+/*
 try{
                 $stmt = $db->prepare("Select mid from message Where uid= ? and match_uname= ?");
                 $stmt->bind_param('is', $uid, $message);
@@ -33,6 +33,8 @@ try{
 }catch(PDOException $exept){
     $_SESSION['mid']=1;
 }
+*/
+$_SESSION['mid']=1;
 
 echo 1;
 
