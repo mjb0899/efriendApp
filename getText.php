@@ -15,7 +15,7 @@ $_SESSION['check']=$message; //working
 
 $uid=$_SESSION['userNum'];
 
-try{
+
     include("dbConnect.php");
 
                 $sql_query="Select mid from message Where uid= '$uid' and match_uname= $message LIMIT 1";
@@ -24,20 +24,14 @@ try{
                 while ($row= $result -> fetch_array()) {
 
                     $mid=$row['mid'];
-                    if($mid==null){
-                        $_SESSION['mid']=null;
-                    }else{
-                        session_start();
-                        $_SESSION['mid']=$mid;
-                    }
 
 
+
+
+
+session_start();
+$_SESSION['mid']=$mid;
                 }
-
-}catch(PDOException $exept){
-    $_SESSION['mid']=null;
-}
-
 
 echo 1;
 
