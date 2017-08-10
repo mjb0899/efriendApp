@@ -6,17 +6,18 @@
  * Time: 16:41
  */
 session_start();
-$text=$_POST['msg'];
-$uid=$_SESSION['userNum'];
-$date = date('Y-m-d H:i:s');
-$match=$_SESSION['check'];
-$mid=$_SESSION['mid'];
+$text=$_POST['msg'];//content
+$uid=$_SESSION['userNum'];//uid
+$date = date('Y-m-d H:i:s');//date
+$match=$_SESSION['check'];//match
+$mid=$_SESSION['mid'];//mid
+$cuser=$_SESSION['name'];
 //sanitize
-/*
+include ("dbConnect.php");
 if(isset($_POST['msg'])){
 
     $stmt2 = $db->prepare("INSERT into convo(content,mid,sender,start_date) VALUES (?,?,?,?)");
-    $stmt2->bind_param('siss', $text,$mid ,$_SESSION['name'],$date);
+    $stmt2->bind_param('siss', $text,$mid ,$cuser,$date);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);
@@ -25,5 +26,5 @@ if(isset($_POST['msg'])){
         echo 1;
 
 
-    }*/
-echo 1;
+    }
+
