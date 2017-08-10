@@ -217,13 +217,13 @@ $get_mid=$_SESSION['mid'];
                                                 $s_date = $row['start_date'];
 
                                             if ($sender == $_SESSION['name']) {
-                                                            echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                                            echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both;">
                                                               <div class="talktext">
                                                                   <p>'.$content.'</p>
                                                               </div>
                                                           </div>';
                                             } else {
-                                                        echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                                        echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
                                                           <div class="talktext">
                                                               <h3><?php echo $_SESSION[\'check\']?></h3>
                                                               <p>'.$content.'</p>
