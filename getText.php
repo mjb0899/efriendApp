@@ -38,7 +38,7 @@ try {
             }else{
                 session_start();
 
-                $_SESSION['mid']=null;
+                $_SESSION['mid']=0;
             }
 
 //not entering loop
