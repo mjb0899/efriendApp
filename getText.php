@@ -10,7 +10,7 @@ session_start();
 $message = $_POST['persondata'];//working
 
 $_SESSION['check']=$message; //working
-$test=$message;
+$test=$_SESSION['check'];
 
 //retrieve mid here and send back to message.j
 
