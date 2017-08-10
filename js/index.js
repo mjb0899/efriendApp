@@ -165,7 +165,7 @@ function text_getter() {
     return false
 }
 
-function send_message() {
+function send() {
      var msg=document.getElementById('msgSend').value;
 
 
