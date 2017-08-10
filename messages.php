@@ -193,7 +193,7 @@ $get_mid=$_SESSION['mid'];
            <!--RETRIEVE OLD CONVERSATIONS-->
                <!--RETRIEVE MESSAGE CONTENT HERE-->
 
-                        <div class="matter">
+                        <div class="matter" id="scroller">
 
                             <?php
                             //getting convos people

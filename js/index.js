@@ -198,3 +198,5 @@ function send() {
     );
     return false
 }
+$('#scroller').scrollTop($('#scroller')[0].scrollHeight);
+
