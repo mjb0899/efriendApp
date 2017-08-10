@@ -251,6 +251,7 @@ $get_mid=$_SESSION['mid'];
 
                                       <div class="talk-bubble tri-right btm-right messageFloaterRight">
                                           <div class="talktext">
+                                              <h3><?php echo $_SESSION['mid']?></h3>
                                               <p>Hello Buddy</p>
                                           </div>
                                       </div>
