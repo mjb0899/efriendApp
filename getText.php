@@ -18,7 +18,7 @@ $uid=$_SESSION['userNum'];
 
 try {
 
-    $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ?");
+    $stmt = $db->prepare("SELECT uid FROM users WHERE uid= ?");
     $stmt->bind_param('i', $uid);
     $stmt->execute();
     $stmt->store_result();
