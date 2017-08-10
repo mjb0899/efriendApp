@@ -47,16 +47,7 @@ if(isset($_POST['resp'])){
         //prepared
 
 
-        $stmt = $db->prepare("Select aid from accept Where cuser= ? and muser= ?");
-        $stmt->bind_param('ss', $_SESSION['name'], $match);
-        $stmt->execute();
-        $stmt->store_result();
-        $stmt->bind_result($col3);
 
-        while ($stmt->fetch()) {
-
-            if($col3==null){
-                include("dbConnect.php");
 
                 $stmt1 = $db->prepare("INSERT into accept(cuser,muser,matchdate) VALUES (?,?,?)");
                 $stmt1->bind_param('sss', $sess, $match,$date);
@@ -70,25 +61,7 @@ if(isset($_POST['resp'])){
                 $stmt1->store_result();
                 $stmt1->bind_result($col1);
 
-            }else{
-                echo '<script language="javascript">';
-                echo 'alert("match exists")';
-                echo '</script>';
-            }
 
-
-        }
-
-
-
-
-
-
-
-
-
-
-        echo 1;
 
     }elseif($resp==0){
         $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?)");
