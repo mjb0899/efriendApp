@@ -9,6 +9,8 @@ session_start();
 unset($_SESSION['errmsg']);
 unset($_SESSION['name']);
 unset($_SESSION['userNum']);
+unset($_SESSION['check']);
+unset($_SESSION['match']);
 session_destroy();
 
 header("Location:index.php");
