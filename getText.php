@@ -28,17 +28,19 @@ try {
     $stmt->store_result();
     $stmt->bind_result($col1);
 
-    while ($stmt->fetch()) {
+    if ($stmt->fetch()) {
 
         $m_id = $col1;
             if($m_id!=null){
                 session_start();
                 $_SESSION['mid']=$m_id;
             }else{
-                session_start();
-                $_SESSION['mid']=null;
+
             }
 
+    }else{
+        session_start();
+        $_SESSION['mid']=null;
     }
 
 }catch(exception $exept){
