@@ -117,7 +117,7 @@ function deny() {
                     alert("Accept saved");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                    alert("Deny saved");
+                    alert("Deny accepted");
                 }
                 else{
                     $("#test").html("Not saved.");

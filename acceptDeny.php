@@ -73,6 +73,17 @@ if(isset($_POST['resp'])){
 
 
     }elseif($resp==0){
+
+        $sql = "SELECT * from accept where cuser='$sess' and muser='$match'";
+        $result=$db->query($sql);
+        if($result->num_rows>0){
+            $count=$count+1;
+        }
+        else{
+            $count=0;
+        }
+
+
         $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?)");
         $stmt1->bind_param('sss', $sess, $match,$date);
         $stmt1->execute();
