@@ -35,40 +35,44 @@ while($row = $result -> fetch_array()){
     $sreli=$row["sreligion"];
     $sage=$row["sage"];
 
-
-    if($ssex=="z"){           //if-1
-
-        if($ssmoke=="_1"){                     //if-2e
-
-            if($sdrink=="_1"){                    //if-3
-
-                if($sreli=="_1"){                               //if-4
-
-                    array_push($base,$sage);
-                    print_r($base);
-                }else{
-                    array_push($base,$sreli);
-                    array_push($base,$sage);
-                    print_r($base);
-
-
-                }//end religion
-
-            }else{
-                array_push($base,$sdrink);
-
-            }//end drink
-
-        }else{
-            array_push($base,$ssmoke);
-
-        }//end smoke
+//push sex
+    if($ssex=="z"){
 
     }else{
         array_push($base,$ssex);
 
     }//end sex
 
+
+//push smoke
+    if($ssmoke=="_1"){                     //if-2e
+
+
+    }else{
+        array_push($base,$ssmoke);
+
+    }
+  //push drink
+    if($sdrink=="_1"){                    //if-3
+
+    }else{
+        array_push($base,$sdrink);
+
+    }//end drink
+
+
+    if($sreli=="_1"){                               //if-4
+
+
+    }else{
+        array_push($base,$sreli);
+
+
+
+    }//end religion
+
+array_push($base,$sage);
+    print_r($base);
 
 
 }
