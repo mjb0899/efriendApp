@@ -15,7 +15,7 @@ if(isset($_SESSION['name'])){
 }
 $_SESSION['match']='sarah10';
 
-//select star from search info of user
+//select star from search iinfo of user
 
 
 
