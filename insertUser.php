@@ -78,7 +78,7 @@ try{
     header("location:home.php");
 
 }catch(PDOException $e)
-{           header("location:index.php");
     echo "Error: " . $e->getMessage();
 }
 */
+header("location:index.php");
