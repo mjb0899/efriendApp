@@ -74,7 +74,7 @@ if(isset($_POST['resp'])){
 
     }elseif($resp==0){
 
-        $sql = "SELECT * from accept where cuser='$sess' and muser='$match'";
+        $sql = "SELECT * from deny where cuser='$sess' and muser='$match'";
         $result=$db->query($sql);
         if($result->num_rows>0){
             $count=$count+1;
