@@ -117,7 +117,7 @@ try{
     $stmt3->store_result();
     $stmt3->bind_result($col2);
 
-
+    header("location:features.php");
 
 }catch(PDOException $exception){
 

@@ -81,4 +81,27 @@ try{
     echo "Error: " . $e->getMessage();
 }
 */
-header("location:index.php");
+try{
+    $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ? and upassword = ?");
+    $stmt->bind_param('ss', $username, $password);
+    $stmt->execute();
+    $stmt->store_result();
+    $stmt->bind_result($col1);
+
+    while ($stmt->fetch()) {
+
+        $uid = $col1;
+        session_start();
+        $_SESSION['name'] = $username;
+        $_SESSION['userNum']=$uid;
+        //  echo $uid . "Logged in";
+        //header("refresh:5; url=index.php");
+    }
+
+         header("location:eFriendSurvey.php");
+
+
+    }catch(PDOException $e){
+    header("location:index.php");
+    }
+
