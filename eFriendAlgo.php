@@ -12,7 +12,7 @@ if(isset($_SESSION['name'])){
     header("url=pageNotFound.php");
 }
 $username=$_SESSION['name']; //set current username
-$uid=8;//get uid
+$uid=$_SESSION['userNum'];//get uid
 $_SESSION['match']='sarah10'; //get match
 include("dbConnect.php");
 try{

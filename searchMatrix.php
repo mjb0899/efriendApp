@@ -29,7 +29,7 @@ $ethnicity =$_POST["ethnicity"];
 $approach_wanted=$_POST["approach_wanted"]; //recheck
 $searchCriteria =$_POST["searchCriteria"]; //search
 $searchSex =$_POST["searchSex"]; //search
-$uid=3;
+$uid=$_SESSION['userNum'];
 
 
 //segregate likes according to #(hash)
