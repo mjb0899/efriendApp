@@ -102,8 +102,11 @@ if(count($base)==1){
 
     $age_split=$base[0];
     $splitString=explode(" - ",$age_split);
-    echo 'Age being split:';
+    echo 'Age being split:-->';
     print_r($splitString);
+
+
+    echo 'List Retrieved';
 
     //sql to search age
         $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
