@@ -52,8 +52,8 @@ if(in_array($type,$allowed_utype)) {
 
 */
 
-$stmt2 = $db->prepare("INSERT INTO users(uusername,upassword,uemail,ufname,ulname,uage,uaddress) VALUES (?,?,?,?,?,?,?)");
-$stmt2->bind_param('sssssss', $uusername,$pass,$email,$ufname,$ulname,$age,$location);
+$stmt2 = $db->prepare("INSERT INTO users(uusername,upassword,uemail,ufname,ulname,uage,uaddress,usex) VALUES (?,?,?,?,?,?,?,?)");
+$stmt2->bind_param('ssssssss', $uusername,$pass,$email,$ufname,$ulname,$age,$location,$sex);
 $stmt2->execute();
 $stmt2->store_result();
 $stmt2->bind_result($col1);

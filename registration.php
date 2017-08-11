@@ -80,8 +80,8 @@
                         <div class="form-group">
                             <label for="sel1">Select gender:</label>
                             <select class="form-control" id="sel1" name="sex">
-                                <option>Male</option>
-                                <option>Female</option>
+                                <option value="_3">Male</option>
+                                <option value="_4">Female</option>
                             </select>
                         </div>
                         <div class="form-group">
