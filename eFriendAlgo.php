@@ -83,6 +83,7 @@ if(count($base)==1){
         $base["stype"] = $sBaseType;
     }
     echo '<br>';
+    echo 'search array:-->';
     print_r($search_array);
     echo '<br>';
 
