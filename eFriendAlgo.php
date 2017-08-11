@@ -78,8 +78,8 @@ if(count($base)==1){
     while($row = $result -> fetch_array()) {
         $sBaseCode = $row["searchBaseCode"];
         $sBaseType = $row["searchTypeCode"];
-        $base["scode"] = $sBaseCode;
-        $base["stype"] = $sBaseType;
+        $search_array["scode"] = $sBaseCode;
+        $search_array["stype"] = $sBaseType;
     }
     echo '<br>';
     echo 'search array:-->';
