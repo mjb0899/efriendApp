@@ -105,7 +105,7 @@ if(count($base)==1){
     echo '<br>';
 
 
-    $age_split=$base[0];
+    $age_split=$base["age"];
     $splitString=explode(" - ",$age_split);
     echo 'Age being split:-->';
     print_r($splitString);
