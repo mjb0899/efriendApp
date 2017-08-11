@@ -83,7 +83,7 @@ try{
 */
 try{
     $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ?");
-    $stmt->bind_param('s', $username);
+    $stmt->bind_param('s', $uusername);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($col1);
