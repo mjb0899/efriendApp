@@ -95,7 +95,7 @@ if(count($base)==1){
     print_r($splitString);
 
     //sql to search age
-        $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1]and uid NOT IN ($uid)";
+        $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1]";
         $result=$db->query($sql);
         while($row = $result -> fetch_array()) {
             echo '<br>';
