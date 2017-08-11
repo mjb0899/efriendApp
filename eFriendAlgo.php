@@ -38,7 +38,7 @@ while($row = $result -> fetch_array()){
 
     if($ssex=="z"){           //if-1
 
-        if($ssmoke=="_1"){                     //if-2
+        if($ssmoke=="_1"){                     //if-2e
 
             if($sdrink=="_1"){                    //if-3
 
