@@ -261,11 +261,11 @@ $get_mid=$_SESSION['mid'];
                                           </div>
                                       </div>
 
-                            <script>
-                                $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
-                            </script>
-                        </div><!--MATTER CLOSE TAG-->
 
+                        </div><!--MATTER CLOSE TAG-->
+           <script>
+               $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
+           </script>
 
 
                <!--SEND MESSAGE HERE-->
