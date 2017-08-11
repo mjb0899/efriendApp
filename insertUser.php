@@ -82,8 +82,8 @@ try{
 }
 */
 try{
-    $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ? and upassword = ?");
-    $stmt->bind_param('ss', $username, $password);
+    $stmt = $db->prepare("SELECT uid FROM users WHERE uusername= ?");
+    $stmt->bind_param('s', $username);
     $stmt->execute();
     $stmt->store_result();
     $stmt->bind_result($col1);
@@ -92,7 +92,7 @@ try{
 
         $uid = $col1;
         session_start();
-        $_SESSION['name'] = $username;
+        $_SESSION['name'] = $uusername;
         $_SESSION['userNum']=$uid;
         //  echo $uid . "Logged in";
         //header("refresh:5; url=index.php");
