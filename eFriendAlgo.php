@@ -24,7 +24,6 @@ include("dbConnect.php");
 
 echo"PART 1 - CREATE BASE ARRAY --> ";
 
-$base=array();
 
 $sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
 $result=$db->query($sql);
@@ -41,8 +40,7 @@ while($row = $result -> fetch_array()){
     if($ssex=="z"){
 
     }else{
-        array_push($base,"x");
-        array_push($base,$ssex);
+        $base[sex]=$ssex;
 
     }//end sex
 
@@ -121,7 +119,19 @@ if(count($base)==1){
 
 
 }else{
-    echo 'escaped explode code';
+
+    echo 'Reached > 2 (base array > 2)!';
+
+    for($i=0;$i<count($base);$i++){
+
+        $base[i];
+
+    }
+
+
+
+
+
 }
 
 
