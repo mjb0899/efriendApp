@@ -89,7 +89,7 @@ if(count($base)==1){
 }else{
     echo 'Reached > 2 (base array > 2)!';
 }
-?>
+
 
 
 
@@ -195,7 +195,7 @@ while($row = $result -> fetch_array()){
     $base["age"]=$sage;
 
 //array_push($base,$sage);
-    echo '<br>';
+    echo '';
     echo"BASE ARRAY CREATED --> ";print_r($base);
 
 
@@ -207,14 +207,14 @@ while($row = $result -> fetch_array()){
 //BASE ARRAY CREATED^^^^^^
 
 //SANITIZE BASE ARRAY
-echo '<br>';
+echo '';
 echo 'SANITIZE BASE count!';
 
 if(count($base)==1){
     //comments
-    echo '<br>';
+    echo '';
     echo 'Reached=1!';
-    echo '<br>';
+    echo '';
 
 
     $age_split=$base["age"];
@@ -229,7 +229,7 @@ if(count($base)==1){
         $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
         $result=$db->query($sql);
         while($row = $result -> fetch_array()) {
-            echo '<br>';
+            echo '';
             echo "UID: ".$row["uid"];
         }
 
@@ -252,7 +252,7 @@ if(count($base)==1){
     $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and usex =$sex_matrix";
     $result=$db->query($sql);
     while($row = $result -> fetch_array()) {
-        echo '<br>';
+        echo '';
         echo "UID: ".$row["uid"];
     }
 
