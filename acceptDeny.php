@@ -83,13 +83,19 @@ if(isset($_POST['resp'])){
             $count=0;
         }
 
-
+        if($count==0){
         $stmt1 = $db->prepare("INSERT into deny(cuser,muser,matchdate) VALUES (?,?,?)");
         $stmt1->bind_param('sss', $sess, $match,$date);
         $stmt1->execute();
         $stmt1->store_result();
         $stmt1->bind_result($col1);
+
+        }
+
+
         echo 0;
+
+
 
     }else{
         echo 'x';
