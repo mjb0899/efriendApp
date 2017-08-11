@@ -22,6 +22,8 @@ $_SESSION['match']='sarah10'; //get match
 
 include("dbConnect.php");
 
+echo"PART 1 - CREATE BASE ARRAY ";
+
 $base=array();
 
 $sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
@@ -76,18 +78,27 @@ while($row = $result -> fetch_array()){
     }//end religion..
 
 array_push($base,$sage);
+    echo '<br>';
     print_r($base);
 
 
 }
 
 
+echo"BASE ARRAY CREATED ";
 
 //BASE ARRAY CREATED^^^^^^
 
 //SANITIZE BASE ARRAY
+echo '<br>';
+echo 'SANITIZE BASE count!';
 
 if(count($base)==1){
+    //comments
+    echo '<br>';
+    echo 'Reached=1!';
+    echo '<br>';
+
 
     $age_split=$base[0];
     $splitString=explode(" - ",$age_split);
