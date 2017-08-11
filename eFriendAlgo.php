@@ -81,14 +81,36 @@ array_push($base,$sage);
 
 }
 
+$age_split=$base[8];
+$splitString=explode(" - ",$age_split);
+echo 'Age being split:';
+echo $splitString;
+
 //BASE ARRAY CREATED^^^^^^
 
 //SANITIZE BASE ARRAY
 
-if(count($base)>1){
+if(count($base)==1){
+
+    $age_split=$base[0];
+    $splitString=explode(" - ",$age_split);
+    echo 'Age being split:';
+    echo $splitString;
+
+
+    /*
+    //sql to search age
+        $sql = "SELECT uid from user_search where uid='$uid'";
+        $result=$db->query($sql);
+        while($row = $result -> fetch_array()) {
+        }
+
+    */
+
+
+
+}else{
     //x//s//d//r//
-
-
 }
 
 
