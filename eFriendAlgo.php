@@ -27,7 +27,7 @@ $sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$ui
 $result=$db->query($sql);
 
 while($row = $result -> fetch_array()){
-    echo "SEX: ".$row["ssex"]. "SMOKE".$row["ssmoke"]. "DRINK".$row["sreligion"]."RELIGION".$row["sage"]."AGE";
+    echo "SEX: ".$row["ssex"]. " /SMOKE ".$row["ssmoke"]. " /DRINK".$row["sdrink"]." /RELIGION".$row["sreligion"]." /AGE".$row["sage"];
 
 }
 
