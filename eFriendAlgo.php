@@ -22,7 +22,7 @@ $_SESSION['match']='sarah10'; //get match
 
 include("dbConnect.php");
 
-echo"PART 1 - CREATE BASE ARRAY ";
+echo"PART 1 - CREATE BASE ARRAY --> ";
 
 $base=array();
 
@@ -79,13 +79,13 @@ while($row = $result -> fetch_array()){
 
 array_push($base,$sage);
     echo '<br>';
-    print_r($base);
+    echo"BASE ARRAY CREATED --> ";print_r($base);
 
 
 }
 
 
-echo"BASE ARRAY CREATED ";
+
 
 //BASE ARRAY CREATED^^^^^^
 
