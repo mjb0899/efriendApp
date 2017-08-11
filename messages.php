@@ -56,7 +56,7 @@ $get_mid=$_SESSION['mid'];
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
-                     $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
+              //       $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
 
 
                  } else if (d == 0) {
