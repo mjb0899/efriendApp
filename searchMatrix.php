@@ -92,7 +92,7 @@ echo '\n Your ambition is'.$ambition;
 ;
 
 $userBaseCode=$smoke.$drink.$religion;
-$userTypeCode=$ptype.$self;
+$userTypeCode=$ptype.$self.$ambition;
 
 
 
