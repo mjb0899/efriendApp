@@ -343,17 +343,17 @@
                         <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
                 <h1>PART 2</h1>
                   <ol>
-                    <li>Does it matter if your friend/connection smokes?</li>
+                    <li>Is it okay if your friend/connection smokes?</li>
                     <select name="searchSmoke">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
-                    <li>Does it matter if your friend/connection drinks?</li>
+                    <li>Is it okay if your friend/connection drinks?</li>
                     <select name="searchDrink">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
-                    <li>Does it matter if your friend/connection is religious?</li>
+                    <li>Is it okay if your friend/connection is religious?</li>
                     <select name="searchReligion">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>

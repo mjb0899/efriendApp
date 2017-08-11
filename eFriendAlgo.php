@@ -22,16 +22,58 @@ $_SESSION['match']='sarah10'; //get match
 
 include("dbConnect.php");
 
+$base=array();
 
 $sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
 $result=$db->query($sql);
-
 while($row = $result -> fetch_array()){
     echo "SEX: ".$row["ssex"]. " /SMOKE ".$row["ssmoke"]. " /DRINK".$row["sdrink"]." /RELIGION".$row["sreligion"]." /AGE".$row["sage"];
 
+    $ssex=$row["ssex"];
+    $ssmoke=$row["ssmoke"];
+    $sdrink=$row["sdrink"];
+    $sreli=$row["sreligion"];
+    $sage=$row["sage"];
+
+
+    if($ssex=="z"){           //if-1
+
+        if($ssmoke=="_1"){                     //if-2
+
+            if($sdrink=="_1"){                    //if-3
+
+                if($sreli=="_1"){                               //if-4
+
+                    array_push($base,$sage);
+                    print_r($base);
+                }else{
+                    array_push($base,$sreli);
+                    array_push($base,$sage);
+                    print_r($base);
+
+
+                }//end religion
+
+            }else{
+                array_push($base,$sdrink);
+
+            }//end drink
+
+        }else{
+            array_push($base,$ssmoke);
+
+        }//end smoke
+
+    }else{
+        array_push($base,$ssex);
+
+    }//end sex
+
+
+
 }
 
-//select
+//create array
 
 
 
