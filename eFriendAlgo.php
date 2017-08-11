@@ -18,7 +18,7 @@ $username=$_SESSION['name']; //set current username
 $uid=$_SESSION['userNum'];//get uid
 
 
-$_SESSION['match']='sarah10'; //get match
+//$_SESSION['match']='sarah10'; //get match
 
 include("dbConnect.php");
 
