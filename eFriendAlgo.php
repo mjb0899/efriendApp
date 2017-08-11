@@ -24,7 +24,7 @@ include("dbConnect.php");
 
 echo"PART 1 - CREATE BASE ARRAY --> ";
 
-
+$base= array();
 $sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
 $result=$db->query($sql);
 while($row = $result -> fetch_array()){
@@ -40,7 +40,7 @@ while($row = $result -> fetch_array()){
     if($ssex=="z"){
 
     }else{
-        $base[sex]=$ssex;
+        $base["sex"]=$ssex;
 
     }//end sex
 
@@ -50,16 +50,19 @@ while($row = $result -> fetch_array()){
 
 
     }else{
-        array_push($base,"s");
-        array_push($base,$ssmoke);
+        $base["smoke"]=$ssmoke;
+
+      //  array_push($base,"s");
+     //   array_push($base,$ssmoke);
 
     }
   //push drink
     if($sdrink=="_1"){                    //if-3
 
     }else{
-        array_push($base,"d");
-        array_push($base,$sdrink);
+        $base["drink"]=$sdrink;
+        //array_push($base,"d");
+     //   array_push($base,$sdrink);
 
     }//end drink
 
@@ -68,14 +71,18 @@ while($row = $result -> fetch_array()){
 
 
     }else{
-        array_push($base,"r");
-        array_push($base,$sreli);
+        $base["reli"]=$sreli;
+
+        // array_push($base,"r");
+     //   array_push($base,$sreli);
 
 
 
     }//end religion..
 
-array_push($base,$sage);
+    $base["age"]=$sage;
+
+//array_push($base,$sage);
     echo '<br>';
     echo"BASE ARRAY CREATED --> ";print_r($base);
 
