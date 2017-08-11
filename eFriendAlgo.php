@@ -11,11 +11,10 @@ if(isset($_SESSION['name'])){
     $username=$_SESSION['name'];
 }else{
     header("url=pageNotFound.php");
-
 }
 $username=$_SESSION['name']; //set current username
 $uid=$_SESSION['userNum'];//get uid
-$_SESSION['match']='sarah10'; //get match
+//$_SESSION['match']='sarah10'; //get match
 
 include("dbConnect.php");
 
@@ -23,7 +22,7 @@ echo"PART 1 - CREATE BASE ARRAY --> ";
 
 $base= array();
 
-$sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
+$sql = "SELECT * from user_search where uid='$uid'";
 $result=$db->query($sql);
 while($row = $result -> fetch_array()){
     echo "SEX: ".$row["ssex"]. " /SMOKE ".$row["ssmoke"]. " /DRINK".$row["sdrink"]." /RELIGION".$row["sreligion"]." /AGE".$row["sage"];
