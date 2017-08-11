@@ -84,7 +84,7 @@ array_push($base,$sage);
 $age_split=$base[8];
 $splitString=explode(" - ",$age_split);
 echo 'Age being split:';
-echo $splitString;
+print_r(array_values($splitString));
 
 //BASE ARRAY CREATED^^^^^^
 
