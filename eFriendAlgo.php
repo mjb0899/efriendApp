@@ -13,6 +13,7 @@ if(isset($_SESSION['name'])){
     header("url=pageNotFound.php");
 
 }
+$_SESSION['match']='sarah10';
 
 //select star from search info of user
 
