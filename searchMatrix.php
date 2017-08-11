@@ -125,4 +125,3 @@ try{
     echo 'in catch';
 }
 
-echo 'tried loop';
