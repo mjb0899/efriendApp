@@ -56,8 +56,8 @@ $get_mid=$_SESSION['mid'];
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
-                     var element = document.getElementById("scroller");
-                     element.scrollTop = element.scrollHeight;
+                     $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
+
 
                  } else if (d == 0) {
 
@@ -301,4 +301,7 @@ $get_mid=$_SESSION['mid'];
     </div>
 </footer>
 </body>
+<script>
+
+</script>
 </html>
