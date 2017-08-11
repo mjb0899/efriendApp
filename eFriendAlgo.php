@@ -76,7 +76,6 @@ if(count($base)==1){
     $sql = "SELECT searchBaseCode,searchTypeCode from user_search where uid='$uid'";
     $result=$db->query($sql);
     while($row = $result -> fetch_array()) {
-        echo "SEX: " . $row["ssex"] . " /AGE" . $row["sage"];
         $sBaseCode = $row["searchBaseCode"];
         $sBaseType = $row["searchTypeCode"];
         $base["scode"] = $sBaseCode;
