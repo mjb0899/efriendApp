@@ -129,11 +129,6 @@ if(count($base)==1){
 
     echo 'Reached > 2 (base array > 2)!';
 
-    for($i=0;$i<count($base);$i++){
-
-        $base[i];
-
-    }
 
 
 
