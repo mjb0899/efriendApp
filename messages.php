@@ -76,6 +76,23 @@ $get_mid=$_SESSION['mid'];
         });
 
 </script>
+    <script>
+        $(document).ready(function () {
+
+            $("#scroller").on("load", function (e) {
+                e.preventDefault();
+
+
+                $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
+
+
+
+            });
+
+        });
+
+
+    </script>
 
 </head>
 <body>
@@ -263,7 +280,7 @@ $get_mid=$_SESSION['mid'];
 
 
                         </div><!--MATTER CLOSE TAG-->
-           <script>
+           <script type="text/javascript">
                $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
            </script>
 
