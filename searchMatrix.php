@@ -89,6 +89,10 @@ if($value1=="r" and $value2=="ww" and $value3=="a"){
 
 echo '\n Your ambition is'.$ambition;
 
+;
+
+$userBaseCode=$smoke.$drink.$religion;
+$userTypeCode=$ptype.$self;
 
 
 
@@ -98,8 +102,8 @@ echo '\n Your ambition is'.$ambition;
 try{
     //adding to personal info
     echo 'In try loop';
-    $stmt2 = $db->prepare("INSERT INTO user_info(uid,ptype,likes,bio,weekend,workMeter,self,approach_game,smoke,drink,religion,ethnicity,approach_wanted,searchCriteria,searchSex,ambition) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
-    $stmt2->bind_param('isssssssssssssss', $uid,$ptype,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex,$ambition);
+    $stmt2 = $db->prepare("INSERT INTO user_info(uid,ptype,likes,bio,weekend,workMeter,self,approach_game,smoke,drink,religion,ethnicity,approach_wanted,searchCriteria,searchSex,ambition,userBaseCode,userTypeCode) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+    $stmt2->bind_param('isssssssssssssssss', $uid,$ptype,$likes,$bio,$weekend,$workMeter,$self,$approach_game,$smoke,$drink,$religion,$ethnicity,$approach_wanted,$searchCriteria,$searchSex,$ambition,$userBaseCode,$userTypeCode);
     $stmt2->execute();
     $stmt2->store_result();
     $stmt2->bind_result($col1);

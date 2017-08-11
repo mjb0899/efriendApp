@@ -126,9 +126,8 @@ if(count($base)==1){
 
 
 }else{
-
+    $age_split=$base["age"];
     echo 'Reached > 2 (base array > 2)!';
-
 
 
 
