@@ -13,11 +13,23 @@ if(isset($_SESSION['name'])){
     header("url=pageNotFound.php");
 
 }
-$_SESSION['match']='sarah10';
+$username=$_SESSION['name']; //set current username
 
-//select star from search iinfo of user
+$uid=$_SESSION['userNum'];//get uid
 
 
+$_SESSION['match']='sarah10'; //get match
+
+include("dbConnect.php");
+
+
+$sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
+$result=$db->query($sql);
+
+while($row = $result -> fetch_array()){
+    echo "SEX: ".$row["ssex"]. "SMOKE".$row["ssmoke"]. "DRINK".$row["sreligion"]."RELIGION".$row["sage"]."AGE";
+
+}
 
 //select
 
