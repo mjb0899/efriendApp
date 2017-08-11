@@ -73,7 +73,7 @@ while($row = $result -> fetch_array()){
 
 
 
-    }//end religion
+    }//end religion..
 
 array_push($base,$sage);
     print_r($base);
