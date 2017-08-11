@@ -88,6 +88,21 @@ if(count($base)==1){
     }
 }else{
     echo 'Reached > 2 (base array > 2)!';
+    $age_split=$base["age"];
+    $splitString=explode(" - ",$age_split);
+    echo 'Age being split:-->';
+    print_r($splitString);
+
+    $sex_matrix=$base["sex"];
+
+
+    echo 'List Retrieved';
+    $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and usex =$sex_matrix";
+    $result=$db->query($sql);
+    while($row = $result -> fetch_array()) {
+        echo '';
+        echo "UID: ".$row["uid"];
+    }
 }
 
 
