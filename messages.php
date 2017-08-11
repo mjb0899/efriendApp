@@ -197,9 +197,7 @@ $get_mid=$_SESSION['mid'];
 
                         <div class="matter" id="scroller">
 
-                            <script>
-                                $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
-                            </script>
+
                             <?php
                             //getting convos people
 
