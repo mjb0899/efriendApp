@@ -17,7 +17,7 @@ $uusername=$_POST["username"];
 $ufname=$_POST["fname"];
 $ulname=$_POST["lname"];
 $email=$_POST["email"];
-//$type=$_POST['utype'];
+
 $pass = md5($_POST["pass"]);
 $age=$_POST["age"];
 $location=$_POST["location"];
