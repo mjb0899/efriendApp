@@ -14,9 +14,14 @@ if(isset($_SESSION['name'])){
 $username=$_SESSION['name']; //set current username
 $uid=$_SESSION['userNum'];//get uid
 $_SESSION['match']='sarah10'; //get match
-include("dbConnect.php");
-try{
+include("dbConnect.php"); //connect db
 
+
+$count_match=0;
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXX PART 1 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+try{
     echo"PART 1 - CREATE BASE ARRAY --> ";
     $base= array();
     $sql = "SELECT ssex,sage from user_search where uid='$uid'";
@@ -25,38 +30,71 @@ try{
         echo "SEX: " . $row["ssex"] ." /AGE" . $row["sage"];
         $ssex = $row["ssex"];
         $sage = $row["sage"];
-//push sex
+
         if ($ssex == "z") {
         } else {
-            $base["sex"] = $ssex;
+            $base["sex"] = $ssex; // add sex to array if exists
         }//end sex
 
-        $base["age"] = $sage;
+        $base["age"] = $sage; //add age to array
 
         echo '<br>';
         echo "BASE ARRAY CREATED --> ";
         print_r($base);
     }
-    }catch(PDOException $exc){
-        echo "error";
-    }
-
-
+}catch(PDOException $exc){
+    echo "error";
+}
 
 //BASE ARRAY CREATED^^^^^^
-//SANITIZE BASE ARRAY
+
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXX PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+//CHECK ARRAY COUNT
 echo '<br>';
-echo 'SANITIZE BASE count!';
+echo 'CHECK ARRAY COUNT!';
+echo '<br>';
+
 if(count($base)==1){
     //comments
     echo '<br>';
-    echo 'Reached=1!';
+    echo 'Count=1!';
     echo '<br>';
+
+    //split difference of ages
     $age_split=$base["age"];
     $splitString=explode(" - ",$age_split);
     echo 'Age being split:-->';
     print_r($splitString);
+
+
+    //---------------------------get search codes of current user---------
+    $search_array= array();
+
+
+    $sql = "SELECT searchBaseCode,searchTypeCode from user_search where uid='$uid'";
+    $result=$db->query($sql);
+    while($row = $result -> fetch_array()) {
+        echo "SEX: " . $row["ssex"] . " /AGE" . $row["sage"];
+        $sBaseCode = $row["searchBaseCode"];
+        $sBaseType = $row["searchTypeCode"];
+        $base["scode"] = $sBaseCode;
+        $base["stype"] = $sBaseType;
+    }
+    echo '<br>';
+    print_r($search_array);
+    echo '<br>';
+
+    //------------------------------ sql variances -----------------------
+    echo 'Running SQL...';
     echo 'List Retrieved';
+
+
+
+
+
+
     //sql to search age
     $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
     $result=$db->query($sql);
@@ -64,9 +102,20 @@ if(count($base)==1){
         echo '<br>';
         echo "UID: ".$row["uid"];
     }
+
+
+
+
+
+
+
+
 }else{
-    echo 'Reached > 2!';
     echo '<br>';
+    echo 'Count>1!';
+    echo '<br>';
+
+    //split difference of ages
     $age_split=$base["age"];
     $splitString=explode(" - ",$age_split);
     echo 'Age being split:-->';
