@@ -137,7 +137,7 @@ if(count($base)==1){
 
 
     echo 'List Retrieved';
-    $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
+    $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and usex =$sex_matrix";
     $result=$db->query($sql);
     while($row = $result -> fetch_array()) {
         echo '<br>';
