@@ -14,17 +14,15 @@ if(isset($_SESSION['name'])){
 
 }
 $username=$_SESSION['name']; //set current username
-
 $uid=$_SESSION['userNum'];//get uid
-
-
-//$_SESSION['match']='sarah10'; //get match
+$_SESSION['match']='sarah10'; //get match
 
 include("dbConnect.php");
 
 echo"PART 1 - CREATE BASE ARRAY --> ";
 
 $base= array();
+
 $sql = "SELECT ssex,ssmoke,sdrink,sreligion,sage from user_search where uid='$uid'";
 $result=$db->query($sql);
 while($row = $result -> fetch_array()){
