@@ -39,6 +39,7 @@ while($row = $result -> fetch_array()){
     if($ssex=="z"){
 
     }else{
+        array_push($base,"x");
         array_push($base,$ssex);
 
     }//end sex
@@ -49,6 +50,7 @@ while($row = $result -> fetch_array()){
 
 
     }else{
+        array_push($base,"s");
         array_push($base,$ssmoke);
 
     }
@@ -56,6 +58,7 @@ while($row = $result -> fetch_array()){
     if($sdrink=="_1"){                    //if-3
 
     }else{
+        array_push($base,"d");
         array_push($base,$sdrink);
 
     }//end drink
@@ -65,6 +68,7 @@ while($row = $result -> fetch_array()){
 
 
     }else{
+        array_push($base,"r");
         array_push($base,$sreli);
 
 
@@ -77,13 +81,17 @@ array_push($base,$sage);
 
 }
 
-//create array
+//BASE ARRAY CREATED^^^^^^
+
+//SANITIZE BASE ARRAY
+
+if(count($base)>1){
+    //x//s//d//r//
 
 
+}
 
 
-
-l
 ?>
 
 
