@@ -273,7 +273,7 @@ if(count($base)==1){
             echo '<br>';
             echo 'perfect match loop';
             echo '<br>';
-            echo 'setmatch:';
+            echo 'setmatc4h:';
             $_SESSION['match']=$row["uusername"];
             echo '<br>';
             echo $_SESSION['match'];
