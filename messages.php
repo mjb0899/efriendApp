@@ -10,6 +10,7 @@ session_start();
 if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
+$username=$_SESSION['name'];
 $uid=$_SESSION['userNum'];
 $get_mid=$_SESSION['mid'];//match id
 ?>
@@ -148,7 +149,7 @@ $get_mid=$_SESSION['mid'];//match id
 
         include("dbConnect.php");
 
-        $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid'";
+        $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid' or match_uname='$username'";
         $result = $db -> query($sql_query);
         while($row = $result -> fetch_array()) {
             $mid = $row['mid'];
