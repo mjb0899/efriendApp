@@ -166,7 +166,7 @@ $username=$_SESSION['name'];
 
                 <!-- Microformats! -->
 
-                <h1 class="fn">C'thulhu</h1>
+                <h1 class="fn"><?php echo $_SESSION['match'] ?></h1>
 
                 <p>
                     <!--ADD LOCATION HERE-->
