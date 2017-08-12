@@ -11,7 +11,7 @@ if(!isset($_SESSION['name'])){
     header("location:index.php");
 }
 $uid=$_SESSION['userNum'];
-$get_mid=$_SESSION['mid'];
+$get_mid=$_SESSION['mid'];//match id
 ?>
 <!DOCTYPE html>
 <html lang="en">

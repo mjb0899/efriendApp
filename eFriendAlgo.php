@@ -339,12 +339,12 @@ if(count($base)==1){
 
 //------------------------------ Check if session set and redirect-----------------------
 
-
+/*
 if(isset($_SESSION['match'])){
     header("location:efriendMatcher.php");
 }else{
     header("location:pageNotFound.html");
-}
+}*/
 
 
 
