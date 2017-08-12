@@ -283,7 +283,7 @@ if(count($base)==1){
             echo '<br>';
 
             //simple potential match ----------------------2
-            $sql = "SELECT uid,uusername from matches_final where (uage BETWEEN $splitString[0] AND $splitString[1]) AND  not uid in (11) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype'  and uusername not in ( '" . implode($matches_made, "', '") . "' )  Limit 1";
+            $sql = "SELECT uid,uusername from matches_final where (uage BETWEEN $splitString[0] AND $splitString[1]) AND  uid NOT IN (11) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype'  and uusername not in ( '" . implode($matches_made, "', '") . "' )  Limit 1";
             $result = $db->query($sql);
             while ($row = $result->fetch_array()) {
                 echo '<br>';
