@@ -16,7 +16,7 @@ if(isset($_SESSION['name'])){
 
 }
 $username=$_SESSION['name'];
-include("eFriendAlgo.php"); // get match session set here
+//include("eFriendAlgo.php"); // get match session set here !!!!!!!!IMPP
 //get uid from table
 //go to search info and get data
 //add info code to array and
@@ -108,6 +108,7 @@ include("eFriendAlgo.php"); // get match session set here
 
             <!--CAROUSEL-->
             <h2>We've Found You A Friend!!</h2>
+            <!--  GET PATH OF IMAGES  -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
