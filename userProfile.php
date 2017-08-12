@@ -239,7 +239,22 @@ if(isset($_SESSION['name'])){
                             </div>';
             }
             ?>
-            <h4>Morrison Barreto</h4>
+            <?php
+            include("dbConnect.php");
+            $sql_query = "Select ufname,ulname,uemail,uage,usex,uaddress from users Where uusername='$username'";
+            $result = $db -> query($sql_query);
+            while($row = $result -> fetch_array()){
+                $firstname= $row['ufname'];
+                $lastname= $row['ulname'];
+                $email= $row['uemail'];
+                $age= $row['uage'];
+                $sex= $row['usex'];
+                $address= $row['uaddress'];
+            }
+            ?>
+            <h4>
+                <?php echo $firstname." ".$lastname?>
+            </h4>
         </div>
         <div class="div_middle">
             <p>Auto Generated Bio </p>
@@ -259,19 +274,7 @@ if(isset($_SESSION['name'])){
                     <h3><?php echo $username ?></h3>
 
 
-                    <?php
-                    include("dbConnect.php");
-                    $sql_query = "Select ufname,ulname,uemail,uage,usex,uaddress from users Where uusername='$username'";
-                    $result = $db -> query($sql_query);
-                    while($row = $result -> fetch_array()){
-                        $firstname= $row['ufname'];
-                        $lastname= $row['ulname'];
-                        $email= $row['uemail'];
-                        $age= $row['uage'];
-                        $sex= $row['usex'];
-                        $address= $row['uaddress'];
-                    }
-                    ?>
+
                     <form>
                         <table style="width:100%">
                             <tr>
