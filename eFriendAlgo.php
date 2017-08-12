@@ -106,7 +106,7 @@ if(count($base)==1){
     $result=$db->query($sql);
     while($row = $result -> fetch_array()) {
         echo '<br>';
-        echo "UID: ".$row["uid"];
+        echo "UID:: ".$row["uid"];
     }
 
 */
