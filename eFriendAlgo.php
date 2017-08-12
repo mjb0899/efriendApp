@@ -11,13 +11,17 @@ if(isset($_SESSION['name'])){
 }else{
     header("url=pageNotFound.php");
 }
+
+//--------------------getvar
 $username=$_SESSION['name']; //set current username
 $uid=$_SESSION['userNum'];//get uid
 $_SESSION['match']='sarah10'; //get match
+
+
 include("dbConnect.php"); //connect db
 
 
-$count_match=0;
+$count=0; //important!!!!!!!
 
 //XXXXXXXXXXXXXXXXXXXXXXXXXXXXX PART 1 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
@@ -57,59 +61,87 @@ echo 'CHECK ARRAY COUNT!';
 echo '<br>';
 
 if(count($base)==1){
-    //comments
-    echo '<br>';
-    echo 'Count=1!';
-    echo '<br>';
-
-    //split difference of ages
-    $age_split=$base["age"];
-    $splitString=explode(" - ",$age_split);
-    echo 'Age being split:-->';
-    print_r($splitString);
-
-
-    //---------------------------get search codes of current user---------
-    $search_array= array();
-
-
-    $sql = "SELECT searchBaseCode,searchTypeCode from user_search where uid='$uid'";
-    $result=$db->query($sql);
-    while($row = $result -> fetch_array()) {
-        $sBaseCode = $row["searchBaseCode"];
-        $sBaseType = $row["searchTypeCode"];
-        $search_array["scode"] = $sBaseCode;
-        $search_array["stype"] = $sBaseType;
-    }
-    echo '<br>';
-    echo 'search array:-->';
-    print_r($search_array);
-    echo '<br>';
-
-    //------------------------------ sql variances -----------------------
-    echo 'Running SQL...';
-    echo 'List Retrieved';
-
-
-    //updated
-    $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
-    $result=$db->query($sql);
-    while($row = $result -> fetch_array()) {
+        //comments
         echo '<br>';
-        echo "UID: ".$row["uid"];
-    }
-
-
-/* //working
-    //sql to search age
-    $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
-    $result=$db->query($sql);
-    while($row = $result -> fetch_array()) {
+        echo 'Count=1!';
         echo '<br>';
-        echo "UID:: ".$row["uid"];
-    }
 
-*/
+        //split difference of ages
+        $age_split=$base["age"];
+        $splitString=explode(" - ",$age_split);
+        echo 'Age being split:-->';
+        print_r($splitString);
+
+
+        //---------------------------get search codes of current user---------
+        $search_array= array();
+
+
+        $sql = "SELECT searchBaseCode,searchTypeCode from user_search where uid='$uid'";
+        $result=$db->query($sql);
+        while($row = $result -> fetch_array()) {
+            $sBaseCode = $row["searchBaseCode"];
+            $sBaseType = $row["searchTypeCode"];
+            $search_array["scode"] = $sBaseCode;
+            $search_array["stype"] = $sBaseType;
+        }
+        echo '<br>';
+        echo 'search array:-->';
+        print_r($search_array);
+        echo '<br>';
+
+        //------------------------------ sql variances -----------------------
+        echo 'Running SQL...';
+        echo 'List Retrieved';
+
+        $scode=$search_array["scode"];
+        $stype=$search_array["stype"];
+
+
+        //specialized perfect match -----------------1
+        $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' and searchTypeCode LIKE '$stype' ";
+        $result=$db->query($sql);
+        while($row = $result -> fetch_array()) {
+            echo '<br>';
+            echo "UID: ".$row["uid"];
+            $count=$count+1;
+            echo '<br>';
+            echo $count;
+            echo '<br>';
+            echo 'perfect match loop';
+            echo '<br>';
+        }
+        if($count==0) {
+            //simple potential match ----------------------2
+            $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' ";
+            $result = $db->query($sql);
+            while ($row = $result->fetch_array()) {
+                echo '<br>';
+                echo "UID: " . $row["uid"];
+                echo '<br>';
+                $count = $count + 1;
+                echo $count;
+                echo '<br>';
+                echo 'potential match loop';
+                echo '<br>';
+            }
+        }
+
+        //generic match -----------------------------3
+        echo $count;
+        if($count==0){
+        $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
+        $result=$db->query($sql);
+        while($row = $result -> fetch_array()) {
+            echo '<br>';
+            echo "UID: ".$row["uid"];
+            echo '<br>';
+            echo 'generic loop';
+            echo '<br>';
+          }
+        }
+
+        //------------------------------ end sql variances -----------------------
 
 
 
@@ -117,27 +149,114 @@ if(count($base)==1){
 
 
 }else{
-    echo '<br>';
-    echo 'Count>1!';
-    echo '<br>';
+        echo '<br>';
+        echo 'Count>1!';
+        echo '<br>';
 
-    //split difference of ages
-    $age_split=$base["age"];
-    $splitString=explode(" - ",$age_split);
-    echo 'Age being split:-->';
-    print_r($splitString);
 
-    $sex_matrix=$base["sex"];
-    echo 'List Retrieved';
-    echo '<br>';
-    echo 'Running SQL...';
-    echo '<br>';
+        //split difference of ages
+        $age_split=$base["age"];
+        $splitString=explode(" - ",$age_split);
+        echo 'Age being split:-->';
+        print_r($splitString);
+
+        $sex_matrix=$base["sex"];
+        echo 'List Retrieved';
+        echo '<br>';
+        echo 'Running SQL...';
+        echo '<br>';
+
+        //---------------------------get search codes of current user---------
+        $search_array= array();
+
+
+        $sql = "SELECT searchBaseCode,searchTypeCode from user_search where uid='$uid'";
+        $result=$db->query($sql);
+        while($row = $result -> fetch_array()) {
+            $sBaseCode = $row["searchBaseCode"];
+            $sBaseType = $row["searchTypeCode"];
+            $search_array["scode"] = $sBaseCode;
+            $search_array["stype"] = $sBaseType;
+        }
+        echo '<br>';
+        echo 'search array:-->';
+        print_r($search_array);
+        echo '<br>';
+
+        //------------------------------ sql variances -----------------------
+        echo 'Running SQL...';
+        echo 'List Retrieved';
+
+        $scode=$search_array["scode"];
+        $stype=$search_array["stype"];
+
+
+        //specialized perfect match -----------------1
+        $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)and usex='$sex_matrix' and searchBaseCode LIKE '$scode' and searchTypeCode LIKE '$stype' ";
+        $result=$db->query($sql);
+        while($row = $result -> fetch_array()) {
+            echo '<br>';
+            echo "UID: ".$row["uid"];
+            $count=$count+1;
+            echo '<br>';
+            echo $count;
+            echo '<br>';
+            echo 'perfect match loop';
+            echo '<br>';
+        }
+        if($count==0) {
+            //simple potential match ----------------------2
+            $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND  uid not in ($uid) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' ";
+            $result = $db->query($sql);
+            while ($row = $result->fetch_array()) {
+                echo '<br>';
+                echo "UID: " . $row["uid"];
+                echo '<br>';
+                $count = $count + 1;
+                echo $count;
+                echo '<br>';
+                echo 'potential match loop';
+                echo '<br>';
+            }
+        }
+
+        //generic match -----------------------------3
+        echo $count;
+        if($count==0){
+            $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND usex='$sex_matrix' AND  uid not in ($uid)";
+            $result=$db->query($sql);
+            while($row = $result -> fetch_array()) {
+                echo '<br>';
+                echo "UID: ".$row["uid"];
+                echo '<br>';
+                echo 'generic loop';
+                echo '<br>';
+            }
+        }
+
+        //------------------------------ end sql variances -----------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
     $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and usex =$sex_matrix";
     $result=$db->query($sql);
     while($row = $result -> fetch_array()) {
         echo '';
         echo "UID: ".$row["uid"];
-    }
+    }*/
 }
 
 
