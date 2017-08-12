@@ -15,7 +15,7 @@ if(isset($_SESSION['name'])){
 //--------------------getvar
 $username=$_SESSION['name']; //set current username
 $uid=$_SESSION['userNum'];//get uid
-$_SESSION['match']='sarah10'; //get match
+$_SESSION['match']=null; //get match
 
 
 include("dbConnect.php"); //connect db
@@ -128,7 +128,7 @@ if(count($base)==1){
 
 
         //specialized perfect match -----------------1
-        $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' and searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
+        $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' and searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
         $result=$db->query($sql);
         while($row = $result -> fetch_array()) {
             echo '<br>';
@@ -139,14 +139,16 @@ if(count($base)==1){
             echo '<br>';
             echo 'perfect match loop';
             echo '<br>';
-
-
+            echo 'setmatch:';
+            $_SESSION['match']=$row["uusername"];
+            echo '<br>';
+            echo $_SESSION['match'];
 
         }
 
         if($count==0) {
             //simple potential match ----------------------2
-            $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
+            $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
             $result = $db->query($sql);
             while ($row = $result->fetch_array()) {
                 echo '<br>';
@@ -157,13 +159,17 @@ if(count($base)==1){
                 echo '<br>';
                 echo 'potential match loop';
                 echo '<br>';
+                echo 'setmatch:';
+                $_SESSION['match']=$row["uusername"];
+                echo '<br>';
+                echo $_SESSION['match'];
             }
         }
 
         //generic match -----------------------------3
         echo $count;
         if($count==0){
-        $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1";
+        $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1";
         $result=$db->query($sql);
         while($row = $result -> fetch_array()) {
             echo '<br>';
@@ -171,7 +177,11 @@ if(count($base)==1){
             echo '<br>';
             echo 'generic loop';
             echo '<br>';
-          }
+            echo 'setmatch:';
+            $_SESSION['match']=$row["uusername"];
+            echo '<br>';
+            echo $_SESSION['match'];
+        }
         }
 
         //------------------------------ end sql variances -----------------------
@@ -252,7 +262,7 @@ if(count($base)==1){
 
 
         //specialized perfect match -----------------1
-        $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)and usex='$sex_matrix' and searchBaseCode LIKE '$scode' and searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
+        $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)and usex='$sex_matrix' and searchBaseCode LIKE '$scode' and searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
         $result=$db->query($sql);
         while($row = $result -> fetch_array()) {
             echo '<br>';
@@ -263,10 +273,14 @@ if(count($base)==1){
             echo '<br>';
             echo 'perfect match loop';
             echo '<br>';
+            echo 'setmatch:';
+            $_SESSION['match']=$row["uusername"];
+            echo '<br>';
+            echo $_SESSION['match'];
         }
         if($count==0) { ///testing here
             //simple potential match ----------------------2
-            $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND  uid not in ($uid) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' 
+            $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND  uid not in ($uid) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' 
                     and uusername not in ( '" . implode($matches_made, "', '") . "' )  Limit 1";
             $result = $db->query($sql);
             while ($row = $result->fetch_array()) {
@@ -278,13 +292,17 @@ if(count($base)==1){
                 echo '<br>';
                 echo 'potential match loop';
                 echo '<br>';
+                echo 'setmatch:';
+                $_SESSION['match']=$row["uusername"];
+                echo '<br>';
+                echo $_SESSION['match'];
             }
         }
 
         //generic match -----------------------------3
         echo $count;
         if($count==0){
-            $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND usex='$sex_matrix' AND  uid not in ($uid) and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1";
+            $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND usex='$sex_matrix' AND  uid not in ($uid) and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1";
             $result=$db->query($sql);
             while($row = $result -> fetch_array()) {
                 echo '<br>';
@@ -292,6 +310,10 @@ if(count($base)==1){
                 echo '<br>';
                 echo 'generic loop';
                 echo '<br>';
+                echo 'setmatch:';
+                $_SESSION['match']=$row["uusername"];
+                echo '<br>';
+                echo $_SESSION['match'];
             }
         }
 
