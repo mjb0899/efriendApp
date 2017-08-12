@@ -149,7 +149,7 @@ $get_mid=$_SESSION['mid'];//match id
 
         include("dbConnect.php");
 
-        $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid' or match_uname='$username'";
+        $sql_query = "Select mid,match_uname,start_date from message Where uid='$uid' ";
         $result = $db -> query($sql_query);
         while($row = $result -> fetch_array()) {
             $mid = $row['mid'];
@@ -167,6 +167,41 @@ $get_mid=$_SESSION['mid'];//match id
 
 
         }
+
+
+         $sql_query = "Select mid,uusername,start_date from message Where match_uname='$username' ";
+        $result = $db -> query($sql_query);
+        while($row = $result -> fetch_array()) {
+            $mid = $row['mid'];
+            $m_convo = $row['uusername'];
+            $s_date = $row['start_date'];
+            echo '<script language="javascript">';
+            echo 'alert("'.$mid."//".$m_convo."//".$s_date.'")';
+            echo '</script>';
+
+            echo' <div>
+            <hr>
+             <a href="javascript:void();" class="tdelete" data-nm="'.$m_convo.'"> '. $m_convo. ' </a>
+            <hr>
+            </div>';
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         ?>
 
 
