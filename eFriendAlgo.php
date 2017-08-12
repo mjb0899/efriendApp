@@ -249,6 +249,7 @@ if(count($base)==1){
 
     }
     echo '<br>';
+    array_push($matches_made, $_SESSION['name']);
     echo 'Final Print:-->';
     echo '<br>';
 
