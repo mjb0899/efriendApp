@@ -215,7 +215,34 @@ if(count($base)==1){
         echo 'search array:-->';
         print_r($search_array);
         echo '<br>';
+    //------------------------ get accept/deny array
+    echo '<br>';
+    echo 'Create accept/deny array:-->';
+    echo '<br>';
 
+    $matches_made= array();//create array
+
+
+    $sql = "SELECT muser from accept where cuser='$username'";
+    $result=$db->query($sql);
+    while($row = $result -> fetch_array()) {
+        array_push($matches_made, $row["muser"]);
+        print_r($matches_made);
+
+    }
+
+    $sql = "SELECT muser from deny where cuser='$username'";
+    $result=$db->query($sql);
+    while($row = $result -> fetch_array()) {
+        array_push($matches_made, $row["muser"]);
+        print_r($matches_made);
+
+    }
+    echo '<br>';
+    echo 'Final Print:-->';
+    echo '<br>';
+
+    print_r($matches_made);
         //------------------------------ sql variances -----------------------
         echo 'Running SQL...';
         echo 'List Retrieved';
