@@ -168,6 +168,9 @@ $get_mid=$_SESSION['mid'];//match id
 
         }
 
+        echo'<hr>';
+        echo 'Matched You';
+        echo '<hr>';
 
          $sql_query = "Select mid,uusername,start_date from message Where match_uname='$username' ";
         $result = $db -> query($sql_query);
