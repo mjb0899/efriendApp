@@ -91,10 +91,16 @@ if(count($base)==1){
     echo 'List Retrieved';
 
 
+    //updated
+    $sql = "SELECT uid from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
+    $result=$db->query($sql);
+    while($row = $result -> fetch_array()) {
+        echo '<br>';
+        echo "UID: ".$row["uid"];
+    }
 
 
-
-
+/* //working
     //sql to search age
     $sql = "SELECT uid from users where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid)";
     $result=$db->query($sql);
@@ -103,7 +109,7 @@ if(count($base)==1){
         echo "UID: ".$row["uid"];
     }
 
-
+*/
 
 
 
