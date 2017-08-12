@@ -169,18 +169,8 @@ $get_mid=$_SESSION['mid'];
         ?>
 
 
-        <div>
-            <hr>
-              <a href="javascript:void();" class="tdelete" data-nm="<?php echo $_SESSION['name'];?>"><?php echo $_SESSION['name'];?></a>
-            <hr>
-        </div><!--LONE DIV CLOSE TAG-->
 
 
-        <div>
-            <hr>
-                <a href="javascript:void();" class="tdelete" data-nm="myron10">myron10</a>
-            <hr>
-        </div><!--LONE DIV CLOSE TAG-->
 
     </div><!--WRAPPER CONVO CLOSE TAG( Left Side )-->
 
