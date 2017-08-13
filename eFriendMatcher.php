@@ -122,8 +122,8 @@ $username=$_SESSION['name'];
                         $p = $row['profile_image'];
                         $uage=$row['uage'];
                         $ufname=$row['ufname'];
-                     echo' <img src="'.$p.'" id="pic">';
-                     echo'<h3 id="middle">'.$ufname.", ".$uage.'</h3>';
+                     echo' <img src="'.$p.'" id="pic" class="middle">';
+                     echo'<h3 class="middle">'.$ufname.", ".$uage.'</h3>';
                     }
                     ?>
                 </div>
