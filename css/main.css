@@ -485,17 +485,6 @@ footer{
 	display: none;
 }
 
-    /*
-    .two{
-
-        margin: auto;
-    }
-
-    .out-wrapper {
-        width: 100%;
-        margin: 0;
-    }
-    .media{
-        width: 100%;
-    }
-}
+    #white{
+		color: white;
+	}
