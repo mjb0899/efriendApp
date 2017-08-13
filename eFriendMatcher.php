@@ -110,7 +110,7 @@ $username=$_SESSION['name'];
             <h2>We've Found You A Friend!!</h2>
 
             <div class="profileInfo">
-                <div class="matchImg">
+                <div class="profile_image">
                     <!--get profile image and name-->
                     <?php
                     include("dbConnect.php");
@@ -123,8 +123,6 @@ $username=$_SESSION['name'];
                      echo' <img src="'.$p.'" id="pic">';
 
                     }
-
-
                     ?>
                 </div>
             </div>
