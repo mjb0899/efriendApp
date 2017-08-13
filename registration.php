@@ -27,10 +27,12 @@
 
 
             if(password1 == password2) {
-                $("#validate-status").text("valid");
+                $("#validate-status").css({"color": "green", "font-size": "large"});
+                $("#validate-status").text("Match");
             }
-            else {
-                $("#validate-status").text("invalid");
+            else {style="font-size: large;color: red;"
+                $("#validate-status").css({"color": "red", "font-size": "large"});
+                $("#validate-status").text("Passwords Do Not Match");
             }
 
         }
@@ -140,7 +142,7 @@
                             <label for="rep_pwd" class="label_font">Confirm Password:</label>
                             <input type="password" class="form-control" id="rep_pwd" name="psw-repeat" required>
                         </div>
-                        <p id="validate-status" style="font-size: large;color: red;"></p>
+                        <p id="validate-status" ></p>
                     </div>
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     <div class="clearfix">
