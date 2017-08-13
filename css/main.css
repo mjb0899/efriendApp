@@ -169,7 +169,7 @@ width:100%;
 .wrapper_box{
 	border: 2px solid green;
 	padding: 2rem;
-	background-color: lightgrey;
+	/*background-color: lightgrey;*/
 	background-image: url("../images/friends.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
