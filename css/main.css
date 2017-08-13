@@ -155,7 +155,6 @@ width:100%;
 /*Quote beside login box*/
 .wrapper_quote{
 	text-align: center;
-	border:2px solid yellow;
 	width: 50%;
 	float: left;
 		padding: 1rem;
@@ -167,7 +166,6 @@ width:100%;
 }
 /*login box*/
 .wrapper_box{
-	border: 2px solid #F9CF00;
 	padding: 2rem;
 	/*background-color: #4484CE;*/
 	border-top-right-radius: 2rem;
