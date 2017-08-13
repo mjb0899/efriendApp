@@ -14,6 +14,28 @@
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <script src="js/index.js"></script>
 
+    <script>
+        $(document).ready(function() {
+            $("#rep_pwd").keyup(validate);
+        });
+
+
+        function validate() {
+            var password1 = $("#pwd").val();
+            var password2 = $("#rep_pwd").val();
+
+
+
+            if(password1 == password2) {
+                $("#validate-status").text("valid");
+            }
+            else {
+                $("#validate-status").text("invalid");
+            }
+
+        }
+
+    </script>
 
 
 </head>
@@ -118,7 +140,7 @@
                             <label for="rep_pwd" class="label_font">Confirm Password:</label>
                             <input type="password" class="form-control" id="rep_pwd" name="psw-repeat" required>
                         </div>
-
+                        <p id="validate-status"></p>
                     </div>
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     <div class="clearfix">
