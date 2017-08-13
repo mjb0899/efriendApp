@@ -74,7 +74,7 @@
                             <label for="usr" class="label_font">Pick a username:</label>
                             <input type="text" class="form-control" id="usr" name="username" onblur="return checkUsername()" placeholder="Select a username" pattern=".{6,}" title="Six or more characters" required>
                         </div>
-                        <div class="alert alert-success hide" id="test">
+                        <div class="alert alert-success" id="test">
                             <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
                         </div>
                         <div class="alert alert-danger" id="test2">
