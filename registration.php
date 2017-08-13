@@ -140,7 +140,7 @@
                             <label for="rep_pwd" class="label_font">Confirm Password:</label>
                             <input type="password" class="form-control" id="rep_pwd" name="psw-repeat" required>
                         </div>
-                        <p id="validate-status"></p>
+                        <p id="validate-status"><strong></strong></p>
                     </div>
                     <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
                     <div class="clearfix">
