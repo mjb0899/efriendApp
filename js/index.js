@@ -152,8 +152,9 @@ function checkUsername() {
                     $("#not_available").fadeOut(10000);
                 }else if(d==0){
 
-                    $("#available").show();
+                    $(".alert-success").show();
                     $("#available").fadeOut(10000);
+                    <!--ALERTS-->
                 }
                 else{
                   //  $("#test").html("Not saved.");
