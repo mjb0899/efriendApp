@@ -148,14 +148,14 @@ function checkUsername() {
                      location.reload();
                      }
                      ,2000);*/
-                    alert("Accept saved");
+                    alert("Already Exists");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                    alert("Deny saved");
+                    alert("available");
                 }
                 else{
-                    $("#test").html("Not saved.");
-                    alert("nothing saved");
+                  //  $("#test").html("Not saved.");
+                    alert("somethings not right");
 
                 }
             }
