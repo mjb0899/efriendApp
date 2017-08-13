@@ -111,7 +111,21 @@ $username=$_SESSION['name'];
 
             <div class="profileInfo">
                 <div class="matchImg">
+                    <!--get profile image and name-->
+                    <?php
+                    include("dbConnect.php");
 
+                    $getMatch=$_SESSION['match'];
+                    $sql_query = "select profile_image from users where uusername='$getMatch'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()) {
+                        $p = $row['profile_image'];
+                     echo' <img src="'.$p.'" id="pic">';
+
+                    }
+
+
+                    ?>
                 </div>
             </div>
 
