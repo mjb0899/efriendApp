@@ -247,7 +247,6 @@ width:100%;
 
 }
 
-
 .eFriendLogo
 {
 	height: 10rem;
@@ -255,6 +254,9 @@ width:100%;
 	border: 4px solid pink;
 	margin:auto;
 	border-radius: 50%;
+	background-image: url("../images/efriend.PNG");
+	background-repeat: no-repeat;
+	background-position: center;
 
 }
 
@@ -267,6 +269,9 @@ width:100%;
 	margin:auto;
 	border-radius: 50%;
 	text-align: center;
+	background-image: url("../images/econnect.PNG");
+	background-repeat: no-repeat;
+	background-position: center;
 
 
 
