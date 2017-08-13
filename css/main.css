@@ -167,9 +167,12 @@ width:100%;
 }
 /*login box*/
 .wrapper_box{
-	border: 2px solid green;
+	border: 2px solid #F9CF00;
 	padding: 2rem;
-	background-color: #F9CF00;
+	background-color: #4484CE;
+	border-top-right-radius: 2rem;
+	border-top-left-radius: 2rem;
+
 
 
 
