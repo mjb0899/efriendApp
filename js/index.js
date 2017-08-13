@@ -148,12 +148,12 @@ function checkUsername() {
                      location.reload();
                      }
                      ,2000);exists*/
-                    $("#not_available").show();
-                    $("#not_available").fadeOut(10000);
+                    $("#test2").show();
+                    $("#test2").fadeOut(1000);
                 }else if(d==0){
 
-                    $(".alert-success").show();
-                    $("#available").fadeOut(10000);
+                    $("#test").show();
+                    $("#test").fadeOut(1000);
                     <!--ALERTS-->
                 }
                 else{
