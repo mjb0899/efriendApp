@@ -130,16 +130,15 @@ function deny() {
     return false
 }
 
-function text_getter() {
+function checkUsername() {
 
-     var messageGet=document.getElementById('personName').value;
-    var headervalue = $(".entry-title").text();
+     var uname=document.getElementById('usr').value;
 
-    var dataString='get='+messageGet;
+    var dataString='uname='+uname;
 
     $.ajax({
             type:"post",
-            url:"textGetter.php",
+            url:"validateUsername.php",
             data: dataString,
             cache:false,
             success:function (d) {
