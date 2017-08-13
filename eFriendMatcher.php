@@ -112,14 +112,61 @@ $username=$_SESSION['name'];
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
+                <?php
+                include("dbConnect.php");
 
-            <!-- Wrapper for slides -->
+                $count_cas=0;// count for carousel
+                $getMatch=$_SESSION['match'];
+                $sql_query = "select path from uploads where username='$getMatch'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()) {
+                    $p = $row['path'];
+                    if($count_cas==0){
+                      echo'  <li data-target="#myCarousel" data-slide-to="'.$count_cas.'" class="active"></li>';
+                      $count_cas=$count_cas+1;
+
+                    }else{
+                       echo' <li data-target="#myCarousel" data-slide-to="'.$count_cas.'"></li>';
+                        $count_cas=$count_cas+1;
+                    }
+                }
+
+                ?>
+
+                <!--  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#myCarousel" data-slide-to="1"></li>
+                  <li data-target="#myCarousel" data-slide-to="2"></li>-->
+
+              </ol>
+
+              <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="item active">
+                <?php
+                include("dbConnect.php");
+
+
+                $count_cas=0;// count for carousel
+                $getMatch=$_SESSION['match'];
+                $sql_query = "select path from uploads where username='$getMatch'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()) {
+                    $p = $row['path'];
+                    if($count_cas==0){
+                        echo'  <div class="item active">
+                                <img src="'.$p.'" id="#pic2" alt="Los Angeles" >
+                              </div>';
+                        $count_cas=$count_cas+1;
+
+                    }else{
+                        echo'    <div class="item">
+                                 <img src="'.$p.'" id="#pic2" alt="Chicago" >
+                                 </div>';
+                        $count_cas=$count_cas+1;
+                    }
+                }
+                ?>
+
+               <!-- <div class="item active">
                     <img src="images/mypic.png" id="#pic2" alt="Los Angeles" >
                 </div>
 
@@ -129,7 +176,10 @@ $username=$_SESSION['name'];
 
                 <div class="item">
                     <img src="images/mypic.png" id="#pic2" alt="New york" >
-                </div>
+                </div>-->
+
+
+
             </div>
 
             <!-- Left and right controls -->
