@@ -76,10 +76,10 @@
                         </div>
 
                         <!--ALERTS-->
-                        <div class="alert alert-success hide">
+                        <div class="alert alert-success hide" id="available">
                             <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
                         </div>
-                        <div class="alert alert-danger hide">
+                        <div class="alert alert-danger hide" id="not_available">
                             <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
                         </div>
                         <!--ALERTS-->
