@@ -169,18 +169,19 @@ width:100%;
 .wrapper_box{
 	border: 2px solid green;
 	padding: 2rem;
-	/*background-color: lightgrey;*/
-	background-image: url("../images/friends.jpg");
-	background-repeat: no-repeat;
-	background-position: center;
+	background-color: #F9CF00;
+
 
 
 }
 .wrapper_box_surround{
 	float: right;
-	background-color: grey;
+	/*background-color: grey;*/
 	width:50%;
 	height: 100%;
+	background-image: url("../images/friends.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 /*FOR MESSAGE BOX*/
