@@ -170,6 +170,9 @@ width:100%;
 	border: 2px solid green;
 	padding: 2rem;
 	background-color: lightgrey;
+	background-image: url("../images/friends.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
 
 
 }
