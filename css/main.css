@@ -182,6 +182,7 @@ width:100%;
 	background-image: url("../images/friends.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
+	border-radius: 2rem;
 }
 
 /*FOR MESSAGE BOX*/
