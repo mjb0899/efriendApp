@@ -169,9 +169,11 @@ width:100%;
 .wrapper_box{
 	border: 2px solid #F9CF00;
 	padding: 2rem;
-	background-color: #4484CE;
+	/*background-color: #4484CE;*/
 	border-top-right-radius: 2rem;
 	border-top-left-radius: 2rem;
+	background: rgba(25, 25, 25, .5);
+
 
 
 
