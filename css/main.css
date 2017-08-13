@@ -468,7 +468,9 @@ footer{
 	float: right;
 }
 
-
+.hide{
+	display: none;
+}
 
 
 

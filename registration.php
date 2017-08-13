@@ -74,6 +74,16 @@
                             <label for="usr" class="label_font">Pick a username:</label>
                             <input type="text" class="form-control" id="usr" name="username" onblur="return checkUsername()" placeholder="Select a username" pattern=".{6,}" title="Six or more characters" required>
                         </div>
+
+                        <!--ALERTS-->
+                        <div class="alert alert-success hide">
+                            <strong>Success!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                        </div>
+                        <div class="alert alert-danger hide">
+                            <strong>Danger!</strong> You should <a href="#" class="alert-link">read this message</a>.
+                        </div>
+                        <!--ALERTS-->
+
                         <div class="form-group">
                             <label for="age" class="label_font">Enter your age:</label>
                             <input type="text" class="form-control" id="uage" name="age" placeholder="Enter your age"  title="Six or more characters" required>

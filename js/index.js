@@ -149,8 +149,12 @@ function checkUsername() {
                      }
                      ,2000);*/
                     alert("Already Exists");
+                    $("#not_available").show();
+                    $("#not_available").fadeOut(1000);
                 }else if(d==0){
-                    //  $("#test").html("Check Fields");
+
+                    $("#available").show();
+                    $("#available").fadeOut(1000);
                     alert("available");
                 }
                 else{
