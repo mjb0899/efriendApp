@@ -116,18 +116,20 @@ $username=$_SESSION['name'];
                     include("dbConnect.php");
 
                     $getMatch=$_SESSION['match'];
-                    $sql_query = "select profile_image from users where uusername='$getMatch'";
+                    $sql_query = "select profile_image,uage,ufname from users where uusername='$getMatch'";
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()) {
                         $p = $row['profile_image'];
+                        $uage=$row['uage'];
+                        $ufname=$row['ufname'];
                      echo' <img src="'.$p.'" id="pic">';
-
+                     echo'<h3>'.$ufname." ,".$uage.'</h3>';
                     }
                     ?>
                 </div>
             </div>
 
-
+<h3></h3>
 
 
 
