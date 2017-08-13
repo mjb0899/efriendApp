@@ -487,7 +487,9 @@ footer{
 .profileInfo{
 	width: 100%;
 }
-
+#middle{
+	margin: auto;
+}
 
 
 

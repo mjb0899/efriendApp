@@ -123,7 +123,7 @@ $username=$_SESSION['name'];
                         $uage=$row['uage'];
                         $ufname=$row['ufname'];
                      echo' <img src="'.$p.'" id="pic">';
-                     echo'<h3>'.$ufname." ,".$uage.'</h3>';
+                     echo'<h3 id="middle">'.$ufname.", ".$uage.'</h3>';
                     }
                     ?>
                 </div>
