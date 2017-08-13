@@ -149,11 +149,11 @@ function checkUsername() {
                      }
                      ,2000);exists*/
                     $("#test2").show();
-                    $("#test2").fadeOut(10000);
+                    $("#test2").fadeOut(4000);
                 }else if(d==0){
 
                     $("#test").show();
-                    $("#test").fadeOut(10000);
+                    $("#test").fadeOut(4000);
                     <!--ALERTS-->
                 }
                 else{
