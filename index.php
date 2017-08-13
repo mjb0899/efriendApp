@@ -81,11 +81,11 @@ if(isset($_SESSION['name'])){
     <div class="wrapper_box_surround">
         <div class="wrapper_box">
             <form action="login.php" method="post">
-                <label for="exampleInputEmail1" class="label_font">Username</label>
+                <label for="exampleInputEmail1" class="label_font" id="white">Username</label>
                 <div class="form-group">
-                    <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Email" title="Invalid input" pattern="[^'\x22]+" required="">
+                    <input type="text" class="form-control" name="username" id="exampleInputEmail1" placeholder="Username" title="Invalid input" pattern="[^'\x22]+" required="">
                 </div>
-                <label for="exampleInputPassword1" class="label_font">Password</label>
+                <label for="exampleInputPassword1" class="label_font" id="white">Password</label>
                 <div class="form-group">
 
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password" title="Invalid Input" pattern="[^'\x22]+" required="">
