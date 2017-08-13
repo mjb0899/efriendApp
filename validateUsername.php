@@ -18,15 +18,13 @@ $result = $db -> query($sql_query);
 while($row = $result -> fetch_array()) {
     $mid = $row['uid'];
 
-    if($mid==null){
-        $count=0;
-    }else{
+    if($mid!=null){
         $count=1;
     }
 
 }
 if($count==0){
-    echo 1;
-}else{
     echo 0;
+}else{
+    echo 1;
 }
