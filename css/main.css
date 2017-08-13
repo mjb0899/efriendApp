@@ -257,6 +257,7 @@ width:100%;
 	background-image: url("../images/efriend.PNG");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 
 }
 
@@ -272,6 +273,8 @@ width:100%;
 	background-image: url("../images/econnect.PNG");
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
+
 
 
 
