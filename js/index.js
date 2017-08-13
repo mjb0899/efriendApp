@@ -149,11 +149,11 @@ function checkUsername() {
                      }
                      ,2000);exists*/
                     $("#not_available").show();
-                    $("#not_available").fadeOut(1000);
+                    $("#not_available").fadeOut(10000);
                 }else if(d==0){
 
                     $("#available").show();
-                    $("#available").fadeOut(1000);
+                    $("#available").fadeOut(10000);
                 }
                 else{
                   //  $("#test").html("Not saved.");
