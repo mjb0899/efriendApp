@@ -147,15 +147,13 @@ function checkUsername() {
                     /*   setTimeout(function(){
                      location.reload();
                      }
-                     ,2000);*/
-                    alert("Already Exists");
+                     ,2000);exists*/
                     $("#not_available").show();
                     $("#not_available").fadeOut(1000);
                 }else if(d==0){
 
                     $("#available").show();
                     $("#available").fadeOut(1000);
-                    alert("available");
                 }
                 else{
                   //  $("#test").html("Not saved.");
