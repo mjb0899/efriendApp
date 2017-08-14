@@ -360,6 +360,12 @@ textarea { resize: none;     }
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
+#pic_convo{
+
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 
 .div_bottom{
