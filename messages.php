@@ -244,24 +244,49 @@ $get_mid=$_SESSION['mid'];//match id
                                                 $content = $row['content'];
                                                 $sender = $row['sender'];
                                                 $s_date = $row['start_date'];
+                                                $img_path=$row['image_path'];
 
                                             if ($sender == $_SESSION['name']) {
+                                                            //if content not null
+                                                if($content!=null){
 
-                                                            echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both;">
+                                                    echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both;">
                                                               <div class="talktext">
                                                                   <p>'.$content.'</p>
                                                               </div>
                                                           </div>';
+                                                }elseif($img_path!=0){
+                                                    echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both; height: 10rem;width: 10rem;">
+                                                              <div class="talktext">
+                                                             <img src="'.$img_path.'" >;
+                                                              </div>
+                                                          </div>';
+                                                }
+
+                                                            //if null
 
                                             } else {
 
-
-                                                            echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
+                                                //if content not null
+                                                if($content!=null) {
+                                                    echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
                                                           <div class="talktext">
                                                               <h3><?php echo $_SESSION[\'check\']?></h3>
-                                                              <p>'.$content.'</p>
+                                                              <p>' . $content . '</p>
                                                           </div>
                                                             </div>';
+                                                }elseif ($img_path!=null){
+                                                    echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both; height: 10rem;width: 10rem;">
+                                                          <div class="talktext">
+                                                              <h3><?php echo $_SESSION[\'check\']?></h3>
+                                                             <img src="'.$img_path.'" >;
+
+                                                          </div>
+                                                            </div>';
+                                                }
+
+                                                //if null
+
 
                                             }
 
