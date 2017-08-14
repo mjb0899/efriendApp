@@ -500,7 +500,7 @@ footer{
 	margin: auto;
 	border-left: 1rem  solid #F9CF00;
 }
-.comic_font h1{
+.comic_font{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 3rem;
 	color: #4484CE;
