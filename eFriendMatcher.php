@@ -127,6 +127,23 @@ $username=$_SESSION['name'];
                     }
                     ?>
                 </div>
+                <hr>
+                <!--BIO-->
+                <div class="profileBio">
+                        <h3>Bio:</h3>
+                        <hr>
+                    <?php
+                    include("dbConnect.php");
+
+                    $getMatch=$_SESSION['match'];
+                    $sql_query = "select bio from profileinfo where uusername='$getMatch'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()) {
+                        $bio = $row['bio'];
+                        echo'<p>'.$bio.'</p>';
+                    }
+                    ?>
+                </div>
             </div>
 
 <h3></h3>
