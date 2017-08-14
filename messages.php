@@ -300,6 +300,11 @@ $get_mid=$_SESSION['mid'];//match id
                <!--SEND MESSAGE HERE-->
 
                     <div class="text_input">
+                        <div style="width: 100%;">
+                            <div style="float:right;">
+
+                            </div>
+                        </div>
                                 <div class="absol">
                                     <div class="form-group area_left">
                                         <textarea class="form-control"  rows="3" id="msgSend" maxlength="100"
