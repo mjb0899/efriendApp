@@ -302,7 +302,7 @@ $get_mid=$_SESSION['mid'];//match id
                     <div class="text_input">
                         <div style="width: 100%;">
                             <div style="float:right;">
-
+                                <p>Modal</p>
                             </div>
                         </div>
                                 <div class="absol">
