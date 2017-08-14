@@ -208,7 +208,7 @@ $username=$_SESSION['name'];
 
                         if($usex=="_3"){//male
 
-                            echo'<p>He feels the best thing about him is'." ".$read_self.'</p>';
+                            echo'<p>He feels the best thing about him is '." ".$read_self.'</p>';
                             echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
 
                         }else{//female
