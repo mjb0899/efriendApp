@@ -258,7 +258,6 @@ $get_mid=$_SESSION['mid'];//match id
                                                 }elseif($content=='#'){
                                                     echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both;">
                                                               <div class="talktext">
-                                                             <h3>'.$img_path.'</h3>
                                                              <img src="'.$img_path.'" id="pic_convo">
                                                               </div>
                                                           </div>';
@@ -272,14 +271,12 @@ $get_mid=$_SESSION['mid'];//match id
                                                 if($content!='#'){
                                                     echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
                                                           <div class="talktext">
-                                                              <h3><?php echo $_SESSION[\'check\']?></h3>
                                                               <p>' . $content . '</p>
                                                           </div>
                                                             </div>';
                                                 }elseif($content=='#'){
                                                     echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
                                                           <div class="talktext">
-                                                              <h3>'.$img_path.'</h3>
                                                              <img src="'.$img_path.'" id="pic_convo">
 
                                                           </div>
