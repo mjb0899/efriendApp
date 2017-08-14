@@ -164,8 +164,10 @@ $username=$_SESSION['name'];
                         $usex = $row['usex'];
 
                         include ("constants.php");
-                        echo $a;
-                        echo $b;
+                     echo constant($a);
+                        //if($self==constant($a)){
+
+                     //   }
 
 
                         if($usex=="_3"){//male
