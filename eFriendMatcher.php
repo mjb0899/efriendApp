@@ -314,36 +314,9 @@ $username=$_SESSION['name'];
 
             <!--PERSON DATA-->
 
-            <div id="contact-info" class="vcard">
 
-                <!-- Microformats! -->
 
-                <h1 class="fn"><?php echo $_SESSION['match'] ?></h1>
 
-                <p>
-                    <!--ADD LOCATION HERE-->
-                    Cell: <span class="tel">555-666-7777</span><br />
-                    Email: <a class="email" href="mailto:greatoldone@lovecraft.com">greatoldone@lovecraft.com</a>
-                </p>
-            </div>
-
-            <div id="objective">
-                <p>
-                    I am an outgoing and energetic (ask anybody) young professional, seeking a
-                    career that fits my professional skills, personality, and murderous tendencies.
-                    My squid-like head is a masterful problem solver and inspires fear in who gaze upon it.
-                    I can bring world domination to your organization.
-                </p>
-            </div>
-            <h1>Likes</h1>
-            <p>ajfhsudgayudsisdigaisa</p>
-            <h1>Likes</h1>
-            <p>ajfhsudgayudsisdigaisa</p>
-
-            <h1>Likes</h1>
-            <p>ajfhsudgayudsisdigaisa</p>
-            <h1>Likes</h1>
-            <p>ajfhsudgayudsisdigaisa</p>
 
 
 
