@@ -149,6 +149,8 @@ $username=$_SESSION['name'];
 
                     <?php
                     include("dbConnect.php");
+                    include ("constants.php");
+
                     echo constant($a);
                     $getMatch=$_SESSION['match'];
                     $sql_query = "select like1,like2,like3,like4,like5,ambition,self,weekend,usex from profileinfo where uusername='$getMatch'";
