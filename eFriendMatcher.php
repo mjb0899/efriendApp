@@ -146,9 +146,10 @@ $username=$_SESSION['name'];
                 </div>
                 <div class="profileBio">
                     <hr>
+
                     <?php
                     include("dbConnect.php");
-
+                    echo constant($a);
                     $getMatch=$_SESSION['match'];
                     $sql_query = "select like1,like2,like3,like4,like5,ambition,self,weekend,usex from profileinfo where uusername='$getMatch'";
                     $result = $db -> query($sql_query);
