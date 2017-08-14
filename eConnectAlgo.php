@@ -346,7 +346,7 @@ if(count($base)==1){
 if(isset($_SESSION['match'])){
     header("location:eConnectMatcher.php");
 }else{
-    header("location:pageNotFound.html");
+    header("location:noMatchesFound.php");
 }
 
 
