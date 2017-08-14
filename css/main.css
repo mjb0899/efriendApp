@@ -489,7 +489,9 @@ footer{
 }
 .middle{
 	margin: auto;
-	margin-top: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+
 }
 .profileBio{
 	padding-top: 1rem;
