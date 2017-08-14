@@ -300,21 +300,21 @@ $get_mid=$_SESSION['mid'];//match id
 
 
 
-                                      <div class="talk-bubble tri-right left-top messageFloaterLeft">
+                                      <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;" >
                                           <div class="talktext">
                                               <hr>
                                               <h3><?php echo $_SESSION['check']?></h3>
-                                              <p>HEY THERE</p>
+                                              <p>convo_with</p>
                                           </div>
                                       </div>
 
 
 
-                                      <div class="talk-bubble tri-right btm-right messageFloaterRight">
+                                      <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both;">
                                           <div class="talktext">
                                               <hr>
                                               <h3><?php echo $_SESSION['mid']?></h3>
-                                              <p>Hello Buddy</p>
+                                              <p>convo_id</p>
                                           </div>
                                       </div>
 
