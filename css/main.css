@@ -484,6 +484,7 @@ footer{
 .btn-flt{
 	float: right;
 }
+/*efriend mathcer*/
 .profileInfo{
 	width: 100%;
 	margin-top: 1rem;
@@ -492,7 +493,13 @@ footer{
 	margin: auto;
 	margin-top: 1rem;
 }
-
+.profileBio{
+	width: 70%;
+	margin: auto;
+	border: 2px solid #F9CF00;
+	background-color: #4484CE;
+	border-radius: 2rem;
+}
 
 
 
