@@ -466,19 +466,20 @@ footer{
 
 .response{
 	width: 100%;
-	border: 2px solid lawngreen;
+	border-top: 2px solid lawngreen;
 	padding: 2rem;
 }
 .message{
 	width: 49%;
 	float: left;
 	border: 2px solid darkgreen;
-
+	padding: 1rem;
 }
 .deny{
 	width: 49%;
 	float: right;
 	border: 2px solid red;
+	padding: 1rem;
 
 }
 .btn-flt{
