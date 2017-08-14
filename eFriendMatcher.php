@@ -130,7 +130,6 @@ $username=$_SESSION['name'];
                 <hr>
                 <!--BIO-->
                 <div class="profileBio">
-                        <h3>Bio:</h3>
                         <hr>
                     <?php
                     include("dbConnect.php");
@@ -143,6 +142,44 @@ $username=$_SESSION['name'];
                         echo'<p>'.$bio.'</p>';
                     }
                     ?>
+                    <hr>
+                </div>
+                <div class="profileBio">
+                    <hr>
+                    <?php
+                    include("dbConnect.php");
+
+                    $getMatch=$_SESSION['match'];
+                    $sql_query = "select like1,like2,like3,like4,like5,ambition,self,weekend,usex from profileinfo where uusername='$getMatch'";
+                    $result = $db -> query($sql_query);
+                    while($row = $result -> fetch_array()) {
+                        $like1 = $row['like1'];
+                        $like1 = $row['like2'];
+                        $like1 = $row['like3'];
+                        $like1 = $row['like4'];
+                        $like1 = $row['like5'];
+                        $self = $row['self'];
+                        $ambition = $row['ambition'];
+                        $weekend = $row['weekend'];
+                        $usex = $row['usex'];
+
+                        include ("constants.php");
+                        echo $a;
+                        echo $b;
+
+
+                        if($usex=="_3"){//male
+
+                            echo'<p>He feels the best thing about him is'.$self.'</p>';
+
+                        }else{//female
+                            echo'<p></p>';
+
+                        }
+
+                    }
+                    ?>
+                    <hr>
                 </div>
             </div>
 
