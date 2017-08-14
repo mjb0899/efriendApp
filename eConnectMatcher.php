@@ -266,18 +266,19 @@ $username=$_SESSION['name'];
                         $week=0;
                     }
 
-
-
-
+//add approaches
 
                     if($usex=="_3"){//male
 
                         echo'<p>He is '." ".$amb.'</p>';
-                        echo'<p>He likes his weeked  interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
+                        echo'<p>He likes his weekend'." ".$week.'</p>';
+                    //    echo'<p>He prefers approaches by'." ".$week.'</p>';
+
 
                     }else{//female
-                        echo'<p>She is'." ".$read_self.'</p>';
-                        echo'<p>Her interests are '.$like1.", ".$like2.", ".$like3.", ".$like4." and ".$like5."".'</p>';
+                        echo'<p>She is'." ".$amb.'</p>';
+                        echo'<p>She likes her weekend'." ".$week.'</p>';
+                     //   echo'<p>She likes her weekend'." ".$week.'</p>';
 
                     }
                 }
