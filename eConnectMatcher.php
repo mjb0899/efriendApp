@@ -221,7 +221,7 @@ $username=$_SESSION['name'];
                     <hr>
             </div>
 
-            <div class="profileBio">
+            <div class="profileBio" style="margin-top: 1rem;">
                 <hr>
 
                 <?php
