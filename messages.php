@@ -309,8 +309,7 @@ $get_mid=$_SESSION['mid'];//match id
 
                                     </div>
                                     <div class="form-group area_middle">
-                                        <p>modal</p>
-
+                                        <button type="submit" class="btn btn-info btn-lg" >>></button>
                                     </div>
                                     <div class="form-group area_right">
                                     <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
