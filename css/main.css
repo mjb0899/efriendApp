@@ -139,7 +139,6 @@ width:100%;
 .matcherPage{
 	width: 60%;
 	margin: auto;
-	border: 2px solid red;
 	-webkit-box-shadow: 13px 0px 5px -1px rgba(184,182,184,1);
 	-moz-box-shadow: 13px 0px 5px -1px rgba(184,182,184,1);
 	box-shadow: 13px 0px 5px -1px rgba(184,182,184,1);
