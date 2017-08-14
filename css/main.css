@@ -509,11 +509,11 @@ footer{
 .comic_font{
 	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 5rem;
-	color: #4484CE;
-	text-shadow: -1px -1px 0 #F9CF00,
-	1px -1px 0 #F9CF00,
-	-1px 1px 0 #F9CF00,
-	1px -1px 0 #F9CF00;
+	color: #F9CF00;
+	text-shadow: -1px -1px 0 #4484CE,
+	1px -1px 0 #4484CE,
+	-1px 1px 0 #4484CE,
+	1px -1px 0 #4484CE;
 	margin: auto;
 }
 .found{
