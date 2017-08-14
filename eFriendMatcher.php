@@ -189,12 +189,12 @@ $username=$_SESSION['name'];
 
                         if($usex=="_3"){//male
 
-                            echo'<p>He feels the best thing about him is'.$read_self.'</p>';
+                            echo'<p>He feels the best thing about him is'." ".$read_self.'</p>';
                             echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
 
                         }else{//female
                             echo'<p>She feels the best thing about her is'.$read_self.'</p>';
-                            echo'<p>Her interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
+                            echo'<p>Her interests are '.$like1.", ".$like2.", ".$like3.", ".$like4." and ".$like5."".'</p>';
 
                         }
                     }
