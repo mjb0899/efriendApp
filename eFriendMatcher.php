@@ -151,7 +151,6 @@ $username=$_SESSION['name'];
                     include("dbConnect.php");
                     include ("constants.php");
 
-                    echo constant($a);
                     $getMatch=$_SESSION['match'];
                     $sql_query = "select like1,like2,like3,like4,like5,ambition,self,weekend,usex from profileinfo where uusername='$getMatch'";
                     $result = $db -> query($sql_query);
@@ -167,7 +166,19 @@ $username=$_SESSION['name'];
                         $usex = $row['usex'];
 
                         include ("constants.php");
-                     echo constant($a);
+                        include ("constants.php");
+                        echo _1;
+                        echo _4;
+
+                        echo _5;
+
+                        echo a;
+
+                        echo s;
+
+                        echo z;
+
+                        echo a;
                         //if($self==constant($a)){
 
                      //   }
