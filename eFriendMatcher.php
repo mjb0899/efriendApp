@@ -125,7 +125,7 @@ $username=$_SESSION['name'];
                         $uage=$row['uage'];
                         $ufname=$row['ufname'];
                      echo' <img src="'.$p.'" id="pic" class="middle">';
-                     echo'<h3 class="middle">'.$ufname.", ".$uage.'</h3>';
+                     echo'<h3 class="middle get_padding">'.$ufname.", ".$uage.'</h3>';
                     }
                     ?>
                 </div>
