@@ -106,8 +106,8 @@ $username=$_SESSION['name'];
         <!--MIddle of container on matcher page-->
         <div class="matcherPage">
 
-            <div class="comic_font">
-                <h2 class="middle">We've Found You A Friend!!</h2>
+            <div class="found">
+                <h2 class="comic_font">We've Found You A Friend!!</h2>
 
             </div>
 
