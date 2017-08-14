@@ -494,10 +494,10 @@ footer{
 	margin-top: 1rem;
 }
 .profileBio{
+	padding-top: 1rem;
 	width: 80%;
 	margin: auto;
-	border: 2px solid #F9CF00;
-	background-color: #4484CE;
+	border-left: 2px solid #F9CF00;
 	border-radius: 2rem;
 }
 
