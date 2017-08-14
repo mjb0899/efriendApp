@@ -156,43 +156,47 @@ $username=$_SESSION['name'];
                     $result = $db -> query($sql_query);
                     while($row = $result -> fetch_array()) {
                         $like1 = $row['like1'];
-                        $like1 = $row['like2'];
-                        $like1 = $row['like3'];
-                        $like1 = $row['like4'];
-                        $like1 = $row['like5'];
+                        $like2 = $row['like2'];
+                        $like3 = $row['like3'];
+                        $like4 = $row['like4'];
+                        $like5 = $row['like5'];
                         $self = $row['self'];
                         $ambition = $row['ambition'];
                         $weekend = $row['weekend'];
                         $usex = $row['usex'];
 
                         include ("constants.php");
-                        include ("constants.php");
-                        echo _1;
-                        echo _4;
+                        if($self=a){
+                            $read_self=a;
+                       }elseif($self=b) {
+                            $read_self=b;
 
-                        echo _5;
+                        }elseif($self=c) {
+                            $read_self=c;
 
-                        echo a;
+                        }elseif($self=d) {
+                            $read_self=d;
 
-                        echo s;
+                        }elseif($self=e) {
+                            $read_self=e;
 
-                        echo z;
+                        }elseif($self=f) {
+                            $read_self=f;
 
-                        echo a;
-                        //if($self==constant($a)){
-
-                     //   }
-
+                        }else{
+                            $read_self="awesomeness";
+                        }
 
                         if($usex=="_3"){//male
 
-                            echo'<p>He feels the best thing about him is'.$self.'</p>';
+                            echo'<p>He feels the best thing about him is'.$read_self.'</p>';
+                            echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
 
                         }else{//female
-                            echo'<p></p>';
+                            echo'<p>She feels the best thing about her is'.$read_self.'</p>';
+                            echo'<p>Her interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
 
                         }
-
                     }
                     ?>
                     <hr>
