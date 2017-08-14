@@ -258,7 +258,8 @@ $get_mid=$_SESSION['mid'];//match id
                                                 }elseif($img_path!=0){
                                                     echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both; height: 10rem;width: 10rem;">
                                                               <div class="talktext">
-                                                             <img src="'.$img_path.'" >;
+                                                             <h3>'.$img_path.'</h3>
+                                                            <img src="'.$img_path.'" >;
                                                               </div>
                                                           </div>';
                                                 }
@@ -278,7 +279,7 @@ $get_mid=$_SESSION['mid'];//match id
                                                 }elseif ($img_path!=null){
                                                     echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both; height: 10rem;width: 10rem;">
                                                           <div class="talktext">
-                                                              <h3><?php echo $_SESSION[\'check\']?></h3>
+                                                              <h3>'.$img_path.'</h3>
                                                              <img src="'.$img_path.'" >;
 
                                                           </div>
