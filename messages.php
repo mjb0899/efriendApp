@@ -238,7 +238,7 @@ $get_mid=$_SESSION['mid'];//match id
                                 echo $_SESSION['mid'];
                             }else {
 
-                                        $sql_query = "Select content,sender,start_date from convo Where mid='$convo_id'";
+                                        $sql_query = "Select content,sender,start_date,image_path from convo Where mid='$convo_id'";
                                         $result = $db->query($sql_query);
                                         while ($row = $result->fetch_array()) {
                                                 $content = $row['content'];
@@ -246,18 +246,23 @@ $get_mid=$_SESSION['mid'];//match id
                                                 $s_date = $row['start_date'];
 
                                             if ($sender == $_SESSION['name']) {
+
                                                             echo '    <div class="talk-bubble tri-right btm-right messageFloaterRight" style="clear: both;">
                                                               <div class="talktext">
                                                                   <p>'.$content.'</p>
                                                               </div>
                                                           </div>';
+
                                             } else {
-                                                        echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
+
+
+                                                            echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
                                                           <div class="talktext">
                                                               <h3><?php echo $_SESSION[\'check\']?></h3>
                                                               <p>'.$content.'</p>
                                                           </div>
                                                             </div>';
+
                                             }
 
                                             //create bubble
@@ -306,7 +311,7 @@ $get_mid=$_SESSION['mid'];//match id
 
                                 <div class="container">
                                     <!-- Trigger the modal with a button -->
-                                    <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>
+                                    <?php if(isset($_SESSION['mid'])) {     '    <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>';}?>
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="myModal" role="dialog">
