@@ -144,6 +144,23 @@ $username=$_SESSION['name'];
                     ?>
                     <hr>
                 </div>
+                <!--RESPONSE DIV VERY IMPORTANT-->
+                <div class="response">
+                    <div class="message">
+
+                        <button type="submit" class="btn btn-success btn-flt" id="submit_accept" data-match="<?php echo $_SESSION['match'] ?>" onclick="return accept()">Message</button>
+
+                    </div>
+
+                    <div class="deny">
+
+                        <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny()">Deny</button>
+
+                    </div>
+
+
+
+                </div>
                 <div class="profileBio">
                     <hr>
 
@@ -294,22 +311,7 @@ $username=$_SESSION['name'];
             </a>
         </div>
             <!--CAROUSEL END-->
-            <div class="response">
-                <div class="message">
 
-                    <button type="submit" class="btn btn-success btn-flt" id="submit_accept" data-match="<?php echo $_SESSION['match'] ?>" onclick="return accept()">Message</button>
-
-                </div>
-
-                <div class="deny">
-
-                    <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny()">Deny</button>
-
-                </div>
-
-
-
-            </div>
 
             <!--PERSON DATA-->
 
