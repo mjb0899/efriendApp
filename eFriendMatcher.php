@@ -127,7 +127,6 @@ $username=$_SESSION['name'];
                     }
                     ?>
                 </div>
-                <hr>
                 <!--BIO-->
                 <div class="profileBio">
                         <hr>
