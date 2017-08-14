@@ -106,12 +106,13 @@ $username=$_SESSION['name'];
         <!--MIddle of container on matcher page-->
         <div class="matcherPage">
 
-            <div class="found">
-                <h2 class="comic_font">We've Found You A Friend!!</h2>
 
-            </div>
 
             <div class="profileInfo">
+                <div class="found">
+                    <h2 class="comic_font">We've Found You A Friend!!</h2>
+
+                </div>
                 <div class="profile_image">
                     <!--get profile image and name-->
                     <?php
