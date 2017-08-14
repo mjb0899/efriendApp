@@ -280,7 +280,7 @@ $get_mid=$_SESSION['mid'];//match id
                                                     echo '   <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;">
                                                           <div class="talktext">
                                                               <h3>'.$img_path.'</h3>
-                                                             <img src="'.$img_path.'" style="height:10px;width:10px;">;
+                                                             <img src="'.$img_path.'" id="pic">;
 
                                                           </div>
                                                             </div>';
