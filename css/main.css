@@ -321,11 +321,7 @@ textarea { resize: none;     }
 
 
 .area_left{
-	width: 50%;
-	float: left;
-}
-.area_middle{
-	width:10%;
+	width: 85%;
 	float: left;
 }
 .area_right{
