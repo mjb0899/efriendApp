@@ -495,10 +495,12 @@ footer{
 }
 .profileBio{
 	padding-top: 1rem;
+	padding-bottom: 1rem;
+
+	padding-left: 1rem;
 	width: 80%;
 	margin: auto;
-	border-left: 2px solid #F9CF00;
-	border-radius: 2rem;
+	border-left: 1rem  solid #F9CF00;
 }
 
 
