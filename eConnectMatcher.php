@@ -254,13 +254,29 @@ $username=$_SESSION['name'];
                         $amb=0;
                     }
 
+                    if($weekend==p){
+                        $week=" at home.";
+                    }elseif($weekend==q) {
+                        $week=" somewhere out.";
+
+                    }elseif($weekend==r) {
+                        $week=" at work sometimes.";
+
+                    }else{
+                        $week=0;
+                    }
+
+
+
+
+
                     if($usex=="_3"){//male
 
                         echo'<p>He is '." ".$amb.'</p>';
-                        echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
+                        echo'<p>He likes his weeked  interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
 
                     }else{//female
-                        echo'<p>She feels the best thing about her is'.$read_self.'</p>';
+                        echo'<p>She is'." ".$read_self.'</p>';
                         echo'<p>Her interests are '.$like1.", ".$like2.", ".$like3.", ".$like4." and ".$like5."".'</p>';
 
                     }
