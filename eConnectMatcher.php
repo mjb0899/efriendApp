@@ -161,11 +161,9 @@ $username=$_SESSION['name'];
                         <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny()">Deny</button>
 
                     </div>
-
-
-
                 </div>
-                <div class="profileBio">
+            </div>
+            <div class="profileBio">
                     <hr>
 
                     <?php
@@ -221,7 +219,6 @@ $username=$_SESSION['name'];
                     }
                     ?>
                     <hr>
-                </div>
             </div>
 
             <div class="profileBio">
@@ -272,42 +269,29 @@ $username=$_SESSION['name'];
 
                         echo'<p>He is '." ".$amb.'</p>';
                         echo'<p>He likes his weekend'." ".$week.'</p>';
-                    //    echo'<p>He prefers approaches by'." ".$week.'</p>';
+                        //    echo'<p>He prefers approaches by'." ".$week.'</p>';
 
 
                     }else{//female
                         echo'<p>She is'." ".$amb.'</p>';
                         echo'<p>She likes her weekend'." ".$week.'</p>';
-                     //   echo'<p>She likes her weekend'." ".$week.'</p>';
+                        //   echo'<p>She likes her weekend'." ".$week.'</p>';
 
                     }
                 }
                 ?>
                 <hr>
+
+
+
+
             </div>
-        </div>
 
 
+        </div><!--MAtcherpage-->
 
 
-
-            <!--  GET PATH OF IMAGES  -->
-
-
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!--CAROUSEL END-->
-
-
-            <!--PERSON DATA-->
+    </div><!--container>
 
 
 
@@ -319,8 +303,12 @@ $username=$_SESSION['name'];
 
 
 
-        </div>
-    </div>
+
+
+
+
+
+
 </main>
 
 
