@@ -224,7 +224,51 @@ $username=$_SESSION['name'];
                 </div>
             </div>
 
-            <h3></h3>
+            <div class="profileBio">
+                <hr>
+
+                <?php
+                include("dbConnect.php");
+                include ("constants.php");
+
+                $getMatch=$_SESSION['match'];
+                $sql_query = "select ambition,self,weekend from profileinfo where uusername='$getMatch'";
+                $result = $db -> query($sql_query);
+                while($row = $result -> fetch_array()) {
+
+                    $self = $row['self'];
+                    $ambition = $row['ambition'];
+                    $weekend = $row['weekend'];
+                    $usex = $row['usex'];
+
+                    include ("constants.php");
+                    if($ambition==1){
+                        $amb=" very ambitious.";
+                    }elseif($ambition==2) {
+                        $amb=" ambitious.";
+
+                    }elseif($ambition==3) {
+                        $amb=" a little ambitious.";
+
+                    }else{
+                        $amb=0;
+                    }
+
+                    if($usex=="_3"){//male
+
+                        echo'<p>He is '." ".$amb.'</p>';
+                        echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
+
+                    }else{//female
+                        echo'<p>She feels the best thing about her is'.$read_self.'</p>';
+                        echo'<p>Her interests are '.$like1.", ".$like2.", ".$like3.", ".$like4." and ".$like5."".'</p>';
+
+                    }
+                }
+                ?>
+                <hr>
+            </div>
+        </div>
 
 
 

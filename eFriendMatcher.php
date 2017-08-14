@@ -185,21 +185,21 @@ $username=$_SESSION['name'];
                         $usex = $row['usex'];
 
                         include ("constants.php");
-                        if($self=a){
+                        if($self==a){
                             $read_self=a;
-                       }elseif($self=b) {
+                       }elseif($self==b) {
                             $read_self=b;
 
-                        }elseif($self=c) {
+                        }elseif($self==c) {
                             $read_self=c;
 
-                        }elseif($self=d) {
+                        }elseif($self==d) {
                             $read_self=d;
 
-                        }elseif($self=e) {
+                        }elseif($self==e) {
                             $read_self=e;
 
-                        }elseif($self=f) {
+                        }elseif($self==f) {
                             $read_self=f;
 
                         }else{
@@ -209,7 +209,7 @@ $username=$_SESSION['name'];
                         if($usex=="_3"){//male
 
                             echo'<p>He feels the best thing about him is '." ".$read_self.'</p>';
-                            echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
+                            echo'<p>His interests are '.$like1.", ".$like2.", ".$like3.", ".$like4.", ".$like5."".'</p>';
 
                         }else{//female
                             echo'<p>She feels the best thing about her is'.$read_self.'</p>';
