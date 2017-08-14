@@ -513,6 +513,7 @@ footer{
 	1px -1px 0 #F9CF00,
 	-1px 1px 0 #F9CF00,
 	1px -1px 0 #F9CF00;
+	margin: auto;
 }
 .found{
 	width: 100%;
