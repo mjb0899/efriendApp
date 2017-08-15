@@ -234,6 +234,7 @@
                         <input type="hidden" name="likes" id="likes">
                 </div>
 
+                        <div style="clear: both">
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
@@ -246,8 +247,11 @@
                             <input type="checkbox" onclick="document.getElementById('tarea').disabled=this.checked;" >
                             <span class="slider round"></span>
                         </label>
+                        </div>
 
-<!--p/q/r-->
+                        <div style="clear: both">
+
+                        <!--p/q/r-->
                         <li>What would your ideal weekend be?</li> <!--weekend-->
                         <select class="form-control" name="weekend">
                             <option value="p">Something at home</option>
@@ -255,6 +259,9 @@
                             <option value="r">Take advantage of the empty Library</option>
                             <option value="ss">sleep</option>
                         </select>
+                        </div>
+
+                        <div style="clear: both">
 
                         <!--a/b/c/d/e/f-->
                         <li>The best thing you have going is:</li><!--self-->
@@ -266,6 +273,9 @@
                             <option value="e">compassionate caring</option>
                             <option value="f">exceptional enthusiasm</option>
                         </select>
+                        </div>
+
+                        <div style="clear: both">
 
                         <!--p/q/r-->
                         <li>After work/school I usually: <!--workmeter-->
@@ -276,6 +286,9 @@
                             <option value="shop">shop</option>
                             <option value="hh">hang out</option>
                         </select>
+                        </div>
+
+                        <div style="clear: both">
 
                         <li>The best way for someone to notice you is:
                         </li>
@@ -287,12 +300,17 @@
                             <option value="x">have a friend introduce you</option>
                             <option value="y"> do the worm in the hall</option>
                         </select>
+                        </div>
+
+                        <div style="clear: both">
 
                         <li>Do you smoke?</li>
                         <select class="form-control" name="smoke">
                             <option value="_1">Yes</option>
                             <option value="_2">No</option>
                         </select>
+                        </div>
+
                         <li>Do you drink?</li>
                         <select class="form-control" name="drink">
                             <option value="_1">Yes</option>
