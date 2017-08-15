@@ -342,12 +342,12 @@ if(count($base)==1){
 
 //------------------------------ Check if session set and redirect-----------------------
 
-
+/*
 if(isset($_SESSION['match'])){
     header("location:eConnectMatcher.php");
 }else{
     header("location:noMatchesFound.php");
-}
+}*/
 
 
 
