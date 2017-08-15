@@ -199,7 +199,7 @@ ul.nav a:hover{
 }
 /*PROFILE CSS*/
 .wrapper_profile{
-	background-color: pink;
+	border:2px solid pink;
 
 }
 .profile_image{
@@ -226,11 +226,11 @@ ul.nav a:hover{
 
 
 .div_bottom{
-	background-color: grey;
+	border:2px solid grey;
 	padding: 1rem;
 }
 .div_top{
-	background-color: red;
+	border:2px solid red;
 	padding: 1rem;
 	text-align: center;
 }
