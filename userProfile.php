@@ -489,8 +489,8 @@ if(isset($_SESSION['name'])){
 
                         <div id="slider-range"style="width:20rem;"></div>
 
-                    </div class="form-group">
-                    <div>
+                    </div >
+                    <div class="form-group">
                     <li>Your friend should be a?</li>
                     <select class="form-control" name="searchSex">
                         <option value="_3">Male</option>

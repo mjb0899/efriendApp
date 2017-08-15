@@ -13,7 +13,6 @@ if(isset($_SESSION['name'])){
 
 }
 //List Variables
-$likes=$_POST["likes"];
 $bio=$_POST["bio"];
 $searchSex =$_POST["searchSex"]; //search
 $uid=$_SESSION['userNum'];
