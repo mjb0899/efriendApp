@@ -373,7 +373,11 @@ $get_mid=$_SESSION['mid'];//match id
                     </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER_GET  CLOSE TAG-->
+        <script>
 
+            $("#matter").scrollTop($("#matter_get")[0].scrollHeight);
+
+        </script>
 
 
     </div><!--WRAPPER CONTENT CLOSE TAG(right side)-->
