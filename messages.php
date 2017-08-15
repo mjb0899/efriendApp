@@ -403,7 +403,8 @@ $get_mid=$_SESSION['mid'];//match id
 </body>
 <script>
 
-     $("#matter").scrollTop($("#matter_get")[0].scrollHeight);
+    var objDiv=document.getElementById("#matter");
+    objDiv.scrollTop=objDiv.scrollHeight;
 
 </script>
 </html>
