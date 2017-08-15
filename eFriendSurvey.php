@@ -412,8 +412,9 @@
                       </p>
 
                       <div id="slider-range"style="width:20rem;"></div>
-    </ol>
 </div>
+    </ol>
+
 
 
 
