@@ -115,7 +115,7 @@ if(count($base)==1){
         }
       array_push($matches_made, $_SESSION['name']);
 
-    echo '<br>';
+        echo '<br>';
         echo 'Final Print:-->';
         echo '<br>';
 
@@ -360,12 +360,15 @@ if(count($base)==1){
 
 //------------------------------ Check if session set and redirect-----------------------
 
-/*
+
+
+sleep(5);
+
 if(isset($_SESSION['match'])){
     header("location:efriendMatcher.php");
 }else{
     header("location:noMatchesFound.php");
-}*/
+}
 
 
 
