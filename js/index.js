@@ -154,7 +154,7 @@ function deny2() {
                     alert("Accept saved");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                    alert("Deny accepted");
+                 //   alert("Deny accepted");
                     location.href="messages.php";
                 }
                 else{
