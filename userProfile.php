@@ -464,9 +464,6 @@ if(isset($_SESSION['name'])){
                 </div>
                 <div id="menu1" class="tab-pane fade">
                     <ol>
-                        <form action="updateMatrix.php" method="post">
-
-
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" class="form-control" cols="30" placeholder="Say something here" id="tarea">
@@ -500,10 +497,7 @@ if(isset($_SESSION['name'])){
                     </div>
                     </ol>
 
-                    <button type="submit" class="signupbtn" onclick="join_ym();">Update Information</button>
-                    </form>
-                </div>
-
+                    <button type="submit" class="signupbtn" onclick="return updateMatrix();">Update Information</button>
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <h3>Image Gallery</h3>
