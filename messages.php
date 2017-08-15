@@ -57,7 +57,7 @@ $get_mid=$_SESSION['mid'];//match id
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
-                     var objDiv=document.getElementById("#matter_get");
+                     var objDiv=document.getElementById("#matter");
                      objDiv.scrollTop=objDiv.scrollHeight;
 
 
@@ -327,6 +327,7 @@ $get_mid=$_SESSION['mid'];//match id
                                     mydiv.scrollTop(mydiv.prop("scrollHeight"));
                                 }
                             </script>
+
 
                <!--SEND MESSAGE HERE-->
 
