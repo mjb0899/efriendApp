@@ -265,8 +265,9 @@ function updateMatrix() {
                     alert("Accept saved");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                    //   alert("Deny accepted");
-                    location.href="eConnectAlgo.php";
+                       alert("Deny accepted");
+
+
                 }
                 else{
                     $("#test").html("Not saved.");
