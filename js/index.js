@@ -118,8 +118,7 @@ function deny() {
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                     alert("Deny accepted");
-                    location.href="eFriendAlgo.php";
-
+                    window.location.href = "eFriendAlgo.php";
                 }
                 else{
                     $("#test").html("Not saved.");
