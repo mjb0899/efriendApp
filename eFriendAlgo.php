@@ -148,7 +148,7 @@ if(count($base)==1){
 
         if($count==0) {
             //simple potential match ----------------------2
-            $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1 ";
+            $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND uid not in ($uid) and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype' and uusername not in ( '" . implode($matches_made, "', '") . "' )";
             $result = $db->query($sql);
             while ($row = $result->fetch_array()) {
                 echo '<br>';
