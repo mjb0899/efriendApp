@@ -373,7 +373,7 @@ $get_mid=$_SESSION['mid'];//match id
                     </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER_GET  CLOSE TAG-->
-        <script>
+        <script type="text/javascript">
 
            var objDiv=document.getElementById("#matter");
            objDiv.scrollTop=objDiv.scrollHeight;
@@ -401,10 +401,9 @@ $get_mid=$_SESSION['mid'];//match id
     </div>
 </footer>
 </body>
-<script>
+<script type="text/javascript">
 
     var objDiv=document.getElementById("#matter");
     objDiv.scrollTop=objDiv.scrollHeight;
-
 </script>
 </html>
