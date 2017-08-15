@@ -151,6 +151,7 @@ if(count($base)==1){
                 $_SESSION['match']=$row["uusername"];
                 echo '<br>';
                 echo $_SESSION['match'];
+                break;
             }
 
 
@@ -180,6 +181,7 @@ if(count($base)==1){
                     $_SESSION['match']=$row["uusername"];
                     echo '<br>';
                     echo $_SESSION['match'];
+                    break;
                 }
             }
         }
@@ -208,6 +210,7 @@ if(count($base)==1){
                 $_SESSION['match']=$row["uusername"];
                 echo '<br>';
                 echo $_SESSION['match'];
+                break;
             }
 
         }
@@ -300,7 +303,6 @@ if(count($base)==1){
             echo '<br>';
             echo 'perfect match loop';
             echo '<br>';
-            echo 'setmatc4h:';
 
             $uname_check=$row["uusername"];
             if(in_array($uname_check,$matches_made)){
@@ -314,6 +316,7 @@ if(count($base)==1){
                 $_SESSION['match']=$row["uusername"];
                 echo '<br>';
                 echo $_SESSION['match'];
+                break;
             }
 
 
@@ -346,6 +349,7 @@ if(count($base)==1){
                     $_SESSION['match']=$row["uusername"];
                     echo '<br>';
                     echo $_SESSION['match'];
+                    break;
                 }
 
             }
@@ -374,6 +378,7 @@ if(count($base)==1){
                     $_SESSION['match']=$row["uusername"];
                     echo '<br>';
                     echo $_SESSION['match'];
+                    break;
                 }
 
             }
@@ -402,8 +407,6 @@ if(count($base)==1){
 //------------------------------ Check if session set and redirect-----------------------
 
 
-
-sleep(5);
 
 if(isset($_SESSION['match'])){
     header("location:efriendMatcher.php");
