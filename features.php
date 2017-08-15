@@ -65,7 +65,7 @@ if(isset($_SESSION['name'])){
                     <?php if(isset($_SESSION['name'])) {   echo'     
                                                                                                          
                                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="">'. $_SESSION["name"].' <span class="caret"></span></a>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">'. $_SESSION["name"].' <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 
                              <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
