@@ -321,7 +321,7 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER scroll CLOSE  TAG-->
-
+                        <img src onerror="loader()">
                <!--SEND MESSAGE. HERE-->
 
                     <div class="text_input">
@@ -401,5 +401,10 @@ $get_mid=$_SESSION['mid'];//match id
     var elem = document.getElementById('scroller');
     elem.scrollTop=elem.scrollHeight;
 
+    function loader(){
+        var elem = document.getElementById('scroller');
+        elem.scrollTop=elem.scrollHeight;
+
+    }
 </script>
 </html>
