@@ -21,6 +21,8 @@ $count=0;
 
 $uid=$_SESSION['userNum'];//working
 
+$_SESSION['mid']=null;
+
 
 try {
     include ("dbConnect.php");
