@@ -118,7 +118,7 @@ function deny() {
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                 //    alert("Deny accepted");
-                    window.location="eFriendAlgo.php";
+                    location.href="messages.php";
                 }
                 else{
                     $("#test").html("Not saved.");
@@ -155,7 +155,7 @@ function deny2() {
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                     alert("Deny accepted");
-                    location.href='eConnectAlgo.php'
+                    location.href="messages.php";
                 }
                 else{
                     $("#test").html("Not saved.");
