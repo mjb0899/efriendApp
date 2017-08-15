@@ -181,7 +181,7 @@
     <div class="wrapper_reg">
 
         <form action="searchMatrix.php" method="post">
-            <div class="container_reg">
+            <div class="container_reg2">
                 <div class="header_div">
                     <h2>  Let's Find You a match </h2>
                 </div>

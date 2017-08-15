@@ -400,6 +400,14 @@ textarea { resize: none;     }
 
 
 }
+.container_reg2{
+	width: 70%;
+	margin: auto;
+	padding: 1rem;
+	border-left: 1rem solid #4484CE;
+
+
+}
 a.fill-div {
 	display: block;
 	height: 100%;
