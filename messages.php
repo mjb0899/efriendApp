@@ -77,7 +77,14 @@ $get_mid=$_SESSION['mid'];//match id
         });
 
 </script>
-
+<script>
+    function loadlink() {
+        $('#texter').load(" #matter_get");
+    }
+    setInterval(function () {
+        loadlink()
+    },10000);
+</script>
 </head>
 <body>
 <header>
