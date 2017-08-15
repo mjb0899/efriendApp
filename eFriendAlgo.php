@@ -284,21 +284,29 @@ if(count($base)==1){
             echo '<br>';
 
             //simple potential match ----------------------2
-            $sql = "SELECT uid,uusername from matches_final where (uage BETWEEN $splitString[0] AND $splitString[1]) AND  uid NOT IN ($uid) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype'  and uusername  NOT IN ( '" . implode($matches_made, "', '") . "' )  Limit 1";
+            $sql = "SELECT uid,uusername from matches_final where (uage BETWEEN $splitString[0] AND $splitString[1]) AND  uid NOT IN ($uid) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype'  and uusername  NOT IN ( '" . implode($matches_made, "', '") . "' )";
             $result = $db->query($sql);
             while ($row = $result->fetch_array()) {
                 echo '<br>';
                 echo "UID: " . $row["uid"];
+                $uname_check=$row["uusername"];
+
                 echo '<br>';
                 $count = $count + 1;
                 echo $count;
                 echo '<br>';
                 echo 'potential match loop';
                 echo '<br>';
-                echo 'setmatch:';
-                $_SESSION['match']=$row["uusername"];
-                echo '<br>';
-                echo $_SESSION['match'];
+
+                if(in_array($uname_check,$matches_made)){
+                    echo 'exists:';
+                }else{
+                    echo 'setmatch:';
+                    $_SESSION['match']=$row["uusername"];
+                    echo '<br>';
+                    echo $_SESSION['match'];
+                }
+
             }
         }
 
