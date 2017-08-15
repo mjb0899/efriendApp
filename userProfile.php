@@ -191,6 +191,26 @@ if(isset($_SESSION['name'])){
             //    alert(document.getElementById('likes').value);
         }
     </script>
+    <title>jQuery UI Slider - Range slider</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $( function() {
+            $( "#slider-range" ).slider({
+                range: true,
+                min: 18,
+                max: 100,
+                values: [ 25, 60 ],
+                slide: function( event, ui ) {
+                    $( "#amount" ).val( "" + ui.values[ 0 ] + " - " + ui.values[ 1 ] );
+                }
+            });
+            $( "#amount" ).val( "" + $( "#slider-range" ).slider( "values", 0 ) +
+                " - " + $( "#slider-range" ).slider( "values", 1 ) );
+        } );
+    </script>
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
