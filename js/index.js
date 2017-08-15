@@ -118,6 +118,7 @@ function deny() {
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                     alert("Deny accepted");
+                    location.href='eFriendAlgo.php'
                 }
                 else{
                     $("#test").html("Not saved.");
@@ -129,6 +130,45 @@ function deny() {
     );
     return false
 }
+
+function deny2() {
+    // var cuser=document.getElementById('dcu').value;
+    //   var muser=document.getElementById('dmu').value;
+    var resp=0;
+    //  'cuser='+cuser+'&muser='+muser+
+
+    var dataString='resp='+resp;
+
+    $.ajax({
+            type:"post",
+            url:"acceptDeny.php",
+            data: dataString,
+            cache:false,
+            success:function (d) {
+                if(d>0){
+                    //    $("#test").html("Your changes have been saved.");
+                    /*   setTimeout(function(){
+                     location.reload();
+                     }
+                     ,2000);*/
+                    alert("Accept saved");
+                }else if(d==0){
+                    //  $("#test").html("Check Fields");
+                    alert("Deny accepted");
+                    location.href='eConnectAlgo.php'
+                }
+                else{
+                    $("#test").html("Not saved.");
+                    alert("nothing saved");
+
+                }
+            }
+        }
+    );
+    return false
+}
+
+
 
 function checkUsername() {
 

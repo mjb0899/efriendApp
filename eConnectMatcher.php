@@ -158,7 +158,7 @@ $username=$_SESSION['name'];
 
                     <div class="deny">
 
-                        <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny()">Deny</button>
+                        <button type="submit" class="btn btn-danger" id="submit_deny" onclick="return deny2()">Deny</button>
 
                     </div>
                 </div>
