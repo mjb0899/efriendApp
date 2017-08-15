@@ -64,10 +64,10 @@ session_start();
                                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">'. $_SESSION["name"].' <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-
+                        
+                             <li><a href="messages.php"><span class="glyphicon glyphicon-envelope">Inbox</a></li>                  
                              <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
                              <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
-                             <li><a href="messages.php"><span class="glyphicon glyphicon-envelope">Inbox</a></li>
                        </ul>
                     </li>                                                         
                                                                                                          
