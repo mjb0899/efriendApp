@@ -77,10 +77,10 @@ if (isset($_POST['submit'])) {
                 // echo $sess.'||'.$uid.'||'.$fileNameNew.'||'.$fileDestination.'||'.$date;
 
                 $mid=$_SESSION['mid'];
-
+                $image_hash='#';
                 //preparing
-                $stmt2 = $db->prepare("INSERT INTO convo (mid,sender,start_date,image_path) VALUES (?,?,?,?)");
-                $stmt2->bind_param('isss',$mid , $sess,$date ,$fileDestination);
+                $stmt2 = $db->prepare("INSERT INTO convo (mid,content,sender,start_date,image_path) VALUES (?,?,?,?)");
+                $stmt2->bind_param('isss',$mid ,$image_hash , $sess,$date ,$fileDestination);
                 $stmt2->execute();
                 $stmt2->store_result();
                 $stmt2->bind_result($col1);
