@@ -154,6 +154,8 @@ if(count($base)==1){
                 echo '<br>';
                 echo "UID: " . $row["uid"];
                 echo '<br>';
+                $uname_check=$row["uusername"];
+
                 $count = $count + 1;
                 echo $count;
                 echo '<br>';
