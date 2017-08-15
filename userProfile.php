@@ -102,7 +102,95 @@ if(isset($_SESSION['name'])){
             clear: both;
         }
     </style>
+    <style type="text/css">
+        textarea[name=bio] {
+            resize: none;
+        }
 
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+        .switch input {display:none;}
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 26px;
+            width: 26px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+
+
+    </style>
+    <script>
+        //   $(document).ready(function () {
+        //        $("submit").click(function () {
+        //            var like1 =document.getElementById('like1').value;
+        //            var like2 =document.getElementById('like2').value;
+        //           var like3 =document.getElementById('like3').value;
+        //            var like4 =document.getElementById('like4').value;
+        //            var like5 =document.getElementById('like5').value;
+        //            document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
+        //        })
+        //    })
+
+    </script>
+
+    <script type="text/javascript">
+        function join_ym()
+        {
+            var like1 =document.getElementById('like1').value;
+            var like2 =document.getElementById('like2').value;
+            var like3 =document.getElementById('like3').value;
+            var like4 =document.getElementById('like4').value;
+            var like5 =document.getElementById('like5').value;
+            document.getElementById('likes').value=like1+'#'+like2+'#'+like3+'#'+like4+'#'+like5;
+            //    alert(document.getElementById('likes').value);
+        }
+    </script>
 
 </head>
 <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
@@ -356,7 +444,55 @@ if(isset($_SESSION['name'])){
                 </div>
                 <div id="menu1" class="tab-pane fade">
                     <h3>Search Info</h3>
-                    <p>Show and update search Information like sex,place</p>
+                    <div style="clear: both">
+                        <li>List your top five likes/hobbies.</li>
+                        <ul>
+                            <div class="form-group" >
+
+                                <li><input class="form-control" id="like1" type="text"></li>
+                                <li><input class="form-control" id="like2" type="text"></li>
+                                <li><input class="form-control"  id="like3" type="text"></li>
+                                <li><input class="form-control" id="like4" type="text"></li>
+                                <li><input class="form-control" id="like5" type="text"></li>
+                            </div>
+                        </ul>
+
+                        <input type="hidden" name="likes" id="likes">
+                    </div>
+
+                    <div style="clear: both" >
+
+                        <li>Create a small bio about something you like?</li> <!--BIO-->
+                        <textarea name="bio" rows="5" class="form-control" cols="30" placeholder="Say something here" id="tarea">
+                     </textarea>
+                        <br>
+                        <p>
+                            Slide right for a generic auto generated bio
+                        </p>
+                        <label  class="switch">
+                            <input type="checkbox" onclick="document.getElementById('tarea').disabled=this.checked;" >
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="mySlider">
+                        <p>
+                            <label for="amount">Search Age:</label>
+                            <input type="text" name="ageRange" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;width:5rem;">
+                        </p>
+
+                        <div id="slider-range"style="width:20rem;"></div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
                 </div>
                 <div id="menu2" class="tab-pane fade">
                     <h3>Image Gallery</h3>
