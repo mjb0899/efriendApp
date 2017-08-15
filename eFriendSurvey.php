@@ -210,7 +210,7 @@
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
-                        <select name="type">
+                        <select class="form-control" name="type">
                             <option value="_5">Introvert</option>
                             <option value="_6">Extrovert</option>
 
@@ -220,11 +220,14 @@
 
                         <li>List your top five likes/hobbies.</li>
                         <ol>
+                            <div class="col-xs-3">
+
                             <li><input class="form-control" id="like1" type="text"></li>
                             <li><input class="form-control" id="like2" type="text"></li>
                             <li><input class="form-control"  id="like3" type="text"></li>
                             <li><input class="form-control" id="like4" type="text"></li>
                             <li><input class="form-control" id="like5" type="text"></li>
+                            </div>
                         </ol>
 
                         <input type="hidden" name="likes" id="likes">
@@ -239,14 +242,14 @@
                         <p>
                             Slide right for a generic auto generated bio
                         </p>
-                        <label class="switch">
+                        <label  class="switch">
                             <input type="checkbox" onclick="document.getElementById('tarea').disabled=this.checked;" >
                             <span class="slider round"></span>
                         </label>
 
 <!--p/q/r-->
                         <li>What would your ideal weekend be?</li> <!--weekend-->
-                        <select name="weekend">
+                        <select class="form-control" name="weekend">
                             <option value="p">Something at home</option>
                             <option value="q">Definitely an outing</option>
                             <option value="r">Take advantage of the empty Library</option>
@@ -255,7 +258,7 @@
 
                         <!--a/b/c/d/e/f-->
                         <li>The best thing you have going is:</li><!--self-->
-                        <select name="self">
+                        <select class="form-control" name="self">
                             <option value="a">incredible intelligence</option>
                             <option value="b">gut splitting  humor</option>
                             <option value="c">amazing honesty</option>
@@ -267,7 +270,7 @@
                         <!--p/q/r-->
                         <li>After work/school I usually: <!--workmeter-->
                         </li>
-                        <select name="workMeter">
+                        <select class="form-control" name="workMeter">
                             <option value="ww">work/study</option>
                             <option value="ss">sleep</option>
                             <option value="shop">shop</option>
@@ -276,7 +279,7 @@
 
                         <li>The best way for someone to notice you is:
                         </li>
-                        <select name="approach_game">
+                        <select class="form-control" name="approach_game">
                             <option value="v"> smile and wink</option>
 
                             <option value="w">introduce yourself</option>
@@ -286,22 +289,22 @@
                         </select>
 
                         <li>Do you smoke?</li>
-                        <select name="smoke">
+                        <select class="form-control" name="smoke">
                             <option value="_1">Yes</option>
                             <option value="_2">No</option>
                         </select>
                         <li>Do you drink?</li>
-                        <select name="drink">
+                        <select class="form-control" name="drink">
                             <option value="_1">Yes</option>
                             <option value="_2">No</option>
                         </select>
                         <li>Would you say you're religious?</li>
-                        <select name="religion">
+                        <select class="form-control" name="religion">
                             <option value="_1">Yes</option>
                             <option value="_2">No</option>
                         </select>
                         <li>Ethnicity?</li>
-                        <select name="ethnicity">
+                        <select class="form-control" name="ethnicity">
                             <option value="g">White</option>
                             <option value="h">Black</option>
                             <option value="i">Asian</option>
@@ -310,7 +313,7 @@
                             <option value="l">Other</option>
                         </select>
                         <li>How would you like to be approached?</li>
-                        <select name="approach_wanted">
+                        <select class="form-control" name="approach_wanted">
                             <option value="s">Flirtline</option>
                             <option value="t">Keeping it simple</option>
                             <option value="u">A compliment</option>
@@ -322,7 +325,7 @@
 
                         <li>What do you look for first in others?
                         </li>
-                        <select name="searchCriteria">
+                        <select class="form-control" name="searchCriteria">
                             <option value="z">doesn't matter</option>
                             <option value="a">intelligence</option>
                             <option value="b">humor</option>
@@ -333,7 +336,7 @@
                         </select>
 
                         <li>Your friend should be a?</li>
-                        <select name="searchSex">
+                        <select class="form-control" name="searchSex">
                             <option value="_3">Male</option>
                             <option value="_4">Female</option>
                             <option value="z">Doesn't Matter</option>
@@ -345,17 +348,17 @@
                 <h1>PART 2</h1>
                   <ol>
                     <li>Is it okay if your friend/connection smokes?</li>
-                    <select name="searchSmoke">
+                    <select class="form-control"  name="searchSmoke">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
                     <li>Is it okay if your friend/connection drinks?</li>
-                    <select name="searchDrink">
+                    <select class="form-control" name="searchDrink">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
                     <li>Is it okay if your friend/connection is religious?</li>
-                    <select name="searchReligion">
+                    <select class="form-control" name="searchReligion">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
