@@ -394,5 +394,10 @@ $get_mid=$_SESSION['mid'];//match id
     </div>
 </footer>
 </body>
-
+<script>
+    window.setInterval(function () {
+        var elem = document.getElementById('matter');
+        elem.scrollTop=elem.scrollHeight;
+    },5000);
+</script>
 </html>
