@@ -57,7 +57,8 @@ if(isset($_SESSION['name'])){
                     </li>
                     <li><a href="happyFriends.php">Happy Friends</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
-                    <li>  <a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span></a></li>
+                    <li>  <a href="messages.php"><span class="glyphicon glyphicon-th-list"></span></a></li>
+                    <li> <a href="survey.php"><span class=" glyphicon glyphicon-tasks"></span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='registration.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li> "; }  ?>
