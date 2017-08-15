@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 
 
 
 
 
 
-<!--NEW ADDED-->
+
+    <!--NEW ADDED-->
     <title>jQuery UI Slider - Range slider</title>
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="/resources/demos/style.css">
@@ -218,11 +220,11 @@
 
                         <li>List your top five likes/hobbies?</li>
                         <ol>
-                            <li><input id="like1" type="text"></li>
-                            <li><input id="like2" type="text"></li>
-                            <li><input id="like3" type="text"></li>
-                            <li><input id="like4" type="text"></li>
-                            <li><input id="like5" type="text"></li>
+                            <li><input class="form-control" id="like1" type="text"></li>
+                            <li><input class="form-control" id="like2" type="text"></li>
+                            <li><input class="form-control"  id="like3" type="text"></li>
+                            <li><input class="form-control" id="like4" type="text"></li>
+                            <li><input class="form-control" id="like5" type="text"></li>
                         </ol>
 
                         <input type="hidden" name="likes" id="likes">
@@ -232,7 +234,7 @@
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
       
-      </textarea>
+                     </textarea>
                         <br>
                         <p>
                             Slide right for a generic auto generated bio
