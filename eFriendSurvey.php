@@ -220,7 +220,7 @@
 
                 <div style="clear: both">
                         <li>List your top five likes/hobbies.</li>
-                        <ol>
+                        <ul>
                             <div class="form-group" >
 
                             <li><input class="form-control" id="like1" type="text"></li>
@@ -229,7 +229,7 @@
                             <li><input class="form-control" id="like4" type="text"></li>
                             <li><input class="form-control" id="like5" type="text"></li>
                             </div>
-                        </ol>
+                        </ul>
 
                         <input type="hidden" name="likes" id="likes">
                 </div>
