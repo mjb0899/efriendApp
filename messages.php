@@ -80,6 +80,8 @@ $get_mid=$_SESSION['mid'];//match id
 <script>
     function loadlink() {
         $('#texter').load(" #matter_get");
+        var objDiv=document.getElementById("#matter_get");
+        objDiv.scrollTop=objDiv.scrollHeight;
     }
     setInterval(function () {
         loadlink()
