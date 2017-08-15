@@ -377,9 +377,10 @@
 
                         <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
                 <h1>PART 2</h1>
+                <ol>
                 <div style="clear: both" class="col-xs-4 form-group ">
 
-                <ol>
+
                     <li>Is it okay if your friend/connection smokes?</li>
                     <select class="form-control"  name="searchSmoke">
                         <option value="_1">Yes</option>
@@ -411,7 +412,7 @@
                       </p>
 
                       <div id="slider-range"style="width:20rem;"></div>
-
+    </ol>
 </div>
 
 
@@ -428,7 +429,7 @@
 
 
 
-                  </ol>
+
 
 
 
