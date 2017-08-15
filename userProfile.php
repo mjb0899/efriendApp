@@ -462,24 +462,9 @@ if(isset($_SESSION['name'])){
 
 
                 </div>
-                <div id="menu1" class="tab-pane fade">
+                <form id="menu1" class="tab-pane fade">
                     <ol>
-                    <div style="clear: both">
-
-                        <li>List your top five likes/hobbies.</li>
-                        <ul>
-                            <div class="form-group" >
-
-                                <li><input class="form-control" id="like1" type="text"></li>
-                                <li><input class="form-control" id="like2" type="text"></li>
-                                <li><input class="form-control"  id="like3" type="text"></li>
-                                <li><input class="form-control" id="like4" type="text"></li>
-                                <li><input class="form-control" id="like5" type="text"></li>
-                            </div>
-                        </ul>
-
-                        <input type="hidden" name="likes" id="likes">
-                    </div>
+                        <form action="updateMatrix.php" method="post">
 
                     <div style="clear: both" >
 
@@ -515,6 +500,9 @@ if(isset($_SESSION['name'])){
                     </div>
                     </ol>
 
+                    <button type="submit" class="signupbtn" onclick="join_ym();">Update Information</button>
+
+                </form>
 
 
 
