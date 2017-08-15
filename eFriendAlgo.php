@@ -283,7 +283,7 @@ if(count($base)==1){
             echo $_SESSION['userNum'];
             echo '<br>';
 
-            //simple potential match ----------------------2
+            //simple potential match -----------------------2
             $sql = "SELECT uid,uusername from matches_final where (uage BETWEEN $splitString[0] AND $splitString[1]) AND  uid NOT IN ($uid) and usex='$sex_matrix' and searchBaseCode LIKE '$scode' or searchTypeCode LIKE '$stype'  and uusername  NOT IN ( '" . implode($matches_made, "', '") . "' )";
             $result = $db->query($sql);
             while ($row = $result->fetch_array()) {
