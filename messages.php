@@ -320,7 +320,7 @@ $get_mid=$_SESSION['mid'];//match id
                                       </div>
 
 
-                        </div><!--MATTER scroll CLOSE  TAG-->
+                        </div><!--MATTER sccroll CLOSE  TAG-->
                         <img src onerror="loader()">
                <!--SEND MESSAGE. HERE-->
 
