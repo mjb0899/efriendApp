@@ -237,7 +237,7 @@
                         <div style="clear: both" >
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
-                        <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
+                        <textarea name="bio" rows="5" class="form-control" cols="30" placeholder="Say something here" id="tarea">
                      </textarea>
                         <br>
                         <p>
