@@ -329,7 +329,7 @@ $get_mid=$_SESSION['mid'];//match id
                             </script>
 
 
-               <!--SEND MESSAGE HERE-->
+               <!--SEND MESSAGE. HERE-->
 
                     <div class="text_input">
                         <div style="width: 100%;">
