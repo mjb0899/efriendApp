@@ -37,3 +37,5 @@ $stmt1->bind_param('si', $bio, $uid);
 $stmt1->execute();
 $stmt1->store_result();
 $stmt1->bind_result($col2);
+
+echo 1;
