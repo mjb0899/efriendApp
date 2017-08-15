@@ -462,11 +462,11 @@ if(isset($_SESSION['name'])){
 
 
                 </div>
-                <form id="menu1" class="tab-pane fade">
+                <div id="menu1" class="tab-pane fade">
                     <ol>
                         <form action="updateMatrix.php" method="post">
 
-                    <div style="clear: both" >
+
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" class="form-control" cols="30" placeholder="Say something here" id="tarea">
@@ -479,7 +479,7 @@ if(isset($_SESSION['name'])){
                             <input type="checkbox" onclick="document.getElementById('tarea').disabled=this.checked;" >
                             <span class="slider round"></span>
                         </label>
-                    </div>
+
 
                     <div class="mySlider" style="padding: 1rem;">
                         <p>
@@ -501,13 +501,6 @@ if(isset($_SESSION['name'])){
                     </ol>
 
                     <button type="submit" class="signupbtn" onclick="join_ym();">Update Information</button>
-
-                </form>
-
-
-
-
-
 
                 </div>
                 <div id="menu2" class="tab-pane fade">
