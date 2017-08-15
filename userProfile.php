@@ -501,6 +501,8 @@ if(isset($_SESSION['name'])){
                     </ol>
 
                     <button type="submit" class="signupbtn" onclick="join_ym();">Update Information</button>
+                    </form>
+                </div>
 
                 </div>
                 <div id="menu2" class="tab-pane fade">
