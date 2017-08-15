@@ -373,11 +373,8 @@ $get_mid=$_SESSION['mid'];//match id
                     </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER GET  CLOSE TAG-->
-        <script>
-            var objDiv=document.getElementById("#matter");
-            objDiv.scrollTop=objDiv.scrollHeight;
-        </script>
-      <!--  <script>
+
+      <script>
             function loadlink() {
                 $('#texter').load(" #matter_get");
                 var objDiv=document.getElementById("#matter_get");
@@ -386,7 +383,7 @@ $get_mid=$_SESSION['mid'];//match id
             setInterval(function () {
                 loadlink()
             },10000);
-        </script>-->
+        </script>
 
     </div><!--WRAPPER CONTENT CLOSE TAG(right side)-->
 
