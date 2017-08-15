@@ -376,7 +376,9 @@
                 </div>
 
                         <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
+                <div style="clear: both" class="col-xs-4 form-group ">
                 <h1>PART 2</h1>
+                </div>
                 <ol>
                 <div style="clear: both" class="col-xs-4 form-group ">
 
@@ -405,7 +407,7 @@
                 </div>
 
                       <!--Select AGE to find people-->
-<div class="mySlider">
+<div class="mySlider" style="clear: both">
                       <p>
                           <label for="amount">Search Age:</label>
                           <input type="text" name="ageRange" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;width:5rem;">
