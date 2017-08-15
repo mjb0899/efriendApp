@@ -210,12 +210,13 @@
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
+                        <div class="col-xs-2">
                         <select class="form-control" name="type">
                             <option value="_5">Introvert</option>
                             <option value="_6">Extrovert</option>
 
                         </select>
-
+                        </div>
 
 
                         <li>List your top five likes/hobbies.</li>
