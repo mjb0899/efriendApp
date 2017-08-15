@@ -57,6 +57,8 @@ $get_mid=$_SESSION['mid'];//match id
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
+                     var objDiv=document.getElementById("#matter_get");
+                     objDiv.scrollTop=objDiv.scrollHeight;
 
 
                  } else if (d == 0) {
