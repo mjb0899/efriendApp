@@ -60,7 +60,6 @@ $get_mid=$_SESSION['mid'];//match id
                      var objDiv=document.getElementById("#matter");
                      objDiv.scrollTop=objDiv.scrollHeight;
 
-
                  } else if (d == 0) {
 
                  alert("Deny saved");
@@ -322,11 +321,6 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER CLOSE TAG-->
-                            <script>
-                                var mydiv=$("#matter");
-                                    mydiv.scrollTop(mydiv.prop("scrollHeight"));
-
-                            </script>
 
 
                <!--SEND MESSAGE. HERE-->
@@ -361,39 +355,6 @@ $get_mid=$_SESSION['mid'];//match id
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
                             </div>
@@ -446,14 +407,4 @@ $get_mid=$_SESSION['mid'];//match id
     </div>
 </footer>
 </body>
-<script>
-    function loadlink() {
-        $('#matter_get').load("#matter");
-        var objDiv=document.getElementById("#matter");
-        objDiv.scrollTop=objDiv.scrollHeight;
-        setInterval(function () {
-            loadlink()
-        },3000);
-    }
-</script>
 </html>
