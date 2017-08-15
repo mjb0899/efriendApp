@@ -218,7 +218,7 @@
 
 
 
-                        <li>List your top five likes/hobbies?</li>
+                        <li>List your top five likes/hobbies.</li>
                         <ol>
                             <li><input class="form-control" id="like1" type="text"></li>
                             <li><input class="form-control" id="like2" type="text"></li>
