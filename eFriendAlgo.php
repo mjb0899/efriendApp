@@ -141,10 +141,17 @@ if(count($base)==1){
             echo '<br>';
             echo 'perfect match loop';
             echo '<br>';
-            echo 'setmatch:';
-            $_SESSION['match']=$row["uusername"];
-            echo '<br>';
-            echo $_SESSION['match'];
+            $uname_check=$row["uusername"];
+            if(in_array($uname_check,$matches_made)){
+                echo 'exists:';
+            }else{
+                echo 'does not exist>>>>>';
+                echo 'setmatch:';
+                $_SESSION['match']=$row["uusername"];
+                echo '<br>';
+                echo $_SESSION['match'];
+            }
+
 
         }
 
@@ -156,13 +163,14 @@ if(count($base)==1){
                 echo '<br>';
                 echo "UID: " . $row["uid"];
                 echo '<br>';
-                $uname_check=$row["uusername"];
+
 
                 $count = $count + 1;
                 echo $count;
                 echo '<br>';
                 echo 'potential match loop';
                 echo '<br>';
+                $uname_check=$row["uusername"];
                 if(in_array($uname_check,$matches_made)){
                     echo 'exists:';
                 }else{
@@ -186,10 +194,18 @@ if(count($base)==1){
             echo '<br>';
             echo 'generic loop';
             echo '<br>';
-            echo 'setmatch:';
-            $_SESSION['match']=$row["uusername"];
-            echo '<br>';
-            echo $_SESSION['match'];
+
+            $uname_check=$row["uusername"];
+            if(in_array($uname_check,$matches_made)){
+                echo 'exists:';
+            }else{
+                echo 'does not exist>>>>>';
+                echo 'setmatch:';
+                $_SESSION['match']=$row["uusername"];
+                echo '<br>';
+                echo $_SESSION['match'];
+            }
+
         }
         }
 
@@ -284,9 +300,19 @@ if(count($base)==1){
             echo 'perfect match loop';
             echo '<br>';
             echo 'setmatc4h:';
-            $_SESSION['match']=$row["uusername"];
-            echo '<br>';
-            echo $_SESSION['match'];
+
+            $uname_check=$row["uusername"];
+            if(in_array($uname_check,$matches_made)){
+                echo 'exists:';
+            }else{
+                echo 'does not exist>>>>>';
+                echo 'setmatch:';
+                $_SESSION['match']=$row["uusername"];
+                echo '<br>';
+                echo $_SESSION['match'];
+            }
+
+
         }
         if($count==0) { ///testing here
             echo $_SESSION['userNum'];
@@ -331,10 +357,17 @@ if(count($base)==1){
                 echo '<br>';
                 echo 'generic loop';
                 echo '<br>';
-                echo 'setmatch:';
-                $_SESSION['match']=$row["uusername"];
-                echo '<br>';
-                echo $_SESSION['match'];
+                $uname_check=$row["uusername"];
+                if(in_array($uname_check,$matches_made)){
+                    echo 'exists:';
+                }else{
+                    echo 'does not exist>>>>>';
+                    echo 'setmatch:';
+                    $_SESSION['match']=$row["uusername"];
+                    echo '<br>';
+                    echo $_SESSION['match'];
+                }
+
             }
         }
 
