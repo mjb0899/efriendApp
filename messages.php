@@ -398,7 +398,7 @@ $get_mid=$_SESSION['mid'];//match id
 </body>
 <script>
     function loadlink() {
-        $('#matter_get').load(" #matter");
+        $('#texter').load(" #matter");
         var objDiv=document.getElementById("#matter");
         objDiv.scrollTop=objDiv.scrollHeight;
     }
