@@ -303,7 +303,7 @@ if(count($base)==1){
     }
 
     //generic match -----------------------------3
-    echo $count;
+    echo "Count->". $count;
     if($count==0){
         $sql = "SELECT uid,uusername from matches_final where uage BETWEEN $splitString[0] AND $splitString[1] AND usex='$sex_matrix' AND  uid not in ($uid) and uusername not in ( '" . implode($matches_made, "', '") . "' ) Limit 1";
         $result=$db->query($sql);
