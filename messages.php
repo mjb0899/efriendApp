@@ -318,6 +318,12 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER CLOSE TAG-->
+           <script>
+
+               var elem = document.getElementById('scroller');
+               elem.scrollTop=elem.scrollHeight;
+
+           </script>
 
 
                <!--SEND MESSAGE. HERE-->
@@ -395,9 +401,9 @@ $get_mid=$_SESSION['mid'];//match id
 </footer>
 </body>
 <script>
-    window.setInterval(function () {
-        var elem = document.getElementById('scroller');
-        elem.scrollTop=elem.scrollHeight;
-    },5000);
+
+    var elem = document.getElementById('scroller');
+    elem.scrollTop=elem.scrollHeight;
+
 </script>
 </html>
