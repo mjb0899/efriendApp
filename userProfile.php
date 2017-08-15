@@ -463,7 +463,6 @@ if(isset($_SESSION['name'])){
 
                 </div>
                 <div id="menu1" class="tab-pane fade">
-                    <h3>Search Info</h3>
                     <ol>
                     <div style="clear: both">
 
@@ -497,7 +496,7 @@ if(isset($_SESSION['name'])){
                         </label>
                     </div>
 
-                    <div class="mySlider">
+                    <div class="mySlider" style="padding: 1rem;">
                         <p>
                             <label for="amount">Search Age:</label>
                             <input type="text" name="ageRange" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;width:5rem;">
@@ -505,7 +504,7 @@ if(isset($_SESSION['name'])){
 
                         <div id="slider-range"style="width:20rem;"></div>
 
-                    </div>
+                    </div class="form-group">
                     <div>
                     <li>Your friend should be a?</li>
                     <select class="form-control" name="searchSex">
