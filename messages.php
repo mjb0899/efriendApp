@@ -372,7 +372,7 @@ $get_mid=$_SESSION['mid'];//match id
                                 </div>
                     </div><!--TEXT INPUT CLOSE TAG-->
 
-       </div><!-- ID MATTER_GET  CLOSE TAG-->
+       </div><!-- ID MATTER_GET  CLOS.E TAG-->
 
     </div><!--WRAPPER CONTENT CLOSE TAG(right side)-->
 
