@@ -322,9 +322,6 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER CLOSE TAG-->
-           <script type="text/javascript">
-               $("#scroller").prop({ scrollTop: $("#scroller").prop("scrollHeight") });
-           </script>
 
 
                <!--SEND MESSAGE HERE-->
@@ -413,6 +410,16 @@ $get_mid=$_SESSION['mid'];//match id
                     </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER GET  CLOSE TAG-->
+        <script>
+            function loadlink() {
+                $('#texter').load(" #matter_get");
+                var objDiv=document.getElementById("#matter_get");
+                objDiv.scrollTop=objDiv.scrollHeight;
+            }
+            setInterval(function () {
+                loadlink()
+            },10000);
+        </script>
 
     </div><!--WRAPPER CONTENT CLOSE TAG(right side)-->
 
