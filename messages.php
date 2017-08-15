@@ -318,10 +318,7 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER CLOSE TAG-->
-           <script>
-                   var objDiv=document.getElementById("#matter");
-                   objDiv.scrollTop=objDiv.scrollHeight;
-               </script>
+
 
                <!--SEND MESSAGE. HERE-->
 
@@ -376,6 +373,10 @@ $get_mid=$_SESSION['mid'];//match id
                     </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER GET  CLOSE TAG-->
+        <script>
+            var objDiv=document.getElementById("#matter");
+            objDiv.scrollTop=objDiv.scrollHeight;
+        </script>
       <!--  <script>
             function loadlink() {
                 $('#texter').load(" #matter_get");
