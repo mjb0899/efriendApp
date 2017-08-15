@@ -57,8 +57,7 @@ $get_mid=$_SESSION['mid'];//match id
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
-                     var objDiv=document.getElementById("#matter_get");
-                     objDiv.scrollTop=objDiv.scrollHeight;
+                     loadlink();
 
                  } else if (d == 0) {
 
@@ -321,7 +320,13 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER CLOSE TAG-->
-
+           <script>
+               function loadlink() {
+                //   $('#texter').load(" #matter_get");
+                   var objDiv=document.getElementById("#matter_get");
+                   objDiv.scrollTop=objDiv.scrollHeight;
+               }
+               </script>
 
                <!--SEND MESSAGE. HERE-->
 
