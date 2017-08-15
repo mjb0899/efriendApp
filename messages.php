@@ -318,14 +318,11 @@ $get_mid=$_SESSION['mid'];//match id
                                       </div>
 
 
-                        </div><!--MATTER CLOSE TAG-->
+                        </div><!--MATTER CLOSE Scroller TAG-->
            <script>
-
-               var elem = document.getElementById('scroller');
-               elem.scrollTop=elem.scrollHeight;
-
+               var d = $('#scroller');
+               d.scrollTop(d.prop("scrollHeight"));
            </script>
-
 
                <!--SEND MESSAGE. HERE-->
 
@@ -378,13 +375,6 @@ $get_mid=$_SESSION['mid'];//match id
                                     </div>
                                 </div>
                     </div><!--TEXT INPUT CLOSE TAG-->
-
-           <script>
-
-               var elem = document.getElementById('scroller');
-               elem.scrollTop=elem.scrollHeight;
-
-           </script>
 
        </div><!-- ID MATTER_GET  CLOS.E TAG-->
 
