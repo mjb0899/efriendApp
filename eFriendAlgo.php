@@ -159,10 +159,15 @@ if(count($base)==1){
                 echo '<br>';
                 echo 'potential match loop';
                 echo '<br>';
-                echo 'setmatch:';
-                $_SESSION['match']=$row["uusername"];
-                echo '<br>';
-                echo $_SESSION['match'];
+                if(in_array($uname_check,$matches_made)){
+                    echo 'exists:';
+                }else{
+                    echo 'does not exist>>>>>';
+                    echo 'setmatch:';
+                    $_SESSION['match']=$row["uusername"];
+                    echo '<br>';
+                    echo $_SESSION['match'];
+                }
             }
         }
 
