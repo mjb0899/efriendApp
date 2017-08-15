@@ -441,14 +441,5 @@ $get_mid=$_SESSION['mid'];//match id
     </div>
 </footer>
 </body>
-<script>
-    function loadlink() {
-        $('#texter').load(" #matter_get");
-        var objDiv=document.getElementById("#matter_get");
-        objDiv.scrollTop=objDiv.scrollHeight;
-    }
-    setInterval(function () {
-        loadlink()
-    },10000);
-</script>
+
 </html>
