@@ -210,7 +210,7 @@
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
-                        <div class="form-group col-xs-4">
+                        <div class="form-group ">
                         <select class="form-control" name="type">
                             <option value="_5">Introvert</option>
                             <option value="_6">Extrovert</option>
@@ -221,7 +221,7 @@
                 <div style="clear: both">
                         <li>List your top five likes/hobbies.</li>
                         <ol>
-                            <div class="col-xs-3 form-group" >
+                            <div class="form-group" >
 
                             <li><input class="form-control" id="like1" type="text"></li>
                             <li><input class="form-control" id="like2" type="text"></li>
@@ -234,7 +234,7 @@
                         <input type="hidden" name="likes" id="likes">
                 </div>
 
-                        <div style="clear: both" class="col-xs-4 form-group ">
+                        <div style="clear: both" >
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
@@ -249,7 +249,7 @@
                         </label>
                         </div>
 
-                        <div style="clear: both" class="col-xs-4 form-group " >
+                        <div style="clear: both"  >
 
                         <!--p/q/r-->
                         <li>What would your ideal weekend be?</li> <!--weekend-->
@@ -261,7 +261,7 @@
                         </select>
                         </div>
 
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both" >
 
                         <!--a/b/c/d/e/f-->
                         <li>The best thing you have going is:</li><!--self-->
@@ -275,7 +275,7 @@
                         </select>
                         </div>
 
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both">
 
                         <!--p/q/r-->
                         <li>After work/school I usually: <!--workmeter-->
@@ -288,7 +288,7 @@
                         </select>
                         </div>
 
-                        <div style="clear: both" class="col-xs-4 form-group ">
+                        <div style="clear: both">
 
                         <li>The best way for someone to notice you is:
                         </li>
@@ -302,7 +302,7 @@
                         </select>
                         </div>
 
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both">
 
                         <li>Do you smoke?</li>
                         <select class="form-control" name="smoke">
@@ -310,7 +310,7 @@
                             <option value="_2">No</option>
                         </select>
                         </div>
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both">
 
                         <li>Do you drink?</li>
                         <select class="form-control" name="drink">
@@ -318,7 +318,7 @@
                             <option value="_2">No</option>
                         </select>
                         </div>
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both">
 
                         <li>Would you say you're religious?</li>
                         <select class="form-control" name="religion">
@@ -326,7 +326,7 @@
                             <option value="_2">No</option>
                         </select>
                         </div>
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both">
 
                         <li>Ethnicity?</li>
                         <select class="form-control" name="ethnicity">
@@ -338,7 +338,7 @@
                             <option value="l">Other</option>
                         </select>
                         </div>
-                        <div style="clear: both" class="col-xs-4 form-group ">
+                        <div style="clear: both">
 
                         <li>How would you like to be approached?</li>
                         <select class="form-control" name="approach_wanted">
@@ -350,7 +350,6 @@
                         <!--SEARCH SEX-->
 
                         <!--SEARCH CRITERIA-->
-                        <div style="clear: both" class="col-xs-4 form-group ">
 
                         <li>What do you look for first in others?
                         </li>
@@ -363,8 +362,6 @@
                             <option value="e">caring</option>
                             <option value="f">enthusiasm</option>
                         </select>
-                        </div>
-                        <div style="clear: both" class="col-xs-3 form-group ">
 
                         <li>Your friend should be a?</li>
                         <select class="form-control" name="searchSex">
@@ -373,50 +370,37 @@
                             <option value="z">Doesn't Matter</option>
                         </select>
                     </ol>
-                </div>
+
 
                         <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
-                <div style="clear: both" class="col-xs-4 form-group ">
                 <h1>PART 2</h1>
-                </div>
-                <ol>
-                <div style="clear: both" class="col-xs-4 form-group ">
-
-
+                  <ol>
                     <li>Is it okay if your friend/connection smokes?</li>
                     <select class="form-control"  name="searchSmoke">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
-                </div>
-                <div style="clear: both" class="col-xs-4 form-group">
-
-                <li>Is it okay if your friend/connection drinks?</li>
+                    <li>Is it okay if your friend/connection drinks?</li>
                     <select class="form-control" name="searchDrink">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
-                </div>
-                <div style="clear: both" class="col-xs-4 form-group">
-
-                <li>Is it okay if your friend/connection is religious?</li>
+                    <li>Is it okay if your friend/connection is religious?</li>
                     <select class="form-control" name="searchReligion">
                         <option value="_1">Yes</option>
                         <option value="_2">No</option>
                     </select>
-                </div>
 
                       <!--Select AGE to find people-->
-<div class="mySlider" style="clear: both">
+<div class="mySlider">
                       <p>
                           <label for="amount">Search Age:</label>
                           <input type="text" name="ageRange" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;width:5rem;">
                       </p>
 
                       <div id="slider-range"style="width:20rem;"></div>
-</div>
-    </ol>
 
+</div>
 
 
 
@@ -432,7 +416,7 @@
 
 
 
-
+                  </ol>
 
 
 
