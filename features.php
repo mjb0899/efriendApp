@@ -56,7 +56,6 @@ if(isset($_SESSION['name'])){
 
                         </ul>
                     </li>
-                    <li><a href="messages.php">Inbox</a></li>
                     <li><a href="happyFriends.php">Happy Friends</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
                     <li><a href="sessions.php">View Active Sessions</a></li>
@@ -73,8 +72,7 @@ if(isset($_SESSION['name'])){
 
                              <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
                              <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
-
-
+                             <li><a href="messages.php">Inbox</a></li>
                        </ul>
                     </li>                                                         
                                                                                                          
