@@ -210,7 +210,7 @@
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
-                        <div class="form-group col-xs-2">
+                        <div class="form-group col-xs-4">
                         <select class="form-control" name="type">
                             <option value="_5">Introvert</option>
                             <option value="_6">Extrovert</option>
@@ -234,7 +234,7 @@
                         <input type="hidden" name="likes" id="likes">
                 </div>
 
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both" class="col-xs-4 form-group ">
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
@@ -249,7 +249,7 @@
                         </label>
                         </div>
 
-                        <div style="clear: both" class="col-xs-3 form-group " >
+                        <div style="clear: both" class="col-xs-4 form-group " >
 
                         <!--p/q/r-->
                         <li>What would your ideal weekend be?</li> <!--weekend-->
@@ -288,7 +288,7 @@
                         </select>
                         </div>
 
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both" class="col-xs-4 form-group ">
 
                         <li>The best way for someone to notice you is:
                         </li>
@@ -338,7 +338,7 @@
                             <option value="l">Other</option>
                         </select>
                         </div>
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both" class="col-xs-4 form-group ">
 
                         <li>How would you like to be approached?</li>
                         <select class="form-control" name="approach_wanted">
@@ -350,7 +350,7 @@
                         <!--SEARCH SEX-->
 
                         <!--SEARCH CRITERIA-->
-                        <div style="clear: both" class="col-xs-3 form-group ">
+                        <div style="clear: both" class="col-xs-4 form-group ">
 
                         <li>What do you look for first in others?
                         </li>
@@ -377,7 +377,7 @@
 
                         <!--PART 2 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXxxxxxx-->
                 <h1>PART 2</h1>
-                <div style="clear: both" class="col-xs-3 form-group ">
+                <div style="clear: both" class="col-xs-4 form-group ">
 
                 <ol>
                     <li>Is it okay if your friend/connection smokes?</li>
@@ -386,7 +386,7 @@
                         <option value="_2">No</option>
                     </select>
                 </div>
-                <div style="clear: both" class="col-xs-3 form-group">
+                <div style="clear: both" class="col-xs-4 form-group">
 
                 <li>Is it okay if your friend/connection drinks?</li>
                     <select class="form-control" name="searchDrink">
@@ -394,7 +394,7 @@
                         <option value="_2">No</option>
                     </select>
                 </div>
-                <div style="clear: both" class="col-xs-3 form-group">
+                <div style="clear: both" class="col-xs-4 form-group">
 
                 <li>Is it okay if your friend/connection is religious?</li>
                     <select class="form-control" name="searchReligion">
