@@ -404,10 +404,9 @@ textarea { resize: none;     }
 	width: 70%;
 	margin: auto;
 	padding: 1rem;
-	border-top: 2px solid #F9CF00;
-	border-right: 1rem solid #F9CF00;
-	border-left: 1rem solid #4484CE;
-	border-bottom: 2px solid #4484CE;
+
+	border-left: 1rem solid #F9CF00;
+
 	background: rgba(25, 25, 25, .5);
 
 
