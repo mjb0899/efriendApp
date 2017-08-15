@@ -322,7 +322,11 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER CLOSE TAG-->
-
+                            <script>
+                                var mydiv=$("#matter"){
+                                    mydiv.scrollTop(mydiv.prop("scrollHeight"));
+                                }
+                            </script>
 
                <!--SEND MESSAGE HERE-->
 
@@ -442,13 +446,13 @@ $get_mid=$_SESSION['mid'];//match id
 </footer>
 </body>
 <script>
-    function loadlink() {
+  /*  function loadlink() {
         $('#texter').load(" #matter_get");
         var objDiv=document.getElementById("#matter_get");
         objDiv.scrollTop=objDiv.scrollHeight;
         setInterval(function () {
             loadlink()
-        });
-    }
+        },1000);
+    }*/
 </script>
 </html>
