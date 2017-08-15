@@ -57,6 +57,8 @@ $get_mid=$_SESSION['mid'];//match id
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
                      $('#texter').load(" #matter_get");
+                     var elem = document.getElementById('scroller');
+                     elem.scrollTop=elem.scrollHeight;
 
                  } else if (d == 0) {
 
@@ -318,11 +320,7 @@ $get_mid=$_SESSION['mid'];//match id
                                       </div>
 
 
-                        </div><!--MATTER CLOSE Scroller TAG-->
-           <script>
-               var d = $('#scroller');
-               d.scrollTop(d.prop("scrollHeight"));
-           </script>
+                        </div><!--MATTER scroll CLOSE  TAG-->
 
                <!--SEND MESSAGE. HERE-->
 
