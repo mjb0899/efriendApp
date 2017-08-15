@@ -23,7 +23,7 @@ $uid=$_SESSION['userNum'];//working
 
 $_SESSION['mid']=null;
 
-
+$get_message=0;
 try {
     include ("dbConnect.php");
     //------------------stmt for users matches
@@ -40,26 +40,30 @@ try {
                 session_start();
                 $_SESSION['mid']=$m_id;
                 $count=1;
-            }
+                $get_message=1;
+                            }
 
     }
-//-------------------stmt for incoming matches convos
-    $stmt2 = $db->prepare("SELECT mid FROM matches_convo WHERE uusername = ? and match_uname = ? LIMIT 1");
-    $stmt2->bind_param('is', $message,$username);
-    $stmt2->execute();
-    $stmt2->store_result();
-    $stmt2->bind_result($col2);
+    if($get_message==0){
+        $stmt2 = $db->prepare("SELECT mid FROM matches_convo WHERE uusername = ? and match_uname = ? LIMIT 1");
+        $stmt2->bind_param('is', $message,$username);
+        $stmt2->execute();
+        $stmt2->store_result();
+        $stmt2->bind_result($col2);
 
-    while ($stmt2->fetch()) {
+        while ($stmt2->fetch()) {
 
-        $m_id = $col2;
-        if($m_id!=null){
-            session_start();
-            $_SESSION['mid']=$m_id;
-            $count=1;
+            $m_id = $col2;
+            if($m_id!=null){
+                session_start();
+                $_SESSION['mid']=$m_id;
+                $count=1;
+            }
+
         }
 
     }
+//-------------------stmt for incoming matches convos
 
 
 
