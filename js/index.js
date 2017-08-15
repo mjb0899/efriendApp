@@ -155,7 +155,7 @@ function deny2() {
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                  //   alert("Deny accepted");
-                    location.href="messages.php";
+                    location.href="eConnectAlgo.php";
                 }
                 else{
                     $("#test").html("Not saved.");
