@@ -14,11 +14,13 @@ if(isset($_SESSION['name'])){
 }
 include("dbConnect.php");
 
+
 //List Variables
 $bio=$_POST["bio"];
 $searchSex =$_POST["sex"]; //search
 $uid=$_SESSION['userNum'];
 $ageVal=$_POST["age"];
+
 if($searchSex!=null){
     $stmt1 = $db->prepare("UPDATE user_search SET ssex=? WHERE uid=?");
     $stmt1->bind_param('si', $searchSex, $uid);
@@ -31,18 +33,18 @@ if($searchSex!=null){
 
 if($ageVal!=null){
 
-$stmt1 = $db->prepare("UPDATE user_search SET sage=? WHERE uid=?");
-$stmt1->bind_param('si', $ageVal, $uid);
-$stmt1->execute();
-$stmt1->store_result();
-$stmt1->bind_result($col2);
+$stmt2 = $db->prepare("UPDATE user_search SET sage=? WHERE uid=?");
+$stmt2->bind_param('si', $ageVal, $uid);
+$stmt2->execute();
+$stmt2->store_result();
+$stmt2->bind_result($col2);
 }
 if($bio!=null) {
 
-    $stmt1 = $db->prepare("UPDATE user_info SET bio=? WHERE uid=?");
-    $stmt1->bind_param('si', $bio, $uid);
-    $stmt1->execute();
-    $stmt1->store_result();
-    $stmt1->bind_result($col2);
+    $stmt3 = $db->prepare("UPDATE user_info SET bio=? WHERE uid=?");
+    $stmt3->bind_param('si', $bio, $uid);
+    $stmt3->execute();
+    $stmt3->store_result();
+    $stmt3->bind_result($col2);
 }
 echo 1;
