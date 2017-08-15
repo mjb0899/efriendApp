@@ -113,7 +113,9 @@ if(count($base)==1){
             print_r($matches_made);
 
         }
-        echo '<br>';
+      array_push($matches_made, $_SESSION['name']);
+
+    echo '<br>';
         echo 'Final Print:-->';
         echo '<br>';
 
