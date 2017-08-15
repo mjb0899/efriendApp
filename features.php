@@ -87,7 +87,7 @@ if(isset($_SESSION['name'])){
 <main>
     <div class="container">
         <div class="wrapper_left">
-            <a href="eFriendMatcher.php" class="fill-div">
+            <a href="eFriendAlgo.php" class="fill-div">
             <div class="eFriendLogo"></div>       efriend
            </a>
 
