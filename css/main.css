@@ -407,7 +407,7 @@ textarea { resize: none;     }
 
 	border-left: 1rem solid #F9CF00;
 
-	background: rgba(25, 25, 25, .5);
+	background: rgba(25, 25, 25, .2);
 	-webkit-box-shadow: 0px 14px 66px 1px rgba(0,0,0,0.79);
 	-moz-box-shadow: 0px 14px 66px 1px rgba(0,0,0,0.79);
 	box-shadow: 0px 14px 66px 1px rgba(0,0,0,0.79);
