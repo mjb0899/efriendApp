@@ -301,6 +301,7 @@ if(count($base)==1){
                 if(in_array($uname_check,$matches_made)){
                     echo 'exists:';
                 }else{
+                    echo 'does not exist>>>>>';
                     echo 'setmatch:';
                     $_SESSION['match']=$row["uusername"];
                     echo '<br>';
