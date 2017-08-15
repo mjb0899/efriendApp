@@ -210,7 +210,7 @@
                     <!--New form-->
                     <ol>
                         <li>What type of person will you claim yourself to be?</li>
-                        <div class="col-xs-2">
+                        <div class="form-group col-xs-2">
                         <select class="form-control" name="type">
                             <option value="_5">Introvert</option>
                             <option value="_6">Extrovert</option>
@@ -237,7 +237,6 @@
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
                         <textarea name="bio" rows="5" cols="30" placeholder="Say something here" id="tarea">
-      
                      </textarea>
                         <br>
                         <p>
