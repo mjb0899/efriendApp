@@ -398,7 +398,7 @@ $get_mid=$_SESSION['mid'];//match id
 </body>
 <script>
 
-     $("#matter").scrollTop($("#matter")[0].scrollHeight);
+     $("#matter").scrollTop($("#matter_get")[0].scrollHeight);
 
 </script>
 </html>
