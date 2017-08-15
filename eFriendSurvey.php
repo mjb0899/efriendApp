@@ -218,10 +218,10 @@
                         </select>
                         </div>
 
-
+                <div style="clear: both">
                         <li>List your top five likes/hobbies.</li>
                         <ol>
-                            <div class="col-xs-3 form-group" style="clear: both">
+                            <div class="col-xs-3 form-group" >
 
                             <li><input class="form-control" id="like1" type="text"></li>
                             <li><input class="form-control" id="like2" type="text"></li>
@@ -232,7 +232,7 @@
                         </ol>
 
                         <input type="hidden" name="likes" id="likes">
-
+                </div>
 
 
                         <li>Create a small bio about something you like?</li> <!--BIO-->
