@@ -221,7 +221,7 @@
 
                         <li>List your top five likes/hobbies.</li>
                         <ol>
-                            <div class="col-xs-3 form-group">
+                            <div class="col-xs-3 form-group" style="clear: both">
 
                             <li><input class="form-control" id="like1" type="text"></li>
                             <li><input class="form-control" id="like2" type="text"></li>
