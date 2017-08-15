@@ -70,7 +70,7 @@ if(isset($_SESSION['name'])){
 
                              <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
                              <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
-                             <li><a href="messages.php">Inbox</a></li>
+                             <li><a href="messages.php"><span class="glyphicon glyphicon-envelope">Inbox</a></li>
                        </ul>
                     </li>                                                         
                                                                                                          
