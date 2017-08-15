@@ -16,7 +16,7 @@ if(isset($_SESSION['name'])){
 
 }
 $username=$_SESSION['name'];
-//include("eFriendAlgo.php"); // get match session set here !!!!!!!!IMPP
+include("eFriendAlgo.php"); // get match session set here !!!!!!!!IMPP
 //get uid from table
 //go to search info and get data
 //add info code to array and
