@@ -489,7 +489,7 @@ if(isset($_SESSION['name'])){
                     </div >
                     <div class="form-group">
                     <li>Your friend should be a?</li>
-                    <select class="form-control" name="searchSex">
+                    <select class="form-control" name="searchSex" id="get_sex">
                         <option value="_3">Male</option>
                         <option value="_4">Female</option>
                         <option value="z">Doesn't Matter</option>

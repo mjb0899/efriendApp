@@ -241,3 +241,40 @@ function send() {
     return false
 }
 
+function updateMatrix() {
+        var age=document.getElementById('amount').value;
+        var sex=document.getElementById('get_sex').value;
+        var bio=document.getElementById('tarea').value;
+
+    //  'cuser='+cuser+'&muser='+muser+
+
+    var dataString='age='+age+'sex='+sex+'bio='+bio;
+
+    $.ajax({
+            type:"post",
+            url:"updateMatrix.php",
+            data: dataString,
+            cache:false,
+            success:function (d) {
+                if(d>0){
+                    //    $("#test").html("Your changes have been saved.");
+                    /*   setTimeout(function(){
+                     location.reload();
+                     }
+                     ,2000);*/
+                    alert("Accept saved");
+                }else if(d==0){
+                    //  $("#test").html("Check Fields");
+                    //   alert("Deny accepted");
+                    location.href="eConnectAlgo.php";
+                }
+                else{
+                    $("#test").html("Not saved.");
+                    alert("nothing saved");
+
+                }
+            }
+        }
+    );
+    return false
+}
