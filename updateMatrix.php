@@ -22,7 +22,7 @@ $uid=$_SESSION['userNum'];
 $ageVal=$_POST["age"];
 
 if($searchSex!=null&& $searchSex!=null && $ageVal!=null){
-    echo 1;
+
 }else{
     echo "r";
 }
@@ -54,3 +54,5 @@ if($bio!=null) {
     $stmt3->store_result();
     $stmt3->bind_result($col4);
 }
+
+echo 1;
