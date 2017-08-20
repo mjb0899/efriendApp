@@ -262,16 +262,16 @@ function updateMatrix() {
                      location.reload();
                      }
                      ,2000);*/
-                    alert("Accept saved");
+                    alert("echoed 1");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                       alert("Deny accepted");
+                       alert("echoed 0");
 
 
                 }
                 else{
                    // $("#test").html("Not saved.");
-                    alert("nothing saved");
+                    alert("echoed r");
 
                 }
             }
