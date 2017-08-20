@@ -210,7 +210,7 @@ $username=$_SESSION['name'];
                             echo'<p>His interests are '.$like1."".$like2."".$like3."".$like4."".$like5."".'</p>';
 
                         }else{//female
-                            echo'<p>She feels the best thing about her is'.$read_self.'</p>';
+                            echo'<p>She feels the best thing about her is'." ".$read_self.'</p>';
                             echo'<p>Her interests are '.$like1.", ".$like2.", ".$like3.", ".$like4." and ".$like5."".'</p>';
 
                         }
@@ -249,12 +249,12 @@ $username=$_SESSION['name'];
                         $amb=0;
                     }
 
-                    if($weekend==p){
+                    if($weekend=="p"){
                         $week=" at home.";
-                    }elseif($weekend==q) {
+                    }elseif($weekend=="q") {
                         $week=" somewhere out.";
 
-                    }elseif($weekend==r) {
+                    }elseif($weekend=="r") {
                         $week=" at work sometimes.";
 
                     }else{
