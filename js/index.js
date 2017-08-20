@@ -270,7 +270,7 @@ function updateMatrix() {
 
                 }
                 else{
-                    $("#test").html("Not saved.");
+                   // $("#test").html("Not saved.");
                     alert("nothing saved");
 
                 }
