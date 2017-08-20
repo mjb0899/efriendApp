@@ -21,7 +21,7 @@ $searchSex =$_POST["sex"]; //search
 $uid=$_SESSION['userNum'];
 $ageVal=$_POST["age"];
 
-if($bio!=null/*&& $searchSex!=null && $ageVal!=null*/){
+if($ageVal!=null/*&& $searchSex!=null && $ageVal!=null*/){
     echo 1;
 }else{
     echo "r";
