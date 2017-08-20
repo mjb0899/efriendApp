@@ -21,8 +21,15 @@ $searchSex =$_POST["sex"]; //search
 $uid=$_SESSION['userNum'];
 $ageVal=$_POST["age"];
 
-error_log($searchSex,$bio,$ageVal, 0);
+if($bio!=null&& $searchSex!=null && $ageVal!=null){
+    echo 1;
+}else{
+    echo "r";
+}
 
+
+
+/*
 if($searchSex!=null){
     $stmt1 = $db->prepare("UPDATE user_search SET ssex=? WHERE uid=?");
     $stmt1->bind_param('si', $searchSex, $uid);
@@ -49,4 +56,3 @@ if($bio!=null) {
     $stmt3->store_result();
     $stmt3->bind_result($col2);
 }
-echo 1;
