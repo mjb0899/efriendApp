@@ -321,13 +321,13 @@ width:100%;
 	padding:2px;
 	clear: both;
 	position: relative; /*NEW..*/
-	height: 20%;
+	height: 15%;
 	border: 2px solid goldenrod;
 }
 .matter{
 	clear: both;
 	overflow-y: scroll;
-height: 75%;
+height: 80%;
 	border: 2px solid red;
 	background-color: #4484CE;
 
