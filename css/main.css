@@ -445,8 +445,7 @@ a.fill-div {
 
 
 .wrapper_right > a:hover {
-	border-left:2rem solid #4484CE;
-	border-right:2rem solid #4484CE;
+	background: linear-gradient(90%,#4484CE,#F9CF00)
 
 
 }
