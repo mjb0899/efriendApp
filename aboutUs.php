@@ -82,8 +82,8 @@ session_start();
 
 
 
-<div class="wrapper_reg">
-    <div class="container_reg">
+<div class="wrapper_reg2">
+    <div class="container_reg3">
         <div class="wrapper_up">
             <h2>-Our Mission-</h2>
             <?php echo $_SESSION['name']; ?>
