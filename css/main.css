@@ -215,7 +215,6 @@ width:100%;
 /*FOR MESSAGE BOX*/
 .wrapper_content{
 	float: right;
-	background-color: #4484CE;
 	width:50%;
 	height: 100%;
     border-radius: 2rem;
@@ -330,6 +329,8 @@ width:100%;
 	overflow-y: scroll;
 height: 80%;
 	border: 2px solid red;
+	background-color: #4484CE;
+
 
 }
 
