@@ -136,7 +136,7 @@ $get_mid=$_SESSION['mid'];//match id
         </div>
     </nav>
 </header>
-
+<p>.</p>
 <div class="container_message">
     <div class="wrapper_convo">
         <!-- GET ALL MESSAGES/CONVOS FROM DB ie MESSAGE TABLE -->
