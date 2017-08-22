@@ -317,8 +317,7 @@ width:100%;
 }
 #matter_get{
 	height: 100%;
-	border-top-left-radius: 1rem;
-	border-top-right-radius: 1rem;
+
 }
 .text_input{
 	width: 100%;
@@ -332,6 +331,8 @@ width:100%;
 	overflow-y: scroll;
 height: 80%;
 	background-color: #4484CE;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
 
 
 }
