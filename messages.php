@@ -320,7 +320,7 @@ $get_mid=$_SESSION['mid'];//match id
                         </div><!--MATTER sccroll CLOSE  TAG-->
            <!--SEND MESSAGE. HERE-->
            <div class="upload_section">
-               <div style="float:right;">
+               <div style="">
 
 
                    <div class="container">
