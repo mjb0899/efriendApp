@@ -78,7 +78,7 @@ session_start();
     </nav>
 </header>
 <!--MAIN CODE-->
-<main>
+
 
 
 
@@ -104,7 +104,7 @@ session_start();
 
 
 
-</main>
+
 <!--FOOTER CODE!!-->
 <footer>
     <div class="footer_left" >
