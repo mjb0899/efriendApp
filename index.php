@@ -76,7 +76,7 @@ if(isset($_SESSION['name'])){
     </nav>
 </header>
 <p>.</p>
-<div class="container">
+<div class="container_main">
     <div class="wrapper_quote">
         <h1>Finding Friends Just Got Easier</h1>
     </div>

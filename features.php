@@ -83,7 +83,7 @@ if(isset($_SESSION['name'])){
 </header>
 <p>.</p>
 <main style="height: 75%">
-    <div class="container" style="height: 100%">
+    <div class="container_main" style="height: 100%">
         <div class="wrapper_left">
             <a href="eFriendAlgo.php" class="fill-div">
             <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People</p>  </div>
