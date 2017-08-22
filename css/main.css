@@ -445,7 +445,7 @@ a.fill-div {
 
 
 .wrapper_right > a:hover {
-	background-color: #4484CE;
+	border-left:2rem solid #4484CE;
 }
 
 .wrapper_left > a:hover {
