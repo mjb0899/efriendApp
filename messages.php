@@ -318,57 +318,55 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER sccroll CLOSE  TAG-->
-           <div class="upload_section">
+           <div class="text_input">
+               <div style="width: 100%;">
+                   <div style="float:right;">
 
 
+                       <div class="container">
+                           <!-- Trigger the modal with a button -->
+                           <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>
 
-                   <div class="container">
-                       <!-- Trigger the modal with a button -->
-                       <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>
-
-                       <!-- Modal -->
-                       <div class="modal fade" id="myModal" role="dialog">
-                           <div class="modal-dialog modal-sm">
-                               <div class="modal-content">
-                                   <div class="modal-header">
-                                       <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                       <h4 class="modal-title">Upload Profile Image</h4>
-                                   </div>
-                                   <div class="modal-body">
-                                       <form action="convoImage.php" method="post" enctype="multipart/form-data">
-                                           <input type="file" name="file" id="exampleInputFile" required>
-                                           <button type="submit" class="btn btn-default btn-sm" name="submit"> <span class="glyphicon glyphicon-pencil">Upload</span></button>
-                                       </form>
-                                   </div>
-                                   <div class="modal-footer">
-                                       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                           <!-- Modal -->
+                           <div class="modal fade" id="myModal" role="dialog">
+                               <div class="modal-dialog modal-sm">
+                                   <div class="modal-content">
+                                       <div class="modal-header">
+                                           <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                           <h4 class="modal-title">Upload Profile Image</h4>
+                                       </div>
+                                       <div class="modal-body">
+                                           <form action="convoImage.php" method="post" enctype="multipart/form-data">
+                                               <input type="file" name="file" id="exampleInputFile" required>
+                                               <button type="submit" class="btn btn-default btn-sm" name="submit"> <span class="glyphicon glyphicon-pencil">Upload</span></button>
+                                           </form>
+                                       </div>
+                                       <div class="modal-footer">
+                                           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                       </div>
                                    </div>
                                </div>
                            </div>
                        </div>
+
+
+                   </div>
+               </div>
+               <div class="absol">
+                   <div class="form-group area_left">
+                                        <textarea class="form-control"  rows="3" id="msgSend" maxlength="100"
+                                            <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>></textarea>
+
+
+
                    </div>
 
-           </div> <!--END UPLOAD-->
-           <!--SEND MESSAGE. HERE-->
+                   <div class="form-group area_right">
+                       <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
 
-                    <div class="text_input">
-                                <div>
-                                    <div class="form-group area_left">
-                                        <textarea class="form-control"  rows="3" id="msgSend" maxlength="100"
-                                                  <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>></textarea>
-
-
-
-                                    </div>
-
-                                    <div class="form-group area_right">
-                                    <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
-
-
-                                    </div>
-
-                                </div>
-                    </div><!--TEXT INPUT CLOSE TAG-->
+                   </div>
+               </div>
+           </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER_GET  CLOS.E TAG-->
 
