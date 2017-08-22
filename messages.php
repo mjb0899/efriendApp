@@ -356,7 +356,7 @@ $get_mid=$_SESSION['mid'];//match id
                    </div>
 
                    <div class="form-group area_right">
-                       <button type="submit" class="btn btn-info btn-lg" style="height: 100%;width: 100%" onclick="return send()">>></button>
+                       <button type="submit" class="btn btn-info" style="height: 100%;width: 100%" onclick="return send()">>></button>
 
                    </div>
            </div><!--TEXT INPUT CLOSE TAG-->
