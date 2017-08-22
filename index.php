@@ -126,7 +126,7 @@ if(isset($_SESSION['name'])){
         <a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER"><img alt="follow me on instagram" src="https://c866088.ssl.cf3.rackcdn.com/assets/instagram30x30.png" border=0></a>
     </div>
     <div class="footer_below" >
-        <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
+        <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; eFriend.com</h5>
     </div>
 </footer>
 </body>
