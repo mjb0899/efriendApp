@@ -320,7 +320,7 @@ $get_mid=$_SESSION['mid'];//match id
                         </div><!--MATTER sccroll CLOSE  TAG-->
 
            <div class="uploader" style="clear: both;width: 100%;">
-               <div style="float: right">
+
                    <div class="container">
                        <!-- Trigger the modal with a button -->
                        <button type="button" class="btn-place" data-toggle="modal"data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>
@@ -350,7 +350,7 @@ $get_mid=$_SESSION['mid'];//match id
 
 
 
-               </div>
+
 
            </div>
            <div class="text_input">
