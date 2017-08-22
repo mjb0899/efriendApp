@@ -81,6 +81,7 @@ if(isset($_SESSION['name'])){
         </div>
     </nav>
 </header>
+<p>.</p>
 <main>
     <div class="container">
         <div class="wrapper_left">
