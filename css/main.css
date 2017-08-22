@@ -336,6 +336,9 @@ height: 75%;
 
 
 textarea { resize: none;     }
+area_left > textarea{
+	height: 100%;
+}
 .send_text{
 	float: right;
 
