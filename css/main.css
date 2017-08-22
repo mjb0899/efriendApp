@@ -317,10 +317,11 @@ width:100%;
 }
 #matter_get{
 	height: 100%;
+	border-top-left-radius: 1rem;
+	border-top-right-radius: 1rem;
 }
 .text_input{
 	width: 100%;
-	padding:2px;
 	clear: both;
 	position: relative; /*NEW..*/
 	height: 15%;
