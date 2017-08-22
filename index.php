@@ -64,7 +64,6 @@ if(isset($_SESSION['name'])){
                     </li>
                     <li><a href="happyFriends.php">Happy Friends!</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
-                    <li><a href="eFriendSurvey.php">survey</a></li>
 
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
