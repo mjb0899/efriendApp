@@ -428,14 +428,6 @@ if(isset($_SESSION['name'])){
                             </tr>
                             <tr>
                                 <td>
-                                    <?php echo $sex?>
-                                </td>
-                                <td>
-                                    <input type="email" name="sex" id="sex"  >
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
                                     <?php echo $address?>
                                 </td>
                                 <td>
