@@ -328,7 +328,7 @@ width:100%;
 	clear: both;
 	overflow-y: scroll;
 height: 80%;
-border: 1px solid black;}
+}
 
 
 textarea { resize: none;     }
