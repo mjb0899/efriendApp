@@ -448,7 +448,7 @@ a.fill-div {
 .red{
 	color:red;
 }
-
+/**/
 
 #submit_data,#firstname,#lastname,#email,#psw,#age,#sex,#address{
 	display: none;
