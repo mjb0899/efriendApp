@@ -246,7 +246,7 @@ width:100%;
 
 .wrapper_left{
 	text-align: center;
-	border:2px solid yellow;
+
 	width: 49%;
 	float: left;
 	padding: 1rem;
@@ -446,7 +446,7 @@ a.fill-div {
 
 
 .wrapper_right > a:hover {
-	background-color: yellow;
+	background-color: #4484CE;
 }
 
 .wrapper_left > a:hover {
