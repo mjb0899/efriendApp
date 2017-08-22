@@ -28,7 +28,7 @@ body
 footer{
 	text-align: center;
 	/*background-color: #F9CF00;*/
-	background: linear-gradient(180deg,#F9CF00,#FFFFFF);
+	background: linear-gradient(90deg,#F9CF00,#FFFFFF);
 
 	height: 15%;
 
