@@ -324,7 +324,6 @@ width:100%;
 	clear: both;
 	position: relative; /*NEW..*/
 	height: 15%;
-	border: 2px solid goldenrod;
 	background: linear-gradient(90deg,#FFFFFF,#4484CE);
 
 }
