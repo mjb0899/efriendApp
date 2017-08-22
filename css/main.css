@@ -258,7 +258,6 @@ width:100%;
 }
 .wrapper_right{
 	float: right;
-	border:2px solid grey;
 	width:49%;
 	height: 100%;
 	padding: 1rem;
