@@ -317,7 +317,6 @@ width:100%;
 }
 #matter_get{
 	height: 100%;
-	border: 2px solid yellow;
 }
 .text_input{
 	width: 100%;
@@ -331,7 +330,6 @@ width:100%;
 	clear: both;
 	overflow-y: scroll;
 height: 80%;
-	border: 2px solid red;
 	background-color: #4484CE;
 
 
@@ -357,20 +355,17 @@ textarea { resize: none;     }
 .area_left{
 	width: 85%;
 	float: left;
-	border: 2px solid green;
 	height: 100%;
 
 }
 .area_right{
 	width: 14%;
 	float: right;
-	border: 2px solid grey;
 	height: 100%;
 
 
 }
 .area_right > button{
-	border: 2px solid #F9CF00;
 	width: 100%;
 
 }
