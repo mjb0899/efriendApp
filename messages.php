@@ -347,7 +347,6 @@ $get_mid=$_SESSION['mid'];//match id
                </div>
            </div>
            <div class="text_input">
-               <div class="absol">
                    <div class="form-group area_left">
                                         <textarea class="form-control" id="msgSend" maxlength="100"
                                             <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>></textarea>
@@ -360,7 +359,6 @@ $get_mid=$_SESSION['mid'];//match id
                        <button type="submit" class="btn btn-info btn-lg" onclick="return send()">>></button>
 
                    </div>
-               </div>
            </div><!--TEXT INPUT CLOSE TAG-->
 
        </div><!-- ID MATTER_GET  CLOS.E TAG-->
