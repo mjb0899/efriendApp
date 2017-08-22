@@ -77,7 +77,7 @@
     <div class="wrapper_reg">
 
         <form action="insertUser.php" method="post">
-            <div class="container_reg">
+            <div class="container_reg2">
                 <div class="header_div">
                     <h2>  Join Our Family </h2>
                 </div>
