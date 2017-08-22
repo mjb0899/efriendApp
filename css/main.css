@@ -253,6 +253,8 @@ width:100%;
 	height: 100%;
 	border-radius: 1rem;
 	background: rgba(25, 25, 25, .2);
+	background: linear-gradient(90deg,#FFFFFF,#4484CE);
+
 
 
 }
