@@ -444,7 +444,8 @@ textarea { resize: none;     }
 	width: 100%;
 	padding: 1rem;
 	margin-top: 5rem;
-	height: 70%;
+	height: 77%;
+	overflow-y: hidden;
 }
 
 .container_reg{
