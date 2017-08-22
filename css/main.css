@@ -452,14 +452,14 @@ a.fill-div {
 
 
 .wrapper_right > a:hover {
-	background: linear-gradient(90deg,#FFFFFF,#4484CE);
+	background: #4484CE;
 	padding:0;
 
 
 }
 
 .wrapper_left > a:hover {
-	background: linear-gradient(90deg,#F9CF00,#FFFFFF);
+	background: #4484CE;
 	padding:0;
 
 
