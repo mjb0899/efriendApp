@@ -354,6 +354,7 @@ textarea { resize: none;     }
 	width: 85%;
 	float: left;
 	border: 2px solid green;
+	height: 100%;
 
 }
 .area_right{
