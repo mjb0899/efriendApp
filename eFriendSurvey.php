@@ -170,7 +170,7 @@
 <main>
     <div class="wrapper_reg">
 
-        <form action="searchMatrix.php" method="post">
+        <form action="searchMatrix.php" method="post" style="width: 80%;margin: auto;">
             <div class="container_reg2">
                 <div class="header_div">
                     <h2>  Let's Find You a match </h2>
