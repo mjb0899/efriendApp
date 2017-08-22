@@ -318,9 +318,8 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                         </div><!--MATTER sccroll CLOSE  TAG-->
-           <!--SEND MESSAGE. HERE-->
            <div class="upload_section">
-               <div style="">
+
 
 
                    <div class="container">
@@ -349,18 +348,10 @@ $get_mid=$_SESSION['mid'];//match id
                        </div>
                    </div>
 
-
-               </div>
-
-
-
-
-           </div>
+           </div> <!--END UPLOAD-->
+           <!--SEND MESSAGE. HERE-->
 
                     <div class="text_input">
-                        <div style="width: 100%;">
-
-                        </div>
                                 <div>
                                     <div class="form-group area_left">
                                         <textarea class="form-control"  rows="3" id="msgSend" maxlength="100"
