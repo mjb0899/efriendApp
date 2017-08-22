@@ -348,7 +348,7 @@ $get_mid=$_SESSION['mid'];//match id
            </div>
            <div class="text_input">
                    <div class="form-group area_left">
-                                        <textarea class="form-control" id="msgSend" maxlength="100"
+                                        <textarea class="form-control heighter" id="msgSend" maxlength="100"
                                             <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>></textarea>
 
 

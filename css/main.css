@@ -336,7 +336,7 @@ height: 75%;
 
 
 textarea { resize: none;     }
-area_left > textarea{
+.heighter{
 	height: 100%;
 }
 .send_text{
