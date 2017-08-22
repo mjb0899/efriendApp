@@ -82,7 +82,7 @@ session_start();
 
 
 
-
+<div class="wrapper_reg">
     <div class="container_reg">
         <div class="wrapper_up">
             <h2>-Our Mission-</h2>
@@ -100,6 +100,9 @@ session_start();
             </div>
         </div>
     </div>
+
+</div>
+
 
 
 
