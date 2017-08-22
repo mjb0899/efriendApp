@@ -403,6 +403,7 @@ textarea { resize: none;     }
 .wrapper_reg{
 	width: 100%;
 		padding: 1rem;
+    margin-top: 5rem;
 
 }
 .container_reg{
