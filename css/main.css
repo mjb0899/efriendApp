@@ -280,7 +280,10 @@ width:100%;
 
 }
 
-
+.wt_col{
+	font-size: large;
+	color: black;
+}
 .eConnectLogo
 {
 	height: 15rem;

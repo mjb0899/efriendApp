@@ -86,8 +86,8 @@ if(isset($_SESSION['name'])){
     <div class="container" style="height: 100%">
         <div class="wrapper_left">
             <a href="eFriendAlgo.php" class="fill-div">
-            <div class="eFriendLogo"></div>       efriend <div><p>Meet New People</p>  </div>
-                <div><p>Find a Friend?</p>  </div>
+            <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People</p>  </div>
+                <div class="wt_col"><p>Find a Friend?</p>  </div>
            </a>
 
 
@@ -99,8 +99,8 @@ if(isset($_SESSION['name'])){
             <a href="eConnectAlgo.php" class="fill-div">
                 <div class="eConnectLogo"></div>  eConnect
 
-                <div><p>Find a Connection?</p>  </div>
-                <div><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
+                <div class="wt_col"><p>Find a Connection?</p>  </div>
+                <div class="wt_col"><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
 
             </a>
 
