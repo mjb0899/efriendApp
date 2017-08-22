@@ -451,7 +451,8 @@ a.fill-div {
 }
 
 .wrapper_left > a:hover {
-	background-color: yellow;
+	background: linear-gradient(90deg,#F9CF00,#4484CE)
+
 }
 .red{
 	color:red;
