@@ -297,7 +297,7 @@ $get_mid=$_SESSION['mid'];//match id
 
 
 
-<!--
+
                                       <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;" >
                                           <div class="talktext">
                                               <hr>
@@ -316,7 +316,7 @@ $get_mid=$_SESSION['mid'];//match id
                                           </div>
                                       </div>
 
--->
+
                         </div><!--MATTER sccroll CLOSE  TAG-->
 
            <div class="uploader" style="clear: both;width: 100%;">
