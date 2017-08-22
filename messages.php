@@ -299,7 +299,7 @@ $get_mid=$_SESSION['mid'];//match id
 
 
 
-
+                            <!--
                                       <div class="talk-bubble tri-right left-top messageFloaterLeft" style="clear: both;" >
                                           <div class="talktext">
                                               <hr>
@@ -317,7 +317,7 @@ $get_mid=$_SESSION['mid'];//match id
                                               <p>convo_id</p>
                                           </div>
                                       </div>
-
+                            -->
 
                         </div><!--MATTER sccroll CLOSE  TAG-->
 
