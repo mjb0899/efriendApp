@@ -82,8 +82,8 @@ if(isset($_SESSION['name'])){
     </nav>
 </header>
 <p>.</p>
-<main>
-    <div class="container">
+<main style="height: 75%">
+    <div class="container" style="height: 100%">
         <div class="wrapper_left">
             <a href="eFriendAlgo.php" class="fill-div">
             <div class="eFriendLogo"></div>       efriend
