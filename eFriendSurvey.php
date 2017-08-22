@@ -159,16 +159,6 @@
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">eFriend Finder</a></li>
-                            <li><a href="#">eConnect</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Happy Friends</a></li>
-                    <li><a href="#">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <a class="navbar-brand menu_logo" href="#" >One Last Step...</a>
@@ -187,22 +177,6 @@
                 </div>
                 <div >
 
-                    <?php
-                    include ("constants.php");
-                        echo _1;
-                        echo _4;
-
-                        echo _5;
-
-                        echo a;
-
-                        echo s;
-
-                        echo z;
-
-
-
-                    ?>
 
 
 
