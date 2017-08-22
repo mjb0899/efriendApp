@@ -228,6 +228,7 @@ ul.nav a:hover{
 .div_bottom{
 	border:2px solid grey;
 	padding: 1rem;
+	background-color: #cccccc;
 }
 .div_top{
 	background-color: #4484CE;
