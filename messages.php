@@ -319,7 +319,7 @@ $get_mid=$_SESSION['mid'];//match id
 
                         </div><!--MATTER sccroll CLOSE  TAG-->
 
-           <div style="clear: both">
+           <div class="uploader" style="clear: both">
                <div class="container">
                    <!-- Trigger the modal with a button -->
                    <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>

@@ -311,7 +311,10 @@ width:100%;
 
 
 }
+.uploader{
+	background: linear-gradient(90deg,#4484CE,#FFFFFF);
 
+}
 #matter_get{
 	height: 100%;
 	border: 2px solid yellow;
