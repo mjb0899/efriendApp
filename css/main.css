@@ -314,6 +314,9 @@ width:100%;
 .uploader{
 	background: linear-gradient(90deg,#FFFFFF,#4484CE);
 	border-top:2px solid #cccccc;
+	border-left:2px solid #cccccc;
+	border-right:2px solid #cccccc;
+
 
 }
 #matter_get{
@@ -326,6 +329,9 @@ width:100%;
 	position: relative; /*NEW..*/
 	height: 15%;
 	background: linear-gradient(90deg,#FFFFFF,#4484CE);
+	border-bottom:2px solid #cccccc;
+	border-left:2px solid #cccccc;
+	border-right:2px solid #cccccc;
 
 }
 .matter{
