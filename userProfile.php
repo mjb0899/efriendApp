@@ -371,7 +371,6 @@ if(isset($_SESSION['name'])){
             </h4>
         </div>
         <div class="div_middle">
-            <p>Auto Generated Bio </p>
         </div>
         <div class="div_bottom">
             <p>Profile Info</p>
