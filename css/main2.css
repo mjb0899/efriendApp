@@ -13,6 +13,8 @@ body
 main{
 	height: 80%;
 	width: 100%;
+	margin-top: 5rem;
+
 }
 
 
@@ -51,7 +53,6 @@ ul.nav a:hover{
 .container2{
 	padding: 1rem;
 	width: 100%;
-	margin-top: 5rem;
 	height: 100%;
 }
 
