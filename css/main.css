@@ -582,10 +582,10 @@ footer{
 	}
 	.wrapper_box_surround{
 		width: 100%;
-		min-width: 300px;
 	}
-	.container_main{
-		overflow: auto;
+	body{
+        min-width: 400px;
+        overflow-x: auto;
 	}
 
 }
