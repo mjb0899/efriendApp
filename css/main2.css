@@ -11,11 +11,20 @@ body
      width: 100%;
 }
 
+
 footer{
 	text-align: center;
-	background-color: #F9CF00;
+	height: 15%;
+	background: lightgrey; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient( whitesmoke,#4484CE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(whitesmoke,#4484CE); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(whitesmoke,#4484CE); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(whitesmoke,#4484CE); /* Standard syntax (must be*/
 
 }
+
+
+
 
 /*MENUBAR*/
 .container-fluid{
@@ -39,6 +48,7 @@ ul.nav a:hover{
 	padding: 1rem;
 	width: 100%;
 	margin-top: 5rem;
+	height: 80%;
 }
 
 /*About us page wrapper*/
