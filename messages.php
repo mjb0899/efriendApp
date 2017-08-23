@@ -178,9 +178,9 @@ $get_mid=$_SESSION['mid'];//match id
             $mid = $row['mid'];
             $m_convo = $row['uusername'];
             $s_date = $row['start_date'];
-            echo '<script language="javascript">';
+         /*   echo '<script language="javascript">';
             echo 'alert("'.$mid."//".$m_convo."//".$s_date.'")';
-            echo '</script>';
+            echo '</script>';*/
 
             echo' <div>
             <hr>
