@@ -68,6 +68,9 @@ ul.nav a:hover{
 .responsive_text2{
 	font-size: 5vw;
 }
+.responsive_text{
+    font-size: 1vw;
+}
 
 /*CONTAINeR*/
 .container_main{
