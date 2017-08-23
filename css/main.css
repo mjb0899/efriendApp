@@ -29,10 +29,10 @@ footer{
 	text-align: center;
 
 	background: #F9CF00; /* For browsers that do not support gradients */
-	background: -webkit-linear-gradient( lightgrey,#ffffff); /* For Safari 5.1 to 6.0 */
-	background: -o-linear-gradient(lightgrey,#ffffff); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(lightgrey,#ffffff); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(lightgrey,#ffffff); /* Standard syntax (must be*/
+	background: -webkit-linear-gradient( lightgrey,#4484CE); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(lightgrey,#4484CE); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(lightgrey,#4484CE); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(lightgrey,#4484CE); /* Standard syntax (must be*/
 
 
 
