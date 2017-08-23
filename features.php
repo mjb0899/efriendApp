@@ -90,7 +90,7 @@ if(isset($_SESSION['name'])){
                 <div class="wt_col"><p>Find a Friend?</p>  </div>
 
                 <span id="some-element">
-                <p>Find Me a Match</p>
+                <p class="responsive_text2">Let's Go </p>
   </span>
 
             </a>
@@ -107,7 +107,7 @@ if(isset($_SESSION['name'])){
                 <div class="wt_col"><p>Find a Connection?</p>  </div>
                 <div class="wt_col"><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
                 <span id="some-element2">
-                     <p>Find Me a Match</p>
+                     <p class="responsive_text2">Let's Go</p>
   </span>
 
             </a>
