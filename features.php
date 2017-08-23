@@ -98,7 +98,7 @@ if(isset($_SESSION['name'])){
 
         </div>
 
-        <div class="wrapper_right">
+        <div class="wrapper_right" id="some-div">
 
 
             <a href="eConnectAlgo.php" class="fill-div">
