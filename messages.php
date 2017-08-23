@@ -325,7 +325,7 @@ $get_mid=$_SESSION['mid'];//match id
 
                    <div class="container">
                        <!-- Trigger the modal with a button -->
-                       <button type="button" class="btn-place" data-toggle="modal"data-target="#myModal"><span class="glyphicon glyphicon-picture"></button>
+                       <button type="button" class="btn-place" data-toggle="modal"data-target="#myModal"><span class="glyphicon glyphicon-picture">Attachment</button>
 
                        <!-- Modal -->
                        <div class="modal fade" id="myModal" role="dialog">
