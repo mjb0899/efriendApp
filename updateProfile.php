@@ -86,10 +86,10 @@ if(isset($_POST['psw'])){
     }
 }
 
-if(isset($_POST['psw'])){
-    if($pass!=null) {
+if(isset($_POST['address'])){
+    if($address!=null) {
         $stmt1 = $db->prepare("UPDATE users SET uaddress=? WHERE uusername=?");
-        $stmt1->bind_param('ss', $email, $sess);
+        $stmt1->bind_param('ss', $address, $sess);
         $stmt1->execute();
         $stmt1->store_result();
         $stmt1->bind_result($col1);
@@ -107,7 +107,7 @@ if(isset($_POST['psw'])){
 
 
 
-if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))&&(($email==null))){
+if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))&&(($address==null))){
     echo 0;
 }
 else{
