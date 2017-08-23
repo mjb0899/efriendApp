@@ -98,7 +98,7 @@ if (isset($_POST['submit'])) {
                 try{
                     echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('File too big')
-                        window.location.href='userProfile.php';
+                        window.location.href='messages.php';
                     </SCRIPT>");
                     exit();
                 }catch(PDOException $exception){
@@ -108,14 +108,14 @@ if (isset($_POST['submit'])) {
         } else {
             echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('Something went Wrong')
-                        window.location.href='userProfile.php';
+                        window.location.href='messages.php';
                     </SCRIPT>");
             exit();
         }
     }  else {
         echo ("<SCRIPT LANGUAGE='JavaScript'>
                          window.alert('Cannot Upload this kind of file')
-                        window.location.href='userProfile.php';
+                        window.location.href='messages.php';
                     </SCRIPT>");
         exit();
     }
