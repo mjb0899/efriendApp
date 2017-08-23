@@ -381,7 +381,6 @@ if(isset($_SESSION['name'])){
                 <li class="active"><a data-toggle="pill" href="#home">My Info</a></li>
                 <li><a data-toggle="pill" href="#menu1">Search Info</a></li>
                 <li><a data-toggle="pill" href="#menu2">Your Images</a></li>
-                <li><a data-toggle="pill" href="#menu3">Menu 3</a></li>
             </ul>
 
             <div class="tab-content">
@@ -616,10 +615,7 @@ if(isset($_SESSION['name'])){
 
 
                 </div>
-                <div id="menu3" class="tab-pane fade">
-                    <h3>Menu 3</h3>
-                    <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-                </div>
+
             </div>
 
         </div>
