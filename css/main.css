@@ -677,9 +677,7 @@ footer{
 
 
 #some-element {
-	border: 1px solid #ccc;
 	display: none;
-	font-size: 10px;
 	margin-top: 10px;
 	padding: 5px;
 	text-transform: uppercase;
@@ -691,9 +689,7 @@ footer{
 
 
 #some-element2 {
-	border: 1px solid #ccc;
 	display: none;
-	font-size: 10px;
 	margin-top: 10px;
 	padding: 5px;
 	text-transform: uppercase;
