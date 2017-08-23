@@ -110,7 +110,7 @@ if(isset($_SESSION['name'])){
         </div>
     </div>
 </main>
-<footer>
+
     <footer>
         <div class="footer_left" >
             <h1>eFriend</h1>
@@ -124,6 +124,6 @@ if(isset($_SESSION['name'])){
             <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
         </div>
     </footer>
-</footer>
+
 </body>
 </html>
