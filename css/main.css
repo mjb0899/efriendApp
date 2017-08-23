@@ -501,6 +501,7 @@ a.fill-div {
 
 .wrapper_right > a:hover {
 	background: #4484CE;
+	color: #F9CF00;
 	padding:0;
 
 
@@ -508,8 +509,8 @@ a.fill-div {
 
 .wrapper_left > a:hover {
 	background: #4484CE;
+	color: #F9CF00;
 	padding:0;
-
 
 }
 .red{
