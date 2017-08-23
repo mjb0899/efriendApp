@@ -685,3 +685,17 @@ footer{
 #some-div:hover #some-element {
 	display: block;
 }
+
+
+#some-element2 {
+	border: 1px solid #ccc;
+	display: none;
+	font-size: 10px;
+	margin-top: 10px;
+	padding: 5px;
+	text-transform: uppercase;
+}
+
+#some-div2:hover #some-element2 {
+	display: block;
+}

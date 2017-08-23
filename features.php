@@ -98,7 +98,7 @@ if(isset($_SESSION['name'])){
 
         </div>
 
-        <div class="wrapper_right" id="some-div">
+        <div class="wrapper_right" id="some-div2">
 
 
             <a href="eConnectAlgo.php" class="fill-div">
@@ -106,7 +106,7 @@ if(isset($_SESSION['name'])){
 
                 <div class="wt_col"><p>Find a Connection?</p>  </div>
                 <div class="wt_col"><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
-                <span id="some-element">
+                <span id="some-element2">
 	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
   </span>
 
