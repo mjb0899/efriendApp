@@ -84,11 +84,16 @@ if(isset($_SESSION['name'])){
 <p>.</p>
 <main style="height: 75%">
     <div class="container_main" style="height: 100%">
-        <div class="wrapper_left">
+        <div class="wrapper_left" id="some-div">
             <a href="eFriendAlgo.php" class="fill-div">
             <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People</p>  </div>
                 <div class="wt_col"><p>Find a Friend?</p>  </div>
-           </a>
+
+                <span id="some-element">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </span>
+
+            </a>
 
 
         </div>
@@ -101,6 +106,9 @@ if(isset($_SESSION['name'])){
 
                 <div class="wt_col"><p>Find a Connection?</p>  </div>
                 <div class="wt_col"><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
+                <span id="some-element">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+  </span>
 
             </a>
 
