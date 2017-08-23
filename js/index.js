@@ -221,7 +221,7 @@ function send() {
                     //    $("#test").html("Your changes have been saved.");
                     /*   setTimeout(function(){
                      location.reload();
-                     }
+                     }.
                      ,2000);*/
                   //  alert("Accepted Message");
                     $('#hidethis').hide();
