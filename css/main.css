@@ -582,10 +582,10 @@ footer{
 	}
 	.wrapper_box_surround{
 		width: 100%;
+
 	}
-	body{
-        min-width: 400px;
-        overflow-x: auto;
+	.wrapper_box{
+		padding: 0;
 	}
 
 }
