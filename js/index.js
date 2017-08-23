@@ -6,10 +6,9 @@ function chk() {
     var lastname=document.getElementById('lastname').value;
     var email=document.getElementById('email').value;
     var psw=document.getElementById('psw').value;
-    var sex=document.getElementById('sex').value;
+
     var address=document.getElementById('address').value;
-    var age=document.getElementById('age').value;
-    var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw+'&sex='+sex+'&address='+address+'&age='+age;
+    var dataString='firstname='+firstname+'&lastname='+lastname+'&email='+email+'&psw='+psw+'&address='+address;
     $.ajax({
             type:"post",
             url:"updateProfile.php",
