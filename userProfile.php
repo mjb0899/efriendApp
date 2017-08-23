@@ -40,6 +40,8 @@ if(isset($_SESSION['name'])){
                         $("#lastname").show();
                         $("#email").show();
                         $("#psw").show();
+                        $("#address").show();
+
                     }
                 );
             }
@@ -54,6 +56,7 @@ if(isset($_SESSION['name'])){
                         $("#lastname").hide();
                         $("#email").hide();
                         $("#psw").hide();
+                        $("#address").hide();
                     }
                 );
             }
@@ -451,6 +454,7 @@ if(isset($_SESSION['name'])){
                     }
                     ?>
                     <div id="test">
+
                     </div>
 
 

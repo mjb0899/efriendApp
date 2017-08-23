@@ -16,6 +16,8 @@ $fname=$_POST['firstname'];
 $lname=$_POST['lastname'];
 $email=$_POST['email'];
 $pass = md5($_POST['psw']);
+$address=$_POST['address'];
+
 include("dbConnect.php");
 if(isset($_POST['firstname'])){
     if($fname!=null){
@@ -83,7 +85,29 @@ if(isset($_POST['psw'])){
         */
     }
 }
-if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))){
+
+if(isset($_POST['psw'])){
+    if($pass!=null) {
+        $stmt1 = $db->prepare("UPDATE users SET uaddress=? WHERE uusername=?");
+        $stmt1->bind_param('ss', $email, $sess);
+        $stmt1->execute();
+        $stmt1->store_result();
+        $stmt1->bind_result($col1);
+        /*
+        $sql = "UPDATE users SET uemail='$pass' Where username='$sess'";
+        if (mysqli_query($db, $sql)) {
+        } else {
+            echo "Error:" . $sql . "<br>" . mysqli_error($db);
+        }
+        */
+    }
+}
+
+
+
+
+
+if((($pass==null))&&(($email==null))&&(($fname==null))&&(($lname==null))&&(($email==null))){
     echo 0;
 }
 else{
