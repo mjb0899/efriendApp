@@ -84,13 +84,13 @@ if(isset($_SESSION['name'])){
 <p>.</p>
 <main style="height: 75%">
     <div class="container_main" style="height: 100%">
-        <div class="wrapper_left" id="some-div">
+        <div class="wrapper_left responsive_text2" id="some-div">
             <a href="eFriendAlgo.php" class="fill-div">
             <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People</p>  </div>
                 <div class="wt_col"><p>Find a Friend?</p>  </div>
 
                 <span id="some-element">
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                <p>Find Me a Match</p>
   </span>
 
             </a>
@@ -98,7 +98,7 @@ if(isset($_SESSION['name'])){
 
         </div>
 
-        <div class="wrapper_right" id="some-div2">
+        <div class="wrapper_right responsive_text2" id="some-div2">
 
 
             <a href="eConnectAlgo.php" class="fill-div">
@@ -107,7 +107,7 @@ if(isset($_SESSION['name'])){
                 <div class="wt_col"><p>Find a Connection?</p>  </div>
                 <div class="wt_col"><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
                 <span id="some-element2">
-	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                     <p>Find Me a Match</p>
   </span>
 
             </a>
