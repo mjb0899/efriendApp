@@ -575,6 +575,18 @@ footer{
 	}
 }
 
+@media screen and (max-width:700px) {
+	.wrapper_quote {
+		display: none;
+
+	}
+	.wrapper_box_surround{
+		width: 100%;
+	}
+}
+
+
+
 /*EFIENDmatcher css*/
 
 .response{
