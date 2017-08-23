@@ -582,7 +582,12 @@ footer{
 	}
 	.wrapper_box_surround{
 		width: 100%;
+		min-width: 300px;
 	}
+	.container_main{
+		overflow: auto;
+	}
+
 }
 
 
