@@ -8,7 +8,7 @@ body
 	background-repeat: no-repeat;
     background-attachment: fixed;
      background-position: center; 
-     height: 100%;
+     height: 94%;
      width: 100%;
 }
 main{
@@ -244,7 +244,7 @@ height: 100%;
 	padding: 1rem;
 	background: whitesmoke;
 	border-radius: 2rem;
-	height: 55%;
+	height: 5%;
 }
 .div_top{
 	background-color: #4484CE;
@@ -255,7 +255,7 @@ height: 100%;
 
 }
 .div_middle{
-	height: 9%;
+	height: 5%;
 	padding: 2px;
 }
 
