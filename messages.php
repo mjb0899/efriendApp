@@ -154,9 +154,9 @@ $get_mid=$_SESSION['mid'];//match id
             $mid = $row['mid'];
             $m_name = $row['match_uname'];
             $s_date = $row['start_date'];
-            echo '<script language="javascript">';
+           /* echo '<script language="javascript">';
             echo 'alert("'.$mid."//".$m_name."//".$s_date.'")';
-            echo '</script>';
+            echo '</script>';*/
 
       echo' <div>
             <hr>
