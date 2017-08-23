@@ -119,7 +119,7 @@ if(isset($_SESSION['name'])){
 </div>
 <footer>
     <div class="footer_left" >
-        <h1>eFriend</h1>
+        <h1 class="responsive_text">eFriend</h1>
     </div>
     <div class="footer_right" >
         <a target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER"><img alt="follow me on facebook" src="https://c866088.ssl.cf3.rackcdn.com/assets/facebook30x30.png" border=0></a>

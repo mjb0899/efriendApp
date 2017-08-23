@@ -63,7 +63,9 @@ ul.nav a:hover{
 	border-bottom: 2px solid #F9CF00;
 }
 
-
+.responsive_text{
+    font-size: 10vw;
+}
 
 /*CONTAINeR*/
 .container_main{
