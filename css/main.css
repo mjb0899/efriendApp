@@ -498,6 +498,14 @@ a.fill-div {
 	text-decoration: none;
 }
 
+.eConnectLogo > a:hover{
+	border: 4px solid #F9CF00;
+}
+
+.eFriendLogo > a:hover{
+	border: 4px solid #F9CF00;
+
+}
 
 .wrapper_right > a:hover {
 	background: #4484CE;
