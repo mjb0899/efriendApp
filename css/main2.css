@@ -213,7 +213,7 @@ ul.nav a:hover{
 }
 /*PROFILE CSS*/
 .wrapper_profile{
-
+height: 100%;
 }
 .profile_image{
 	height: 15rem;
