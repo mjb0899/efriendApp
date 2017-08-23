@@ -86,7 +86,7 @@ if(isset($_SESSION['name'])){
     <div class="container_main" style="height: 100%">
         <div class="wrapper_left responsive_text2" id="some-div">
             <a href="eFriendAlgo.php" class="fill-div">
-            <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People</p>  </div>
+            <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People.</p>  </div>
                 <div class="wt_col"><p>Find a Friend?</p>  </div>
 
                 <span id="some-element">
