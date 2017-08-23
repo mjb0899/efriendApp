@@ -10,6 +10,11 @@ if(isset($_SESSION['name'])){
     $uid = null;
 
 }
+if(isset($_SESSION['name'])){
+
+}else{
+    header("location:index.php");
+}
 
 ?>
 
