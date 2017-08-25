@@ -29,24 +29,7 @@ session_start();
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
-
-
-
-
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">Features <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-
-                            <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='eFriendAlgo.php'>eFriend Finder</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"       <li><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
-
-
-                            <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eConnectAlgo.php'>eConnect</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"           <li><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
-
-
-                        </ul>
-                    </li>
+                    <li class="active"><a href="efriendAd.php">Features</a></li>
                     <li><a href="happyFriends.php">Happy Friends</a></li>
                     <li class="active"><a href="aboutUs.php">About Us</a></li>
                     <?php if(isset($_SESSION['name'])) {   echo"   <li>  <a href='messages.php'>Inbox</span></a></li> "; }  ?>
