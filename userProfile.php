@@ -509,7 +509,7 @@ if(isset($_SESSION['name'])){
                                 <!-- Trigger the modal with a button -->
                                 <hr>
 
-                                <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-pencil"></button>
+                                <button type="button" class="btn-place" data-toggle="modal" data-target="#myModal2"><span class="glyphicon glyphicon-pencil">Add Pictures</button>
                                 <hr>
 
                                 <!-- Modal -->
