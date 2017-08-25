@@ -250,6 +250,11 @@ height: 100%;
 	padding: 2rem;
 	text-align: center;
 	border-radius: 2rem;
+	background-image: url('../images/rr2.PNG');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+
 
 
 }
