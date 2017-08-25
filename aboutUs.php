@@ -54,6 +54,7 @@ session_start();
                         </ul>
                     </li>';}?>
 
+                    <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='features.php'>Home</a></li>"; }  ?>
 
                     <li><a href="happyFriends.php">Happy Friends</a></li>
                     <li class="active"><a href="aboutUs.php">About Us</a></li>
