@@ -359,7 +359,7 @@ $get_mid=$_SESSION['mid'];//match id
            </div>
            <div class="text_input">
                    <div class="form-group area_left">
-                                        <textarea class="form-control" id="msgSend" maxlength="100" style="height: 100%;"
+                                        <textarea class="form-control" id="msgSend" maxlength="100" required="required" style="height: 100%;"
                                              <?php
                                              include ("dbConnect.php");
                                              $match_uid=null;
@@ -395,7 +395,7 @@ $get_mid=$_SESSION['mid'];//match id
 
                                              ?>
 
-                                            <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?> ></textarea>
+                                            <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}  ?> ></textarea>
 
 
 
