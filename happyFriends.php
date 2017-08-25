@@ -78,7 +78,7 @@ session_start();
     </nav>
 </header>
 <!--MAIN CODE-->
-<main>
+
 
     <div class="container_reg">
         <div class="wrapper_up">
@@ -127,7 +127,7 @@ session_start();
 
 
 
-</main>
+
 <!--FOOTER CODE!!-->
 <footer>
     <div class="footer_left" >
