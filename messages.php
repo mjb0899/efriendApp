@@ -369,7 +369,6 @@ $get_mid=$_SESSION['mid'];//match id
                                                  $match_uid = $row['uid'];
                                              }
 
-                                             echo '<script>alert("'.$match_uid.'")</script>';
                                             if($match_uid!=null){
 
                                                 $sql_query = "select approach_wanted from user_info where uid='$$match_uid'";
