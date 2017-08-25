@@ -368,7 +368,7 @@ $get_mid=$_SESSION['mid'];//match id
                                              while($row = $result -> fetch_array()) {
                                                  $match_uid = $row['uid'];
                                              }
-
+                                            $match_approach="u";
                                             if($match_uid!=null){
 
                                                 $sql_query = "select approach_wanted from user_info where uid='$match_uid'";
@@ -380,10 +380,13 @@ $get_mid=$_SESSION['mid'];//match id
                                                 }
 
                                             }
-                                            if($match_approach=!null){
-                                                echo ' placeholder = "'.$match_approach.'" ';
-                                            }else{
-                                                echo ' placeholder = "Keep it simple" ';
+
+                                            if($match_approach=="s"){
+                                                echo ' placeholder = "Maybe a Flirtline ;)" ';
+                                            }elseif($match_approach=="t"){
+                                                echo ' placeholder = "Maybe a compliment?" ';
+                                            }elseif($match_approach="u"){
+                                                echo ' placeholder = "Maybe Keep it simple?" ';
 
                                             }
 
