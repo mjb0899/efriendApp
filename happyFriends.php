@@ -79,7 +79,7 @@ session_start();
 </header>
 <!--MAIN CODE-->
 
-
+<div class="container_main">
     <div class="container_reg">
         <div class="wrapper_up">
             <div class="container">
@@ -123,6 +123,8 @@ session_start();
 
         </div>
     </div>
+</div>
+
 
 
 
