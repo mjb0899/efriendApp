@@ -64,7 +64,7 @@ session_start();
                 <div class="wt_col"><p>Find a Friend?</p>  </div>
 
                 <span id="some-element">
-                <p class="responsive_text2">Let's Go </p>
+                     <p class="responsive_text2">Sign In to Know More</p>
   </span>
 
             </a>
@@ -81,7 +81,7 @@ session_start();
                 <div class="wt_col"><p>Find a Connection?</p>  </div>
                 <div class="wt_col"><p>Anonymous? <br> Reveal yourself if you think the connection is right!</p>  </div>
                 <span id="some-element2">
-                     <p class="responsive_text2">Let's Go</p>
+                     <p class="responsive_text2">Sign In to Know More</p>
   </span>
 
             </a>
