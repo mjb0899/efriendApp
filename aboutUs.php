@@ -88,17 +88,21 @@ session_start();
             <h2>-Our Mission-</h2>
             <?php echo $_SESSION['name']; ?>
             <p>
-                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
+                Technology has transformed the way people connect and establish relationships.
+                Online dating has become one of the most used tools for people to socialize in the recent years. The amount of people using dating websites has been continuously increasing. However these sites aim to match people for online dating purposes.
             </p>
+            The proposed project explores a new domain of matching people and how they connect. The primary goal of this domain is to help people make friends. This web service will help to diminish the awkwardness of dating website and help people meet without an ulterior motive of dating. For example, if a person likes football and wants to watch a game, he/she can check if there are others interested in football and ask them out to a game.
             <p>
-                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
             </p>
+
             <p>
-                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
+                There is also a concept of "Darkroom" where two friends can be matched but cannot see each other and can start a conversation without worrying about " what if things don't work out". They can unmatch.
+                If they are comfortable and feel they are connecting well, they can reveal their images and share photos.
+                This will help people to boost their conversation abilities,build deeper connections and socialize better.
             </p>
-            <p>
-                As the world’s largest music and audio platform, SoundCloud lets people discover and enjoy the greatest selection of music from the most diverse creator community on earth. Since launching in 2008, the platform has become renowned for its unique content and features, including the ability to share music and connect directly with artists, as well as unearth breakthrough tracks, raw demos, podcasts and more. This is made possible by an open platform that directly connects creators and their fans across the globe. Music and audio creators use SoundCloud to both share and monetise their content with a global audience, as well as receive detailed stats and feedback from the Music&Me community.
-            </p>
+
+
+
             <h3 <?php if(isset($_SESSION['name'])) { ?>style="display:none;"<?php } ?> > Don't have a free account yet?</h3>
             <div class="wrapper_down">
                 <a href="registration.php"> <button type="button" class="log-btn" <?php if(isset($_SESSION['name'])) { ?>style="display:none;"<?php } ?>  >Create Account</button></a>
