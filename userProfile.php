@@ -375,7 +375,7 @@ if(isset($_SESSION['name'])){
         </div>
         <div class="div_middle">
         </div>
-        <div class="div_bottom">
+        <div class="div_bottom" style="width:60%;">
             <p>Profile Info</p>
             <ul class="nav nav-pills">
                 <li class="active"><a data-toggle="pill" href="#home">My Info</a></li>
