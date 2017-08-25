@@ -88,7 +88,7 @@ if(isset($_SESSION['name'])){
         .responsive {
             padding: 0 6px;
             float: left;
-            width: 24.99999%;
+            width: 14.99999%;
         }
 
         @media only screen and (max-width: 700px){
