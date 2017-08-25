@@ -44,11 +44,11 @@ session_start();
                         <ul class="dropdown-menu">
 
                             <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='eFriendAlgo.php'>eFriend Finder</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"       <li><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo" "; }  ?>
 
 
                             <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eConnectAlgo.php'>eConnect</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"           <li><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
+                            <?php if(!isset($_SESSION['name'])) {   echo""; }  ?>
 
 
                         </ul>
