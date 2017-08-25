@@ -395,14 +395,14 @@ $get_mid=$_SESSION['mid'];//match id
 
                                              ?>
 
-                                            <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>></textarea>
-
+                                            ></textarea>
+                       <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>
 
 
                    </div>
 
                    <div class="form-group area_right">
-                       <button type="submit" class="btn btn-info" style="height: 100%;width: 100%" onclick="return send()">>></button>
+                       <button type="submit" class="btn btn-info" style="height: 100%;width: 100%" onclick="return send()" <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>>>></button>
 
                    </div>
            </div><!--TEXT INPUT CLOSE TAG-->
