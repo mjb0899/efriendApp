@@ -228,8 +228,7 @@ $get_mid=$_SESSION['mid'];//match id
 
                             <?php
                             //getting convos people
-
-                            include("dbConnect.php");
+                            $hint_gen=0;                            include("dbConnect.php");
 
                             $convo_id=$_SESSION['mid'];//funny
 
@@ -245,6 +244,8 @@ $get_mid=$_SESSION['mid'];//match id
                                                 $sender = $row['sender'];
                                                 $s_date = $row['start_date'];
                                                 $img_path=$row['image_path'];
+
+                                                $hint_gen=1;
 
                                             if ($sender == $_SESSION['name']) {
                                                             //if content not null
@@ -378,15 +379,19 @@ $get_mid=$_SESSION['mid'];//match id
                                                 }
 
                                             }
+                                            if($hint_gen==1){
+                                                if($match_approach=="s"){
+                                                    echo ' placeholder = "Maybe a Flirtline ;)" ';
+                                                }elseif($match_approach=="t"){
+                                                    echo ' placeholder = "Maybe a compliment?" ';
+                                                }elseif($match_approach="u"){
+                                                    echo ' placeholder = "Maybe Keep it simple?" ';
 
-                                            if($match_approach=="s"){
-                                                echo ' placeholder = "Maybe a Flirtline ;)" ';
-                                            }elseif($match_approach=="t"){
-                                                echo ' placeholder = "Maybe a compliment?" ';
-                                            }elseif($match_approach="u"){
-                                                echo ' placeholder = "Maybe Keep it simple?" ';
-
+                                                }
+                                            }else{
+                                                echo ' placeholder = "Type something here..." ';
                                             }
+
 
                                              ?>
 
