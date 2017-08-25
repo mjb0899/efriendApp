@@ -605,6 +605,15 @@ footer{
 	}
 
 }
+@media screen and (max-width:600px) {
+	.container_main {
+		min-height: 600px;
+
+	}
+}
+
+
+
 
 
 
