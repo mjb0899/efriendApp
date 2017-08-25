@@ -245,7 +245,7 @@ if(isset($_SESSION['name'])){
                     <li><a href="happyFriends.php">Happy Friends</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
                     <li>  <a href="messages.php">Inbox</span></a></li>
-                    <li> <a href="userProfile.php">My Profile</span></a></li>
+                    <li class="active"> <a href="userProfile.php">My Profile</span></a></li>
                 </ul>
 
                     <ul class="nav navbar-nav navbar-right">
