@@ -80,8 +80,10 @@ ul.nav a:hover{
 	     padding: 1rem;
 	     width: 100%;
 	margin-top: 5rem;
+	min-height: 700px;
 
-	
+
+
 }
 .container_message{
 	/*background-color: #e9e9e9;*/
@@ -604,12 +606,6 @@ footer{
 		padding: 5px;
 	}
 
-}
-@media screen and (max-width:600px) {
-	.container_main {
-		min-height: 600px;
-
-	}
 }
 
 
