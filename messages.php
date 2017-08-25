@@ -362,7 +362,7 @@ $get_mid=$_SESSION['mid'];//match id
                                              <?php
                                              include ("dbConnect.php");
                                              $match_uid=null;
-                                            $match_uname=$_SESSION['match'];
+                                            $match_uname=$_SESSION['check'];
                                              $sql_query = "select uid from users where uusername='$match_uname'";
                                              $result = $db -> query($sql_query);
                                              while($row = $result -> fetch_array()) {
