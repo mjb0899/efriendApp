@@ -48,23 +48,10 @@ if(isset($_SESSION['name'])){
 
                     <?php if(isset($_SESSION['name'])) {   echo"    <li><a href='features.php'>Home</a></li>"; }  ?>
 
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                    <li><a href="efriendAd.php">Features</a></li>
 
-                            <?php if(isset($_SESSION['name'])) {   echo"       <li class='ditem'><a href='features.php'>eFriend Finder</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"       <li class='ditem'><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
-
-
-                            <?php if(isset($_SESSION['name'])) {   echo"           <li class='ditem'><a href='eFriendSurvey.php'>eConnect</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"           <li class='ditem'><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
-
-
-                        </ul>
-                    </li>
                     <li><a href="happyFriends.php">Happy Friends!</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
-                    <li><a href="eFriendSurvey.php">Survey</a></li>
 
 
                 </ul>
