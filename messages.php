@@ -395,8 +395,8 @@ $get_mid=$_SESSION['mid'];//match id
 
                                              ?>
 
-                                            ></textarea>
-                       <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>
+                                            <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?> ></textarea>
+
 
 
                    </div>
