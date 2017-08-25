@@ -237,6 +237,10 @@ height: 100%;
 	-o-border-radius: 50%;
 	border-radius: 50%;
 }
+*{
+	font-family: "Century Gothic",sans-serif;
+
+}
 
 
 .div_bottom{
