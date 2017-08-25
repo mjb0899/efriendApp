@@ -244,6 +244,8 @@ height: 100%;
 	padding: 1rem;
 	background: whitesmoke;
 	border-radius: 2rem;
+	width:60%;
+	margin: auto;
 }
 .div_top{
 	padding: 2rem;
