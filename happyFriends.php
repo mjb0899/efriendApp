@@ -38,26 +38,28 @@ session_start();
 
 
 
-
+                    <?php if(isset($_SESSION['name'])) {   echo'
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">Features <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu">';}?>
 
-                            <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='eFriendAlgo.php'>eFriend Finder</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"       <li><a href='efriendAd.php'>eFriend Finder</a></li>"; }  ?>
-
-
-                            <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eConnectAlgo.php'>eConnect</a></li>"; }  ?>
-                            <?php if(!isset($_SESSION['name'])) {   echo"           <li><a href='econnectAd.php'>eConnect</a></li>"; }  ?>
+                    <?php if(isset($_SESSION['name'])) {   echo"       <li><a href='eFriendAlgo.php'>eFriend Finder</a></li>"; }  ?>
+                    <?php if(!isset($_SESSION['name'])) {   echo" "; }  ?>
 
 
+                    <?php if(isset($_SESSION['name'])) {   echo"           <li><a href='eConnectAlgo.php'>eConnect</a></li>"; }  ?>
+                    <?php if(!isset($_SESSION['name'])) {   echo""; }  ?>
+
+                    <?php if(isset($_SESSION['name'])) {   echo'
                         </ul>
-                    </li>
-                    <li class="active"><a href="happyFriends.php">Happy Friends</a></li>
-                    <li><a href="aboutUs.php">About Us</a></li>
+                    </li>';}?>
+
+                    <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='features.php'>Home</a></li>"; }  ?>
+
+                    <li><a href="happyFriends.php">Happy Friends</a></li>
+                    <li class="active"><a href="aboutUs.php">About Us</a></li>
                     <?php if(isset($_SESSION['name'])) {   echo"   <li>  <a href='messages.php'>Inbox</span></a></li> "; }  ?>
                     <?php if(isset($_SESSION['name'])) {   echo"   <li> <a href='userProfile.php'>My Profile</span></a></li>"; }  ?>
-
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='registration.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li> "; }  ?>
@@ -67,7 +69,7 @@ session_start();
                                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">'. $_SESSION["name"].' <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-
+                        
                              <li><a href="messages.php"><span class="glyphicon glyphicon-envelope">Inbox</a></li>                  
                              <li><a href="userProfile.php"><span class="glyphicon glyphicon-th-list"></span>My Profile</a></li>
                              <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span>Logout</a></li>
