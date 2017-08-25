@@ -78,7 +78,7 @@ session_start();
     </nav>
 </header>
 <!--MAIN CODE-->
-
+<p>.</p>
 <div class="container_main">
     <div class="container_reg">
         <div class="wrapper_up">
