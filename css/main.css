@@ -265,6 +265,7 @@ width:100%;
 
 .wrapper_left{
 	text-align: center;
+	min-height: 700px;
 
 	width: 49%;
 	float: left;
@@ -286,6 +287,8 @@ width:100%;
 	border-radius: 1rem;
 	background: rgba(25, 25, 25, .2);
 	background: linear-gradient(90deg,#4484CE,#FFFFFF);
+	min-height: 700px;
+
 
 
 
