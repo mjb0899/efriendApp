@@ -379,7 +379,7 @@ $get_mid=$_SESSION['mid'];//match id
                                                 }
 
                                             }
-                                            if($hint_gen==1){
+                                            if($hint_gen==0){
                                                 if($match_approach=="s"){
                                                     echo ' placeholder = "Maybe a Flirtline ;)" ';
                                                 }elseif($match_approach=="t"){
