@@ -359,6 +359,34 @@ $get_mid=$_SESSION['mid'];//match id
            <div class="text_input">
                    <div class="form-group area_left">
                                         <textarea class="form-control" id="msgSend" maxlength="100" style="height: 100%;"
+                                             <?php
+                                             include ("dbConnect.php");
+                                             $match_uid=null;
+                                            $match_uname=$_SESSION['match'];
+                                             $sql_query = "select uid from users where uusername='$match_uname'";
+                                             $result = $db -> query($sql_query);
+                                             while($row = $result -> fetch_array()) {
+                                                 $match_uid = $row['uid'];
+                                             }
+
+                                            if($match_uid!=null){
+
+                                                $sql_query = "select approach_wanted from user_info where uid='$$match_uid'";
+                                                $result = $db -> query($sql_query);
+                                                while($row = $result -> fetch_array()) {
+                                                    $match_approach = $row['approach_wanted'];
+                                                }
+
+                                            }
+                                            if($match_approach=!null){
+                                                echo ' placeholder = "'.$match_approach.'" ';
+                                            }else{
+                                                echo ' placeholder = "Keep it simple" ';
+
+                                            }
+
+                                             ?>
+
                                             <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>></textarea>
 
 
