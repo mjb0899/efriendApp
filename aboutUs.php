@@ -85,8 +85,11 @@ session_start();
 <div class="wrapper_reg2">
     <div class="container_reg3">
         <div class="wrapper_up">
-            <h2>-Our Mission-</h2>
-            <?php echo $_SESSION['name']; ?>
+            <h2>-eFriend-</h2>
+
+            <p>
+                <?php echo $_SESSION['name'].", "; ?> Thank you for being a part of eFriend.</p>
+
             <p>
                 Technology has transformed the way people connect and establish relationships.
                 Online dating has become one of the most used tools for people to socialize in the recent years. The amount of people using dating websites has been continuously increasing. However these sites aim to match people for online dating purposes.
