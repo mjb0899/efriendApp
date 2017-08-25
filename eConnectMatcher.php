@@ -76,6 +76,9 @@ $username=$_SESSION['name'];
                     </li>
                     <li><a href="happyFriends.php">Happy Friends</a></li>
                     <li><a href="aboutUs.php">About Us</a></li>
+                    <li>  <a href="messages.php">Inbox</span></a></li>
+                    <li> <a href="userProfile.php">My Profile</span></a></li>
+
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <?php if(!isset($_SESSION['name'])) {   echo"    <li><a href='registration.php'><span class='glyphicon glyphicon-user'></span> Sign Up</a></li> "; }  ?>
