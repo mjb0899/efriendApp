@@ -82,7 +82,7 @@ session_start();
 <div class="container_main">
     <div class="container_reg">
         <div class="wrapper_up">
-            <div class="container">
+            <div class="container" style="width: 100%;">
                 <h2>Carousel Example</h2>
                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
