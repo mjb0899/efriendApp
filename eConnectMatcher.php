@@ -60,7 +60,7 @@ $username=$_SESSION['name'];
 
 
 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="features.php">Features <span class="caret"></span></a>
                         <ul class="dropdown-menu">
 
