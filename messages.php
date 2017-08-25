@@ -375,8 +375,6 @@ $get_mid=$_SESSION['mid'];//match id
                                                 $result = $db -> query($sql_query);
                                                 while($row = $result -> fetch_array()) {
                                                     $match_approach = $row['approach_wanted'];
-                                                    echo '<script>alert("'.$match_approach.'")</script>';
-
                                                 }
 
                                             }
