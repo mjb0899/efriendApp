@@ -85,7 +85,7 @@ if(isset($_SESSION['name'])){
 <main style="height: 75%">
     <div class="container_main" style="height: 100%">
         <div class="wrapper_left responsive_text2" id="some-div">
-            <a href="eFriendAlgo.php" class="fill-div">
+            <a href="#" class="fill-div">
                 <div class="eFriendLogo"></div>       efriend <div class="wt_col"><p>Meet New People.</p>  </div>
                 <div class="wt_col"><p>Find a Friend?</p>  </div>
 
@@ -101,7 +101,7 @@ if(isset($_SESSION['name'])){
         <div class="wrapper_right responsive_text2" id="some-div2">
 
 
-            <a href="eConnectAlgo.php" class="fill-div">
+            <a href="#" class="fill-div">
                 <div class="eConnectLogo"></div>  eConnect
 
                 <div class="wt_col"><p>Find a Connection?</p>  </div>
