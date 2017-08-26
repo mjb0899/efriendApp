@@ -56,6 +56,8 @@ $get_mid=$_SESSION['mid'];//match id
                      //alert(d);
                   //   $( "#texter" ).load(window.location.href + " #texter" );
                      $('#hidethis').hide();
+                     $('#showthis').show();
+
                      $('#texter').load(" #matter_get");
                      var elem = document.getElementById('scroller');
                      elem.scrollTop=elem.scrollHeight;
@@ -236,6 +238,8 @@ $get_mid=$_SESSION['mid'];//match id
                                 echo '<div class="convo_name"><h1 id="hidethis">SELECT CONVERSATION</h1></div>';
                                 echo $_SESSION['mid'];
                             }else {
+                                echo '<div class="convo_name"><h1 id="showthis">'.$_SESSION["check"].'</h1></div>';
+
 
                                         $sql_query = "Select content,sender,start_date,image_path from convo Where mid='$convo_id'";
                                         $result = $db->query($sql_query);

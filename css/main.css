@@ -698,7 +698,9 @@ footer{
 	display: block;
 }
 
-
+#showthis{
+	display: none;
+}
 #some-element2 {
 	display: none;
 	margin-top: 10px;
