@@ -145,9 +145,8 @@
                         </div>
                         <p id="validate-status" ></p>
                     </div>
-                    <p><input type="checkbox" id="toggle" /> By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-                    <div class="clearfix">
+                    <p><input type="checkbox" id="toggle" /> By creating an account you agree to our   <a href="#" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Terms & Privacy</a>.</p>
+                                       <div class="clearfix">
                         <button type="button" class="cancelbtn">Cancel</button>
                         <button type="submit" class="signupbtn" id="sendNewSms" disabled>Sign Up</button>
                     </div>
@@ -178,6 +177,14 @@
         } else {
             $('#sendNewSms').attr('disabled', true); //disable input
         }
+    });
+
+
+
+</script>
+<script>
+    $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
     });
 </script>
 
