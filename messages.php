@@ -354,7 +354,7 @@ $get_mid=$_SESSION['mid'];//match id
                        </div>
                    </div>
 
-              <div style="float: right;width: 50%;"><p id="showthis"><?php echo $_SESSION['check']?></p></div>
+              <div style="float: right;width: 50%;	background: linear-gradient(90deg,#FFFFFF,#4484CE);"><p id="showthis"><?php echo $_SESSION['check']?></p></div>
 
 
 
