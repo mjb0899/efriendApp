@@ -57,15 +57,10 @@
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Features <span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="#">eFriend Finder</a></li>
-                            <li><a href="#">eConnect</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Happy Friends</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="efriendAd.php">Features</a></li>
+
+                    <li><a href="happyFriends.php">Happy Friends</a></li>
+                    <li><a href="aboutUs.php">About Us</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="index.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
