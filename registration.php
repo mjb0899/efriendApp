@@ -145,7 +145,7 @@
                         </div>
                         <p id="validate-status" ></p>
                     </div>
-                    <p><input type="checkbox" id="toggle" /> By creating an account you agree to our   <a href="#" data-toggle="popover" title="Privacy" data-content="We care about the privacy of our Users. You understand that by using the Services you consent to the collection, use and disclosure of your personally identifiable information and aggregate data as set forth in our Privacy Policy and to have your personal information collected, used, transferred to and processed in the United Kingdom.">Terms & Privacy</a>.</p>
+                    <p><input type="checkbox" id="toggle" /> By creating an account you agree to our   <a href="#" data-toggle="popover" title="Privacy" data-content="We care about the privacy of our Users. You understand that by using the Services you consent to the collection, use and processing of your personally identifiable information and aggregate data as set forth in our Privacy Policy and to have your personal information collected, stored used and processed in the United Kingdom.">Terms & Privacy</a>.</p>
                                        <div class="clearfix">
                         <button type="button" class="cancelbtn">Cancel</button>
                         <button type="submit" class="signupbtn" id="sendNewSms" disabled>Sign Up</button>
