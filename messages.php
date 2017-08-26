@@ -354,7 +354,7 @@ $get_mid=$_SESSION['mid'];//match id
                        </div>
                    </div>
 
-              <div style="float: right;width: 50%;"><p id="showthis">convo name</p></div>
+              <div style="float: right;width: 50%;"><p id="showthis"><?php echo $_SESSION['check']?></p></div>
 
 
 
