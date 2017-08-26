@@ -542,6 +542,12 @@ a.fill-div {
 .tales {
 	width: 100%;
 }
+.convo_name{
+	width: 100%;
+}
+#hidethis{
+	margin: auto;
+}
 .carousel-inner{
 	width:400px;
 	max-height: 500px !important;
