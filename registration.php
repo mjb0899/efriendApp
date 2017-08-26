@@ -37,6 +37,18 @@
 
         }
 
+        var checker = document.getElementById('checkme');
+        var sendbtn = document.getElementById('enableme');
+        // when unchecked or checked, run the function
+        checker.onchange = function(){
+            if(this.checked){
+                sendbtn.disabled = false;
+            } else {
+                sendbtn.disabled = true;
+            }
+
+        }
+
     </script>
 
 
@@ -144,10 +156,11 @@
                         </div>
                         <p id="validate-status" ></p>
                     </div>
-                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> <input type="checkbox" id="checkme"/>
+
                     <div class="clearfix">
                         <button type="button" class="cancelbtn">Cancel</button>
-                        <button type="submit" class="signupbtn">Sign Up</button>
+                        <button type="submit" class="signupbtn" id="enableme"  disabled="disabled">Sign Up</button>
                     </div>
                 </div>
 
