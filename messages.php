@@ -328,7 +328,7 @@ $get_mid=$_SESSION['mid'];//match id
 
            <div class="uploader" style="clear: both;width: 100%;">
 
-                   <div class="container" style="float: left">
+                   <div class="container" style="float: left;width: 40%;">
                        <!-- Trigger the modal with a button -->
                        <button type="button" class="btn-place btn btn-default" data-toggle="modal"data-target="#myModal"   <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>><span class="glyphicon glyphicon-picture">Attachment</button>
 
@@ -354,7 +354,7 @@ $get_mid=$_SESSION['mid'];//match id
                        </div>
                    </div>
 
-              <div style="float: right"><p id="showthis">convo name</p></div>
+              <div style="float: right;width: 50%;"><p id="showthis">convo name</p></div>
 
 
 
