@@ -233,7 +233,7 @@ $get_mid=$_SESSION['mid'];//match id
                             $convo_id=$_SESSION['mid'];//funny
 
                             if($convo_id==null){
-                                echo '<div class="convo_name"><h1 id="hidethis" class="middle">SELECT CONVERSATION</h1></div>';
+                                echo '<div class="convo_name"><h1 id="hidethis">SELECT CONVERSATION</h1></div>';
                                 echo $_SESSION['mid'];
                             }else {
 
