@@ -37,17 +37,16 @@
 
         }
 
-        var checker = document.getElementById('checkme');
-        var sendbtn = document.getElementById('enableme');
-        // when unchecked or checked, run the function
-        checker.onchange = function(){
-            if(this.checked){
-                sendbtn.disabled = false;
-            } else {
-                sendbtn.disabled = true;
-            }
+        $('#toggle').click(function () {
+            //check if checkbox is checked
+            if ($(this).is(':checked')) {
 
-        }
+                $('#sendNewSms').removeAttr('disabled'); //enable input
+
+            } else {
+                $('#sendNewSms').attr('disabled', true); //disable input
+            }
+        });
 
     </script>
 
@@ -156,11 +155,11 @@
                         </div>
                         <p id="validate-status" ></p>
                     </div>
-                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p> <input type="checkbox" id="checkme"/>
+                    <p><input type="checkbox" id="toggle" /> By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
 
                     <div class="clearfix">
                         <button type="button" class="cancelbtn">Cancel</button>
-                        <button type="submit" class="signupbtn" id="enableme"  disabled="disabled">Sign Up</button>
+                        <button type="submit" class="signupbtn" id="sendNewSms" disabled>Sign Up</button>
                     </div>
                 </div>
 
