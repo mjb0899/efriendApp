@@ -238,7 +238,6 @@ $get_mid=$_SESSION['mid'];//match id
                                 echo '<div class="convo_name"><h1 id="hidethis">SELECT CONVERSATION</h1></div>';
                                 echo $_SESSION['mid'];
                             }else {
-                                echo '<div class="convo_name"><h1 id="showthis">'.$_SESSION["check"].'</h1></div>';
 
 
                                         $sql_query = "Select content,sender,start_date,image_path from convo Where mid='$convo_id'";
@@ -329,7 +328,7 @@ $get_mid=$_SESSION['mid'];//match id
 
            <div class="uploader" style="clear: both;width: 100%;">
 
-                   <div class="container">
+                   <div class="container" style="float: left">
                        <!-- Trigger the modal with a button -->
                        <button type="button" class="btn-place btn btn-default" data-toggle="modal"data-target="#myModal"   <?php if(!isset($_SESSION['mid'])) {   echo " disabled";}?>><span class="glyphicon glyphicon-picture">Attachment</button>
 
@@ -355,7 +354,7 @@ $get_mid=$_SESSION['mid'];//match id
                        </div>
                    </div>
 
-
+              <div style="float: left"><p id="showthis">convo name</p></div>';
 
 
 
