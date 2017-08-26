@@ -12,6 +12,7 @@
     <meta charset="UTF-8">
     <title>SORRY</title>
 </head>
-<body style="background-image: url(images/no_matches.png)">
+<body style="background-image: url(images/no_matches.png);background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover">
+
 </body>
 </html>
