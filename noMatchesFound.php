@@ -2,15 +2,23 @@
 /**
  * Created by PhpStorm.
  * User: ADMIN
- * Date: 14/08/2017
- * Time: 16:58
+ * Date: 07/08/2017
+ * Time: 13:52
  */
+session_start();
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html >
 <head>
     <meta charset="UTF-8">
-    <title>SORRY</title>
+    <title>MusicAndMe</title>
+    <!--MENUBAR CSS-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body style="background-image: url(images/no_matches.png);background-position: center center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover">
 <nav class="navbar navbar-inverse navbar-fixed-top menu_logo">
