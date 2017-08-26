@@ -238,7 +238,7 @@ $get_mid=$_SESSION['mid'];//match id
                                 echo '<div class="convo_name"><h1 id="hidethis">SELECT CONVERSATION</h1></div>';
                                 echo $_SESSION['mid'];
                             }else {
-
+                                echo '<div class="convo_name"><h1 id="showthis">'.$_SESSION["check"].'</h1></div>';
 
 
                                         $sql_query = "Select content,sender,start_date,image_path from convo Where mid='$convo_id'";
@@ -297,7 +297,7 @@ $get_mid=$_SESSION['mid'];//match id
 
 
                                         }//end while
-                                echo '<div class="convo_name"><h1 id="showthis">'.$_SESSION["check"].'</h1></div>';
+
                             }//end else
                             ?>
                             <img src onerror="loader()">
