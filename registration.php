@@ -37,22 +37,12 @@
 
         }
 
-        $('#toggle').click(function () {
-            //check if checkbox is checked
-            if ($(this).is(':checked')) {
-
-                $('#sendNewSms').removeAttr('disabled'); //enable input
-
-            } else {
-                $('#sendNewSms').attr('disabled', true); //disable input
-            }
-        });
 
     </script>
 
 
 </head>
-<body>
+<body >
 <header>
     <nav class="navbar navbar-inverse navbar-fixed-top menu_logo">
         <div class="container-fluid">
@@ -178,6 +168,20 @@
         <h5>Copyright &copy; 2017 &bull; All rights reserved &bull; Music&me.com</h5>
     </div>
 </footer>
+<script>
+    $('#toggle').click(function() {
+//check if checkbox is checked
+        if ($(this).is(':checked')) {
+
+            $('#sendNewSms').removeAttr('disabled'); //enable input
+
+        } else {
+            $('#sendNewSms').attr('disabled', true); //disable input
+        }
+    });
+</script>
+
+
 </body>
 </html>
 
