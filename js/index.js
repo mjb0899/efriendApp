@@ -75,15 +75,15 @@ function accept() {
                      location.reload();
                      }
                      ,2000);*/
-                    alert("Accept saved");
+                 //   alert("Accept saved");
                     location.href="messages.php";
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                    alert("Deny saved");
+                 //   alert("Deny saved");
                 }
                 else{
                    // $("#test").html("Not saved.");
-                    alert("Nothing saved");
+              //      alert("Nothing saved");
 
                 }
             }
@@ -112,7 +112,7 @@ function deny() {
                      location.reload();
                      }
                      ,2000);*/
-                    alert("Accept saved");
+               //     alert("Accept saved");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                 //    alert("Deny accepted");
@@ -120,7 +120,7 @@ function deny() {
                 }
                 else{
                     $("#test").html("Not saved.");
-                    alert("nothing saved");
+              //      alert("nothing saved");
 
                 }
             }
@@ -149,7 +149,7 @@ function deny2() {
                      location.reload();
                      }
                      ,2000);*/
-                    alert("Accept saved");
+               //     alert("Accept saved");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
                  //   alert("Deny accepted");
@@ -157,7 +157,7 @@ function deny2() {
                 }
                 else{
                     $("#test").html("Not saved.");
-                    alert("nothing saved");
+                 //   alert("nothing saved");
 
                 }
             }
@@ -196,7 +196,7 @@ function checkUsername() {
                 }
                 else{
                   //  $("#test").html("Not saved.");
-                    alert("somethings not right");
+                 //   alert("somethings not right");
 
                 }
             }
@@ -227,10 +227,10 @@ function send() {
                     $('#hidethis').hide();
                     $('#texter').load(" #matter_get");
                 }else if(d==0){
-                    alert("issues");
+                //    alert("issues");
                 }
                 else{
-                    alert("Not Acepted");
+                 //   alert("Not Acepted");
 
                 }
             }
@@ -260,16 +260,16 @@ function updateMatrix() {
                      location.reload();
                      }
                      ,2000);*/
-                    alert("echoed 1");
+                 //   alert("echoed 1");
                 }else if(d==0){
                     //  $("#test").html("Check Fields");
-                       alert("echoed 0");
+                   //    alert("echoed 0");
 
 
                 }
                 else{
                    // $("#test").html("Not saved.");
-                    alert("echoed r");
+                //    alert("echoed r");
 
                 }
             }
